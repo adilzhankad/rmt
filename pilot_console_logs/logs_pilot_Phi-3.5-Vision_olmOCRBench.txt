@@ -1,0 +1,69 @@
+[2026-10-20 12:31:33] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+`torch_dtype` is deprecated! Use `dtype` instead!
+self.img_root:/home/shadeform/a3/LMUData/images/olmOCRBench
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.01s/it]
+/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/transformers/models/auto/image_processing_auto.py:647: FutureWarning: The image_processor_class argument is deprecated and will be removed in v4.42. Please use `slow_image_processor_class`, or `fast_image_processor_class` instead
+  warnings.warn(
+Infer Phi-3.5-Vision/olmOCRBench, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Infer Phi-3.5-Vision/olmOCRBench, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/shadeform/a3/experiment/run.py", line 220, in run
+    infer_data_job(model, work_dir=str(work_dir), model_name=model_key, dataset=ds, api_nproc=api_nproc)
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/inference.py", line 245, in infer_data_job
+    model = infer_data(
+            ^^^^^^^^^^^
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/inference.py", line 199, in infer_data
+    response = model.generate(message=struct, dataset=dataset_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/base.py", line 119, in generate
+    return self.generate_inner(message, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/phi3_vision.py", line 149, in generate_inner
+    generate_ids = self.model.generate(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/transformers/generation/utils.py", line 2783, in _sample
+    model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_dot_5_hyphen_vision_hyphen_instruct/12b77fb40b63a2c73c68243d3f767aab688a1b2a/modeling_phi3_v.py", line 1660, in prepare_inputs_for_generation
+    past_length = past_key_values.seen_tokens
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+Traceback (most recent call last):
+  File "/home/shadeform/a3/experiment/run.py", line 281, in <module>
+    main()
+  File "/home/shadeform/a3/experiment/run.py", line 276, in main
+    row = run(a.model, bench, a.split, a.operator, cfg=cfg, api_nproc=a.api_nproc, note=a.note)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/experiment/run.py", line 220, in run
+    infer_data_job(model, work_dir=str(work_dir), model_name=model_key, dataset=ds, api_nproc=api_nproc)
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/inference.py", line 245, in infer_data_job
+    model = infer_data(
+            ^^^^^^^^^^^
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/inference.py", line 199, in infer_data
+    response = model.generate(message=struct, dataset=dataset_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/base.py", line 119, in generate
+    return self.generate_inner(message, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/phi3_vision.py", line 149, in generate_inner
+    generate_ids = self.model.generate(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/transformers/generation/utils.py", line 2783, in _sample
+    model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/shadeform/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_dot_5_hyphen_vision_hyphen_instruct/12b77fb40b63a2c73c68243d3f767aab688a1b2a/modeling_phi3_v.py", line 1660, in prepare_inputs_for_generation
+    past_length = past_key_values.seen_tokens
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'

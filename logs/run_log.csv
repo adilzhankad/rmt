@@ -41,3 +41,17 @@ timestamp_utc,operator,model,benchmark,split,n_items,n_failed,duration_s,vlmeval
 2026-10-20T12:32:49Z,Adilzhan,Ovis2-8B,olmOCRBench,pilot,20,,13.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,,"ERROR ValueError: 'aimv2' is already used by a Transformers config, pick another name."
 2026-10-20T12:45:29Z,Adilzhan,Qwen2.5-VL-7B-Instruct,OmniDocBench,pilot,20,0,1148.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.343,ok
 2026-10-20T12:47:14Z,Adilzhan,Idefics3-8B-Llama3,CCOCR,pilot,20,0,863.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.14152385845884843,ok
+2026-10-20T12:53:05Z,Adilzhan,Idefics3-8B-Llama3,OCRBench_v2,pilot,20,0,347.7,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.36680114798504476,ok
+2026-10-20T13:04:08Z,Adilzhan,Qwen2.5-VL-7B-Instruct,olmOCRBench,pilot,20,0,1116.7,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,79.0,ok
+2026-10-20T13:22:12Z,Adilzhan,MiniCPM-V-4_5,CCOCR,pilot,20,0,1082.1,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.5691208338035489,ok
+2026-10-20T13:28:46Z,Adilzhan,MiniCPM-V-4_5,OCRBench_v2,pilot,20,0,391.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.5984195402298851,ok
+2026-10-20T13:41:12Z,Adilzhan,Idefics3-8B-Llama3,OmniDocBench,pilot,20,,,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,,"ABORTED by operator after 14/20 pages: about 294 s per page, a 400-page run does not fit the GPU budget; olmOCRBench pilot not started; no score"
+2026-10-20T13:53:08Z,Adilzhan,MiniCPM-V-4_5,OmniDocBench,pilot,20,0,1459.1,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.242,ok
+2026-10-20T14:06:31Z,Adilzhan,Phi-3.5-Vision,CCOCR,pilot,20,0,1517.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.22333081039246025,ok
+2026-10-20T14:08:03Z,Adilzhan,MiniCPM-V-4_5,olmOCRBench,pilot,20,0,892.7,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,77.3,ok
+2026-10-20T14:09:19Z,Adilzhan,Phi-3.5-Vision,OCRBench_v2,pilot,20,0,165.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.46142821708262677,ok
+2026-10-20T14:18:16Z,Adilzhan,Ovis2-8B,CCOCR,pilot,20,0,588.5,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.4708553672716677,ok
+2026-10-20T14:20:19Z,Adilzhan,Ovis2-8B,OCRBench_v2,pilot,20,0,120.3,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.4290022156811331,ok
+2026-10-20T14:34:23Z,Adilzhan,Ovis2-8B,OmniDocBench,pilot,20,0,841.8,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.471,ok
+2026-10-20T14:35:41Z,Adilzhan,Phi-3.5-Vision,OmniDocBench,pilot,20,,,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,,"ABORTED by operator after 3/20 pages: about 297 s per page, a 400-page run does not fit the GPU budget; olmOCRBench pilot not started; no score"
+2026-10-20T14:42:41Z,Adilzhan,Ovis2-8B,olmOCRBench,pilot,20,0,495.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,58.4,ok

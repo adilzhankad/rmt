@@ -1,0 +1,284 @@
+[2026-10-20 11:33:51] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+self.img_root:/home/shadeform/a3/LMUData/images/OmniDocBench
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:11<03:34, 11.29s/it] 10%|█         | 2/20 [00:15<02:10,  7.24s/it] 15%|█▌        | 3/20 [00:17<01:22,  4.87s/it] 20%|██        | 4/20 [00:21<01:10,  4.39s/it] 25%|██▌       | 5/20 [00:27<01:17,  5.16s/it] 30%|███       | 6/20 [00:31<01:05,  4.71s/it] 35%|███▌      | 7/20 [00:34<00:51,  3.95s/it] 40%|████      | 8/20 [00:45<01:14,  6.18s/it] 45%|████▌     | 9/20 [00:46<00:51,  4.66s/it] 50%|█████     | 10/20 [00:48<00:38,  3.90s/it] 55%|█████▌    | 11/20 [00:50<00:28,  3.19s/it] 60%|██████    | 12/20 [01:01<00:45,  5.63s/it] 65%|██████▌   | 13/20 [01:06<00:38,  5.54s/it] 70%|███████   | 14/20 [01:07<00:24,  4.03s/it] 75%|███████▌  | 15/20 [01:10<00:19,  3.85s/it] 80%|████████  | 16/20 [01:13<00:13,  3.39s/it] 85%|████████▌ | 17/20 [01:19<00:12,  4.30s/it] 90%|█████████ | 18/20 [01:21<00:07,  3.60s/it] 95%|█████████▌| 19/20 [01:25<00:03,  3.70s/it]100%|██████████| 20/20 [01:27<00:00,  3.18s/it]100%|██████████| 20/20 [01:27<00:00,  4.37s/it]
+Loading data: 0it [00:00, ?it/s]Loading data: 20it [00:00, 1188.76it/s]
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /home/shadeform/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     /home/shadeform/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+[nltk_data] Downloading package omw-1.4 to
+[nltk_data]     /home/shadeform/nltk_data...
+[nltk_data]   Package omw-1.4 is already up-to-date!
+load_success:20,load_fail:0
+text_block
+Edit_dist:
+------------  --------
+ALL_page_avg  0.946691
+------------  --------
+====================================================================================================
+BLEU:
+---  -
+all  0
+---  -
+====================================================================================================
+METEOR:
+---  ----------
+all  0.00391645
+---  ----------
+====================================================================================================
+----Anno Attribute---------------
+Edit_dist:
+--------------------------------------  --------
+text_background: multi_colored          1
+text_background: single_colored         1
+text_background: white                  0.987011
+text_language: text_en_ch_mixed         0.923077
+text_language: text_english             0.941142
+text_language: text_simplified_chinese  1
+text_rotate: horizontal                 1
+text_rotate: normal                     0.987811
+--------------------------------------  --------
+====================================================================================================
+sample_count:
+--------------------------------------  ---
+text_background: multi_colored            7
+text_background: single_colored          17
+text_background: white                  305
+text_language: text_en_ch_mixed           1
+text_language: text_english              66
+text_language: text_simplified_chinese  262
+text_rotate: horizontal                   4
+text_rotate: normal                     325
+--------------------------------------  ---
+====================================================================================================
+Edit_dist:
+--------------------------------  --------
+ALL                               0.946691
+None                              0.998041
+colorful_backgroud                1
+data_source: PPT2PDF              1
+data_source: academic_literature  0.749249
+data_source: colorful_textbook    0.996606
+data_source: exam_paper           0.999296
+data_source: magazine             1
+data_source: newspaper            0.99958
+data_source: note                 1
+data_source: research_report      1
+fuzzy_scan                        1
+language: english                 0.831509
+language: simplified_chinese      0.999851
+layout: 1andmore_column           1
+layout: double_column             0.749249
+layout: other_layout              0.999613
+layout: single_column             0.99903
+layout: three_column              0.998847
+watermark                         1
+--------------------------------  --------
+====================================================================================================
+display_formula
+Edit_dist:
+------------  --------
+ALL_page_avg  0.792208
+------------  --------
+====================================================================================================
+----Anno Attribute---------------
+Edit_dist:
+-------------------------  --------
+formula_type: handwriting  1
+formula_type: print        0.861472
+-------------------------  --------
+====================================================================================================
+sample_count:
+-------------------------  -
+formula_type: handwriting  1
+formula_type: print        3
+-------------------------  -
+====================================================================================================
+Edit_dist:
+--------------------------------  --------
+ALL                               0.792208
+None                              1
+data_source: academic_literature  0.584416
+data_source: exam_paper           1
+language: english                 0.584416
+language: simplified_chinese      1
+layout: double_column             0.584416
+layout: other_layout              1
+--------------------------------  --------
+====================================================================================================
+table
+TEDS:
+---  --------
+all  0.131692
+---  --------
+====================================================================================================
+TEDS_structure_only:
+---  --------
+all  0.133333
+---  --------
+====================================================================================================
+Edit_dist:
+------------  --------
+ALL_page_avg  0.875872
+------------  --------
+====================================================================================================
+----Anno Attribute---------------
+Edit_dist:
+----------------------------------  --------
+include_background: False           0.834381
+include_background: True            1
+include_equation: False             0.847121
+include_equation: True              1
+include_photo: False                0.867505
+language: table_en                  0.337526
+language: table_simplified_chinese  1
+line: fewer_line                    0.779175
+line: full_line                     1
+line: less_line                     1
+table_layout: horizontal            0.867505
+with_span: False                    1
+with_span: True                     0.337526
+with_structured_text: False         0.867505
+----------------------------------  --------
+====================================================================================================
+TEDS:
+----------------------------------  --------
+include_background: False           0.164615
+include_background: True            0
+include_equation: False             0.151952
+include_equation: True              0
+include_photo: False                0.131692
+language: table_en                  0.658461
+language: table_simplified_chinese  0
+line: fewer_line                    0.219487
+line: full_line                     0
+line: less_line                     0
+table_layout: horizontal            0.131692
+with_span: False                    0
+with_span: True                     0.658461
+with_structured_text: False         0.131692
+----------------------------------  --------
+====================================================================================================
+TEDS_structure_only:
+----------------------------------  --------
+include_background: False           0.166667
+include_background: True            0
+include_equation: False             0.153846
+include_equation: True              0
+include_photo: False                0.133333
+language: table_en                  0.666667
+language: table_simplified_chinese  0
+line: fewer_line                    0.222222
+line: full_line                     0
+line: less_line                     0
+table_layout: horizontal            0.133333
+with_span: False                    0
+with_span: True                     0.666667
+with_structured_text: False         0.133333
+----------------------------------  --------
+====================================================================================================
+sample_count:
+----------------------------------  --
+include_background: False           12
+include_background: True             3
+include_equation: False             13
+include_equation: True               2
+include_photo: False                15
+language: table_en                   3
+language: table_simplified_chinese  12
+line: fewer_line                     9
+line: full_line                      3
+line: less_line                      3
+table_layout: horizontal            15
+with_span: False                    12
+with_span: True                      3
+with_structured_text: False         15
+----------------------------------  --
+====================================================================================================
+Edit_dist:
+--------------------------------  --------
+ALL                               0.875872
+colorful_backgroud                1
+data_source: academic_literature  0.50349
+data_source: exam_paper           1
+data_source: magazine             1
+data_source: research_report      1
+fuzzy_scan                        1
+language: english                 0.50349
+language: simplified_chinese      1
+layout: double_column             0.668993
+layout: other_layout              1
+layout: single_column             1
+--------------------------------  --------
+====================================================================================================
+TEDS:
+--------------------------------  --------
+ALL                               0.123461
+colorful_backgroud                0
+data_source: academic_literature  0.493846
+data_source: exam_paper           0
+data_source: magazine             0
+data_source: research_report      0
+fuzzy_scan                        0
+language: english                 0.493846
+language: simplified_chinese      0
+layout: double_column             0.32923
+layout: other_layout              0
+layout: single_column             0
+--------------------------------  --------
+====================================================================================================
+TEDS_structure_only:
+--------------------------------  --------
+ALL                               0.125
+colorful_backgroud                0
+data_source: academic_literature  0.5
+data_source: exam_paper           0
+data_source: magazine             0
+data_source: research_report      0
+fuzzy_scan                        0
+language: english                 0.5
+language: simplified_chinese      0
+layout: double_column             0.333333
+layout: other_layout              0
+layout: single_column             0
+--------------------------------  --------
+====================================================================================================
+reading_order
+Edit_dist:
+------------  -------
+ALL_page_avg  0.90119
+------------  -------
+====================================================================================================
+----Anno Attribute---------------
+sample_count:
+
+====================================================================================================
+Edit_dist:
+--------------------------------  --------
+ALL                               0.90119
+None                              0.956725
+colorful_backgroud                0.833333
+data_source: PPT2PDF              0.5
+data_source: academic_literature  0.707516
+data_source: colorful_textbook    0.973684
+data_source: exam_paper           0.973684
+data_source: magazine             1
+data_source: newspaper            0.97445
+data_source: note                 1
+data_source: research_report      1
+fuzzy_scan                        1
+language: english                 0.78235
+language: simplified_chinese      0.956038
+layout: 1andmore_column           1
+layout: double_column             0.707516
+layout: other_layout              0.9857
+layout: single_column             0.921053
+layout: three_column              0.916667
+watermark                         1
+--------------------------------  --------
+====================================================================================================
+The save path of End2End_Evaluation is: /home/shadeform/a3/raw/rerun/pilot/GeminiFlash3-5/OmniDocBench/GeminiFlash3-5_OmniDocBench_End2End_Evaluation.json
+The save path of overall metrics is: /home/shadeform/a3/raw/rerun/pilot/GeminiFlash3-5/OmniDocBench/GeminiFlash3-5_OmniDocBench_overall.tsv
+{"operator": "Adilzhan", "model": "GeminiFlash3-5", "benchmark": "OmniDocBench", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "0fa5ccf31e682e219cb9ca83da741a59", "n_failed": 19, "primary_score": 0.675, "notes": "19 failed answers scored by the evaluator as given", "duration_s": 106.6, "timestamp_utc": "2026-10-20T11:35:38Z"}

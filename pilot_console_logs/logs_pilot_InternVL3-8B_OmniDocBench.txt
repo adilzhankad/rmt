@@ -1,0 +1,1895 @@
+[2026-10-20 11:51:55] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+`torch_dtype` is deprecated! Use `dtype` instead!
+self.img_root:/home/shadeform/a3/LMUData/images/OmniDocBench
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.05it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.08it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.58it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.35it/s]
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py:216: UserWarning: Following kwargs received: {'do_sample': False, 'max_new_tokens': 4096, 'top_p': None}, will use as generation config. 
+  warnings.warn(f'Following kwargs received: {self.kwargs}, will use as generation config. ')
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:   5%|▌         | 1/20 [00:03<01:14,  3.93s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+InternVL model version: V2.0
+dynamic ViT batch size: 3
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 三、解题要领
+
+最后，从比对文章的角度分析，要有整体的大局观。  
+客观题错误项的设误点往往很小，阅读时一定要仔细阅读每一个词语，将选项还原到原文对应位置，对文章内容进行的细部阅读。比对时，要有整体观照的大局意识，把选项中出现的词语放在全文中理解，在整体中观照细节，在细节中领悟整体。
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+Chem. Eng. Technol. 2007, 30, No. 9, 1262-1265
+
+Membrane bioreactor 1263
+
+Hydraulic retention time was set to 8 h. The effluent was pumped under an operating pressure of ΔP = 0.1 MPa. The initial effluent flow was 36.7 L/m³h.
+
+The electrode was made of stainless steel with many small, evenly distributed holes. The distance between the electrode plates was 5 cm. The membrane assembly and the electrode plates were bound together. The adjustable power regulator ST-DPS100F was purchased from Hangzhou SuperTech Electronic Technology Co. Ltd. (Hangzhou, China). XHPLC-28MR Programmable logical control was obtained from Changzhou Xionghua Automation Equipment Co. Ltd. (Changzhou, China).
+
+2 Experimental Setup and Sewage Properties
+
+2.1 Experimental Setup
+
+The reactor was made of plastic with dimensions of 40 × 30 × 42 cm. The effective volume was 40.5 L. The reactor was partitioned into two compartments by a clapboard, with one compartment twice the size of the other. A tubular aerator was fitted at the top of the pool level so that aerobic and anoxic biofilms could be formed in the upper and lower parts, respectively. The hollow fiber membrane assembly was fitted in the other pool. A small perforated pipe aerator was fitted under the membrane assembly. The clapboard height was lower than the waterline to ensure water flowed from the bigger compartment into the smaller, so that membrane fouling could be alleviated. The bioreactor is shown in Fig. 1.
+
+The polypropylene hollow fiber membrane assembly was purchased from Zheda Kaihua Technical Co. Ltd. The inner and outer diameters of the membrane are 0.32 and 0.47 mm, respectively. The area of the membrane assembly is 4 m². The length and height of the membrane were 24 cm and 22.5 cm, respectively.
+
+Activated sludge was taken from Wuhan Shahu Sewage Treatment Plant. The initial incubation concentration was 4.5 g/L. The MBR began to operate formally after the active sludge was cultured for 7 days. No sludge was discharged during experiments under normal conditions.
+
+Figure 1. Schematic of the new style membrane bioreactor after applying the appending direct pulse current field.
+
+Table 1. Water quality in the experiments.
+
+| CODcr (mg/L) | pH (NTU) | Turbidity (mg/L) | ζ-potential (mV) | Water Temperature (°C) |
+|--------------|----------|------------------|------------------|-----------------------|
+| 310–740      | 5–8      | 100–500          | -18.4 to -22.6   | 15–25                 |
+
+2.2 Sewage Properties
+
+Sewage water was taken from a septic tank at residential building No. 2 situated in the northern part of a university in Wuhan, China. The water quality is shown in Tab. 1.
+
+3 Results and Discussion
+
+3.1 Influence of Pulse Direct Current Electric Field on Membrane Flux in the MBR
+
+In order to research the effect of the pulse direct current field on membrane flux, the change in membrane flux was measured at three different electric fields: 20 V/cm steady direct current field, 20 V/cm electric field with 10 s pulse duration, 30 pulse min interval, and no appending electric field. These were controlled respectively in the MBR. The results are shown in Fig. 2. It can be seen from Fig. 2 that the average membrane flux in pulsed direct current field varies between the values for membrane flux in continuous direct current field and no electric field, under the same electric field strength.
+
+The membrane flux in Fig. 2, curve (a) drops continuously with time during the complete operation. This could be caused by the continuous sedimentation of minute particles on the membrane surface, which clogged pores of the membrane.
+
+The membrane flux in Fig. 2, curve (b) becomes stable after a transit reduction with an increase of operation time under 20 V/cm appending steady field strength. Its average membrane flux was the highest of all experiments carried out.
+
+It can be seen from Fig. 2, curve (b) that the membrane flux increases immediately after the application of an electric pulse. The rate of reduction of the average membrane flux is lower than that found with no electric field. This suggests that the application of pulsed electric field in MBRs is an effective method for resisting the deposition of particles on the membrane surface, cleaning the filter cake, and reducing membrane fouling.
+
+© 2007 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+http://www.cet-journal.com
+```Infer InternVL3-8B/OmniDocBench, Rank 0/1:  10%|█         | 2/20 [00:37<06:23, 21.32s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  15%|█▌        | 3/20 [01:03<06:40, 23.53s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+Chem. Eng. Technol. 2007, No. 9, 1203–1211
+
+Table 1. Considered process variables of the FCCU case study.
+
+| Variable | Description |
+|----------|-------------|
+| 1        | Flow of wash oil to reactor riser |
+| 2        | Flow of fresh feed to reactor riser |
+| 3        | Flow of slurry to reactor riser |
+| 4        | Temperature of fresh feed entering furnace |
+| 5        | Fresh feed temperature to riser |
+| 6        | Furnace firebox temperature |
+| 7        | Combustion air blower inlet suction flow |
+| 8        | Combustion air blower throughput |
+| 9        | Combustion air flow rate |
+| 10       | Lift air blower suction flow |
+| 11       | Lift air blower speed |
+| 12       | Lift air blower throughput |
+| 13       | Riser temperature |
+| 14       | Wet gas compressor suction pressure |
+| 15       | Wet gas flow to vapor recovery unit |
+| 16       | Regenerator bed temperature |
+| 17       | Stack gas valve position |
+| 18       | Regenerator pressure |
+| 19       | Standpipe catalyst level |
+| 20       | Stack gas O2 concentration |
+| 21       | Combustion air blower discharge pressure |
+| 22       | Wet gas composition suction valve position |
+
+Real-time processes 1207
+
+Figure 3. Scatter plot in high dimensional feature space.
+
+Figure 2. Scatter plot in original feature space.
+
+© 2007 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+http://www.cet-journal.com
+
+Table 2. Process disturbances for FCCU.
+
+| Case | Disturbance |
+|------|-------------|
+| 1    | 10% loss of combustion air blower capacity |
+| 2    | 5% degradation in the flow of regenerated catalyst |
+| 3    | 5% increase in the coke factor of the feed |
+| 4    | 10% decrease in the heat exchanger coefficient of the furnace |
+| 5    | 10% increase in fresh feed |
+| 6    | 5% decrease in lift air blower speed |
+| 7    | 5% increase in friction coefficient of regenerated catalyst |
+| 8    | Negative bias of reactor pressure sensor |
+
+dataset, which is generated from simulation studies, in the FCCU process and extracted the first and second optimal discriminant vector using Fisher discriminant analysis. Then the data was projected to the optimal discriminant vector, which resulted in the generation of a scatter plot of the first and second feature vector in the original space. It can be seen in Fig. 2 that only fault 1 can be differentiated clearly from the normal data and that faults 2 and 3 cannot be differentiated from normal data. The reason for this is that FDA is a linear method in operation. Consequently, it has a poor ability to deal with data which shows complex nonlinear relationships among variables. The scatter plot of the first kernel Fisher feature vector and the second vector via kernel FDA is presented in Fig. 3. It is seen from Fig. 3 that after projecting to high-dimensional feature space through selecting the appropriate kernel function, the kernel Fisher discriminant method can easily discriminate data that belong to different classes.
+
+The RBF function is used as the selected kernel function, and the parameter c is selected as 0.8 according to experience, viz.:
+
+\[ K(x_i, x_j) = \exp\left(-\frac{\|x_i - x_j\|^2}{c^2}\right) \]
+
+The process disturbances considered are listed in Tab. 2. A 10% loss of combustion air blower capacity was selected for
+
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+50
+
+V. Torrisi et al. / Materials Science and Engineering B 169 (2010) 49-54
+
+![Figure 1](#) Isotherms of different ratios (1/1, 1/5, 1/10, 1/15) are displayed. Arrows indicate surface pressure deposition (12 mN/m for 1/1, 1/5, 1/10 films and 15 mN/m for 1/15 film). (For interpretation of the references to color in this figure legend, the reader is referred to the web version of the article)
+
+![Figure 2](#) AFM height images for 1/5 (a), 1/10 (b), 1/15 (c) respectively.
+
+---
+
+In this paper we report the multitechnique study of the chemical patterns obtained by LB technique on polymer blend monolayer, consisting of a variable ratio of polystyrene (PS). The nature of the structures of the system has been studied by changing the concentration ratio of the two polymers in the blend and characterising the chemical nature of the obtained structures. This particular system, apart from the obvious model system value, has relevant application potential in view of the outstanding electrical/mechanical properties expected for ordered P2VP-metal complexes [8].
+
+Furthermore, as it is known that the transfer process of the structures obtained at the air/water interfaces may affect severely the integrity of the transferred films, due to the inherent extraction geometry and the chemical nature of the substrates, we have employed a particular deposition mode of the LB monolayers, i.e., the horizontal precipitation Langmuir-Blodgett (HP-LB) method, allowing the deposition of high quality films by reducing to a minimum the lateral stresses on the films [9].
+
+The paper is aimed to show that the different polymer phases observed for the various blend composition by scanning probe microscopies (SPM) techniques can be effectively analysed using ToFsIMS chemical mapping and substantially coincide with a specific chemical structure.
+
+2. Experimental
+
+Poly(vinylpyridine) (P2VP, Mw = 200 kDa) Polysciences, Inc.) and poly(styrene) (PS, Mw = 280 kDa, Sp2, Scientific Polymer Products, Inc.) have been dissolved in chloroform with different relative weights of the two polymers (P2VP/PS = 1/1, 1/5, 1/10) but keeping a constant total polymer concentration of 0.5 g/L.
+
+These solutions were used for preparation of Langmuir polymer layers at the water/air interface in a computer-controlled trough (LT-102, Micromachines, Belarus). The floating film was compressed at a rate of 0.5 mm/s (or 0.75 cm2/s) and the corresponding isotherms were acquired. LB films of each mixture (applied pressure 11-14 mN/m) were transferred on cleaned silicon (100) and freshly cleaved mica substrates by means of horizontal precipitation (HP-LB) method [9].
+
+Concerning the quality of the film transfer, for HP-LB method we cannot define a transfer ratio. While vertical deposition is usually characterized by measurement of the transfer ratio, that is the decrease of the area occupied by the monolayer (held at constant pressure) on the water surface divided by the coated area of the solid substrate, instead in HP method, it is not significant to define the decrease of area of the monolayer and therefore the transfer ratio because film is held at constant pressure during the deposition.
+
+Si substrates were cleaned either in a H2SO4/H2O2 mixture or by UV-O treatment, rinsed in ultra pure (MQ3) water and dried in N2 flux before deposition.
+```Infer InternVL3-8B/OmniDocBench, Rank 0/1:  20%|██        | 4/20 [01:29<06:30, 24.42s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  25%|██▌       | 5/20 [01:44<05:18, 21.21s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  30%|███       | 6/20 [02:02<04:38, 19.90s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+458 Chapter 14
+
+# In This Chapter
+
+## 14.1 DISK SPACE
+- **14.1.1** Finding Available Disk Space: The `df` Command
+- **14.1.2** Summarizing Disk Usage: The `du` Command
+
+## 14.2 MORE UNIX COMMANDS
+- **14.2.1** Displaying Banners: The `banner` Command
+- **14.2.2** Running Commands at a Later Time: The `at` Command
+- **14.2.3** Revealing the Command Type: The `type` Command
+- **14.2.4** Timing Programs: The `time` Command
+- **14.2.5** Reminder Service: The `calendar` Command
+- **14.2.6** Detailed Information on Users: The `finger` Command
+- **14.2.7** Saving and Distributing Files: The `tar` Command
+
+## 14.3 SPELLING ERROR CORRECTION
+- **14.3.1** `spell` Options
+- **14.3.2** Creating Your Own Spelling List
+
+## 14.4 UNIX SECURITY
+- **14.4.1** Password Security
+- **14.4.2** File Security
+- **14.4.3** Directory Permission
+- **14.4.4** The Superuser
+- **14.4.5** File Encryption: The `crypt` Command
+
+## 14.5 USING FTP
+- **14.5.1** FTP Basics
+- **14.5.2** Anonymous FTP
+
+## 14.6 WORKING WITH COMPRESSED FILES
+- **14.6.1** The `compress` and `uncompress` Commands
+
+## 14.7 THE telnet COMMAND
+
+## 14.8 REMOTE COMPUTING
+- **14.8.1** The Remote Access Command: `rpc`
+- **14.8.2** The Remote Access Command: `rsh`
+- **14.8.3** The Remote Access Command: `rlogin`
+
+### COMMAND SUMMARY
+
+### REVIEW EXERCISES
+Terminal Session
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+爱总结
+
+爱总结爱学习
+
+④动力臂：从支点到动力作用线的距离。用字母11表示。
+⑤阻力臂：从支点到阻力作用线的距离。用字母12表示。
+3、研究杠杆的平衡条件：
+杠杆的平衡条件（或杠杆原理）是：
+动力×动力臂=阻力×阻力臂。写成公式F111=F212 也可写成：F1 / F2=12 / 11
+4、应用：
+
+| 名称       | 结构          | 特征特点 | 应用举例       |
+|------------|---------------|----------|----------------|
+| 省力       | 杠杆          |          |                |
+|            | 动力臂 大于   |          | 阻力臂 省力、 费距离 撬棒、铡刀、动滑轮、轮轴、羊角锤、钢丝钳、手推车、花枝剪刀 |
+|            | 杠杆 动力臂   | 小于     | 阻力臂 费力、 省距离 缝纫机踏板、起重臂 人的前臂、理发剪刀、钓鱼杆 等臂 |
+|            | 杠杆 动力臂等于阻力臂 不省力 |          | 不费力 天平，定滑轮 |
+|            |               |          |                |
+
+五、滑轮
+
+1、定滑轮：
+①定义：中间的轴固定不动的滑轮。
+②实质：定滑轮的实质是：等臂杠杆
+③特点：使用定滑轮不能省力但是能改变动力的方向。
+
+2、动滑轮：
+①定义：和重物一起移动的滑轮。
+②实质：动滑轮的实质是：动力臂为阻力臂2倍 的省力杠杆。
+③特点：使用动滑轮能省一半的力，但不能改变动力的方向。
+
+3、滑轮组
+①定义：定滑轮、动滑轮组合成滑轮组。
+②特点：使用滑轮组既能省力又能改变动力的方向
+
+第十四章《压力和压强、浮力》复习提纲
+
+一、固体的压力和压强
+
+1、压力：
+（1）定义：垂直压在物体表面上的力叫压力。
+（2）重为G的物体在承面上静止不动。指出下列各种情况下所受压力的大小。
+
+![压力示意图](attachment://pressure_diagram.png)
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  35%|███▌      | 7/20 [02:25<04:31, 20.88s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  40%|████      | 8/20 [02:59<05:00, 25.05s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+ ```markdown
+四、解决问题。(34分)
+
+1. 杭州某书店5月份每周的销售情况如下表。(8分)
+
+| 周数   | 第一周 | 第二周 | 第三周 | 第四周 |
+|--------|--------|--------|--------|--------|
+| 本数   | 2034   | 2988   | 1982   | 4088   |
+
+(1) 该书店每周销售的书各接近几千本？(4分)
+- 第一周约(2000)本
+- 第二周约(3000)本
+- 第三周约(2000)本
+- 第四周约(4000)本
+
+(2) 把该书店5月份这四周销售的图书本数按从少到多的顺序排列。(2分)
+1982<2034<2988<4088
+
+(3) 卖出图书的数量最多的一周比最少的一周大约多少少本书？(2分)
+4000-2000=2000(本)
+
+2. 体育广场共有2400个座位。有三所学校各派出七百多名学生代表来参加演讲比赛，这些座位够吗？(4分)
+把七百多估成800。
+800+800+800=2400(名)
+2400=2400 够。
+
+3. 水果店里的苹果、香蕉、梨各有多少千克？将水果的名称填入下表中。(6分)
+
+- 我比香蕉多得多。
+- 我比苹果少得多。
+- 我比苹果少一些。
+
+| 香蕉  | 梨    | 苹果  |
+|-------|-------|-------|
+| 183千克 | 463千克 | 500千克 |
+
+4. 
+
+![冰箱](image_link)
+
+原价2300元 现价2000元
+
+原价4300元 降价500元
+
+(1) 现在一台冰箱多少钱？(3分)
+4300-500=3800(元)
+
+(2) 现在购买一台冰箱和一台洗衣机一共要花多少钱？(3分)
+2000+3800=5800(元)
+
+5. 下面是三种电子产品的价格情况。(10分)
+
+| 手机   | 平板电脑 | 笔记本电脑 |
+|--------|----------|------------|
+| 3500元 | 4300元   | 5600元     |
+
+(1) 一台笔记本电脑比一台平板电脑贵多少钱？(3分)
+5600-4300=1300(元)
+
+(2) 一台手机比一台平板电脑便宜多少钱？(3分)
+4300-3500=800(元)
+
+(3) 你还能提出其他数学问题并解答吗？(4分)
+(答案不唯一) 一台笔记本电脑比一台手机贵多少钱？
+5600-3500=2100(元)
+
+关注微信公众号“教辅资料站”获取更多学习资料
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+解法 4: \( F(x) = \frac{g(x)}{f(x)} = \frac{\sin(2x + \frac{\pi}{4})}{\sin(2x - \frac{\pi}{4})} \)，定义域为 \(\{x \mid x \neq \frac{\pi}{8} + \frac{k\pi}{2}, k \in \mathbb{Z}\}\)
+
+\[ F'(x) = \frac{2\cos(2x + \frac{\pi}{4})\sin(2x - \frac{\pi}{4}) - 2\cos(2x - \frac{\pi}{4})\sin(2x + \frac{\pi}{4})}{\sin^2(2x - \frac{\pi}{4})} = \frac{-2}{\sin^2(2x - \frac{\pi}{4})} < 0 \]
+
+\(\therefore F(x)\) 的单调递减区间为 \(\left(-\frac{3\pi}{8} + \frac{k\pi}{2}, \frac{\pi}{8} + \frac{k\pi}{2}\right), k \in \mathbb{Z}\)，无递增区间。
+
+---
+
+评分标准：
+
+(1) \( g(x) \) 表达式正确 2 分，
+
+(2) 有化简结果正确 2 分: \(-\tan(2x + \frac{\pi}{4}) \cdot \frac{1}{\tan(2x - \frac{\pi}{4})}, 1 + \frac{2}{\tan 2x - 1} \cdot \frac{-2}{\sin(2x - \frac{\pi}{4})} < 0\)
+
+(3) 单调区间正确 1 分。
+
+---
+
+![Image](Image description not required)
+
+注：1. 有正确的体积公式，\( h \) 没算对，这2分也给！
+
+2. 没有写出以上的任何一个踩分点，去证明AIE垂直与平面ABCD，给2分
+
+---
+
+18. (本小题满分12分)
+
+(1)如图，取AB中点O，连接
+
+\( OQ, OD_1 \)
+
+\( \because A_1D_1 = AB = B_1D_1 = AD = 2 \)
+
+\( \therefore OQ = \frac{1}{2}A_1B_1 = 1 \)
+
+\( \therefore B_1Q \parallel AA_1 \)，四边形 \( B_1A_1QO \) 为菱形
+
+\( \therefore A_1D_1 = A_1O = AO \)，即 \( \triangle A_1D_1O \) 为等边三角形
+
+\( \therefore \angle A_1D_1B_1 = \frac{\pi}{3} \)
+
+\( \therefore S_{\triangle A_1B_1D_1} = \frac{1}{2} \times 1 \times 1 \times \sin \frac{\pi}{3} = \frac{\sqrt{3}}{4} \)
+
+\( S_{\triangle ABC} = \frac{1}{2} \times 2 \times 1 \times \sin \frac{\pi}{3} = \frac{\sqrt{3}}{2} \)
+
+有体积公式，给2分
+
+---
+
+(2) 解法 1: 由 (1) 知平面 \( A_1A_1B_1 \perp \) 平面 \( ABCD \)
+
+又 \( BC \perp AB \)，所以 \( BC \perp \) 平面 \( A_1A_1B_1B \)
+
+所以平面 \( BCC_1B_1 \perp \) 平面 \( A_1A_1B_1B \)
+
+过 \( E \) 作 \( EH \perp BB_1 \) 于 \( H \)，则 \( EH \perp \) 平面 \( BCC_1B_1 \)
+
+从而 \( \angle EC_1H \) 为直线 \( C_1E \) 与平面 \( BCC_1B_1 \) 所成角
+
+\( EH = BE \sin 60^\circ = \frac{3\sqrt{3}}{4} \)
+
+\( C_1E^2 = C_1B_1^2 + B_1E^2 = C_1B_1^2 + BE^2 - 2 \cdot BB_1 \cdot BE \cdot \cos 60^\circ = 2 \)，即 \( C_1E = \sqrt{2} \)
+
+所以 \( \sin \angle EC_1H = \frac{EH}{C_1E} = \frac{3\sqrt{6}}{8} \)
+
+2分
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+新一代无线技术加速企业创新与转型
+
+新一代无线技术加速企业创新与转型
+
+过去三十多年来，无线互联网连接经历了翻天覆地的变化，人们对高速连接的期望，以及人与物、物与物的海量连接需求持续推动着无线技术的变革。如今，随着5G和Wi-Fi 6等新一代无线技术的完善和广泛应用，数十亿部智能家居传感器、工业设备以及人工智能计算机将接入互联网。物联网终端呈现指数级增长，意味着这个时代对网络承载力的要求达到了前所未有的高度，无线网络技术投资布局已经成为全球企业的关键发展目标。
+
+2020年新冠疫情肆虐全球，全球企业经营受到冲击。为了解危机期间全球企业的先进无线技术采用情况，德勤针对全球的网络技术高管展开调研。在这项调研中我们着重研究了三个板块，受访企业在受疫情影响后对于先进无线技术态度的转变、先进无线技术对企业创新和转型带来的助力、以及技术落地所需的生态环境。在调研过程中，全球网络技术决策者明显表现出对于先进无线技术的重视，他们都认为5G和Wi-Fi 6将成为商业成功的关键助力。新冠疫情期间，提高网络连通性以支持远程办公、在线学习和自动化的需求激增，更生动证明了企业对安全、优质、无处不在的网络连接的诉求。
+
+此外，5G和Wi-Fi 6的同步采用趋势也很明显。作为最积极探索和采用先进无线技术的国家之一，中国的5G采用率高达70%，Wi-Fi 6部署及试点比例（72%）也处于最高水平。2020年5月，国家提出加快5G网络、数据中心等新型基础设施建设进度。在各方支持下，2020年底中国5G基站总量超过71.8万个，实现所有地级以上城市5G网络全覆盖。1 2020年同期，中国WLAN市场总体规模达到8.7亿美元，Wi-Fi 6占总体WLAN市场31.2%，规模达2.7亿美元。2 二者对于无线技术的未来都至关重要，在未来很长的一段时间内，5G和Wi-Fi 6将相互补充，实现无缝协作，应用在工业互联网、物联网、智
+
+能驾驶等诸多领域，帮助各行各业爆发出新的活力。
+
+我们在谈及创新和企业转型时，大多数网络技术高管对先进无线技术都寄予厚望。他们认为先进无线技术对其所在企业部署物联网、大数据分析、人工智能、边缘计算和云计算非常重要，在企业数字化转型过程中不可或缺。中国的网络技术高管普遍希望藉由先进无线技术来开发新产品和服务，这一比重达48%。除此之外，利用新技术以及提高效率也是中国企业希望实现的两大目标。
+
+可以肯定的是，先进无线技术将以惊人的速度，以及低功耗、高带宽和低时延特性，帮助企业提升韧性，应对突如其来的业务中断的局面，催生创新解决方案并推进企业执行创新用例，为社会各个领域带来深刻变化。站在更宏观的角度来看，作为物联网发展基石的先进无线技术，将结合人工智能、大数据和区块链等技术，推进人类社会从“信息化”迈向“智能化”时代。
+
+林国恩
+
+德勤中国科技、传媒和电信行业领导合伙人
+
+Deloitte
+
+1工信部  
+2IDC《中国WLAN市场季度跟踪报告，2020年第四季度》  
+报告
+```Infer InternVL3-8B/OmniDocBench, Rank 0/1:  45%|████▌     | 9/20 [03:21<04:26, 24.24s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  50%|█████     | 10/20 [03:26<03:04, 18.40s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+地质、海洋、生物等学科的科学研究，提供了最广阔的天然实验室。
+
+我国的科学考察站：
+南极：长城站（1985），中山站（1989），昆仑站（2009）；
+北极：黄河站（2004）。
+
+## 极地的保护与和平利用
+
+### (1) 生态环境危机
+近年来南极地区大量的鲸和北极地区的北极熊、海豹、海狮等动物遭到人们的滥杀。
+
+### (2) 主要措施
+为了保护南极的生态环境，和平利用南极，1959年12月，澳大利亚、阿根廷等12个国家签订了《南极条约》，我国于1983年正式加入《南极条约》。
+
+49
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+Federal Register / Vol. 81, No. 194/Thursday, October 6, 2016/Rules and Regulations 69441
+
+Madera Canyon. Stephan's rufellite beetle is no longer found at the Bog Springs Campground location, as the habitat there no longer exists. Stephan's rufellite beetle has not been collected or documented since 1993, despite the Service's surveying for the species at the Sylvester Spring, and at numerous other nearby locations with potential habitat. Based on our review of the best available scientific and commercial information, we believe that the Stephan's rufellite beetle is extirpated. The preponderance of Stephan's rufellite specimens have been documented in artificial habitat created by a water tank's leaking pipeline and overflow at the Bog Springs Campground. Only two specimens have ever been documented from Sylvester Spring, the only relatively intact spring habitat remaining where the species was historically known to exist. Historically, Stephan's rufellite beetle may have only occupied Sylvester Spring and Bog Springs, and populations may have started declining when water from springs in Madre Canyon was first captured in concrete boxes and piped to divert water for domestic and recreational water supplies. Up until 1993, when the Stephan's rufellite beetle was last detected, the species appears to have had to survive in extremely low numbers within Sylvester Spring, making it very difficult to detect, in contrast to the relatively large numbers collected in the 1970s at the Bog Springs Campground site. The species has not been documented as extant since 1993. 23 years ago, when one individual was found at Sylvester Spring as part of a specific effort to survey for Stephan's rufellite beetle in Madera Canyon.
+
+Beginning in 2012, the Service surveyed Sylvester Spring, the one remaining known population location for Stephan's rufellite beetle, and seven other locations with potential habitat on multiple occasions. The most intensive survey efforts occurred at Sylvester Spring and Bog Springs, the water source for the extirpated Bog Springs Campground population. Three different survey methods were used in an effort to find the species, and no Stephan's rufellite beetles were found. While Stephan's rufellite beetle is small in size (and therefore difficult to find), adult beetles, if present, should be detected regardless of the time of year surveyed based on their life history (multi-year metamorphosis and relatively long life span). Therefore, based on the best available scientific and commercial information, the Service believes Stephan's rufellite beetle to be extirpated.
+
+Summary of Status Review
+
+The SSA Report for Stephan's rufellite beetle is a summary of the information assembled and reviewed by the Service and incorporates the best available scientific and commercial information for this species. Our analysis leads us to believe Stephan's rufellite beetle is extirpated. Although extinction is difficult, if not impossible, to prove, and the Service has no policy specifically defining the level of information necessary to conclude that a species should be considered extinct. For any species there is uncertainty driving a conclusion of extinction. For the Stephan's rufellite beetle, we have carefully assessed the best scientific and commercial information available regarding the current status of the species. The biological and analytical information we reviewed and analyzed as the basis for our findings is documented in the SSA Report. That analysis is based on no information found. There are no findings of the existence of the Stephan's rufellite beetle in more than 23 years, despite multiple survey efforts since 2012 in known and potential habitat where other rufellite beetles were documented across multiple seasons, and using a variety of survey methods. The type locality consisting of a leaking pipeline to a water storage tank, where the beetle was collected, no longer exists. The Service surveyed the remaining site at which Stephan's rufellite beetle had been documented, Sylvester Spring, on numerous occasions with different survey methods. Despite these efforts, we have been unable to confirm the existence of the species.
+
+Finding
+
+Our review of the best available scientific and commercial information leads us to believe that the Stephan's rufellite beetle is extirpated, and, as such, it is not eligible for listing as an endangered or threatened species under the Act. Although the Act does not directly address the situation of considering a species for listing where the best available information indicates that the species is likely already extinct, the purpose of the Act is to prevent species from becoming extinct. We believe the species is already extinct, by definition, the species cannot be extinct in danger of, or likely to become in danger of, extinction. Therefore, we did not further evaluate whether Stephan's rufellite beetle is in danger of extinction throughout its range (an endangered species), is likely to become in danger of extinction throughout its range (a threatened species), or is an endangered or threatened species in a significant portion of its range. We find that listing Stephan's rufellite beetle as an endangered or a threatened species under the Act is not warranted throughout all or a significant portion of its range, and consequently we are removing it from candidate status.
+
+As a result of the Service's 12-month finding on the multidistrict litigation settlement with the Center for Biological Diversity and WildEarth Guardians, the Service is required to submit a proposed listing rule or a not-warranted finding to the Federal Register by September 30, 2016 (In re: Endangered Species Act Section 4 Deadline Litigation, No. 10-377 (EGS), MDL 2165). Docket No. 10-2165 (D.C. May 10, 2011), for all 251 species that were included as candidate species in the Service's November 10, 2010, 12-month finding for the Stephan's rufellite beetle and constitutes the Service's 12-month finding on the 5404 petition, to list Stephan's rufellite beetle as an endangered or threatened species. A detailed discussion of the basis for this finding can be found in the Stephan's rufellite beetle-specific assessment form, SSA Report, and other supporting documents (see ADDRESSES, above).
+
+New Information
+
+We request that you submit any new information concerning the taxonomy, biology, ecology, status, or stressors to the Huachuca-Canelo population of the Arizona treefrog, the Arkansas darter, black-canyon muddula, Highlands tiger beetle, Dichanthelium (panicum) kirstii (Hirst Brothers panic grass), two Kentucky cave beetles (Louisville cave beetle and Tatum Cave beetle), relic beetle and scorpion beetle, leopard frog, and Stephan's rufellite beetle to the appropriate person, as specified under FOR FURTHER INFORMATION CONTACT, whenever it becomes available. New information will help us monitor these species and encourage their conservation. We encourage local agencies and stakeholders to continue cooperative monitoring and conservation efforts for these species. If an emergency situation develops for any of these species, we will act to provide immediate protection.
+
+References Cited
+
+Lists of the references cited in the petition findings are available on the Internet at http://www.regulations.gov and upon request from the appropriate person, as specified under FOR FURTHER INFORMATION CONTACT.
+```Infer InternVL3-8B/OmniDocBench, Rank 0/1:  55%|█████▌    | 11/20 [04:14<04:07, 27.47s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+## 时事新闻
+
+### 国家教育体制改革方案公布
+
+国家教育体制改革方案公布，提出到2020年，基本普及15年教育，基本实现教育现代化。方案提出，到2020年，基本普及15年教育，基本实现教育现代化。方案提出，到2020年，基本普及15年教育，基本实现教育现代化。
+
+### 打击侵权假冒专项行动
+
+十类大案要案公布
+
+本报北京1月12日电（记者李海涛）全国工商系统自开展打击侵犯知识产权和制售假冒伪劣商品专项行动以来，各地工商部门已查获侵权假冒商品近200万件，查获侵权假冒商标专用权案件近2万个。国家工商行政管理总局1月12日公布了十类大案要案。
+
+这十类大案要案分别是：江苏无锡市工商部门查获的利用互联网销售假冒世界一线知名品牌商品案、重庆市长寿工商部门查获的“LV”“GUCCI”等国际著名品牌商品案、广东东莞市工商部门查获的假冒“TheNorthFace”“Columbia”注册商标案、上海闸北区工商部门查获的假冒“TheNorthFace”“Columbia”注册商标案、海南省海口工商部门查获的假冒“TheNorthFace”“Columbia”注册商标案、福建省南平市工商部门查获的假冒“耐克”“阿迪达斯”注册商标案、湖南省邵阳市工商部门查获的假冒“耐克”“阿迪达斯”注册商标案、江西省南昌市工商部门查获的假冒“耐克”“阿迪达斯”注册商标案、江苏省扬州市工商部门查获的假冒“耐克”“阿迪达斯”注册商标案、浙江省温州市工商部门查获的假冒“耐克”“阿迪达斯”注册商标案。
+
+### 央视将办网络春晚
+
+与亿万网民互动大拜年
+
+本报北京1月12日电（记者毕振山）今年，中央电视台在传统春节联欢晚会的基础上，将增加一个网络春晚，中央电视台网络春晚的节目内容将与传统春晚形成互补，突出网络文化特色，突出年轻性、互动性、参与性。
+
+### 美原油泄漏事件最终报告表明人为及工程失误造成灾难发生
+
+据新华社华盛顿1月11日电（记者任海军）美国墨西哥湾漏油事件的最终调查报告11日公布，这份由美国国家海洋和大气管理局的近海石油开采系统进行全面改革的报告最引人注目。报告认为，墨西哥湾漏油泄漏事件“可以避免”，美国石油公司、哈利伯顿公司以及瑞士海洋勘探公司的错误判断和事件发生时的最重要原因，而政府当时监管“是无效的”，且“跟不上海上油探区域”。
+
+### “一元公寓”折射怎样的万般无奈
+
+农民工说这窄比马路还多
+
+2010年12月12日，王春燕、鲁萍、王军、梁伟、张振宇、曹新宇、王鹏子、陆怡、杨博、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆、杨帆Infer InternVL3-8B/OmniDocBench, Rank 0/1:  60%|██████    | 12/20 [06:22<07:44, 58.04s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  65%|██████▌   | 13/20 [06:37<05:14, 45.00s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 强农惠农政策力度不断加大 稳粮增收创新实践扎实推进
+
+## 安徽省委常委、副省长赵树丛
+### 为保障国家粮食安全做出新贡献
+
+## 湖北省委常委张昌尔
+### 推进农业现代化在五方面下功夫
+
+## 浙江省委书记夏宝龙
+### 全面推进“美丽乡村”建设
+
+## 河北省委常委、省纪委书记胜喜亚
+### 力争粮食生产再上新台阶
+
+## 天津市副市长李文喜
+### 五年打造“三个高地”“两个基地”
+
+## 山西省委副书记金道铭
+### 特色农业促增收 五个覆盖惠民生
+
+## 辽宁省副省长赵化明
+### 努力“十二五”跨入农业强省
+
+## 吉林省副省长王宪魁
+### 促进粮食大省迈上新台阶
+
+## 黑龙江省副省长吕维峰
+### 全力发展现代化大农业
+
+## 江西省常委、副省长陈德兴
+### 打好粮食增产主攻战役
+
+## 湖南省副省长徐明华
+### 实现农业现代化成功转型
+
+## 内蒙古自治区副区长李平
+### 农牧业保持稳定发展
+
+## 广西壮族自治区副主席陈章良
+### 打造千百亿元优势特色产业
+
+## 宁夏回族自治区党委副书记马绍伟
+### 大力发展特色农业促增收
+
+## 贵州省副省长禄智明
+### 农民增收这个核心不能削弱
+
+## 陕西省副省长姚引良
+### 夯实农业农村经济发展基础
+
+## 甘肃省副省长纪元
+### 多措并举加快农业农村发展
+
+## 新疆维吾尔自治区副主席钱智
+### 六大特色产业建设显成效
+
+## 甘肃省副省长常正森
+### 兴热带高效农业 建冬季大“菜篮子”
+
+## 新疆维吾尔自治区副主席钱智
+### 六大特色产业建设显成效
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 中组部中宣部中央创先争优活动领导小组要求
+## 在广大党员、干部中广泛开展向文建明学习活动
+
+新华社北京12月21日电 近日，中央组织部、中央宣传部发出通知，要求各地区各部门在广大党员、干部中广泛开展向文建明同志学习的活动，通过学习文建明同志的先进事迹，引导广大党员、干部自觉践行社会主义核心价值体系，自觉投身于推动科学发展、促进社会和谐、服务人民群众、保持党的先进性纯洁性，为夺取全面建设小康社会新胜利、实现党的十七大和十七届三中全会确定的目标任务而努力奋斗。
+
+## 打造“三农”发展新引擎
+## 为粮食安全提供有力保障
+
+**本报记者 郑剑锋 陈泓**
+
+“2010年中储粮集团粮食储备量2000多亿斤，比‘十五’期间增长30%。对于今年前11个月，中储粮集团粮食储备量同比增长34%。可以说，中储粮集团在国家粮食宏观调控中发挥了重要作用。”中储粮集团总经理高龙在日前接受本报记者采访时说。他告诉记者，“十二五”期间中储粮集团将打造“全产业链粮食企业”的战略新思路，通过“全产业链”战略的实施，进一步发挥国有粮食企业“国家队”的作用，为“三农”发展作出新的贡献。
+
+“关于粮食问题，中储粮集团在‘十一五’期间已经取得重大进展。”高龙说，“‘十一五’期间，中储粮集团在粮食收储和‘三农’中的作用也日益凸显。在经济危机和‘三农’中的作用也日益凸显。在自己对国家、对社会的贡献，认真履行企业社会责任方面，中储粮集团都取得了显著成绩。”
+
+一要发挥行业带动引领作用，促进地方经济发展。中储粮集团是中央经济工作“三农”问题的重要决策部门，中储粮集团在粮食收购、储备、轮换、销售、加工、物流等环节建立了140家粮油食品加工企业，覆盖了小麦、玉米、稻谷、油料、糖料、油脂等主要农产品的加工领域。2010年，中储粮集团粮食收购总量预计2484亿斤，其中，中央储备粮收购总量预计256亿斤，涉及种植面积3600万亩，约占全国的1/4；地方储备粮收购总量预计396亿斤，订单粮食收购350万吨，涉及农户155万户，此项收购拉动农民增收73.3亿元。
+
+二要围绕国家粮食调控，保障粮油有效供给和市场价格稳定。“十一五”期间，无论是在粮食价格调控上，还是在粮食储备上，中储粮集团都发挥了重要作用。特别是在作为中央国有粮食企业的作用，利用自身在粮食宏观调控方面的优势和力量，克服成本压力带来的影响，积极联合国家完成了和中央储备粮轮换、储备、临储等有效储备。
+
+三要发挥行业带动引领作用，促进粮食市场化和流通。要围绕国家粮食调控“两个市场、两种资源”战略，以“十一五”期间中储粮集团“北粮南运”、“中储粮集团在区域市场中‘一招制胜’”、与新疆积极合作“北粮南运”等为成功案例，成为粮食市场化和流通的典范。
+
+四要推动粮食行业食品质量安全体系建设，确保食品质量安全。从2006年我国启动国家严控粮食质量安全和标准准入出口工作开始，中储粮集团就承担了严控粮食质量安全和标准准入出口工作。在“十一五”期间，中储粮集团进一步完善了各类食品安全管理制度，控制“三聚氰胺”、“黄曲霉毒素”等有害物质的污染，确保了全国粮食安全。
+
+五要发挥行业带动引领作用，从农民到市场。从2010年开始，中储粮集团在东北地区实施“北粮南运”、“中储粮集团在区域市场中‘一招制胜’”、与新疆积极合作“北粮南运”等为成功案例，成为粮食市场化和流通的典范。
+
+## 发挥保险机构作用
+## 放大惠农政策效应
+## ——访中国人保集团公司董事长吴焰
+
+12月21日，海峡两岸联合轮船协会在台北与台湾海峡两岸渔业协会在浙江舟山同时召开海峡两岸渔业交流工作会议。这是海峡两岸（台北）和（舟山）海峡两岸渔业交流工作会议首次在浙江舟山和台北同时召开。
+
+**本报记者 郑剑锋**
+
+在中国人民共和国成立60周年之际，中国保监会主席吴焰在“海峡两岸渔业交流工作会议”上表示，要继续发挥保险业的积极作用，从源头上加大政策性保险保障补贴力度，以服务广大渔民，支持两岸渔业发展，促进两岸关系和谐发展。
+
+两岸渔业4年，渔业基本覆盖了两岸每年50%以上，农业保险保费收入保持在50%以上。农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持在50%以上，农业保险保费收入保持Infer InternVL3-8B/OmniDocBench, Rank 0/1:  70%|███████   | 14/20 [08:46<07:00, 70.12s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  75%|███████▌  | 15/20 [10:39<06:55, 83.13s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 中国银河证券研究院
+## CHINA GALAXY SECURITIES
+
+### 公司点评
+
+#### 附录：
+
+#### （一）公司财务预测表
+
+| 资产负债表（百万元） | 2022A    | 2023E    | 2024E    | 2025E    |
+|----------------------|----------|----------|----------|----------|
+| 流动资产             | 10251.08 | 12286.84 | 14052.28 | 16637.88 |
+| 现金                 | 1596.99  | 1271.84  | 1800.96  | 2383.75  |
+| 应收账款             | 1752.30  | 1600.56  | 1905.54  | 2148.95  |
+| 其它应收款           | 239.61   | 409.91   | 395.93   | 636.29   |
+| 预付账款             | 626.54   | 848.86   | 904.23   | 1252.29  |
+| 存货                 | 2637.96  | 4435.85  | 4616.77  | 5135.39  |
+| 其他                 | 3397.68  | 3719.81  | 4428.87  | 5081.21  |
+| 非流动资产           | 12409.05 | 12152.04 | 12464.93 | 12844.36 |
+| 长期投资             | 851.84   | 751.84   | 951.84   | 1151.84  |
+| 固定资产             | 1981.87  | 1965.90  | 2130.80  | 2277.24  |
+| 无形资产             | 7585.09  | 7060.09  | 6920.09  | 6762.09  |
+| 其他                 | 1990.24  | 2374.21  | 2462.19  | 2653.18  |
+| 资产总计             | 22660.13 | 24438.88 | 26517.21 | 29482.24 |
+| 流动负债             | 7990.76  | 8261.34  | 8422.72  | 9079.24  |
+| 短期借款             | 3849.13  | 3849.13  | 3849.13  | 3849.13  |
+| 应付账款             | 2576.93  | 2610.53  | 2546.02  | 2705.14  |
+| 其他                 | 1564.70  | 1801.68  | 2027.57  | 2524.98  |
+| 非流动负债           | 4982.19  | 5582.19  | 6182.19  | 6762.19  |
+| 长期借款             | 4665.62  | 5265.62  | 5865.62  | 6845.62  |
+| 其他                 | 316.57   | 316.57   | 316.57   | 316.57   |
+| 负债合计             | 12972.95 | 13843.53 | 14604.91 | 15861.43 |
+| 少数股东权益         | 809.06   | 877.68   | 981.74   | 1108.79  |
+| 归属母公司股东权益   | 8878.13  | 9717.68  | 10930.56 | 12512.02 |
+| 负债和股东权益       | 22660.13 | 24438.88 | 26517.21 | 29482.24 |
+
+| 现金流量表(百万元) | 2022A   | 2023E   | 2024E   | 2025E   |
+|--------------------|---------|---------|---------|---------|
+| 经营活动现金流     | -445.91 | -348.25 | 1036.17 | 1188.41 |
+| 净利润             | 744.36  | 984.45  | 1316.95 | 1708.50 |
+| 折旧摊销           | 472.06  | 457.00  | 487.11  | 520.57  |
+| 财务费用           | 349.99  | 402.25  | 432.25  | 462.25  |
+| 投资损失           | -71.41  | -101.62 | -125.19 | -156.62 |
+| 营运资金变动       | -2012.96| -2909.32| -1074.95| -1346.29|
+| 其它               | 72.04   | 0.00    | 0.00    | 0.00    |
+| 投资活动现金流     | -2613.09| -98.38  | -674.81 | -743.38 |
+| 资本支出           | -2490.58| -400.00 | -700.00 | -700.00 |
+| 长期投资           | -234.12 | 200.00  | -100.00 | -200.00 |
+| 其他               | 111.60  | 101.62  | 125.19  | 156.62  |
+| 筹资活动现金流     | 3622.15 | 121.48  | 167.75  | 137.75  |
+| 短期借款           | 1058.07 | 0.00    | 0.00    | 0.00    |
+| 长期借款           | 596.00  | 600.00  | 600.00  | 600.00  |
+| 其他               | 1968.08 | -478.52 | -432.25 | -462.25 |
+| 现金净增加额       | 564.29  | -325.15 | 529.12  | 582.79  |
+
+| 利润表（百万元） | 2022A   | 2023E   | 2024E   | 2025E   |
+|------------------|---------|---------|---------|---------|
+| 营业收入         | 8774.23 | 10888.60| 13147.88| 16972.29|
+| 营业成本         | 6706.94 | 8488.58 | 10313.11| 13502.99|
+| 营业税金及附加   | 50.50   | 58.84   | 65.74   | 83.16   |
+| 营业费用         | 121.70  | 145.89  | 164.35  | 203.67  |
+| 管理费用         | 421.14  | 511.76  | 565.36  | 678.89  |
+| 财务费用         | 338.48  | 401.45  | 431.61  | 461.35  |
+| 资产减值损失     | -31.50  | 0.00    | 0.00    | 0.00    |
+| 公允价值变动收益 | -17.91  | 0.00    | 0.00    | 0.00    |
+| 投资收益         | 71.41   | 101.62  | 125.19  | 156.62  |
+| 营业利润         | 835.40  | 1082.27 | 1446.21 | 1881.24 |
+| 营业外收入       | 4.09    | 0.00    | 0.00    | 0.00    |
+| 营业外支出       | 10.56   | 0.00    | 0.00    | 0.00    |
+| 利润总额         | 828.93  | 1082.27 | 1446.21 | 1881.24 |
+| 所得税           | 84.57   | 97.83   | 129.26  | 172.74  |
+| 净利润           | 744.36  | 984.45  | 1316.95 | 1708.50 |
+| 少数股东损益     | 51.88   | 68.62   | 104.07  | 127.05  |
+| 归属母公司净利润 | 692.48  | 915.83  | 1212.89 | 1581.46 |
+| EBITDA           | 1611.39 | 1839.10 | 2239.74 | 2706.54 |
+| EPS (元)         | 0.45    | 0.60    | 0.79    | 1.03    |
+
+| 主要财务比率       | 2022A   | 2023E   | 2024E   | 2025E   |
+|--------------------|---------|---------|---------|---------|
+| 营业收入           | 12.11%  | 24.10%  | 20.75%  | 29.09%  |
+| 营业利润           | -8.05%  | 29.55%  | 33.63%  | 30.08%  |
+| 归属母公司净利润   | -4.65%  | 32.25%  | 32.44%  | 30.39%  |
+| 毛利率             | 23.56%  | 22.04%  | 21.56%  | 20.44%  |
+| 净利率             | 7.89%   | 8.41%   | 9.22%   | 9.32%   |
+| ROE                | 7.80%   | 9.42%   | 11.10%  | 12.64%  |
+| ROIC               | 5.49%   | 6.24%   | 7.23%   | 8.14%   |
+| 资产负债率         | 57.25%  | 56.65%  | 55.08%  | 53.80%  |
+| 净负债比率         | 133.92% | 130.66% | 122.60% | 116.45% |
+| 流动比率           | 1.28    | 1.49    | 1.67    | 1.83    |
+| 速动比率           | 0.49    | 0.44    | 0.53    | 0.61    |
+| 总资产周转率       | 0.39    | 0.45    | 0.50    | 0.58    |
+| 应收账款周转率     | 5.01    | 6.80    | 6.90    | 7.90    |
+| 应付账款周转率     | 3.40    | 4.17    | 5.16    | 6.27    |
+| 每股经营现金       | 0.45    | 0.60    | 0.79    | 1.03    |
+| 每股净资产         | 5.77    | 6.32    | 7.11    | 8.14    |
+| P/E                | 17.85   | 13.50   | 10.19   | 7.82    |
+| P/B                | 1.39    | 1.27    | 1.13    | 0.99    |
+| EV/EBITDA          | 13.88   | 11.22   | 9.25    | 7.66    |
+| P/S                | 1.40    | 1.13    | 0.93    | 0.72    |
+
+数据来源：公司数据 中国银河证券研究院
+
+请务必阅读正文最后的中国银河证券股份有限公司免责声明。
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  80%|████████  | 16/20 [10:57<04:14, 63.65s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+ ```markdown
+# 华安证券 HUAAN RESEARCH
+
+## 王府井 (600859)
+
+### 2022H1 线上销售近5亿元。
+
+#### 投资建议
+
+短期来看，百货转型效果显著，购物中心、奥特莱斯、专业店、超市等业态持续拓展，叠加线上渠道多触点引流，疫情好转后，有税业务有望实现稳定增长；长期来看，免税门店逐步落地，凭借有税业务竞争优势、控股股东赋能、合资方资源优势，免税业务有望成为公司新的增长点。我们预计公司2022-2024年EPS分别为0.98、1.18、1.29元/股，对应当前股价PE分别为24、19、18倍，维持“买入”评级。
+
+#### 风险提示
+
+局部地区疫情反复；免税业务进展不及预期；行业竞争加剧。
+
+#### 重要财务指标
+
+| 主要财务指标 | 单位: 百万元 | 2021A | 2022E | 2023E | 2024E |
+| ------------ | ------------ | ----- | ----- | ----- | ----- |
+| 营业收入     |              | 12753 | 11204 | 12573 | 13436 |
+| 收入同比 (%) |              | 10.6% | -12.1% | 12.2% | 6.9% |
+| 归属母公司净利润 |              | 1340  | 1107  | 1339  | 1459  |
+| 净利润同比 (%) |              | 295.6% | -17.4% | 21.0% | 8.9% |
+| 毛利率 (%)   |              | 42.1% | 37.5% | 38.8% | 39.7% |
+| ROE (%)      |              | 6.9%  | 5.5%  | 6.3%  | 6.4% |
+| 每股收益（元） |              | 1.36  | 0.98  | 1.18  | 1.29  |
+| P/E          |              | 19.79 | 23.52 | 19.44 | 17.84 |
+
+资料来源：wind，华安证券研究所
+
+---
+
+敬请参阅末页重要声明及评级说明
+
+2 / 4
+
+证券研究报告
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 财信证券
+## CHASING SECURITIES
+
+### 财务预测摘要
+
+#### 人民币亿
+
+| 利润表 | 2020A   | 2021A   | 2022E   | 2023E   | 2024E   |
+|--------|---------|---------|---------|---------|---------|
+| 净利息收入 | 2,533.78 | 2,693.82 | 2,837.71 | 3,041.79 | 3,284.97 |
+| 手续费及佣金 | 164.95  | 220.07  | 300.85  | 387.35  | 496.56  |
+| 其他收入 | 163.48  | 273.56  | 356.44  | 405.53  | 458.25  |
+| 营业收入 | 2,862.21 | 3,187.64 | 3,495.00 | 3,834.68 | 4,239.78 |
+| 营业税及附加 | 21.87   | 24.68   | 26.93   | 29.51   | 32.72   |
+| 业务管理费 | 1,656.49 | 1,881.02 | 2,085.05 | 2,311.20 | 2,511.93 |
+| 其他业务成本 | 1.92    | 1.29    | 0.87    | 0.98    | 0.85    |
+| 营业外净收入 | 3.79    | 0.49    | 1.03    | 1.77    | 0.90    |
+| 拨备前利润 | 1,185.72 | 1,281.14 | 1,383.17 | 1,494.75 | 1,655.17 |
+| 计提拨备 | 504.17  | 466.58  | 453.74  | 431.32  | 427.17  |
+| 税前利润 | 681.55  | 814.56  | 929.43  | 1,063.44 | 1,228.00 |
+| 所得税 | 38.18   | 49.22   | 57.47   | 65.21   | 73.21   |
+| 净利润 | 643.37  | 765.34  | 781.96  | 998.22  | 1,154.79 |
+
+#### 财务指标
+
+| 财务指标 | 2020A  | 2021A  | 2022E  | 2023E  | 2024E  |
+|----------|--------|--------|--------|--------|--------|
+| 收入增长 | 5.42%  | 18.96% | 13.93% | 14.48% | 15.68% |
+| 净利润增速 | -0.47% | 8.05%  | 7.96%  | 8.07%  | 10.73% |
+| 拨备前利润增速 | 6.93%  | 19.52% | 14.10% | 14.42% | 15.47% |
+| 税前利润增速 | 3.40%  | 11.37% | 9.64%  | 9.72%  | 10.56% |
+| 营业收入增速 | 5.48%  | 6.32%  | 5.34%  | 7.19%  | 7.99%  |
+| 净利息收入增速 | -3.45% | 33.42% | 36.70% | 28.75% | 28.19% |
+| 手续费及佣金增速 | 5.78%  | 13.55% | 10.85% | 10.85% | 10.42% |
+| 业务管理费用增速 | -55.45% | -32.81% | -32.17% | 12.45% | -13.82% |
+| 其他业务成本增速 | 11.02% | 10.78% | 12.08% | 10.33% | 10.20% |
+| 规模增长 |        |        |        |        |        |
+| 生息资产增速 | 14.65% | 13.15% | 11.60% | 12.53% | 10.49% |
+| 贷款增速 | 23.95% | 15.23% | 11.26% | 10.51% | 10.30% |
+| 同业资产增速 | 6.39%  | 10.95% | 9.97%  | 7.64%  | 9.92%  |
+| 其他投资增速 | 19.11% | 17.62% | -87.20% | 528.94% | 117.19% |
+| 计息负债增速 | 10.44% | 10.41% | 11.11% | 11.14% | 11.15% |
+| 存款增速 | 11.21% | 9.62%  | 11.30% | 11.30% | 11.30% |
+| 同业负债增速 | -17.42% | 63.64% | 6.30%  | 7.89%  | 7.89% |
+| 归属母公司权益增速 | 23.52% | 18.20% | 3.69%  | 12.92% | 13.07% |
+
+#### 资产负债表
+
+| 资产负债表 | 2020A   | 2021A   | 2022E   | 2023E   | 2024E   |
+|------------|---------|---------|---------|---------|---------|
+| 贷款       | 55,124  | 62,372  | 69,610  | 78,330  | 86,546  |
+| 同业资产   | 5,520   | 6,361   | 7,077   | 7,821   | 8,626   |
+| 证券投资   | 39,088  | 43,367  | 47,692  | 51,334  | 56,429  |
+| 生息资产   | 111,931 | 123,995 | 138,976 | 153,335 | 168,976 |
+| 非生息资产 | 1,602   | 1,884   | 241     | 1,516   | 3,293   |
+| 总资产     | 113,533 | 125,879 | 139,217 | 154,851 | 172,269 |
+| 存款       | 103,580 | 113,541 | 126,375 | 140,660 | 156,560 |
+| 其他计息负债 | 2,343   | 3,404   | 3,568   | 3,765   | 3,975   |
+| 非计息负债 | 880     | 978     | 1,024   | 1,109   | 1,198   |
+| 总负债     | 106,803 | 117,923 | 130,967 | 145,534 | 161,733 |
+| 母公司所有者权益 | 6,718   | 7,941   | 8,234   | 9,298   | 10,513  |
+
+#### 利率指标
+
+| 利率指标 | 2020A  | 2021A  | 2022E  | 2023E  | 2024E  |
+|----------|--------|--------|--------|--------|--------|
+| 净息差(NIM) | 2.25%  | 2.17%  | 2.05%  | 1.92%  | 1.94%  |
+| 净利息(Spread) | 2.14%  | 2.05%  | 1.93%  | 1.78%  | 1.82%  |
+| 生息资产收益率 | 3.69%  | 3.63%  | 3.51%  | 3.49%  | 3.42%  |
+| 计息负债成本率 | 1.55%  | 1.58%  | 1.58%  | 1.66%  | 1.67%  |
+
+#### 盈利能力
+
+| 盈利能力 | 2020A  | 2021A  | 2022E  | 2023E  | 2024E  |
+|----------|--------|--------|--------|--------|--------|
+| 信贷成本 | 0.89%  | 0.73%  | 0.63%  | 0.55%  | 0.50%  |
+| 成本收入比 | 58.71% | 59.82% | 60.45% | 61.07% | 60.98% |
+| ROAA     | 0.57%  | 0.62%  | 0.64%  | 0.66%  | 0.68%  |
+| ROAE     | 9.68%  | 9.74%  | 10.63% | 10.83% | 11.11% |
+| 拨备前利润率 | 41.43% | 40.19% | 39.58% | 38.98% | 39.04% |
+| 所得税有效税率 | 5.60%  | 6.04%  | 6.18%  | 6.13%  | 5.96%  |
+
+#### 资产质量
+
+| 资产质量 | 2020A  | 2021A  | 2022E  | 2023E  | 2024E  |
+|----------|--------|--------|--------|--------|--------|
+| 不良贷款率 | 0.88%  | 0.82%  | 0.85%  | 0.85%  | 0.84%  |
+| 不良贷款净生成率 | 1.22%  | 1.25%  | 10.04% | 10.06% | 9.49%  |
+| 拨备覆盖率 | 408.06% | 418.61% | 401.69% | 366.84% | 342.74% |
+| 拨贷比     | 3.59%  | 3.43%  | 3.29%  | 2.93%  | 2.66%  |
+
+#### 资本
+
+| 资本 | 2020A  | 2021A  | 2022E  | 2023E  | 2024E  |
+|------|--------|--------|--------|--------|--------|
+| 资本充足率 | 13.88% | 14.78% | 14.42% | 13.87% | 13.42% |
+| 核心资本充足率 | 9.60%  | 9.92%  | 9.79%  | 9.72%  | 9.68%  |
+| 杠杆倍数 | 5.90%  | 6.30%  | 5.90%  | 5.76%  | 5.65%  |
+
+#### 每股指标
+
+| 每股指标 | 2020A  | 2021A  | 2022E  | 2023E  | 2024E  |
+|----------|--------|--------|--------|--------|--------|
+| EPS(摊薄) | 0.74   | 0.82   | 0.94   | 1.08   | 1.25   |
+| 每股拨备前利润(元) | 0.42   | 0.86   | 1.21   | 1.38   | 0.42   |
+| BVPS     | 7.72   | 8.60   | 8.91   | 10.06  | 11.38  |
+| 每股总资产(元) | 133.27 | 135.33 | 137.40 | 131.70 | 137.53 |
+| P/E      | 6.11   | 5.47   | 4.79   | 4.19   | 3.62   |
+| P/B      | 10.72  | 5.23   | 3.73   | 3.28   | 10.73  |
+| P/POP    | 0.58   | 0.52   | 0.51   | 0.45   | 0.40   |
+| P/A      | 0.03   | 0.03   | 0.03   | 0.03   | 0.03   |
+
+**资料来源：财信证券，iFinD**
+
+---
+
+此报告仅供内部客户参考
+
+-19-
+
+请务必阅读正文之后的免责条款部分
+```Infer InternVL3-8B/OmniDocBench, Rank 0/1:  85%|████████▌ | 17/20 [12:54<03:59, 79.71s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1:  90%|█████████ | 18/20 [13:25<02:10, 65.09s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 山西证券股份有限公司
+## SHANXI SECURITIES CO., LTD.
+
+### 公司研究/公司快报
+
+#### 期内公司毛利率 41.94% (+10.83pct)，净利率 9.83% (+10.84pct)。
+- 整体费用率 31.99% (-2.28pct)，其中销售费用率 7.55% (-0.47pct)、管理费用率 19.7% (-2.39pct)、研发费用率 0.21% (+0.58pct)、财务费用率 4.74% (+0.58pct)。系欧元银行同业拆放利率持续上涨致境外企业借款利息支出同比增加。经营性活动现金流净额 26.83 亿元 (+244.11%) 系境内外有限服务型酒店运营情况较上年大幅改善。
+
+#### 投资建议
+- 年内休闲旅游和商务差旅消费需求释放明显，境内酒店市场信心逐步恢复、经营情况改善明显。7 月境内、境外酒店 RevPAR 分别恢复至 2019 年同期 116%、113%，8 月前三周恢复至 2019 年同期 117%。预计公司 2023Q3 境内、境外酒店整体平均 RevPAR 分别为 2019 年同期 115%-120%、110%-115%。我们预计公司 2023-2025 年 EPS 分别为 1.31、1.86、2.06 元，对应公司 8 月 30 日收盘价 38.4 元，2023-2025 年 PE 分别为 29.5、20.6、18.7 倍，维持“增持-A”评级。
+
+#### 风险提示
+- 公司经营成本上升风险；居民消费需求恢复不及预期风险；市场竞争加剧风险。
+
+#### 财务数据与估值：
+
+| 会计年度       | 2021A  | 2022A  | 2023E  | 2024E  | 2025E  |
+|----------------|--------|--------|--------|--------|--------|
+| 营业收入(百万元) | 11,339 | 11,008 | 15,123 | 16,828 | 18,396 |
+| YoY(%)         | 14.6   | -2.9   | 37.4   | 11.3   | 9.3    |
+| 净利润(百万元)  | 101    | 113    | 1,392  | 1,991  | 2,200  |
+| YoY(%)         | -8.7   | 12.8   | 1126.8 | 43.0   | 10.5   |
+| 毛利率(%)      | 34.2   | 33.1   | 41.1   | 47.6   | 47.7   |
+| EPS(摊薄/元)   | 0.09   | 0.11   | 1.30   | 1.86   | 2.06   |
+| ROE(%)         | 1.7    | 1.4    | 8.7    | 11.2   | 11.1   |
+| P/E(倍)        | 408.4  | 362.1  | 29.5   | 20.6   | 18.7   |
+| P/B(倍)        | 2.5    | 2.5    | 2.3    | 2.1    | 1.9    |
+| 净利率(%)      | 0.9    | 1.0    | 9.2    | 11.8   | 12.0   |
+
+资料来源：最闻，山西证券研究所
+
+请务必阅读最后一页股票评级说明和免责声明
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+Jambons et al.
+
+the groundwater. Based on these measurements, a gradient in chlorogenic acid pollution was observed (Figure 1). In March 2013, 24–4 m long hybrid poplar cuttings of the Grimming cultivar (*Populus deltoides* × *Populus trichocarpa* × *Populus deltoides*) were planted on the field for future phytoremediation purposes. The trees were distributed over a defined rectangular grid of 10 m by 35 m, enclosing the area with the highest concentrations of chlorogenic acid in the groundwater (>100 mg L^−1^) (Figure 1). In 2015, samples for isolation of cultivable fungal strains were collected from soil, rhizosphere and roots of common bent and hybrid poplar. Four soil samples were of common bent and hybrid poplar. Four soil samples were taken in a 1-m perimeter around observation wells OW175-4 and OW149-4 (Figure 1), from surface soil, −1, −1.5, and −2 m. Common bent rhizosphere and roots were sampled inside the 1-m perimeter around each of the observation wells. Poplar rhizosphere and root samples were taken from three trees growing in the zones with high concentrations of chlorogenic acid (Figure 1). From each tree, four sample repetitions were taken. In total, 32 soil samples were collected (4 × 4 depths × 2 locations), 8 bentgrass root and rhizosphere samples (4 × 2 locations) and 12 poplar rhizosphere and root samples (4 × 3 trees). Soil samples were taken with sterile tools and transported in sterile bags. Roots were collected with soil particles still adhering to the surface, which was considered the rhizosphere fraction. For poplar, the tertiary fine roots were selected. Roots with adhering rhizosphere fraction were obtained with sterile tools and directly transferred into falcon tubes with 30 ml sterile 10 mM MgSO4.
+
+Isolation of Bacteria and Fungi
+
+Soil samples were homogenized and vortexed in sterile 10 mM MgSO4 prior to isolations. Root and rhizosphere samples were vortexed after which the roots were removed from the MgSO4. The resulting soil pellet after centrifugation (15 min, 2700g) constituted the rhizosphere fraction. Poplar roots were surface sterilized by immersing them for 5 min in 1% NaClO and bunchgrass roots were sterilized with 0.1% NaClO supplemented with 0.1% Tween. Following treatment, all roots were rinsed four times in sterile distilled water. The last rinsing solution was plated on 869 medium (Mergaey et al., 1985) to confirm surface sterility by scoring microbial growth after 7 days of incubation at 30°C. The surface sterilized roots were assembled in 15 ml sterile 10 mM MgSO4 and mixed for 1 min using a Polytron PR1200 mixer (Kinematica A6).
+
+For fungi isolations, dilutions up to 10^−4^ of the soil, rhizosphere and endophytic root solutions were plated onto peptone-glucose-acid agar medium pH 5, as described by Dietrich and Lamer (1990), and incubated for 7 days at 23°C. After incubation, all fungal mycelia were selected, purified and stored on solid malt extract [2% (w/v)]-peptone [0.3% (w/v)] medium pH 5 at 4°C.
+
+For bacteria isolation, dilutions of the soil samples were added to a selective minimal medium (Sebastian et al., 1996) supplemented with 25 mg L^−1^ chlorogenic acid as sole carbon source, or with 3 mM glucose in addition to chlorogenic acid. Every 10 days, 10 ml of the culture was transferred into 90 ml of fresh medium with a slightly higher concentration of chlorogenic acid, ultimately leading to 60 mg L^−1^ chlorogenic acid after 3 months of incubation at 30°C and 120 rpm. At the end of the experiment, chlorogenic acid concentrations were determined using High Performance Liquid Chromatography (HPLC). The surviving bacterial strains were purified and stored in a glycerol solution [15% (w/v) glycerol; 0.85% (w/v) NaCl] at −40°C.
+
+Identification of Isolated Bacteria and Fungi
+
+DNA was extracted from bacterial isolates using the DNeasy® Blood and Tissue kit (Qiagen, Venlo, Netherlands) and from fungal isolates using the DNeasy® PowerSoil® kit (Qiagen, Hilden, Germany).
+
+Legend
+
+- Observation well
+  - OW175-4 Well ID
+  - OW149-4 Well ID
+- Poplar
+- Sampling location soil and grass
+- Sampling location poplar
+- CA concentration in groundwater
+  - > 100 mg L^−1^
+  - [30–100] mg L^−1^
+  - [0–30] mg L^−1^
+
+FIGURE 1 | Schematic overview of the sampling site and sampling locations. Soil samples (surface soil, −1, −1.5, and −2 m) and samples of root and rhizosphere of grass were taken in an area of one meter around OW149-4 and OW175-4 (n = 4). Root and rhizosphere samples of poplar were taken of the trees growing closest to the two observation wells, with four repetitions for each tree.
+
+---
+
+Frontiers in Microbiology | www.frontiersin.org
+
+August 2019 | Volume 10 | Article 1892
+```Infer InternVL3-8B/OmniDocBench, Rank 0/1:  95%|█████████▌| 19/20 [14:05<00:57, 57.52s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OmniDocBench, Rank 0/1: 100%|██████████| 20/20 [14:31<00:00, 47.86s/it]Infer InternVL3-8B/OmniDocBench, Rank 0/1: 100%|██████████| 20/20 [14:31<00:00, 43.56s/it]
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+You are an AI assistant specialized in converting PDF images to Markdown format. Please follow these instructions for the conversion:
+
+    1. Text Processing:
+    - Accurately recognize all text content in the PDF image without guessing or inferring.
+    - Convert the recognized text into Markdown format.
+    - Maintain the original document structure, including headings, paragraphs, lists, etc.
+
+    2. Mathematical Formula Processing:
+    - Convert all mathematical formulas to LaTeX format.
+    # - Enclose inline formulas with \( \). For example: This is an inline formula \( E = mc^2 \)
+    - Enclose block formulas with \\[ \\]. For example: \[ \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+    3. Table Processing:
+    - Convert tables to HTML format.
+    - Wrap the entire table with <table> and </table>.
+
+    4. Figure Handling:
+    - Ignore figures content in the PDF image. Do not attempt to describe or convert images.
+
+    5. Output Format:
+    - Ensure the output Markdown document has a clear structure with appropriate line breaks between elements.
+    - For complex layouts, try to maintain the original document's structure and format as closely as possible.
+
+    Please strictly follow these guidelines to ensure accuracy and consistency in the conversion. Your task is to accurately convert the content of the PDF image into Markdown format without adding any extra explanations or comments.
+    <|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 中国碳金融创新发展白皮书
+
+## 特征六：地方试点有尝试不同程度的碳金融创新实践，全国碳市场碳金融仍在理论探索阶段。
+
+中国碳衍生品创新实践分布在各地方试点交易所。北京、上海、深圳、广东和湖北碳市场已经分别推出了不同类型的碳金融衍生品，涵盖了碳远期、碳期货、碳期权（碳掉期）等衍生品模式，有助于发挥碳市场的价格发现作用。全国碳市场尚未开展碳衍生品交易活动，广期所已明确发展全国碳期货交易的定位，但相关服务尚未开展。相较而言，EU-ETS目前已纳入除了碳借贷之外的所有种类碳金融衍生品，衍生品的对冲风险功能暂未能在我国全国碳市场充分发挥¹。
+
+### 中国全国与地方碳市场及欧洲 EU-ETS 碳金融衍生品纳入情况比较
+
+|          | 碳远期 | 碳期货 | 碳期权 | 碳掉期 | 碳置换 | 碳借贷（借碳） |
+|----------|--------|--------|--------|--------|--------|----------------|
+| 全国碳市场 |        |        |        | 暂未纳入碳金融衍生品 |        |                |
+| 北京     |        |        | ✓      | ✓      |        |                |
+| 上海     | ✓      |        |        |        |        | ✓              |
+| 天津     |        |        |        | 暂未纳入碳金融衍生品 |        |                |
+| 深圳     |        | ✓      |        |        | ✓      |                |
+| 广东     |        |        | ✓      |        |        |                |
+| 重庆     |        |        |        | 暂未纳入碳金融衍生品 |        |                |
+| 湖北     | ✓      |        |        |        |        |                |
+| EU-ETS   | ✓      | ✓      | ✓      | ✓      | ✓      |                |
+
+## 受访碳金融从业者认为目前我国碳金融发展面临的主要挑战
+
+单位：%
+
+- 缺乏统一的碳金融定义和相关标准 67.53%
+- 缺乏统一的交易规则 63.64%
+- 缺乏足够的碳金融产品种类 59.74%
+- 缺乏可获取的高质量数据 45.45%
+- 缺乏优质的碳金融人才 25.97%
+- 缺乏机构间的碳金融合作 19.48%
+- 缺乏相关金融科技的支撑 15.58%
+
+¹ 上海金融陈骁，碳排放权交易市场：国际经验、中国特色与政策建议，2022 年 10 月，https://kns.cnki.net/kcms/detail/abstract?db=3v&uniqKey=44YLTOAiTRKibYLV5jsi7TKGj9uTdeTsOl_r45_XcalBySNOHTWmguY9v21_rS5lBNH2TCHKc_9xh&uniplatform=NZKPT
+
+© 2023 毕马威华振会计师事务所（特殊普通合伙）— 中国合伙制会计师事务所，毕马威企业咨询（中国）有限公司— 中国有限责任公司，毕马威会计师事务所— 澳门合伙制事务所，及毕马威会计师事务所— 香港特别行政区合伙制事务所，均是与英国私营担保有限公司— 毕马威国际有限公司相关联的独立成员所全球性组织中的成员。版权所有，不得转载。在中国印刷。
+```
+Loading data: 0it [00:00, ?it/s]Loading data: 20it [00:00, 1742.91it/s]
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /home/shadeform/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     /home/shadeform/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+[nltk_data] Downloading package omw-1.4 to
+[nltk_data]     /home/shadeform/nltk_data...
+[nltk_data]   Package omw-1.4 is already up-to-date!
+load_success:20,load_fail:0
+text_block
+Edit_dist:
+------------  --------
+ALL_page_avg  0.228402
+------------  --------
+====================================================================================================
+BLEU:
+---  --------
+all  0.112689
+---  --------
+====================================================================================================
+METEOR:
+---  ---------
+all  0.0797267
+---  ---------
+====================================================================================================
+----Anno Attribute---------------
+Edit_dist:
+--------------------------------------  ---------
+text_background: multi_colored          0.264983
+text_background: single_colored         0.219338
+text_background: white                  0.622334
+text_language: text_en_ch_mixed         1
+text_language: text_english             0.0917391
+text_language: text_simplified_chinese  0.698659
+text_rotate: horizontal                 0.975
+text_rotate: normal                     0.599112
+--------------------------------------  ---------
+====================================================================================================
+sample_count:
+--------------------------------------  ---
+text_background: multi_colored            8
+text_background: single_colored          11
+text_background: white                  335
+text_language: text_en_ch_mixed           1
+text_language: text_english              57
+text_language: text_simplified_chinese  296
+text_rotate: horizontal                   4
+text_rotate: normal                     349
+--------------------------------------  ---
+====================================================================================================
+Edit_dist:
+--------------------------------  ----------
+ALL                               0.228402
+None                              0.11987
+colorful_backgroud                0.107625
+data_source: PPT2PDF              0
+data_source: academic_literature  0.0921147
+data_source: colorful_textbook    0.14787
+data_source: exam_paper           0.215382
+data_source: magazine             0.0415011
+data_source: newspaper            0.737161
+data_source: note                 0.203791
+data_source: research_report      0.00307929
+fuzzy_scan                        0.00421053
+language: english                 0.0762029
+language: simplified_chinese      0.298648
+layout: 1andmore_column           0.0415266
+layout: double_column             0.0855127
+layout: other_layout              0.664088
+layout: single_column             0.0726814
+layout: three_column              0.0853259
+watermark                         0.292308
+--------------------------------  ----------
+====================================================================================================
+display_formula
+Edit_dist:
+------------  --------
+ALL_page_avg  0.517159
+------------  --------
+====================================================================================================
+----Anno Attribute---------------
+Edit_dist:
+-------------------------  --------
+formula_type: handwriting  0.706667
+formula_type: print        0.390421
+-------------------------  --------
+====================================================================================================
+sample_count:
+-------------------------  -
+formula_type: handwriting  1
+formula_type: print        3
+-------------------------  -
+====================================================================================================
+Edit_dist:
+--------------------------------  --------
+ALL                               0.517159
+None                              0.436916
+data_source: academic_literature  0.597403
+data_source: exam_paper           0.436916
+language: english                 0.597403
+language: simplified_chinese      0.436916
+layout: double_column             0.597403
+layout: other_layout              0.436916
+--------------------------------  --------
+====================================================================================================
+table
+TEDS:
+---  -----
+all  0.833
+---  -----
+====================================================================================================
+TEDS_structure_only:
+---  --------
+all  0.876939
+---  --------
+====================================================================================================
+Edit_dist:
+------------  --------
+ALL_page_avg  0.596292
+------------  --------
+====================================================================================================
+----Anno Attribute---------------
+Edit_dist:
+----------------------------------  --------
+include_background: False           0.57139
+include_background: True            0.61423
+include_equation: False             0.572886
+include_equation: True              0.625924
+include_photo: False                0.579958
+language: table_en                  0.466941
+language: table_simplified_chinese  0.608212
+line: fewer_line                    0.58526
+line: full_line                     0.514689
+line: less_line                     0.62932
+table_layout: horizontal            0.579958
+with_span: False                    0.59489
+with_span: True                     0.520231
+with_structured_text: False         0.579958
+----------------------------------  --------
+====================================================================================================
+TEDS:
+----------------------------------  --------
+include_background: False           0.83708
+include_background: True            0.816684
+include_equation: False             0.868911
+include_equation: True              0.599585
+include_photo: False                0.833
+language: table_en                  0.826288
+language: table_simplified_chinese  0.834679
+line: fewer_line                    0.778255
+line: full_line                     0.986111
+line: less_line                     0.844126
+table_layout: horizontal            0.833
+with_span: False                    0.836693
+with_span: True                     0.818232
+with_structured_text: False         0.833
+----------------------------------  --------
+====================================================================================================
+TEDS_structure_only:
+----------------------------------  --------
+include_background: False           0.875676
+include_background: True            0.881989
+include_equation: False             0.886303
+include_equation: True              0.816071
+include_photo: False                0.876939
+language: table_en                  0.938492
+language: table_simplified_chinese  0.861551
+line: fewer_line                    0.824949
+line: full_line                     1
+line: less_line                     0.909848
+table_layout: horizontal            0.876939
+with_span: False                    0.868396
+with_span: True                     0.911111
+with_structured_text: False         0.876939
+----------------------------------  --------
+====================================================================================================
+sample_count:
+----------------------------------  --
+include_background: False           12
+include_background: True             3
+include_equation: False             13
+include_equation: True               2
+include_photo: False                15
+language: table_en                   3
+language: table_simplified_chinese  12
+line: fewer_line                     9
+line: full_line                      3
+line: less_line                      3
+table_layout: horizontal            15
+with_span: False                    12
+with_span: True                      3
+with_structured_text: False         15
+----------------------------------  --
+====================================================================================================
+Edit_dist:
+--------------------------------  --------
+ALL                               0.596292
+colorful_backgroud                0.705859
+data_source: academic_literature  0.492638
+data_source: exam_paper           0.520157
+data_source: magazine             0.705859
+data_source: research_report      0.639761
+fuzzy_scan                        0.520157
+language: english                 0.492638
+language: simplified_chinese      0.630843
+layout: double_column             0.501811
+layout: other_layout              0.705859
+layout: single_column             0.639761
+--------------------------------  --------
+====================================================================================================
+TEDS:
+--------------------------------  --------
+ALL                               0.786238
+colorful_backgroud                0.5875
+data_source: academic_literature  0.772634
+data_source: exam_paper           0.986111
+data_source: magazine             0.5875
+data_source: research_report      0.792756
+fuzzy_scan                        0.986111
+language: english                 0.772634
+language: simplified_chinese      0.790773
+layout: double_column             0.843793
+layout: other_layout              0.5875
+layout: single_column             0.792756
+--------------------------------  --------
+====================================================================================================
+TEDS_structure_only:
+--------------------------------  --------
+ALL                               0.854995
+colorful_backgroud                0.775
+data_source: academic_literature  0.918155
+data_source: exam_paper           1
+data_source: magazine             0.775
+data_source: research_report      0.807163
+fuzzy_scan                        1
+language: english                 0.918155
+language: simplified_chinese      0.833942
+layout: double_column             0.945437
+layout: other_layout              0.775
+layout: single_column             0.807163
+--------------------------------  --------
+====================================================================================================
+reading_order
+Edit_dist:
+------------  -------
+ALL_page_avg  0.17458
+------------  -------
+====================================================================================================
+----Anno Attribute---------------
+sample_count:
+
+====================================================================================================
+Edit_dist:
+--------------------------------  ---------
+ALL                               0.17458
+None                              0.0210526
+colorful_backgroud                0.0625
+data_source: PPT2PDF              0
+data_source: academic_literature  0.0833333
+data_source: colorful_textbook    0.09375
+data_source: exam_paper           0.0526316
+data_source: magazine             0
+data_source: newspaper            0.610232
+data_source: note                 0.25
+data_source: research_report      0
+fuzzy_scan                        0
+language: english                 0.0555556
+language: simplified_chinese      0.229515
+layout: 1andmore_column           0
+layout: double_column             0.0833333
+layout: other_layout              0.509238
+layout: single_column             0.0625
+layout: three_column              0
+watermark                         0.1875
+--------------------------------  ---------
+====================================================================================================
+The save path of End2End_Evaluation is: /home/shadeform/a3/raw/rerun/pilot/InternVL3-8B/OmniDocBench/InternVL3-8B_OmniDocBench_End2End_Evaluation.json
+The save path of overall metrics is: /home/shadeform/a3/raw/rerun/pilot/InternVL3-8B/OmniDocBench/InternVL3-8B_OmniDocBench_overall.tsv
+{"operator": "Adilzhan", "model": "InternVL3-8B", "benchmark": "OmniDocBench", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "0fa5ccf31e682e219cb9ca83da741a59", "n_failed": 0, "primary_score": 0.305, "notes": "ok", "duration_s": 899.5, "timestamp_utc": "2026-10-20T12:06:55Z"}

@@ -1,0 +1,21 @@
+=== GPT4o_MINI OCRBench_v2 11:21:03
+exit=0 GPT4o_MINI,OCRBench_v2,20,0,51.4,0.46204623976870385,ok
+=== GPT4o_MINI OmniDocBench 11:21:58
+exit=0 GPT4o_MINI,OmniDocBench,20,0,75.6,0.284,ok
+=== GPT4o_MINI olmOCRBench 11:23:17
+exit=0 GPT4o_MINI,olmOCRBench,20,0,155.9,59.4,ok
+=== GeminiFlashLite3-5 OCRBench_v2 11:25:56
+exit=0 GeminiFlashLite3-5,OCRBench_v2,20,5,49.5,0.5575442122943759,5 failed answers scored by the evaluator as given
+=== GeminiFlashLite3-5 CCOCR 11:26:47
+exit=0 GeminiFlashLite3-5,CCOCR,20,0,64.3,0.7509588762261122,ok
+=== GeminiFlashLite3-5 OmniDocBench 11:27:54
+exit=0 GeminiFlashLite3-5,OmniDocBench,20,4,84.3,0.288,4 failed answers scored by the evaluator as given
+=== GeminiFlashLite3-5 olmOCRBench 11:29:21
+exit=0 GeminiFlashLite3-5,olmOCRBench,20,1,124.1,66.7,1 failed answers scored by the evaluator as given
+=== GeminiFlash3-5 OCRBench_v2 11:31:28
+exit=0 GeminiFlash3-5,OCRBench_v2,20,14,65.6,0.2508680555555556,14 failed answers scored by the evaluator as given
+=== GeminiFlash3-5 CCOCR 11:32:36
+exit=0 GeminiFlash3-5,CCOCR,20,12,72.8,0.3465131003491864,12 failed answers scored by the evaluator as given
+=== GeminiFlash3-5 OmniDocBench 11:33:51
+exit=0 GeminiFlash3-5,OmniDocBench,20,19,106.6,0.675,19 failed answers scored by the evaluator as given
+=== GeminiFlash3-5 olmOCRBench 11:35:40

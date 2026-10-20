@@ -1,0 +1,130 @@
+[2026-10-20 14:34:26] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+self.img_root:/home/shadeform/a3/LMUData/images/olmOCRBench
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.38it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.44it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.53it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.63it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.57it/s]
+Infer Ovis2-8B/olmOCRBench, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]Infer Ovis2-8B/olmOCRBench, Rank 0/1:   5%|▌         | 1/20 [00:40<12:47, 40.40s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  10%|█         | 2/20 [01:33<14:22, 47.93s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  15%|█▌        | 3/20 [02:02<11:04, 39.11s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  20%|██        | 4/20 [02:29<09:10, 34.38s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  25%|██▌       | 5/20 [02:50<07:25, 29.68s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  30%|███       | 6/20 [03:07<05:55, 25.40s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  35%|███▌      | 7/20 [03:29<05:16, 24.33s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  40%|████      | 8/20 [03:54<04:51, 24.31s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  45%|████▌     | 9/20 [04:02<03:33, 19.40s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  50%|█████     | 10/20 [04:07<02:29, 14.93s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  55%|█████▌    | 11/20 [04:18<02:03, 13.73s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  60%|██████    | 12/20 [04:47<02:26, 18.36s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  65%|██████▌   | 13/20 [05:11<02:20, 20.04s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  70%|███████   | 14/20 [05:52<02:37, 26.32s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  75%|███████▌  | 15/20 [06:21<02:15, 27.04s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  80%|████████  | 16/20 [06:26<01:22, 20.58s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  85%|████████▌ | 17/20 [06:41<00:56, 18.88s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  90%|█████████ | 18/20 [07:15<00:46, 23.26s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1:  95%|█████████▌| 19/20 [07:26<00:19, 19.76s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1: 100%|██████████| 20/20 [07:45<00:00, 19.45s/it]Infer Ovis2-8B/olmOCRBench, Rank 0/1: 100%|██████████| 20/20 [07:45<00:00, 23.27s/it]
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (108676), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (287748), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (333652), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (76236), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (85808), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (108384), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (255668), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (71964), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (165472), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (329804), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (313108), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (176888), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (2233392), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (171556), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (2233388), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (1034376), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (48840), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (179144), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (147972), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+Parsing XLSX:   0%|          | 0/20 [00:00<?, ?it/s]Parsing XLSX: 100%|██████████| 20/20 [00:00<00:00, 1493.94it/s]
+✅ Loaded 121 tests across 20 pdfs.
+📂 Creating temporary candidate folder: /tmp/olmocr_eval_rr_uvd6n
+🧹 Temporary folder: /tmp/olmocr_eval_rr_uvd6n
+
+Evaluating candidate: olmocr_eval_rr_uvd6n
+Evaluating tests for olmocr_eval_rr_uvd6n:   0%|          | 0/141 [00:00<?, ?test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  11%|█         | 15/141 [00:01<00:09, 13.44test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  13%|█▎        | 19/141 [00:01<00:08, 14.66test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  15%|█▍        | 21/141 [00:01<00:10, 11.19test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  25%|██▍       | 35/141 [00:02<00:08, 12.69test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  26%|██▌       | 37/141 [00:03<00:09, 11.39test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  28%|██▊       | 39/141 [00:03<00:09, 11.33test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  55%|█████▍    | 77/141 [00:03<00:01, 43.90test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  60%|█████▉    | 84/141 [00:03<00:01, 39.63test/s]Evaluating tests for olmocr_eval_rr_uvd6n:  94%|█████████▎| 132/141 [00:03<00:00, 86.84test/s]Evaluating tests for olmocr_eval_rr_uvd6n: 100%|██████████| 141/141 [00:08<00:00, 17.03test/s]
+
+Candidate: olmocr_eval_rr_uvd6n
+  [FAIL] Test 2503.06958_pg1_math_001 on arxiv_math/2503.06958_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \mathcal{A}^{\mathbb{Z}^d} anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_005 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for -2\leq D_t^2 - E_t\cdot D_t anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_002 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for -K_X\cdot D = f_t^*\left(\sum_i C_i\right)\cdot D_t =\left( (p+q)E_t + \sum_i C_{i,t}\right) \cdot D_t = p+q anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_004 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for -2\leq (K_{Y_t} + D_t) \cdot D_t = \left(-\sum_{i}C_{i,t} - E_t + D_t\right) \cdot D_t = D_t^2 - E_t\cdot D_t < -E_t\cdot D_t anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_006 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for p+q = D\cdot C \geq (D\cdot C)_x = \alpha + \beta \geq p + q anywhere in content
+  [FAIL] Test ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1_header_00 on headers_footers/ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected absence of 'financial support available - biology...' with threshold 1.0 but best match ratio was 1.000
+  [FAIL] Test ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1_header_01 on headers_footers/ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected absence of 'last updated friday, 08 march 2013 13:24...' with threshold 1.0 but best match ratio was 1.000
+  [FAIL] Test 7901d119ed91a89f8fbabf0eef7174d75a7656e3_page_1.pdf_manual_00 on headers_footers/7901d119ed91a89f8fbabf0eef7174d75a7656e3_page_1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected absence of '1/2...' with threshold 1.0 but best match ratio was 1.000
+  [FAIL] Test 13_pg475_pg1_text_00 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'It is characteristic of later Judaism th...' with threshold 0.9927007299270073 but best match ratio was 0.489
+  [FAIL] Test 13_pg475_pg1_text_02 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'in the gospel into an express sanction o...' with threshold 0.9855072463768116 but best match ratio was 0.551
+  [FAIL] Test 13_pg475_pg1_text_07 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'LITERATURE. Nowack, Die kleinen Prophete...' with threshold 0.9824561403508771 but best match ratio was 0.386
+  [FAIL] Test 13_pg475_pg1_text_08 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected '1904); Wellhausen, id. (iii. 1898); G. A...' with threshold 0.9841269841269842 but best match ratio was 0.444
+  [FAIL] Test 13_pg475_pg1_text_10 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'tears of the daughters of Israel, thrust...' with threshold 1.0 but best match ratio was 0.968
+  [FAIL] Test 13_pg475_pg1_text_11 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'malachite is found in greater or less qu...' with threshold 0.9444444444444444 but best match ratio was 0.889
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_4.pdf_order_6346753b on multi_column/0845863d27c84b14011e17a388821525e783_page_4_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'after' text 'The main expression of this event would ...' not found with max_l_dist 1
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_4.pdf_order_69836411 on multi_column/0845863d27c84b14011e17a388821525e783_page_4_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '3. Continental rifting and breakup...' not found with max_l_dist 1
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_4.pdf_order_68199b52 on multi_column/0845863d27c84b14011e17a388821525e783_page_4_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'The Equatorial segment corresponds to a ...' not found with max_l_dist 2
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_40575929 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[46] Barkschat R (2021) The constant Q t...' not found with max_l_dist 1
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_bec1d2a5 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[35] Baranisak RK, Delo EJ (2021) Freque...' not found with max_l_dist 2
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_33d8a975 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[38] Huang F, Yao CM (2020) Audio replay...' not found with max_l_dist 1
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_6ef1a2f1 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'after' text '[60] Khalid H, Woo SS, Lip Tang S, SS (2...' not found with max_l_dist 1
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_12.pdf_order_a3f466b7 on multi_column/0845863d27c84b14011e17a388821525e783_page_12_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'Other less dominating, intermediate even...' not found with max_l_dist 2
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_12.pdf_order_6dad0ada on multi_column/0845863d27c84b14011e17a388821525e783_page_12_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'Note this conclusion is based on the sim...' not found with max_l_dist 2
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_12.pdf_order_8ed85d3f on multi_column/0845863d27c84b14011e17a388821525e783_page_12_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'after' text 'However, the broad zone of diffuse 145-1...' not found with max_l_dist 2
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_12.pdf_order_07ba66fc on multi_column/0845863d27c84b14011e17a388821525e783_page_12_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'The fission-track data in this study do ...' not found with max_l_dist 2
+  [FAIL] Test 39_765731 on old_scans/39 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'J M Shackleford a special command includ...' with threshold 0.9942196531791907 but best match ratio was 0.780
+  [FAIL] Test 39_724825 on old_scans/39 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'on Ohio River. I am confident The Gurril...' with threshold 1.0 but best match ratio was 0.694
+  [FAIL] Test 2503.07488_pg6_math_006 on arxiv_math/2503.07488_pg6 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \psi_j = (\varphi_{j+1} + \varphi_j)/2 anywhere in content
+  [FAIL] Test 2503.07488_pg6_math_004 on arxiv_math/2503.07488_pg6 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \lambda_j = -\partial_1 S(\varphi_j,\varphi_{j+1}) = \partial_2 S(\varphi_{j-1},\varphi_j) anywhere in content
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_05 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching 'INTMRK→BRDORT' found in any table with threshold 1.0
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_06 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching 'INTMRK→INTERDVU' found in any table with threshold 1.0
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_08 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching '.236' found in any table with threshold 1.0
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_09 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Found cells matching '2.069' but relationships were not satisfied: Cell to the left '236' doesn't match expected '.236' (similarity: 0.86)
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_00 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching 'P' found in any table with threshold 1.0
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_01 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching 'R' found in any table with threshold 1.0
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_03 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching '0.26' found in any table with threshold 1.0
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_04 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching '0.81' found in any table with threshold 1.0
+  [FAIL] Test 2503.09591_pg20_math_002 on arxiv_math/2503.09591_pg20 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for e\leq 6(n-n_1)-4\sqrt{6(n-n_1)-6}+6 \leq 6n-\sqrt{96n-63} \text{ for }n_1=2,3 \text{ if }n\geq 6 anywhere in content
+  [FAIL] Test 2503.07488_pg6_math_011 on arxiv_math/2503.07488_pg6 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \mu \{ S(\varphi_{j_0+j},\varphi_{j_0+j+1}) \} = 2\mu\{ h(\psi_{j_0+j}) \sin \theta_{j_0+j} \} = A\{ \varphi_j \}/q anywhere in content
+  [FAIL] Test 4_pg380_equation_02 on old_scans_math/4_pg380 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for 4^{x}+2x^{3} anywhere in content
+  [FAIL] Test 2503.09181_pg5_math_002 on arxiv_math/2503.09181_pg5 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \hat y^{(n)} = f(x_s^{(n)},z^{(n)}) anywhere in content
+  [FAIL] Test 2503.09181_pg5_math_004 on arxiv_math/2503.09181_pg5 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for s \leftarrow s \cup \pi(x_s,z) anywhere in content
+  [FAIL] Test 2503.09181_pg5_math_005 on arxiv_math/2503.09181_pg5 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \pi(x^{(n)}_s, z^{(n)}) \in \Lambda^{(n)} anywhere in content
+  [FAIL] Test 2503.09181_pg5_math_003 on arxiv_math/2503.09181_pg5 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \min_{\theta,\phi} \mathbb{E}_{\mathbf{y}, \mathbf{x}} l(f_\theta(\mathbf{x}_s,z),\mathbf{y}) anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_014 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \frac{1}{\Theta_0}=\frac{1}{\Theta_1}=0 anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_027 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for A:= \begin{bmatrix} -\frac{x_1}{\Theta_1}\alpha_1 & \alpha_1 \\ -\beta_1 & 0 \end{bmatrix} \begin{bmatrix} -\frac{x_0}{\Theta_0}\alpha_0 & \alpha_0 \\ -\beta_0 & 0 \end{bmatrix} = \begin{bmatrix} \frac{x_0x_1}{\Theta_0\Theta_1}\alpha_0\alpha_1-\beta_0\alpha_1 & -\frac{x_1}{\Theta_1}\alpha_0\alpha_1 \\ \frac{x_0}{\Theta_0}\alpha_0\beta_1 & -\alpha_0\beta_1 \end{bmatrix} anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_011 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \frac{\alpha_0}{\beta_0}=\frac{\alpha_1}{\beta_1}=p\Theta_0\Theta_1 anywhere in content
+  Average Score: 58.4% (95% CI: [48.9%, 68.2%]) over 141 tests.
+
+============================================================
+Final Summary with 95% Confidence Intervals:
+olmocr_eval_rr_uvd6n : Average Score: 58.4% ± 9.6% (average of per-JSONL scores)
+    absent  : 66.7% average pass rate over 9 tests
+    baseline: 100.0% average pass rate over 20 tests
+    math    : 76.1% average pass rate over 71 tests
+    order   : 15.4% average pass rate over 13 tests
+    present : 42.9% average pass rate over 14 tests
+    table   : 42.9% average pass rate over 14 tests
+
+    Results by JSONL file:
+        arxiv_math                    : 67.3% (33/49 tests)
+        baseline                      : 100.0% (20/20 tests)
+        headers_footers               : 62.5% (5/8 tests)
+        long_tiny_text                : 50.0% (6/12 tests)
+        multi_column                  : 15.4% (2/13 tests)
+        old_scans                     : 33.3% (1/3 tests)
+        old_scans_math                : 95.5% (21/22 tests)
+        tables                        : 42.9% (6/14 tests)
+
+        arxiv_math                    : 67.3% (33/49 tests)
+        baseline                      : 100.0% (20/20 tests)
+        headers_footers               : 62.5% (5/8 tests)
+        long_tiny_text                : 50.0% (6/12 tests)
+        multi_column                  : 15.4% (2/13 tests)
+        old_scans                     : 33.3% (1/3 tests)
+        old_scans_math                : 95.5% (21/22 tests)
+        tables                        : 42.9% (6/14 tests)
+Results save to: /home/shadeform/a3/raw/rerun/pilot/Ovis2-8B/olmOCRBench/olmOCRBench_eval_summary.csv
+{"operator": "Adilzhan", "model": "Ovis2-8B", "benchmark": "olmOCRBench", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "25fe250887fee675f887a2a2d24df185", "n_failed": 0, "primary_score": 58.4, "notes": "ok", "duration_s": 495.0, "timestamp_utc": "2026-10-20T14:42:41Z"}

@@ -1,0 +1,32 @@
+[2026-10-20 11:21:03] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+The localized version of data file is /home/shadeform/a3/LMUData/OCRBench_v2_local.tsv
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:17,  1.06it/s] 10%|█         | 2/20 [00:01<00:12,  1.44it/s] 15%|█▌        | 3/20 [00:02<00:11,  1.52it/s] 20%|██        | 4/20 [00:02<00:08,  1.90it/s] 25%|██▌       | 5/20 [00:03<00:09,  1.60it/s] 30%|███       | 6/20 [00:03<00:08,  1.66it/s] 35%|███▌      | 7/20 [00:04<00:06,  1.89it/s] 45%|████▌     | 9/20 [00:05<00:06,  1.60it/s] 50%|█████     | 10/20 [00:06<00:06,  1.57it/s] 55%|█████▌    | 11/20 [00:06<00:05,  1.77it/s] 60%|██████    | 12/20 [00:06<00:03,  2.04it/s] 65%|██████▌   | 13/20 [00:07<00:04,  1.58it/s] 70%|███████   | 14/20 [00:08<00:04,  1.37it/s] 75%|███████▌  | 15/20 [00:09<00:03,  1.32it/s] 80%|████████  | 16/20 [00:10<00:02,  1.48it/s] 85%|████████▌ | 17/20 [00:10<00:01,  1.79it/s] 90%|█████████ | 18/20 [00:10<00:01,  1.98it/s] 95%|█████████▌| 19/20 [00:11<00:00,  1.81it/s]100%|██████████| 20/20 [00:12<00:00,  1.40it/s]100%|██████████| 20/20 [00:12<00:00,  1.59it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]100%|██████████| 20/20 [00:00<00:00, 19377.70it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 20%|██        | 4/20 [00:00<00:02,  7.75it/s]Building prefix dict from the default dictionary ...
+[2026-10-20 11:21:51] DEBUG - __init__.py: initialize - 113: Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+[2026-10-20 11:21:51] DEBUG - __init__.py: initialize - 132: Loading model from cache /tmp/jieba.cache
+Loading model cost 0.472 seconds.
+[2026-10-20 11:21:51] DEBUG - __init__.py: initialize - 164: Loading model cost 0.472 seconds.
+Prefix dict has been built successfully.
+[2026-10-20 11:21:51] DEBUG - __init__.py: initialize - 166: Prefix dict has been built successfully.
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+ 55%|█████▌    | 11/20 [00:03<00:03,  2.57it/s] 70%|███████   | 14/20 [00:04<00:01,  3.22it/s]/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+100%|██████████| 20/20 [00:04<00:00,  4.55it/s]
+{"operator": "Adilzhan", "model": "GPT4o_MINI", "benchmark": "OCRBench_v2", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0", "n_failed": 0, "primary_score": 0.46204623976870385, "notes": "ok", "duration_s": 51.4, "timestamp_utc": "2026-10-20T11:21:55Z"}

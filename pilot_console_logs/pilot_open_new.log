@@ -1,0 +1,23 @@
+=== Phi-3.5-Vision CCOCR 12:30:09
+exit=1 Phi-3.5-Vision,CCOCR,20,,42.5,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+=== Phi-3.5-Vision OCRBench_v2 12:30:54
+exit=1 Phi-3.5-Vision,OCRBench_v2,20,,15.0,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+=== Phi-3.5-Vision OmniDocBench 12:31:12
+exit=1 Phi-3.5-Vision,OmniDocBench,20,,18.7,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+=== Phi-3.5-Vision olmOCRBench 12:31:32
+exit=1 Phi-3.5-Vision,olmOCRBench,20,,18.6,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+PILOT_OPEN_DONE Phi-3.5-Vision
+=== Ovis2-8B CCOCR 12:31:54
+exit=1 Ovis2-8B,CCOCR,20,,11.9,,"ERROR ValueError: 'aimv2' is already used by a Transformers config
+=== Ovis2-8B OCRBench_v2 12:32:07
+exit=1 Ovis2-8B,OCRBench_v2,20,,10.3,,"ERROR ValueError: 'aimv2' is already used by a Transformers config
+=== Ovis2-8B OmniDocBench 12:32:20
+exit=1 Ovis2-8B,OmniDocBench,20,,13.4,,"ERROR ValueError: 'aimv2' is already used by a Transformers config
+=== Ovis2-8B olmOCRBench 12:32:36
+exit=1 Ovis2-8B,olmOCRBench,20,,13.6,,"ERROR ValueError: 'aimv2' is already used by a Transformers config
+PILOT_OPEN_DONE Ovis2-8B
+=== Idefics3-8B-Llama3 CCOCR 12:32:51
+exit=0 Idefics3-8B-Llama3,CCOCR,20,0,863.0,0.14152385845884843,ok
+=== Idefics3-8B-Llama3 OCRBench_v2 12:47:17
+exit=0 Idefics3-8B-Llama3,OCRBench_v2,20,0,347.7,0.36680114798504476,ok
+=== Idefics3-8B-Llama3 OmniDocBench 12:53:07

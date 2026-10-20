@@ -1,0 +1,5 @@
+=== InternVL3-8B CCOCR 11:21:27
+exit=1 InternVL3-8B,CCOCR,20,,65.8,,ERROR AttributeError: 'InternVLChatModel' object has no attribute 'all_tied_weights_keys'
+=== InternVL3-8B OCRBench_v2 11:22:36
+exit=1 InternVL3-8B,OCRBench_v2,20,,11.8,,ERROR AttributeError: 'InternVLChatModel' object has no attribute 'all_tied_weights_keys'
+=== InternVL3-8B OmniDocBench 11:22:51

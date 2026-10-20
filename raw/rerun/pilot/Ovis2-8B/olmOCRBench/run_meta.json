@@ -8,10 +8,11 @@
   "temperature": 0,
   "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
   "tsv_md5": "25fe250887fee675f887a2a2d24df185",
-  "notes": "ERROR ValueError: 'aimv2' is already used by a Transformers config, pick another name.",
-  "n_failed": "",
-  "duration_s": 13.6,
-  "timestamp_utc": "2026-10-20T12:32:49Z",
+  "n_failed": 0,
+  "primary_score": 58.4,
+  "notes": "ok",
+  "duration_s": 495.0,
+  "timestamp_utc": "2026-10-20T14:42:41Z",
   "system": {
     "python": "3.11.17",
     "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
@@ -20,7 +21,7 @@
     "gpu": [
       "NVIDIA L40S"
     ],
-    "transformers": "4.57.6"
+    "transformers": "4.46.2"
   },
   "usage": {
     "calls": 0,

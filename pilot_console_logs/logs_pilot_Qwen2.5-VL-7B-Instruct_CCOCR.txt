@@ -1,0 +1,64 @@
+[2026-10-20 12:18:03] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+[2026-10-20 12:18:13] WARNING - misc.py: get_cache_path - 93: <class 'huggingface_hub.errors.CorruptedCacheException'>: Repo path is not a directory: /home/shadeform/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files:  50%|█████     | 8/16 [00:00<00:00, 38.03it/s]Fetching 16 files:  75%|███████▌  | 12/16 [00:20<00:06,  1.67s/it]Fetching 16 files:  81%|████████▏ | 13/16 [00:45<00:10,  3.51s/it]Fetching 16 files:  88%|████████▊ | 14/16 [00:46<00:06,  3.30s/it]Fetching 16 files:  94%|█████████▍| 15/16 [00:46<00:03,  3.12s/it]Fetching 16 files: 100%|██████████| 16/16 [00:47<00:00,  2.96s/it]Fetching 16 files: 100%|██████████| 16/16 [00:47<00:00,  2.96s/it]
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+You are attempting to use Flash Attention 2 without specifying a torch dtype. This might lead to unexpected behaviour
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.28it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.33it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.35it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.82it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.56it/s]
+Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:   5%|▌         | 1/20 [00:18<05:49, 18.37s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  10%|█         | 2/20 [00:25<03:34, 11.89s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  15%|█▌        | 3/20 [00:37<03:19, 11.75s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  20%|██        | 4/20 [00:38<02:00,  7.55s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  25%|██▌       | 5/20 [00:43<01:41,  6.74s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  30%|███       | 6/20 [00:44<01:04,  4.58s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  35%|███▌      | 7/20 [00:44<00:41,  3.20s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  40%|████      | 8/20 [00:48<00:42,  3.52s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  45%|████▌     | 9/20 [00:50<00:34,  3.13s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  50%|█████     | 10/20 [00:51<00:23,  2.31s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  55%|█████▌    | 11/20 [00:53<00:20,  2.27s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  60%|██████    | 12/20 [01:06<00:43,  5.50s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  65%|██████▌   | 13/20 [02:05<02:32, 21.83s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  70%|███████   | 14/20 [02:27<02:09, 21.65s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  75%|███████▌  | 15/20 [02:28<01:17, 15.59s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  80%|████████  | 16/20 [04:39<03:21, 50.30s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  85%|████████▌ | 17/20 [04:47<01:52, 37.53s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  90%|█████████ | 18/20 [04:57<00:58, 29.39s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1:  95%|█████████▌| 19/20 [05:11<00:24, 24.81s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1: 100%|██████████| 20/20 [05:12<00:00, 17.54s/it]Infer Qwen2.5-VL-7B-Instruct/CCOCR, Rank 0/1: 100%|██████████| 20/20 [05:12<00:00, 15.63s/it]
+Processing sub-datasets:   0%|          | 0/16 [00:00<?, ?it/s]Processing sub-datasets:   6%|▋         | 1/16 [00:00<00:12,  1.21it/s]Processing sub-dataset: kie_open_category_COLD_CELL
+donut_evaluator: total_tp: 72, total_fn_or_fp: 15, ptd_num: 3, gt_num: 3
+Completed evaluation for kie_open_category_COLD_CELL: {'f1_score': 0.9056603659665363, 'acc': np.float64(0.9184473703955773), 'response_success_ratio': 0.9999999996666666}
+Processing sub-dataset: kie_constrained_category_EPHOIE_SCUT
+donut_evaluator: total_tp: 2, total_fn_or_fp: 0, ptd_num: 1, gt_num: 1
+Completed evaluation for kie_constrained_category_EPHOIE_SCUT: {'f1_score': 0.99999950000025, 'acc': np.float64(0.9999990000010001), 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_document_text_IAM
+Completed evaluation for multi_scene_ocr_document_text_IAM: {'macro_f1_score': 0.999999998483871, 'mirco_f1_score': 0.9999999994838711, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_scene_text_IC15
+Completed evaluation for multi_scene_ocr_scene_text_IC15: {'macro_f1_score': 0.9999999981666665, 'mirco_f1_score': 0.9999999991666666, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_scene_text_InverseText
+Completed evaluation for multi_scene_ocr_scene_text_InverseText: {'macro_f1_score': 0.6666666653333332, 'mirco_f1_score': 0.6666666659999999, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_lan_ocr_Japanese_Japanese
+Completed evaluation for multi_lan_ocr_Japanese_Japanese: {'macro_f1_score': 0.5616018387361518, 'mirco_f1_score': 0.35190615803290304, 'response_success_ratio': 0.9999999995}
+Processing sub-dataset: multi_lan_ocr_Korean_Korean
+Completed evaluation for multi_lan_ocr_Korean_Korean: {'macro_f1_score': 0.6666666653888887, 'mirco_f1_score': 0.6666666660555555, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_lan_ocr_Russian_Russian
+Completed evaluation for multi_lan_ocr_Russian_Russian: {'macro_f1_score': 0.39999999906, 'mirco_f1_score': 0.39999999946000003, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_lan_ocr_Vietnamese_Vietnamese
+Completed evaluation for multi_lan_ocr_Vietnamese_Vietnamese: {'macro_f1_score': 0.8808864252070656, 'mirco_f1_score': 0.8808864260879521, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_doc_doc_scan_eng
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 169.86it/s]
+Completed evaluation for doc_parsing_doc_doc_scan_eng: {'score': 0.6576842105263159, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_formula_formula_handwriting
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 427.73it/s]
+Completed evaluation for doc_parsing_formula_formula_handwriting: {'score': 0.5111747851002866, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_molecular_molecular_handwriting
+
+  0%|          | 0/2 [00:00<?, ?it/s][A100%|██████████| 2/2 [00:00<00:00, 11244.78it/s]
+Completed evaluation for doc_parsing_molecular_molecular_handwriting: {'score': 0.10649691794726679, 'response_success_ratio': 0.9999999995}
+Processing sub-dataset: kie_constrained_category_sroie2019_word
+donut_evaluator: total_tp: 4, total_fn_or_fp: 0, ptd_num: 1, gt_num: 1
+Completed evaluation for kie_constrained_category_sroie2019_word: {'f1_score': 0.9999997500000625, 'acc': np.float64(0.9999990000010001), 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_table_table_photo_eng
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 54.48it/s]
+Processing sub-datasets: 100%|██████████| 16/16 [00:00<00:00, 17.99it/s]
+Completed evaluation for doc_parsing_table_table_photo_eng: {'score': 0.9612903225806452, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_document_text_zh_doc
+Completed evaluation for multi_scene_ocr_document_text_zh_doc: {'macro_f1_score': 0.6807817578235472, 'mirco_f1_score': 0.680781758504329, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_scene_text_zh_scene
+Completed evaluation for multi_scene_ocr_scene_text_zh_scene: {'macro_f1_score': 0.9999999984090908, 'mirco_f1_score': 0.9999999994090909, 'response_success_ratio': 0.9999999989999999}
+Comprehensive results saved to: /home/shadeform/a3/raw/rerun/pilot/Qwen2.5-VL-7B-Instruct/CCOCR/Qwen2.5-VL-7B-Instruct_CCOCR_comprehensive_eval.json
+
+================================================================================
+Final Aggregated Results:
+================================================================================
+  LAN_OCR             : 0.6273
+  SCENE_OCR           : 0.8695
+  KIE                 : 0.9728
+  DOC_PARSING         : 0.5592
+  TOTAL               : 0.7572
+================================================================================
+{"operator": "Adilzhan", "model": "Qwen2.5-VL-7B-Instruct", "benchmark": "CCOCR", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "f8927b76510ffe04e59d45e3f8e8b620", "n_failed": 0, "primary_score": 0.757188774561454, "notes": "ok", "duration_s": 375.9, "timestamp_utc": "2026-10-20T12:24:19Z"}

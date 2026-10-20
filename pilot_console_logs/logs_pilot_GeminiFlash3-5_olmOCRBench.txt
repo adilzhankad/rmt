@@ -1,0 +1,1 @@
+[2026-10-20 11:35:40] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.

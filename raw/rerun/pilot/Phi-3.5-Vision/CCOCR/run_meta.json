@@ -8,10 +8,11 @@
   "temperature": 0,
   "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
   "tsv_md5": "f8927b76510ffe04e59d45e3f8e8b620",
-  "notes": "ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'",
-  "n_failed": "",
-  "duration_s": 42.5,
-  "timestamp_utc": "2026-10-20T12:30:52Z",
+  "n_failed": 0,
+  "primary_score": 0.22333081039246025,
+  "notes": "ok",
+  "duration_s": 1517.9,
+  "timestamp_utc": "2026-10-20T14:06:31Z",
   "system": {
     "python": "3.11.17",
     "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
@@ -20,7 +21,7 @@
     "gpu": [
       "NVIDIA L40S"
     ],
-    "transformers": "4.57.6"
+    "transformers": "4.46.2"
   },
   "usage": {
     "calls": 0,

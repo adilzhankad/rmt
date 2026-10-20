@@ -1,0 +1,311 @@
+[2026-10-20 11:50:07] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.13it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.55it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.36it/s]
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/internvl/internvl_chat.py:216: UserWarning: Following kwargs received: {'do_sample': False, 'max_new_tokens': 4096, 'top_p': None}, will use as generation config. 
+  warnings.warn(f'Following kwargs received: {self.kwargs}, will use as generation config. ')
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:   5%|▌         | 1/20 [00:01<00:21,  1.12s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  10%|█         | 2/20 [00:02<00:19,  1.08s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  15%|█▌        | 3/20 [00:06<00:44,  2.59s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  20%|██        | 4/20 [00:10<00:51,  3.19s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  25%|██▌       | 5/20 [00:11<00:35,  2.37s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  30%|███       | 6/20 [00:12<00:26,  1.87s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  35%|███▌      | 7/20 [00:15<00:29,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  40%|████      | 8/20 [00:16<00:20,  1.70s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  45%|████▌     | 9/20 [00:25<00:44,  4.05s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+InternVL model version: V2.0
+dynamic ViT batch size: 16
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Which of the following options best matches the image?  Here's some options: apartment building, windmill, gazebo, lighthouse. Directly output the results without any additional explanation.<|im_end|>
+<|im_start|>assistant
+ windmill
+InternVL model version: V2.0
+dynamic ViT batch size: 13
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+从图中提取: 检验类型, 并按json格式返回<|im_end|>
+<|im_start|>assistant
+ ```json
+{
+  "检验类型": "型式检验（耐火性能）"
+}
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 1
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Find out the value of 'Calories/Energy per serving', 'Calories/Energy per 100g/ml', 'Protein per serving', 'Protein per 100g/ml', 'Total Fat per serving', 'Total Fat per 100g/ml', 'Carbohydrate per serving', 'Carbohydrate per 100g/ml', 'Sodium per serving', 'Sodium per 100g/ml', 'Serving Size' stated in the image. Extract the required information using the text in the image directly, and return the result in a dict with keys 'CE-PS', 'CE-P1', 'PRO-PS', 'PRO-P1', 'TF-PS', 'TF-P1', 'CAR-PS', 'CAR-P1', 'SO-PS', 'SO-P1', 'SS'. Your answer should be in the JSON format:{    "key1": "..",  # The firt key and value    "key2": ".."     # The second key and value    ..}<|im_end|>
+<|im_start|>assistant
+ ```json
+{
+    "CE-PS": "628kJ",
+    "CE-P1": "1960kJ",
+    "PRO-PS": "3.1g",
+    "PRO-P1": "9.8g",
+    "TF-PS": "7.2g",
+    "TF-P1": "22.4g",
+    "CAR-PS": "17.8g",
+    "CAR-P1": "55.6g",
+    "SO-PS": "100mg",
+    "SO-P1": "310mg",
+    "SS": "32g (1 bar)"
+}
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 13
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Convert the key information in the chart into a nested python dict.<|im_end|>
+<|im_start|>assistant
+ ```python
+data = {
+    "years": [2015, 2016, 2017, 2018, 2019, 2020],
+    "total_consumption_billion_tons": [120, 125, 130, 135, 140, 145],
+    "cagr_percent": [2, 2.5, 3, 3.5, 4, 4.5]
+}
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 13
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+图中的13800138000是指什么？<|im_end|>
+<|im_start|>assistant
+ 图中的13800138000是一个电话号码。
+InternVL model version: V2.0
+dynamic ViT batch size: 16
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Who served the customer?<|im_end|>
+<|im_start|>assistant
+ The customer was served by Lesedi Hlongwane.
+InternVL model version: V2.0
+dynamic ViT batch size: 17
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Which of these is immediately affected if the native tree leaves disappear? wedge tailed eagle, carpet snake, black flying fox, or goanna?<|im_end|>
+<|im_start|>assistant
+ If the native tree leaves disappear, the black flying fox would be immediately affected. The black flying fox directly relies on the native tree leaves for food. The disappearance of this food source would have a direct impact on its survival. 
+
+Other species like the carpet snake, goanna, and wedge-tailed eagle might be affected indirectly as the changes in the black flying fox population could ripple through the food web.
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+What part of the plant cell does chromatin live? Here's the options: golgi apparatus, mitochondrion, nucleus, cell wall.<|im_end|>
+<|im_start|>assistant
+ Chromatin is located in the nucleus.
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Parse the document image in Markdown format<|im_end|>
+<|im_start|>assistant
+ ```markdown
+# 西安理工大学硕士学位论文
+
+## 2.2.2 马克思主义话语体系
+
+马克思主义是科学的理论，它作用于人们的历史活动，必然具有独特的话语体系形态。随着事物的发展，马克思主义话语体系是依据环境的变化所形成的理论成果，是为了适应社会不断进行调整创新的。在人的实践活动当中，马克思主义理论需要主动调整和适应不同的环境下的话语，要适合社会发展、文化发展等方面，创新马克思主义理论的内容和形式，形成马克思主义特有的话语体系。马克思主义话语体系是马克思主义理论用话语所传达的思想理论体系，不仅要适应发展，而且要在发展中不断的丰富和创新马克思主义理论自身的话语体系。适应时代的发展，要用通俗易懂的话语表达马克思主义理论最直接最核心的思想。新时代的马克思主义话语体系不仅要守本，而且要创新。研究现实问题，以此为起点，推进话语体系建设，完善话语体系。中国化马克思主义话语体系是以传播中国思想、理论、观点、情感为目的，具有中国特殊的、规范的、开放的、稳定的话语集合。马克思主义话语体系需要在中国发展的过程中不断地提炼，需要在现实的实践中不断地扩充。中国化马克思主义话语体系的完善和创新具有非常重要的意义。
+
+---
+
+(C)1994-2020 China Academic Journal Electronic Publishing House. All rights reserved. http://www.cnki.net
+```
+InternVL model version: V2.0
+dynamic ViT batch size: 21
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Please use the information from the provided image to directly answer the mathematical question described in the image.<|im_end|>
+<|im_start|>assistant
+ To determine how many seconds Malaika spends at an elevation between $4$ meters and $7$ meters, we need to look at the graph and identify the time intervals where the elevation is within this range.
+
+1. **Identify the Elevation Range on the Graph:**
+   - The y-axis represents elevation in meters.
+   - We are interested in the elevation range from $4$ meters to $7$ meters.
+
+2. **Locate the Elevation Range on the Graph:**
+   - Find the points on the graph where the elevation is $4$ meters and $7$ meters.
+   - The graph shows that the elevation reaches $4$ meters at around $6$ seconds and $7$ meters at around $10$ seconds.
+   - The elevation again reaches $4$ meters at around $12$ seconds and $7$ meters at around $14$ seconds.
+
+3. **Determine the Time Intervals:**
+   - From $6$ seconds to $10$ seconds, the elevation is between $4$ meters and $7$ meters.
+   - From $12$ seconds to $14$ seconds, the elevation is again between $4$ meters and $7$ meters.
+
+4. **Calculate the Duration of Each Interval:**
+   - From $6$ seconds to $10$ seconds: \(10 - 6 = 4\) seconds.
+   - From $12$ seconds to $14$ seconds: \(14 - 12 = 2\) seconds.
+
+5. **Sum the Durations:**
+   - Total time spent at an elevation between $4$ meters and $7$ meters: \(4 + 2 = 6\) seconds.
+
+Therefore, Malaika spends a total of \(\boxed{6}\) seconds at an elevation between $4$ meters and $7$ meters.Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  50%|█████     | 10/20 [00:38<01:07,  6.73s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  55%|█████▌    | 11/20 [00:58<01:38, 10.92s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  60%|██████    | 12/20 [00:59<01:02,  7.84s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  65%|██████▌   | 13/20 [00:59<00:39,  5.63s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  70%|███████   | 14/20 [01:09<00:40,  6.73s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  75%|███████▌  | 15/20 [01:19<00:39,  7.89s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  80%|████████  | 16/20 [01:23<00:27,  6.83s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  85%|████████▌ | 17/20 [01:24<00:14,  4.88s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  90%|█████████ | 18/20 [01:24<00:07,  3.57s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Read all the text in the image.<|im_end|>
+<|im_start|>assistant
+ 三、翻译与文化交流
+
+人类的文化，从总体上来说是各个民族文化交流和融合的产物。而这种交流和融合必须通过翻译。作为中国人，要想与世界进行交流，就离不开与其他民族语言之间的翻译。
+
+现代社会中，无论是文化的交流，还是国际贸易都离不开翻译。随着全球信息化时代的来临，新一轮翻译高潮正波涌起，无论是在规模、范围上，还是在文化交流的多向性上，都是前所未有的，有的学者称之为“翻译爆炸”。
+
+翻译是一项极富挑战性的工作。仅仅掌握了外语是不够的，学好母语同样是翻译的基本功。此外，翻译不仅是机械的语言转换，也是不同文化间的对话交流。如果对本国与对象国的文化缺乏了解，要做好翻译几乎是不可能的。
+
+1. 误译是翻译中难以完全避免的现象。诺贝尔文学奖得主、美国作家赛珍珠在翻译中国古典名著《水浒》时，出现了非常有意思的误译。第32回中，武松看到邻座喝上好的青花瓷酒，吃熟精肉，而自己只喝一般的酒，仅一碟儿熟菜，他以为店家故意不卖给他，便非常生气，店家解释，“武行者心中要吃，那里听他分说，一片声的吆喝道：‘放屁！放屁！’”赛珍珠把最后一句译成：“Pass your wind—Pass your wind!”实际上此处的“放屁”是“胡言乱语”之意，不是真正的“放屁”。就这个意思而言，你认为此处应如何翻译呢？
+
+2. 西方有句名言：Translators are traitors（翻译有反意），意思是说任何翻译都会背离原文。《哈姆莱特》中有一段著名的独白，开头第一句是“To be, or not to be, that is the question”。英文中“be”具有多种含义，汉语中并无完全对应的语词，而且冠词的用法也很讲究。不同的中国译者曾给出不同的汉语翻译，例如：“生存还是毁灭，这是一个值得考虑的问题”、“是生存还是消亡，问题的所在”、“死后是存在，还是不存 在——这是问题”、“活下去还是不活，这是问题”、“活着好，还是死了好，这是个问题”等等。你觉得谁的翻译更好呢？道理何在？你能提供更好的译法吗？
+
+课外延伸
+
+季羡林先生为《中国翻译词典》作序时说：“倘若拿河流来作比，中华文化这一条长河，有水满的时候，也有水少的时候，但从未枯竭。原因就是有新水注入。注入的次数大大小小是颇多的。最大的有两次，一次是从印度来的水，一次是从西方来的水。而这两次的大注入依靠的都是翻译。中华文化之所以能长葆青春，万应灵药就是翻译。”
+
+查找相关资料，探究一下季羡林先生所说的两次外国来的“水”具体指的是什么，它们对中华文化的发展产生过什么重大的影响。将你的研究成果写成小论文，与老师同学交流。
+InternVL model version: V2.0
+dynamic ViT batch size: 3
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Where should I pay my bills?<|im_end|>
+<|im_start|>assistant
+ You should pay your bills at the Cashier, which is located near the Exit on the Pharmacy Floor Plan.
+InternVL model version: V2.0
+dynamic ViT batch size: 16
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Based on the information from the provided image, answer the following question: Which property do these three objects have in common? Here are the choices: 'bouncy', 'hard', 'stretchy'. Please output the answer directly.<|im_end|>
+<|im_start|>assistant
+ hard
+InternVL model version: V2.0
+dynamic ViT batch size: 13
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Watch the table in this image and convert it into a Markdown table in the text form.<|im_end|>
+<|im_start|>assistant
+ | home team | score | away team | score | venue | crowd | date |
+| --- | --- | --- | --- | --- | --- | --- |
+| hawthorn | 13.10 (88) | south melbourne | 7.14 (56) | glenferrie oval | 15000 | 21 august 1943 |
+| collingwo od | 16.17 (113) | fitzroy | 9.9 (63) | victoria park | 6500 | 21 august 1943 |
+| carlton | 15.23 (113) | north melbourne | 7.5 (47) | princes park | 8000 | 21 august 1943 |
+| richmond | 15.19 (109) | melbourne | 12.13 (85) | punt road oval | 9000 | 21 august 1943 |
+| footscray | 9.10 (64) | essendon | 6.15 (51) | western oval | 6000 | 21 august 1943 |
+InternVL model version: V2.0
+dynamic ViT batch size: 25
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Please represent this table with the HTML-format in text.<|im_end|>
+<|im_start|>assistant
+ <table border='1' cellspacing='0'>
+<tr> <th>  </th> <th>  </th> <th> Percentage of plan assets </th> <th>  </th> <th> Target asset allocation </th> </tr>
+<tr> <td>  </td> <td>  </td> <td> 2008 </td> <td> 2007 </td> <td> 2008 </td> </tr>
+<tr> <td> Equity securities </td> <td>  </td> <td> 54% </td> <td> 68% </td> <td> 61% </td> </tr>
+<tr> <td> Debt securities </td> <td>  </td> <td> 37% </td> <td> 28% </td> <td> 30% </td> </tr>
+<tr> <td> Real estate and other </td> <td>  </td> <td> 9% </td> <td> 4% </td> <td> 9% </td> </tr>
+<tr> <td> Total </td> <td>  </td> <td> 100% </td> <td> 100% </td> <td> 100% </td> </tr>
+</table>
+InternVL model version: V2.0
+dynamic ViT batch size: 16
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Where is the region of the text 'Hoon'? Output the normalized coordinates of the left-top and right-bottom corners of the bounding box. The coordinates should be normalized ranging from 0 to 1000 by the image width and height.Your answer should be in the following format:(x1, y1, x2, y2) # x1, y1, x2, y2 are the normalized coordinates of the bounding box.<|im_end|>
+<|im_start|>assistant
+ To find the region of the text 'Hoon' in the image, we need to identify the location of the word 'Hoon' in the text on the wall. The text 'Hoon' is part of the phrase "Kaya Toast, Fried Bee Hoon and Great Strong Coffee."
+
+Here are the normalized coordinates of the bounding box for the text 'Hoon':
+
+(450, 200, 600, 300)
+
+These coordinates are based on the width and height of the image, normalized to a range from 0 to 1000.
+InternVL model version: V2.0
+dynamic ViT batch size: 6
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+what is written in the image?<|im_end|>
+<|im_start|>assistant
+ intafoctSias
+InternVL model version: V2.0
+dynamic ViT batch size: 16
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+what is written in the image?<|im_end|>
+<|im_start|>assistant
+ Vienna
+InternVL model version: V2.0
+dynamic ViT batch size: 16
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Spotting all the text in the image with word-level. Output the normalized coordinates of the left-top and right-bottom corners of the bounding box and the text content. The coordinates should be normalized ranging from 0 to 1000 by the image width and height.Your answer should be in the following format:[(x1, y1, x2, y2, text content), (x1, y1, x2, y2, text content)...] # The normalized coordinates and the content of the text in the image.<|im_end|>
+<|im_start|>assistant
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1:  95%|█████████▌| 19/20 [01:26<00:03,  3.07s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer InternVL3-8B/OCRBench_v2, Rank 0/1: 100%|██████████| 20/20 [01:27<00:00,  2.35s/it]Infer InternVL3-8B/OCRBench_v2, Rank 0/1: 100%|██████████| 20/20 [01:27<00:00,  4.37s/it]
+ [(142, 68, 225, 175, 'Expert'), (142, 68, 225, 175, 'Beauty')]
+InternVL model version: V2.0
+dynamic ViT batch size: 7
+<|im_start|>system
+你是书生·万象，英文名是InternVL，是由上海人工智能实验室、清华大学及多家合作单位联合开发的多模态大语言模型。<|im_end|>
+<|im_start|>user
+<image>
+Please provide a Chinese translation of the text in the region defined by the coordinates [75, 147, 964, 195] in this image. The coordinates have been normalized ranging from 0 to 1000 by the image width and height. Please provide the translated content directly.<|im_end|>
+<|im_start|>assistant
+ 仔细阅读文章并分析其结构。为每段写下主要思想。
+  0%|          | 0/20 [00:00<?, ?it/s]100%|██████████| 20/20 [00:00<00:00, 9323.78it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 20%|██        | 4/20 [00:00<00:00, 18.81it/s]Building prefix dict from the default dictionary ...
+[2026-10-20 11:51:49] DEBUG - __init__.py: initialize - 113: Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+[2026-10-20 11:51:49] DEBUG - __init__.py: initialize - 132: Loading model from cache /tmp/jieba.cache
+Loading model cost 0.430 seconds.
+[2026-10-20 11:51:49] DEBUG - __init__.py: initialize - 164: Loading model cost 0.430 seconds.
+Prefix dict has been built successfully.
+[2026-10-20 11:51:49] DEBUG - __init__.py: initialize - 166: Prefix dict has been built successfully.
+ 55%|█████▌    | 11/20 [00:04<00:03,  2.48it/s] 70%|███████   | 14/20 [00:04<00:01,  3.24it/s]100%|██████████| 20/20 [00:04<00:00,  4.62it/s]
+{"operator": "Adilzhan", "model": "InternVL3-8B", "benchmark": "OCRBench_v2", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0", "n_failed": 0, "primary_score": 0.5342690872109771, "notes": "ok", "duration_s": 105.9, "timestamp_utc": "2026-10-20T11:51:53Z"}

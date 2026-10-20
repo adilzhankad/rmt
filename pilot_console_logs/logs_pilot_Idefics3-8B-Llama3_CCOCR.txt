@@ -1,0 +1,65 @@
+[2026-10-20 12:32:51] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+/home/shadeform/a3/.venv-open/lib/python3.11/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:35<01:47, 35.88s/it]Fetching 4 files:  50%|█████     | 2/4 [00:46<00:46, 23.08s/it]Fetching 4 files:  75%|███████▌  | 3/4 [00:48<00:16, 16.29s/it]Fetching 4 files: 100%|██████████| 4/4 [00:50<00:00, 12.62s/it]Fetching 4 files: 100%|██████████| 4/4 [00:50<00:00, 12.62s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.51s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.63s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.49s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.46s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.57s/it]
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/vlm/idefics.py:87: UserWarning: Following kwargs received: {'max_new_tokens': 4096}, will use as generation config. 
+  warnings.warn(
+Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:   5%|▌         | 1/20 [00:19<06:06, 19.29s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  10%|█         | 2/20 [00:27<03:53, 12.99s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  15%|█▌        | 3/20 [00:49<04:47, 16.91s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  20%|██        | 4/20 [00:50<02:50, 10.65s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  25%|██▌       | 5/20 [04:50<23:22, 93.52s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  30%|███       | 6/20 [04:51<14:27, 61.98s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  35%|███▌      | 7/20 [04:52<09:05, 42.00s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  40%|████      | 8/20 [04:53<05:47, 28.95s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  45%|████▌     | 9/20 [04:54<03:42, 20.26s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  50%|█████     | 10/20 [08:56<14:47, 88.75s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  55%|█████▌    | 11/20 [08:57<09:17, 61.89s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  60%|██████    | 12/20 [08:59<05:48, 43.54s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  65%|██████▌   | 13/20 [12:34<11:08, 95.49s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  70%|███████   | 14/20 [12:36<06:44, 67.42s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  75%|███████▌  | 15/20 [12:39<03:58, 47.75s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  80%|████████  | 16/20 [12:42<02:16, 34.25s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  85%|████████▌ | 17/20 [12:51<01:20, 26.73s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  90%|█████████ | 18/20 [13:06<00:46, 23.34s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1:  95%|█████████▌| 19/20 [13:09<00:17, 17.11s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1: 100%|██████████| 20/20 [13:10<00:00, 12.24s/it]Infer Idefics3-8B-Llama3/CCOCR, Rank 0/1: 100%|██████████| 20/20 [13:10<00:00, 39.51s/it]
+Processing sub-datasets:   0%|          | 0/16 [00:00<?, ?it/s]Processing sub-datasets:   6%|▋         | 1/16 [00:00<00:12,  1.23it/s]Processing sub-dataset: kie_open_category_COLD_CELL
+donut_evaluator: total_tp: 15, total_fn_or_fp: 120, ptd_num: 3, gt_num: 3
+Completed evaluation for kie_open_category_COLD_CELL: {'f1_score': 0.19999999733333337, 'acc': np.float64(0.20301106428011598), 'response_success_ratio': 0.9999999996666666}
+Processing sub-dataset: kie_constrained_category_EPHOIE_SCUT
+donut_evaluator: total_tp: 0, total_fn_or_fp: 4, ptd_num: 1, gt_num: 1
+Completed evaluation for kie_constrained_category_EPHOIE_SCUT: {'f1_score': 0.0, 'acc': np.float64(0.15384600000015386), 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_document_text_IAM
+Completed evaluation for multi_scene_ocr_document_text_IAM: {'macro_f1_score': 0.01605758577522047, 'mirco_f1_score': 0.016057585791278056, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_scene_text_IC15
+Completed evaluation for multi_scene_ocr_scene_text_IC15: {'macro_f1_score': 0.9999999981666665, 'mirco_f1_score': 0.9999999991666666, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_scene_text_InverseText
+Completed evaluation for multi_scene_ocr_scene_text_InverseText: {'macro_f1_score': 0.6666666653333332, 'mirco_f1_score': 0.6666666659999999, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_lan_ocr_Japanese_Japanese
+Completed evaluation for multi_lan_ocr_Japanese_Japanese: {'macro_f1_score': 0.12406015013236281, 'mirco_f1_score': 0.14046822725951613, 'response_success_ratio': 0.9999999995}
+Processing sub-dataset: multi_lan_ocr_Korean_Korean
+Completed evaluation for multi_lan_ocr_Korean_Korean: {'macro_f1_score': 0.0, 'mirco_f1_score': 0.0, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_lan_ocr_Russian_Russian
+Completed evaluation for multi_lan_ocr_Russian_Russian: {'macro_f1_score': 0.0, 'mirco_f1_score': 0.0, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_lan_ocr_Vietnamese_Vietnamese
+Completed evaluation for multi_lan_ocr_Vietnamese_Vietnamese: {'macro_f1_score': 0.0, 'mirco_f1_score': 0.0, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_doc_doc_scan_eng
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 1798.59it/s]
+Completed evaluation for doc_parsing_doc_doc_scan_eng: {'score': 0.00042105263157898865, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_formula_formula_handwriting
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 8924.05it/s]
+Completed evaluation for doc_parsing_formula_formula_handwriting: {'score': 0.02521489971346702, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_molecular_molecular_handwriting
+
+  0%|          | 0/2 [00:00<?, ?it/s][A100%|██████████| 2/2 [00:00<00:00, 49344.75it/s]
+Completed evaluation for doc_parsing_molecular_molecular_handwriting: {'score': 0.24771689497716892, 'response_success_ratio': 0.9999999995}
+Processing sub-dataset: kie_constrained_category_sroie2019_word
+donut_evaluator: total_tp: 0, total_fn_or_fp: 14, ptd_num: 1, gt_num: 1
+Completed evaluation for kie_constrained_category_sroie2019_word: {'f1_score': 0.0, 'acc': 0.0, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: doc_parsing_table_table_photo_eng
+
+  0%|          | 0/1 [00:00<?, ?it/s][A100%|██████████| 1/1 [00:00<00:00, 101.35it/s]
+Processing sub-datasets: 100%|██████████| 16/16 [00:00<00:00, 18.52it/s]
+Completed evaluation for doc_parsing_table_table_photo_eng: {'score': 0.0, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_document_text_zh_doc
+Completed evaluation for multi_scene_ocr_document_text_zh_doc: {'macro_f1_score': 0.05622489928307608, 'mirco_f1_score': 0.056224899339300985, 'response_success_ratio': 0.9999999989999999}
+Processing sub-dataset: multi_scene_ocr_scene_text_zh_scene
+Completed evaluation for multi_scene_ocr_scene_text_zh_scene: {'macro_f1_score': 0.0, 'mirco_f1_score': 0.0, 'response_success_ratio': 0.9999999989999999}
+Comprehensive results saved to: /home/shadeform/a3/raw/rerun/pilot/Idefics3-8B-Llama3/CCOCR/Idefics3-8B-Llama3_CCOCR_comprehensive_eval.json
+
+================================================================================
+Final Aggregated Results:
+================================================================================
+  LAN_OCR             : 0.0310
+  SCENE_OCR           : 0.3478
+  KIE                 : 0.1190
+  DOC_PARSING         : 0.0683
+  TOTAL               : 0.1415
+================================================================================
+{"operator": "Adilzhan", "model": "Idefics3-8B-Llama3", "benchmark": "CCOCR", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "f8927b76510ffe04e59d45e3f8e8b620", "n_failed": 0, "primary_score": 0.14152385845884843, "notes": "ok", "duration_s": 863.0, "timestamp_utc": "2026-10-20T12:47:14Z"}

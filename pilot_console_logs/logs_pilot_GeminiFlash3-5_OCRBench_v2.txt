@@ -1,0 +1,19 @@
+[2026-10-20 11:31:28] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:01<00:28,  1.48s/it] 10%|█         | 2/20 [00:04<00:39,  2.21s/it] 15%|█▌        | 3/20 [00:05<00:29,  1.74s/it] 20%|██        | 4/20 [00:06<00:20,  1.31s/it] 25%|██▌       | 5/20 [00:09<00:30,  2.03s/it] 30%|███       | 6/20 [00:09<00:20,  1.47s/it] 35%|███▌      | 7/20 [00:14<00:32,  2.52s/it] 40%|████      | 8/20 [00:17<00:33,  2.75s/it] 45%|████▌     | 9/20 [00:20<00:30,  2.80s/it] 50%|█████     | 10/20 [00:21<00:21,  2.15s/it] 55%|█████▌    | 11/20 [00:22<00:17,  1.92s/it] 60%|██████    | 12/20 [00:30<00:30,  3.78s/it] 65%|██████▌   | 13/20 [00:31<00:20,  3.00s/it] 70%|███████   | 14/20 [00:32<00:13,  2.29s/it] 75%|███████▌  | 15/20 [00:34<00:10,  2.14s/it] 80%|████████  | 16/20 [00:39<00:12,  3.11s/it] 85%|████████▌ | 17/20 [00:42<00:09,  3.14s/it] 90%|█████████ | 18/20 [00:43<00:04,  2.32s/it] 95%|█████████▌| 19/20 [00:45<00:02,  2.36s/it]100%|██████████| 20/20 [00:52<00:00,  3.52s/it]100%|██████████| 20/20 [00:52<00:00,  2.60s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]100%|██████████| 20/20 [00:00<00:00, 21592.30it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]Building prefix dict from the default dictionary ...
+[2026-10-20 11:32:30] DEBUG - __init__.py: initialize - 113: Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+[2026-10-20 11:32:30] DEBUG - __init__.py: initialize - 132: Loading model from cache /tmp/jieba.cache
+Loading model cost 0.480 seconds.
+[2026-10-20 11:32:31] DEBUG - __init__.py: initialize - 164: Loading model cost 0.480 seconds.
+Prefix dict has been built successfully.
+[2026-10-20 11:32:31] DEBUG - __init__.py: initialize - 166: Prefix dict has been built successfully.
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+ 55%|█████▌    | 11/20 [00:03<00:02,  3.33it/s]100%|██████████| 20/20 [00:03<00:00,  6.05it/s]
+{"operator": "Adilzhan", "model": "GeminiFlash3-5", "benchmark": "OCRBench_v2", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0", "n_failed": 14, "primary_score": 0.2508680555555556, "notes": "14 failed answers scored by the evaluator as given", "duration_s": 65.6, "timestamp_utc": "2026-10-20T11:32:34Z"}

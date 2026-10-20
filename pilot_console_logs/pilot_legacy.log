@@ -1,0 +1,14 @@
+=== Phi-3.5-Vision CCOCR 13:41:12
+exit=0 Phi-3.5-Vision,CCOCR,20,0,1517.9,0.22333081039246025,ok
+=== Phi-3.5-Vision OCRBench_v2 14:06:33
+exit=0 Phi-3.5-Vision,OCRBench_v2,20,0,165.0,0.46142821708262677,ok
+=== Phi-3.5-Vision OmniDocBench 14:09:21
+exit=0 Ovis2-8B,CCOCR,20,0,588.5,0.4708553672716677,ok
+=== Ovis2-8B OCRBench_v2 14:18:18
+exit=0 Ovis2-8B,OCRBench_v2,20,0,120.3,0.4290022156811331,ok
+=== Ovis2-8B OmniDocBench 14:20:21
+exit=0 Ovis2-8B,OmniDocBench,20,0,841.8,0.471,ok
+=== Ovis2-8B olmOCRBench 14:34:26
+exit=0 Ovis2-8B,olmOCRBench,20,0,495.0,58.4,ok
+PILOT_OPEN_DONE Ovis2-8B
+PILOT_LEGACY_DONE

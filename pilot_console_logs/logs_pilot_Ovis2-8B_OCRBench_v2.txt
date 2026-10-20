@@ -1,0 +1,32 @@
+[2026-10-20 14:18:19] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.86it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  3.30it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.41it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.30it/s]
+Infer Ovis2-8B/OCRBench_v2, Rank 0/1:   0%|          | 0/20 [00:00<?, ?it/s]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:   5%|▌         | 1/20 [00:00<00:16,  1.12it/s]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  10%|█         | 2/20 [00:02<00:27,  1.51s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  15%|█▌        | 3/20 [00:07<00:48,  2.88s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  20%|██        | 4/20 [00:15<01:17,  4.82s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  25%|██▌       | 5/20 [00:16<00:52,  3.51s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  30%|███       | 6/20 [00:17<00:38,  2.78s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  35%|███▌      | 7/20 [00:21<00:42,  3.23s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  40%|████      | 8/20 [00:23<00:34,  2.84s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  45%|████▌     | 9/20 [00:36<01:05,  5.91s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  50%|█████     | 10/20 [00:39<00:51,  5.12s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  55%|█████▌    | 11/20 [01:00<01:27,  9.76s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  60%|██████    | 12/20 [01:01<00:58,  7.26s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  65%|██████▌   | 13/20 [01:01<00:36,  5.15s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  70%|███████   | 14/20 [01:11<00:39,  6.56s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  75%|███████▌  | 15/20 [01:21<00:37,  7.51s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  80%|████████  | 16/20 [01:23<00:22,  5.74s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  85%|████████▌ | 17/20 [01:34<00:22,  7.57s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  90%|█████████ | 18/20 [01:35<00:10,  5.35s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1:  95%|█████████▌| 19/20 [01:38<00:04,  4.88s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1: 100%|██████████| 20/20 [01:40<00:00,  3.75s/it]Infer Ovis2-8B/OCRBench_v2, Rank 0/1: 100%|██████████| 20/20 [01:40<00:00,  5.00s/it]
+  0%|          | 0/20 [00:00<?, ?it/s]100%|██████████| 20/20 [00:00<00:00, 20877.57it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 20%|██        | 4/20 [00:00<00:02,  7.78it/s]Building prefix dict from the default dictionary ...
+[2026-10-20 14:20:15] DEBUG - __init__.py: initialize - 113: Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+[2026-10-20 14:20:15] DEBUG - __init__.py: initialize - 132: Loading model from cache /tmp/jieba.cache
+Loading model cost 0.408 seconds.
+[2026-10-20 14:20:15] DEBUG - __init__.py: initialize - 164: Loading model cost 0.408 seconds.
+Prefix dict has been built successfully.
+[2026-10-20 14:20:15] DEBUG - __init__.py: initialize - 166: Prefix dict has been built successfully.
+ 55%|█████▌    | 11/20 [00:04<00:03,  2.43it/s] 70%|███████   | 14/20 [00:04<00:01,  3.17it/s]/home/shadeform/a3/.venv-legacy/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv-legacy/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv-legacy/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+100%|██████████| 20/20 [00:04<00:00,  4.43it/s]
+{"operator": "Adilzhan", "model": "Ovis2-8B", "benchmark": "OCRBench_v2", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0", "n_failed": 0, "primary_score": 0.4290022156811331, "notes": "ok", "duration_s": 120.3, "timestamp_utc": "2026-10-20T14:20:19Z"}

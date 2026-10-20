@@ -1,0 +1,119 @@
+[2026-10-20 11:29:21] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+self.img_root:/home/shadeform/a3/LMUData/images/olmOCRBench
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:05<01:45,  5.56s/it] 10%|█         | 2/20 [00:06<00:51,  2.88s/it] 15%|█▌        | 3/20 [00:08<00:43,  2.56s/it] 20%|██        | 4/20 [00:09<00:31,  1.97s/it] 25%|██▌       | 5/20 [00:11<00:25,  1.72s/it] 30%|███       | 6/20 [00:13<00:29,  2.10s/it] 35%|███▌      | 7/20 [00:17<00:31,  2.44s/it] 40%|████      | 8/20 [00:21<00:35,  2.93s/it] 50%|█████     | 10/20 [00:21<00:16,  1.66s/it] 55%|█████▌    | 11/20 [00:28<00:27,  3.03s/it] 60%|██████    | 12/20 [00:32<00:26,  3.35s/it] 65%|██████▌   | 13/20 [00:35<00:22,  3.23s/it] 70%|███████   | 14/20 [00:39<00:20,  3.40s/it] 75%|███████▌  | 15/20 [00:45<00:20,  4.08s/it] 80%|████████  | 16/20 [00:48<00:15,  3.95s/it] 85%|████████▌ | 17/20 [00:50<00:09,  3.16s/it] 90%|█████████ | 18/20 [00:51<00:04,  2.46s/it] 95%|█████████▌| 19/20 [00:58<00:04,  4.01s/it]100%|██████████| 20/20 [01:32<00:00, 12.80s/it]100%|██████████| 20/20 [01:32<00:00,  4.61s/it]
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (108676), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (287748), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (333652), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (76236), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (85808), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (108384), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (255668), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (71964), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (165472), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (329804), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (313108), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (176888), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (2233392), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (171556), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (2233388), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (1034376), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (48840), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (179144), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+/home/shadeform/a3/third_party/VLMEvalKit/vlmeval/smp/file.py:172: UserWarning: Cell contents too long (147972), truncated to 32767 characters
+  data.to_excel(writer, index=False)
+Parsing XLSX:   0%|          | 0/20 [00:00<?, ?it/s]Parsing XLSX: 100%|██████████| 20/20 [00:00<00:00, 1600.18it/s]
+✅ Loaded 121 tests across 20 pdfs.
+📂 Creating temporary candidate folder: /tmp/olmocr_eval_1wuxdx5g
+🧹 Temporary folder: /tmp/olmocr_eval_1wuxdx5g
+
+Evaluating candidate: olmocr_eval_1wuxdx5g
+Evaluating tests for olmocr_eval_1wuxdx5g:   0%|          | 0/141 [00:00<?, ?test/s]Evaluating tests for olmocr_eval_1wuxdx5g:   2%|▏         | 3/141 [00:01<00:48,  2.83test/s]Evaluating tests for olmocr_eval_1wuxdx5g:   4%|▍         | 6/141 [00:01<00:22,  6.00test/s]Evaluating tests for olmocr_eval_1wuxdx5g:   6%|▋         | 9/141 [00:01<00:23,  5.69test/s]Evaluating tests for olmocr_eval_1wuxdx5g:   8%|▊         | 11/141 [00:01<00:18,  7.05test/s]Evaluating tests for olmocr_eval_1wuxdx5g:   9%|▉         | 13/141 [00:02<00:21,  5.98test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  11%|█         | 15/141 [00:02<00:25,  4.88test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  11%|█▏        | 16/141 [00:03<00:33,  3.70test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  12%|█▏        | 17/141 [00:04<00:41,  2.99test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  13%|█▎        | 19/141 [00:08<02:08,  1.05s/test]Evaluating tests for olmocr_eval_1wuxdx5g:  16%|█▌        | 22/141 [00:08<01:12,  1.65test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  18%|█▊        | 26/141 [00:08<00:39,  2.93test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  21%|██        | 29/141 [00:08<00:27,  4.09test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  24%|██▍       | 34/141 [00:09<00:16,  6.36test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  26%|██▌       | 37/141 [00:09<00:13,  7.54test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  55%|█████▌    | 78/141 [00:09<00:01, 41.05test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  62%|██████▏   | 87/141 [00:10<00:01, 32.91test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  67%|██████▋   | 95/141 [00:10<00:01, 31.33test/s]Evaluating tests for olmocr_eval_1wuxdx5g:  94%|█████████▎| 132/141 [00:10<00:00, 66.04test/s]Evaluating tests for olmocr_eval_1wuxdx5g: 100%|██████████| 141/141 [00:17<00:00,  8.15test/s]
+
+Candidate: olmocr_eval_1wuxdx5g
+  [FAIL] Test 2503.06612_pg19_math_006 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for p+q = D\cdot C \geq (D\cdot C)_x = \alpha + \beta \geq p + q anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_029 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for v_p(\Theta_0)=v_p(x_0)=-1-v_p(x_1)\not\in\{-1,0\} anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_004 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for -2\leq (K_{Y_t} + D_t) \cdot D_t = \left(-\sum_{i}C_{i,t} - E_t + D_t\right) \cdot D_t = D_t^2 - E_t\cdot D_t < -E_t\cdot D_t anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_018 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for v_p(\Theta_0)\not\in\{-1,0,v_p(x_0),-1-v_p(x_1)\} anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_027 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for A:= \begin{bmatrix} -\frac{x_1}{\Theta_1}\alpha_1 & \alpha_1 \\ -\beta_1 & 0 \end{bmatrix} \begin{bmatrix} -\frac{x_0}{\Theta_0}\alpha_0 & \alpha_0 \\ -\beta_0 & 0 \end{bmatrix} = \begin{bmatrix} \frac{x_0x_1}{\Theta_0\Theta_1}\alpha_0\alpha_1-\beta_0\alpha_1 & -\frac{x_1}{\Theta_1}\alpha_0\alpha_1 \\ \frac{x_0}{\Theta_0}\alpha_0\beta_1 & -\alpha_0\beta_1 \end{bmatrix} anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_007 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for f_t^*D = D_t + pq E_t anywhere in content
+  [FAIL] Test 2503.07488_pg6_math_011 on arxiv_math/2503.07488_pg6 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \mu \{ S(\varphi_{j_0+j},\varphi_{j_0+j+1}) \} = 2\mu\{ h(\psi_{j_0+j}) \sin \theta_{j_0+j} \} = A\{ \varphi_j \}/q anywhere in content
+  [FAIL] Test 2503.07488_pg6_math_006 on arxiv_math/2503.07488_pg6 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \psi_j = (\varphi_{j+1} + \varphi_j)/2 anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_021 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for v_p(\Theta_0)\not\in\{0,v_p(x_0)\} anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_014 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \frac{1}{\Theta_0}=\frac{1}{\Theta_1}=0 anywhere in content
+  [FAIL] Test 2503.06612_pg19_math_005 on arxiv_math/2503.06612_pg19 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for -2\leq D_t^2 - E_t\cdot D_t anywhere in content
+  [FAIL] Test 2503.03994_pg108_math_000 on arxiv_math/2503.03994_pg108 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for v_p(\Theta_0)\not\in\{-1,-1-v_p(x_1)\} anywhere in content
+  [FAIL] Test ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1_header_00 on headers_footers/ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected absence of 'financial support available - biology...' with threshold 1.0 but best match ratio was 1.000
+  [FAIL] Test ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1_header_01 on headers_footers/ce07fcbef4260468df457d1ea31d794a5beec3c9_page_1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected absence of 'last updated friday, 08 march 2013 13:24...' with threshold 1.0 but best match ratio was 1.000
+  [FAIL] Test 7901d119ed91a89f8fbabf0eef7174d75a7656e3_page_1.pdf_manual_00 on headers_footers/7901d119ed91a89f8fbabf0eef7174d75a7656e3_page_1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected absence of '1/2...' with threshold 1.0 but best match ratio was 1.000
+  [FAIL] Test 13_pg475_pg1_text_00 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'It is characteristic of later Judaism th...' with threshold 0.9927007299270073 but best match ratio was 0.985
+  [FAIL] Test 13_pg475_pg1_text_07 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'LITERATURE. Nowack, Die kleinen Prophete...' with threshold 0.9824561403508771 but best match ratio was 0.719
+  [FAIL] Test 13_pg475_pg1_text_08 on long_tiny_text/13_pg475_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected '1904); Wellhausen, id. (iii. 1898); G. A...' with threshold 0.9841269841269842 but best match ratio was 0.857
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_40575929 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[46] Barkschat R (2021) The constant Q t...' not found with max_l_dist 1
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_bec1d2a5 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[35] Baranisak RK, Delo EJ (2021) Freque...' not found with max_l_dist 2
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_92f5b816 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'IEEE Signal Processing Letters 28: 937-9...' not found with max_l_dist 2
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_33d8a975 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[38] Huang F, Yao CM (2020) Audio replay...' not found with max_l_dist 1
+  [FAIL] Test 00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13.pdf_order_6ef1a2f1 on multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_13_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text '[50] Chollet F (2017) Xception: deep lea...' not found with max_l_dist 1
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_12.pdf_order_6dad0ada on multi_column/0845863d27c84b14011e17a388821525e783_page_12_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'Note this conclusion is based on the sim...' not found with max_l_dist 2
+  [FAIL] Test 0845863d27c84b14011e17a388821525e783_page_12.pdf_order_8ed85d3f on multi_column/0845863d27c84b14011e17a388821525e783_page_12_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: 'before' text 'For example, Harman et al. (1998) in the...' not found with max_l_dist 2
+  [FAIL] Test 39_765731 on old_scans/39 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'J M Shackleford a special command includ...' with threshold 0.9942196531791907 but best match ratio was 0.965
+  [FAIL] Test 39_724825 on old_scans/39 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Expected 'on Ohio River. I am confident The Gurril...' with threshold 1.0 but best match ratio was 0.951
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_03 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: Found cells matching '4.11' but relationships were not satisfied: Cell to the right '\(0.31^*\)' doesn't match expected '0.31*' (similarity: 0.67)
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_05 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching 'INTMRK→BRDORT' found in any table with threshold 1.0
+  [FAIL] Test b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4_table_06 on tables/b5c5b8661b5a272e7a175cdb20d49e67ba0d_pg4 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No cell matching 'INTMRK→INTERDVU' found in any table with threshold 1.0
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_00 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No tables found in the content
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_01 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No tables found in the content
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_03 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No tables found in the content
+  [FAIL] Test f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_table_04 on tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No tables found in the content
+  [FAIL] Test 2503.06958_pg1_math_001 on arxiv_math/2503.06958_pg1 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \mathcal{A}^{\mathbb{Z}^d} anywhere in content
+  [FAIL] Test 4_pg380_equation_11 on old_scans_math/4_pg380 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for f(x, y) = xy + x anywhere in content
+  [FAIL] Test 2503.09181_pg5_math_003 on arxiv_math/2503.09181_pg5 page 1 average pass ratio: 0.000 (0/1 repeats passed).Ex: No match found for \min_{\theta,\phi} \mathbb{E}_{\mathbf{y}, \mathbf{x}} l(f_\theta(\mathbf{x}_s,z),\mathbf{y}) anywhere in content
+  Average Score: 66.7% (95% CI: [57.0%, 77.7%]) over 141 tests.
+
+============================================================
+Final Summary with 95% Confidence Intervals:
+olmocr_eval_1wuxdx5g : Average Score: 66.7% ± 10.3% (average of per-JSONL scores)
+    absent  : 66.7% average pass rate over 9 tests
+    baseline: 100.0% average pass rate over 20 tests
+    math    : 78.9% average pass rate over 71 tests
+    order   : 46.2% average pass rate over 13 tests
+    present : 64.3% average pass rate over 14 tests
+    table   : 50.0% average pass rate over 14 tests
+
+    Results by JSONL file:
+        arxiv_math                    : 71.4% (35/49 tests)
+        baseline                      : 100.0% (20/20 tests)
+        headers_footers               : 62.5% (5/8 tests)
+        long_tiny_text                : 75.0% (9/12 tests)
+        multi_column                  : 46.2% (6/13 tests)
+        old_scans                     : 33.3% (1/3 tests)
+        old_scans_math                : 95.5% (21/22 tests)
+        tables                        : 50.0% (7/14 tests)
+
+        arxiv_math                    : 71.4% (35/49 tests)
+        baseline                      : 100.0% (20/20 tests)
+        headers_footers               : 62.5% (5/8 tests)
+        long_tiny_text                : 75.0% (9/12 tests)
+        multi_column                  : 46.2% (6/13 tests)
+        old_scans                     : 33.3% (1/3 tests)
+        old_scans_math                : 95.5% (21/22 tests)
+        tables                        : 50.0% (7/14 tests)
+Results save to: /home/shadeform/a3/raw/rerun/pilot/GeminiFlashLite3-5/olmOCRBench/olmOCRBench_eval_summary.csv
+{"operator": "Adilzhan", "model": "GeminiFlashLite3-5", "benchmark": "olmOCRBench", "split": "pilot", "n_items": 20, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "25fe250887fee675f887a2a2d24df185", "n_failed": 1, "primary_score": 66.7, "notes": "1 failed answers scored by the evaluator as given", "duration_s": 124.1, "timestamp_utc": "2026-10-20T11:31:25Z"}

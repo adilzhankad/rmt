@@ -1,0 +1,28 @@
+=== InternVL3-8B CCOCR 11:45:07
+exit=0 InternVL3-8B,CCOCR,20,0,297.2,0.448228742124569,ok
+=== InternVL3-8B OCRBench_v2 11:50:06
+exit=0 InternVL3-8B,OCRBench_v2,20,0,105.9,0.5342690872109771,ok
+=== InternVL3-8B OmniDocBench 11:51:55
+exit=0 InternVL3-8B,OmniDocBench,20,0,899.5,0.305,ok
+=== InternVL3-8B olmOCRBench 12:06:57
+exit=0 InternVL3-8B,olmOCRBench,20,0,662.6,79.9,ok
+PILOT_OPEN_DONE InternVL3-8B
+=== Qwen2.5-VL-7B-Instruct CCOCR 12:18:02
+exit=0 Qwen2.5-VL-7B-Instruct,CCOCR,20,0,375.9,0.757188774561454,ok
+=== Qwen2.5-VL-7B-Instruct OCRBench_v2 12:24:21
+exit=0 Qwen2.5-VL-7B-Instruct,OCRBench_v2,20,0,116.2,0.3981829573934837,ok
+=== Qwen2.5-VL-7B-Instruct OmniDocBench 12:26:20
+exit=0 Qwen2.5-VL-7B-Instruct,OmniDocBench,20,0,1148.9,0.343,ok
+=== Qwen2.5-VL-7B-Instruct olmOCRBench 12:45:31
+exit=0 Qwen2.5-VL-7B-Instruct,olmOCRBench,20,0,1116.7,79.0,ok
+PILOT_OPEN_DONE Qwen2.5-VL-7B-Instruct
+=== MiniCPM-V-4_5 CCOCR 13:04:10
+exit=0 MiniCPM-V-4_5,CCOCR,20,0,1082.1,0.5691208338035489,ok
+=== MiniCPM-V-4_5 OCRBench_v2 13:22:14
+exit=0 MiniCPM-V-4_5,OCRBench_v2,20,0,391.6,0.5984195402298851,ok
+=== MiniCPM-V-4_5 OmniDocBench 13:28:48
+exit=0 MiniCPM-V-4_5,OmniDocBench,20,0,1459.1,0.242,ok
+=== MiniCPM-V-4_5 olmOCRBench 13:53:10
+exit=0 MiniCPM-V-4_5,olmOCRBench,20,0,892.7,77.3,ok
+PILOT_OPEN_DONE MiniCPM-V-4_5
+PILOT_OPEN_ALL_DONE
