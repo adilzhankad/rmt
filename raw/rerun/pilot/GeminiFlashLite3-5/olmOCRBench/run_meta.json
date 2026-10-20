@@ -1,0 +1,53 @@
+{
+  "operator": "Adilzhan",
+  "model": "GeminiFlashLite3-5",
+  "benchmark": "olmOCRBench",
+  "split": "pilot",
+  "n_items": 20,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "25fe250887fee675f887a2a2d24df185",
+  "n_failed": 0,
+  "primary_score": 67.7,
+  "notes": "retry of failed answers",
+  "duration_s": 31.6,
+  "timestamp_utc": "2026-10-20T12:24:48Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA L40S"
+    ],
+    "transformers": "4.57.6"
+  },
+  "usage": {
+    "calls": 1,
+    "tokens": {
+      "input": 1156,
+      "output": 1572,
+      "thinking": 0
+    },
+    "finish_reasons": {
+      "STOP": 1
+    }
+  },
+  "items_file": "items/olmOCRBench_pilot.csv",
+  "model_config": {
+    "kind": "api",
+    "provider": "google",
+    "replace_with": {
+      "wrapper": "Gemini",
+      "model": "gemini-3.5-flash-lite",
+      "temperature": 0,
+      "retry": 10,
+      "verbose": false
+    },
+    "overrides": {
+      "max_tokens": "MAX_TOKENS"
+    }
+  },
+  "prompt": "benchmark"
+}

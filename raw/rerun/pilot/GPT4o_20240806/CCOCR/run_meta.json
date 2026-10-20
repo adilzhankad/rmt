@@ -1,0 +1,38 @@
+{
+  "operator": "Adilzhan",
+  "model": "GPT4o_20240806",
+  "benchmark": "CCOCR",
+  "split": "pilot",
+  "n_items": 20,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "f8927b76510ffe04e59d45e3f8e8b620",
+  "n_failed": 0,
+  "primary_score": 0.6619072870408994,
+  "notes": "ok",
+  "duration_s": 25.3,
+  "timestamp_utc": "2026-10-20T11:36:44Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA L40S"
+    ],
+    "transformers": "4.57.6"
+  },
+  "usage": {
+    "calls": 20,
+    "tokens": {
+      "input": 19426,
+      "output": 4575,
+      "thinking": 0
+    },
+    "finish_reasons": {
+      "stop": 20
+    }
+  },
+  "items_file": "items/CCOCR_pilot.csv"
+}

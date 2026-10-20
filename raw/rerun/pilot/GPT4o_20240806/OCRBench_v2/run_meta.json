@@ -1,0 +1,38 @@
+{
+  "operator": "Adilzhan",
+  "model": "GPT4o_20240806",
+  "benchmark": "OCRBench_v2",
+  "split": "pilot",
+  "n_items": 20,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0",
+  "n_failed": 0,
+  "primary_score": 0.653967879165149,
+  "notes": "ok",
+  "duration_s": 23.1,
+  "timestamp_utc": "2026-10-20T11:36:16Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA L40S"
+    ],
+    "transformers": "4.57.6"
+  },
+  "usage": {
+    "calls": 20,
+    "tokens": {
+      "input": 17190,
+      "output": 1756,
+      "thinking": 0
+    },
+    "finish_reasons": {
+      "stop": 20
+    }
+  },
+  "items_file": "items/OCRBench_v2_pilot.csv"
+}

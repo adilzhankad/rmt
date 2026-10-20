@@ -1,0 +1,602 @@
+[
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>$\\text{COD}_{cr}$(mg/L)</th>\n <th>pH</th>\n <th>Turbidity(NTU)</th>\n <th>SS(mg/L)</th>\n <th>$\\zeta$-potential(mV)</th>\n <th>Water Temperature($^{\\circ}$C)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>310-740</td>\n <td>5-8</td>\n <td>100-500</td>\n <td>400-800</td>\n <td>-18.4--22.6</td>\n <td>15-25</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>$\\text{COD}_{cr}$(mg/L)</td><td>pH</td><td>Turbidity(NTU)</td><td>SS(mg/L)</td><td>$\\zeta$-potential(mV)</td><td>Water Temperature($^{\\circ}$C)</td></tr><tr><td>310-740</td><td>5-8</td><td>100-500</td><td>400-800</td><td>-18.4--22.6</td><td>15-25</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            15
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_en",
+                "include_equation": true,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n<tr>\n<th>COD<sub>Cr</sub> (mg/L)</th>\n<th>pH</th>\n<th>Turbidity (NTU)</th>\n<th>SS (mg/L)</th>\n<th>\\(\\zeta\\)-potential (mV)</th>\n<th>Water Temperature (°C)</th>\n</tr>\n<tr>\n<td>310–740</td>\n<td>5–8</td>\n<td>100–500</td>\n<td>400–800</td>\n<td>-18.4–22.6</td>\n<td>15–25</td>\n</tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>CODCr (mg/L)</td><td>pH</td><td>Turbidity (NTU)</td><td>SS (mg/L)</td><td>\\(\\zeta\\)-potential (mV)</td><td>Water Temperature (°C)</td></tr><tr><td>310–740</td><td>5–8</td><td>100–500</td><td>400–800</td><td>-18.4–22.6</td><td>15–25</td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.2573099415204678,
+        "img_id": "docstructbench_llm-raw-scihub-o.O-ceat.200600266.pdf_2.jpg",
+        "metric": {
+            "TEDS": 0.8241629919424951,
+            "TEDS_structure_only": 1.0,
+            "Edit_dist": 0.11987381703470032
+        },
+        "image_name": "docstructbench_llm-raw-scihub-o.O-ceat.200600266.pdf_2.jpg",
+        "upper_len": 317,
+        "Edit_num": 38
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>Variable</th>\n <th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>1</td>\n <td>Flow of wash oil to reactor riser</td>\n</tr>\n<tr>\n <td>2</td>\n <td>Flow of fresh feed to reactor riser</td>\n</tr>\n<tr>\n <td>3</td>\n <td>Flow of slurry to reactor riser</td>\n</tr>\n<tr>\n <td>4</td>\n <td>Temperature of fresh feed entering furnace</td>\n</tr>\n<tr>\n <td>5</td>\n <td>Fresh feed temperature to riser</td>\n</tr>\n<tr>\n <td>6</td>\n <td>Furnace firebox temperature</td>\n</tr>\n<tr>\n <td>7</td>\n <td>Combustion air blower inlet suction flow</td>\n</tr>\n<tr>\n <td>8</td>\n <td>Combustion air blower throughput</td>\n</tr>\n<tr>\n <td>9</td>\n <td>Combustion air flow rate</td>\n</tr>\n<tr>\n <td>10</td>\n <td>Lift air blower suction flow</td>\n</tr>\n<tr>\n <td>11</td>\n <td>Lift air blower speed</td>\n</tr>\n<tr>\n <td>12</td>\n <td>Lift air blower throughput</td>\n</tr>\n<tr>\n <td>13</td>\n <td>Riser temperature</td>\n</tr>\n<tr>\n <td>14</td>\n <td>Wet gas compressor suction pressure</td>\n</tr>\n<tr>\n <td>15</td>\n <td>Wet gas compressor inlet suction flow</td>\n</tr>\n<tr>\n <td>16</td>\n <td>Wet gas flow to vapor recovery unit</td>\n</tr>\n<tr>\n <td>17</td>\n <td>Regenerator bed temperature</td>\n</tr>\n<tr>\n <td>18</td>\n <td>Stack gas valve position</td>\n</tr>\n<tr>\n <td>19</td>\n <td>Regenerator pressure</td>\n</tr>\n<tr>\n <td>20</td>\n <td>Standpipe catalyst level</td>\n</tr>\n<tr>\n <td>21</td>\n <td>Stack gas $\\text{O}_{2}$ concentration</td>\n</tr>\n<tr>\n <td>22</td>\n <td>Combustion air blower discharge pressure</td>\n</tr>\n<tr>\n <td>23</td>\n <td>Wet gas composition suction valve position</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>Variable</td><td>Description</td></tr><tr><td>1</td><td>Flow of wash oil to reactor riser</td></tr><tr><td>2</td><td>Flow of fresh feed to reactor riser</td></tr><tr><td>3</td><td>Flow of slurry to reactor riser</td></tr><tr><td>4</td><td>Temperature of fresh feed entering furnace</td></tr><tr><td>5</td><td>Fresh feed temperature to riser</td></tr><tr><td>6</td><td>Furnace firebox temperature</td></tr><tr><td>7</td><td>Combustion air blower inlet suction flow</td></tr><tr><td>8</td><td>Combustion air blower throughput</td></tr><tr><td>9</td><td>Combustion air flow rate</td></tr><tr><td>10</td><td>Lift air blower suction flow</td></tr><tr><td>11</td><td>Lift air blower speed</td></tr><tr><td>12</td><td>Lift air blower throughput</td></tr><tr><td>13</td><td>Riser temperature</td></tr><tr><td>14</td><td>Wet gas compressor suction pressure</td></tr><tr><td>15</td><td>Wet gas compressor inlet suction flow</td></tr><tr><td>16</td><td>Wet gas flow to vapor recovery unit</td></tr><tr><td>17</td><td>Regenerator bed temperature</td></tr><tr><td>18</td><td>Stack gas valve position</td></tr><tr><td>19</td><td>Regenerator pressure</td></tr><tr><td>20</td><td>Standpipe catalyst level</td></tr><tr><td>21</td><td>Stack gas $\\text{O}_{2}$ concentration</td></tr><tr><td>22</td><td>Combustion air blower discharge pressure</td></tr><tr><td>23</td><td>Wet gas composition suction valve position</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            2
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": true,
+                "line": "fewer_line",
+                "language": "table_en",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n    <tr>\n    <th>Variable</th>\n    <th>Description</th>\n    </tr>\n    <tr>\n    <td>1</td>\n    <td>Flow of wash oil to reactor riser</td>\n    </tr>\n    <tr>\n    <td>2</td>\n    <td>Flow of fresh feed to reactor riser</td>\n    </tr>\n    <tr>\n    <td>3</td>\n    <td>Flow of slurry to reactor riser</td>\n    </tr>\n    <tr>\n    <td>4</td>\n    <td>Temperature of fresh feed entering furnace</td>\n    </tr>\n    <tr>\n    <td>5</td>\n    <td>Fresh feed temperature to riser</td>\n    </tr>\n    <tr>\n    <td>6</td>\n    <td>Furnace firebox temperature</td>\n    </tr>\n    <tr>\n    <td>7</td>\n    <td>Combustion air blower inlet suction flow</td>\n    </tr>\n    <tr>\n    <td>8</td>\n    <td>Combustion air blower throughput</td>\n    </tr>\n    <tr>\n    <td>9</td>\n    <td>Combustion air flow rate</td>\n    </tr>\n    <tr>\n    <td>10</td>\n    <td>Lift air blower suction flow</td>\n    </tr>\n    <tr>\n    <td>11</td>\n    <td>Lift air blower speed</td>\n    </tr>\n    <tr>\n    <td>12</td>\n    <td>Lift air blower throughput</td>\n    </tr>\n    <tr>\n    <td>13</td>\n    <td>Riser temperature</td>\n    </tr>\n    <tr>\n    <td>14</td>\n    <td>Wet gas compressor suction pressure</td>\n    </tr>\n    <tr>\n    <td>15</td>\n    <td>Wet gas compressor inlet suction flow</td>\n    </tr>\n    <tr>\n    <td>16</td>\n    <td>Wet gas flow to vapor recovery unit</td>\n    </tr>\n    <tr>\n    <td>17</td>\n    <td>Regenerator bed temperature</td>\n    </tr>\n    <tr>\n    <td>18</td>\n    <td>Stack gas valve position</td>\n    </tr>\n    <tr>\n    <td>19</td>\n    <td>Regenerator bed level</td>\n    </tr>\n    <tr>\n    <td>20</td>\n    <td>Standpipe catalyst level</td>\n    </tr>\n    <tr>\n    <td>21</td>\n    <td>Stack gas O<sub>2</sub> concentration</td>\n    </tr>\n    <tr>\n    <td>22</td>\n    <td>Combustion air blower discharge pressure</td>\n    </tr>\n    <tr>\n    <td>23</td>\n    <td>Wet gas composition suction valve position</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>Variable</td><td>Description</td></tr><tr><td>1</td><td>Flow of wash oil to reactor riser</td></tr><tr><td>2</td><td>Flow of fresh feed to reactor riser</td></tr><tr><td>3</td><td>Flow of slurry to reactor riser</td></tr><tr><td>4</td><td>Temperature of fresh feed entering furnace</td></tr><tr><td>5</td><td>Fresh feed temperature to riser</td></tr><tr><td>6</td><td>Furnace firebox temperature</td></tr><tr><td>7</td><td>Combustion air blower inlet suction flow</td></tr><tr><td>8</td><td>Combustion air blower throughput</td></tr><tr><td>9</td><td>Combustion air flow rate</td></tr><tr><td>10</td><td>Lift air blower suction flow</td></tr><tr><td>11</td><td>Lift air blower speed</td></tr><tr><td>12</td><td>Lift air blower throughput</td></tr><tr><td>13</td><td>Riser temperature</td></tr><tr><td>14</td><td>Wet gas compressor suction pressure</td></tr><tr><td>15</td><td>Wet gas compressor inlet suction flow</td></tr><tr><td>16</td><td>Wet gas flow to vapor recovery unit</td></tr><tr><td>17</td><td>Regenerator bed temperature</td></tr><tr><td>18</td><td>Stack gas valve position</td></tr><tr><td>19</td><td>Regenerator bed level</td></tr><tr><td>20</td><td>Standpipe catalyst level</td></tr><tr><td>21</td><td>Stack gas O2 concentration</td></tr><tr><td>22</td><td>Combustion air blower discharge pressure</td></tr><tr><td>23</td><td>Wet gas composition suction valve position</td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.19800942902042953,
+        "img_id": "docstructbench_llm-raw-scihub-o.O-ceat.200600410.pdf_5.jpg",
+        "metric": {
+            "TEDS": 0.990323029796714,
+            "TEDS_structure_only": 1.0,
+            "Edit_dist": 0.013642564802182811
+        },
+        "image_name": "docstructbench_llm-raw-scihub-o.O-ceat.200600410.pdf_5.jpg",
+        "upper_len": 1466,
+        "Edit_num": 20
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>Case</th>\n <th>Disturbance</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>1</td>\n <td>10 % loss of combustion air blower capacity</td>\n</tr>\n<tr>\n <td>2 </td>\n <td> 5 % degradation in the flow of regenerated catalyst</td>\n</tr>\n<tr>\n <td>3</td>\n <td>5 % increase in the coke factor of the feed</td>\n</tr>\n<tr>\n <td>4</td>\n <td>10 % decrease in the heat exchanger coefficient of the furnace</td>\n</tr>\n<tr>\n <td>5</td>\n <td>10 % increase in fresh feed</td>\n</tr>\n<tr>\n <td>6</td>\n <td>5% decrease in lift air blower speed</td>\n</tr>\n<tr>\n <td>7</td>\n <td>5 % increase in friction coefficient of regenerated catalyst</td>\n</tr>\n<tr>\n <td>8</td>\n <td>Negative bias of reactor pressure sensor</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>Case</td><td>Disturbance</td></tr><tr><td>1</td><td>10 % loss of combustion air blower capacity</td></tr><tr><td>2 </td><td> 5 % degradation in the flow of regenerated catalyst</td></tr><tr><td>3</td><td>5 % increase in the coke factor of the feed</td></tr><tr><td>4</td><td>10 % decrease in the heat exchanger coefficient of the furnace</td></tr><tr><td>5</td><td>10 % increase in fresh feed</td></tr><tr><td>6</td><td>5% decrease in lift air blower speed</td></tr><tr><td>7</td><td>5 % increase in friction coefficient of regenerated catalyst</td></tr><tr><td>8</td><td>Negative bias of reactor pressure sensor</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            13
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": true,
+                "line": "fewer_line",
+                "language": "table_en",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            1
+        ],
+        "pred": "<table>\n    <tr>\n    <th>Case</th>\n    <th>Disturbance</th>\n    </tr>\n    <tr>\n    <td>1</td>\n    <td>10% loss of combustion air blower capacity</td>\n    </tr>\n    <tr>\n    <td>2</td>\n    <td>5% degradation in the flow of regenerated catalyst</td>\n    </tr>\n    <tr>\n    <td>3</td>\n    <td>5% increase in the coke factor of the feed</td>\n    </tr>\n    <tr>\n    <td>4</td>\n    <td>10% decrease in the heat exchanger coefficient of the furnace</td>\n    </tr>\n    <tr>\n    <td>5</td>\n    <td>10% increase in fresh feed</td>\n    </tr>\n    <tr>\n    <td>6</td>\n    <td>5% decrease in lift air blower speed</td>\n    </tr>\n    <tr>\n    <td>7</td>\n    <td>5% increase in friction coefficient of regenerated catalyst</td>\n    </tr>\n    <tr>\n    <td>8</td>\n    <td>Negative bias of reactor pressure sensor</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>Case</td><td>Disturbance</td></tr><tr><td>1</td><td>10% loss of combustion air blower capacity</td></tr><tr><td>2</td><td>5% degradation in the flow of regenerated catalyst</td></tr><tr><td>3</td><td>5% increase in the coke factor of the feed</td></tr><tr><td>4</td><td>10% decrease in the heat exchanger coefficient of the furnace</td></tr><tr><td>5</td><td>10% increase in fresh feed</td></tr><tr><td>6</td><td>5% decrease in lift air blower speed</td></tr><tr><td>7</td><td>5% increase in friction coefficient of regenerated catalyst</td></tr><tr><td>8</td><td>Negative bias of reactor pressure sensor</td></tr></table></body></html>",
+        "pred_category_type": "html_table",
+        "pred_position": 3555,
+        "edit": 0.1882640586797066,
+        "img_id": "docstructbench_llm-raw-scihub-o.O-ceat.200600410.pdf_5.jpg",
+        "metric": {
+            "TEDS": 0.9757479295433228,
+            "TEDS_structure_only": 1.0,
+            "Edit_dist": 0.01171303074670571
+        },
+        "image_name": "docstructbench_llm-raw-scihub-o.O-ceat.200600410.pdf_5.jpg",
+        "upper_len": 683,
+        "Edit_num": 8
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>周数</th>\n <th>第一周</th>\n <th>第二周</th>\n <th>第三周</th>\n <th>第四周</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>本数</td>\n <td>2034</td>\n <td>2988</td>\n <td>1982</td>\n <td>4088</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>周数</td><td>第一周</td><td>第二周</td><td>第三周</td><td>第四周</td></tr><tr><td>本数</td><td>2034</td><td>2988</td><td>1982</td><td>4088</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            3
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "full_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n    <tr>\n    <td>周次</td>\n    <td>第一周</td>\n    <td>第二周</td>\n    <td>第三周</td>\n    <td>第四周</td>\n    </tr>\n    <tr>\n    <td>本数</td>\n    <td>2034</td>\n    <td>2988</td>\n    <td>1982</td>\n    <td>4088</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>周次</td><td>第一周</td><td>第二周</td><td>第三周</td><td>第四周</td></tr><tr><td>本数</td><td>2034</td><td>2988</td><td>1982</td><td>4088</td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.3407079646017699,
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+        "metric": {
+            "TEDS": 0.9583333333333334,
+            "TEDS_structure_only": 1.0,
+            "Edit_dist": 0.0051813471502590676
+        },
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+        "upper_len": 193,
+        "Edit_num": 1
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>香蕉</th>\n <th>梨</th>\n <th>苹果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>183千克</td>\n <td>463千克</td>\n <td>500千克</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>香蕉</td><td>梨</td><td>苹果</td></tr><tr><td>183千克</td><td>463千克</td><td>500千克</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            21
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "full_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": true,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            1
+        ],
+        "pred": "<table>\n    <tr>\n    <td>水果</td>\n    <td>香蕉</td>\n    <td>梨</td>\n    <td>苹果</td>\n    </tr>\n    <tr>\n    <td>重量</td>\n    <td>183 千克</td>\n    <td>463 千克</td>\n    <td>500 千克</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>水果</td><td>香蕉</td><td>梨</td><td>苹果</td></tr><tr><td>重量</td><td>183 千克</td><td>463 千克</td><td>500 千克</td></tr></table></body></html>",
+        "pred_category_type": "html_table",
+        "pred_position": 689,
+        "edit": 0.39378238341968913,
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+        "metric": {
+            "TEDS": 0.75,
+            "TEDS_structure_only": 0.8,
+            "Edit_dist": 0.14705882352941177
+        },
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+        "upper_len": 170,
+        "Edit_num": 25
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>手机 </th>\n <th>平板电脑</th>\n <th>笔记本电脑</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>3500元</td>\n <td>4300元</td>\n <td>5600元</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>手机 </td><td>平板电脑</td><td>笔记本电脑</td></tr><tr><td>3500元</td><td>4300元</td><td>5600元</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            31
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "full_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            3
+        ],
+        "pred": "<table>\n    <tr>\n    <td>手机</td>\n    <td>平板电脑</td>\n    <td>笔记本电脑</td>\n    </tr>\n    <tr>\n    <td>3500 元</td>\n    <td>4300 元</td>\n    <td>5600 元</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>手机</td><td>平板电脑</td><td>笔记本电脑</td></tr><tr><td>3500 元</td><td>4300 元</td><td>5600 元</td></tr></table></body></html>",
+        "pred_category_type": "html_table",
+        "pred_position": 1187,
+        "edit": 0.38323353293413176,
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+        "metric": {
+            "TEDS": 0.8958333333333334,
+            "TEDS_structure_only": 1.0,
+            "Edit_dist": 0.025974025974025976
+        },
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_2360.jpg",
+        "upper_len": 154,
+        "Edit_num": 4
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>资产负债表（百万元）</th>\n <th>2022A</th>\n <th>2023E</th>\n <th>2024E</th>\n <th>2025E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>流动资产</td>\n <td>10251.08</td>\n <td>12286.84</td>\n <td>14052.28</td>\n <td>16637.88</td>\n</tr>\n<tr>\n <td>现金</td>\n <td>1596.99</td>\n <td>1271.84</td>\n <td>1800.96</td>\n <td>2383.75</td>\n</tr>\n<tr>\n <td>应收账款</td>\n <td>1752.30</td>\n <td>1600.56</td>\n <td>1905.54</td>\n <td>2148.95</td>\n</tr>\n<tr>\n <td>其它应收款</td>\n <td>239.61</td>\n <td>409.91</td>\n <td>395.93</td>\n <td>636.29</td>\n</tr>\n<tr>\n <td>预付账款</td>\n <td>626.54</td>\n <td>848.86</td>\n <td>904.23</td>\n <td>1252.29</td>\n</tr>\n<tr>\n <td>存货</td>\n <td>2637.96</td>\n <td>4435.85</td>\n <td>4616.77</td>\n <td>5135.39</td>\n</tr>\n<tr>\n <td>其他</td>\n <td>3397.68</td>\n <td>3719.81</td>\n <td>4428.87</td>\n <td>5081.21</td>\n</tr>\n<tr>\n <td>非流动资产</td>\n <td>12409.05</td>\n <td>12152.04</td>\n <td>12464.93</td>\n <td>12844.36</td>\n</tr>\n<tr>\n <td>长期投资</td>\n <td>851.84</td>\n <td>751.84</td>\n <td>951.84</td>\n <td>1151.84</td>\n</tr>\n<tr>\n <td>固定资产</td>\n <td>1981.87</td>\n <td>1965.90</td>\n <td>2130.80</td>\n <td>2277.24</td>\n</tr>\n<tr>\n <td>无形资产</td>\n <td>7585.09</td>\n <td>7060.09</td>\n <td>6920.09</td>\n <td>6762.09</td>\n</tr>\n<tr>\n <td>其他</td>\n <td>1990.24</td>\n <td>2374.21</td>\n <td>2462.19</td>\n <td>2653.18</td>\n</tr>\n<tr>\n <td>资产总计</td>\n <td>22660.13</td>\n <td>24438.88</td>\n <td>26517.21</td>\n <td>29482.24</td>\n</tr>\n<tr>\n <td>流动负债</td>\n <td>7990.76</td>\n <td>8261.34</td>\n <td>8422.72</td>\n <td>9079.24</td>\n</tr>\n<tr>\n <td>短期借款</td>\n <td>3849.13</td>\n <td>3849.13</td>\n <td>3849.13</td>\n <td>3849.13</td>\n</tr>\n<tr>\n <td>应付账款</td>\n <td>2576.93</td>\n <td>2610.53</td>\n <td>2546.02</td>\n <td>2705.14</td>\n</tr>\n<tr>\n <td>其他</td>\n <td>1564.70</td>\n <td>1801.68</td>\n <td>2027.57</td>\n <td>2524.98</td>\n</tr>\n<tr>\n <td>非流动负债</td>\n <td>4982.19</td>\n <td>5582.19</td>\n <td>6182.19</td>\n <td>6782.19</td>\n</tr>\n<tr>\n <td>长期借款</td>\n <td>4665.62</td>\n <td>5265.62</td>\n <td>5865.62</td>\n <td>6465.62</td>\n</tr>\n<tr>\n <td>其他</td>\n <td>316.57</td>\n <td>316.57</td>\n <td>316.57</td>\n <td>316.57</td>\n</tr>\n<tr>\n <td>负债合计</td>\n <td>12972.95</td>\n <td>13843.53</td>\n <td>14604.91</td>\n <td>15861.43</td>\n</tr>\n<tr>\n <td>少数股东权益</td>\n <td>809.06</td>\n <td>877.68</td>\n <td>981.74</td>\n <td>1108.79</td>\n</tr>\n<tr>\n <td>归属母公司股东权益</td>\n <td>8878.13</td>\n <td>9717.68</td>\n <td>10930.56</td>\n <td>12512.02</td>\n</tr>\n<tr>\n <td>负债和股东权益</td>\n <td>22660.13</td>\n <td>24438.88</td>\n <td>26517.21</td>\n <td>29482.24</td>\n</tr>\n</tbody>\n</table>",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            3
+        ],
+        "pred_position": "",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>资产负债表(百万元)</td><td>2022A</td><td>2023E</td><td>2024E</td><td>2025E</td></tr><tr><td>流动资产</td><td>10251.08</td><td>12286.84</td><td>14052.28</td><td>16637.88</td></tr><tr><td>现金</td><td>1596.99</td><td>1271.84</td><td>1800.96</td><td>2383.75</td></tr><tr><td>应收账款</td><td>1752.30</td><td>1600.56</td><td>1905.54</td><td>2148.95</td></tr><tr><td>其它应收款</td><td>239.61</td><td>409.91</td><td>395.93</td><td>636.29</td></tr><tr><td>预付账款</td><td>626.54</td><td>848.86</td><td>904.23</td><td>1252.29</td></tr><tr><td>存货</td><td>2637.96</td><td>4435.85</td><td>4616.77</td><td>5135.39</td></tr><tr><td>其他</td><td>3397.68</td><td>3719.81</td><td>4428.87</td><td>5081.21</td></tr><tr><td>非流动资产</td><td>12409.05</td><td>12152.04</td><td>12464.93</td><td>12844.36</td></tr><tr><td>长期投资</td><td>851.84</td><td>751.84</td><td>951.84</td><td>1151.84</td></tr><tr><td>固定资产</td><td>1981.87</td><td>1965.90</td><td>2130.80</td><td>2277.24</td></tr><tr><td>无形资产</td><td>7585.09</td><td>7060.09</td><td>6920.09</td><td>6762.09</td></tr><tr><td>其他</td><td>1990.24</td><td>2374.21</td><td>2462.19</td><td>2653.18</td></tr><tr><td>资产总计</td><td>22660.13</td><td>24438.88</td><td>26517.21</td><td>29482.24</td></tr><tr><td>流动负债</td><td>7990.76</td><td>8261.34</td><td>8422.72</td><td>9079.24</td></tr><tr><td>短期借款</td><td>3849.13</td><td>3849.13</td><td>3849.13</td><td>3849.13</td></tr><tr><td>应付账款</td><td>2576.93</td><td>2610.53</td><td>2546.02</td><td>2705.14</td></tr><tr><td>其他</td><td>1564.70</td><td>1801.68</td><td>2027.57</td><td>2524.98</td></tr><tr><td>非流动负债</td><td>4982.19</td><td>5582.19</td><td>6182.19</td><td>6782.19</td></tr><tr><td>长期借款</td><td>4665.62</td><td>5265.62</td><td>5865.62</td><td>6465.62</td></tr><tr><td>其他</td><td>316.57</td><td>316.57</td><td>316.57</td><td>316.57</td></tr><tr><td>负债合计</td><td>12972.95</td><td>13843.53</td><td>14604.91</td><td>15861.43</td></tr><tr><td>少数股东权益</td><td>809.06</td><td>877.68</td><td>981.74</td><td>1108.79</td></tr><tr><td>归属母公司股东权益</td><td>8878.13</td><td>9717.68</td><td>10930.56</td><td>12512.02</td></tr><tr><td>负债和股东权益</td><td>22660.13</td><td>24438.88</td><td>26517.21</td><td>29482.24</td></tr></table></body></html>",
+        "norm_pred": "",
+        "gt_category_type": "table",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "edit": 1,
+        "img_id": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "metric": {
+            "TEDS": 0.0,
+            "TEDS_structure_only": 0.0,
+            "Edit_dist": 1.0
+        },
+        "image_name": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "upper_len": 2207,
+        "Edit_num": 2207
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>现金流量表（百万元）</th>\n <th>2022A</th>\n <th>2023E</th>\n <th>2024E</th>\n <th>2025E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>经营活动现金流</td>\n <td>-445.91</td>\n <td>-348.25</td>\n <td>1036.17</td>\n <td>1188.41</td>\n</tr>\n<tr>\n <td>净利润</td>\n <td>744.36</td>\n <td>984.45</td>\n <td>1316.95</td>\n <td>1708.50</td>\n</tr>\n<tr>\n <td>折旧摊销</td>\n <td>472.06</td>\n <td>457.00</td>\n <td>487.11</td>\n <td>520.57</td>\n</tr>\n<tr>\n <td>财务费用</td>\n <td>349.99</td>\n <td>402.25</td>\n <td>432.25</td>\n <td>462.25</td>\n</tr>\n<tr>\n <td>投资损失</td>\n <td>-71.41</td>\n <td>-101.62</td>\n <td>-125.19</td>\n <td>-156.62</td>\n</tr>\n<tr>\n <td>营运资金变动</td>\n <td>-2012.96</td>\n <td>-2090.32</td>\n <td>-1074.95</td>\n <td>-1346.29</td>\n</tr>\n<tr>\n <td>其它</td>\n <td>72.04</td>\n <td>0.00</td>\n <td>0.00</td>\n <td>0.00</td>\n</tr>\n<tr>\n <td>投资活动现金流</td>\n <td>-2613.09</td>\n <td>-98.38</td>\n <td>-674.81</td>\n <td>-743.38</td>\n</tr>\n<tr>\n <td>资本支出</td>\n <td>-2490.58</td>\n <td>-400.00</td>\n <td>-700.00</td>\n <td>-700.00</td>\n</tr>\n<tr>\n <td>长期投资</td>\n <td>-234.12</td>\n <td>200.00</td>\n <td>-100.00</td>\n <td>-200.00</td>\n</tr>\n<tr>\n <td>其他</td>\n <td>111.60</td>\n <td>101.62</td>\n <td>125.19</td>\n <td>156.62</td>\n</tr>\n<tr>\n <td>筹资活动现金流</td>\n <td>3622.15</td>\n <td>121.48</td>\n <td>167.75</td>\n <td>137.75</td>\n</tr>\n<tr>\n <td>短期借款</td>\n <td>1058.07</td>\n <td>0.00</td>\n <td>0.00</td>\n <td>0.00</td>\n</tr>\n<tr>\n <td>长期借款</td>\n <td>596.00</td>\n <td>600.00</td>\n <td>600.00</td>\n <td>600.00</td>\n</tr>\n<tr>\n <td>其他</td>\n <td>1968.08</td>\n <td>-478.52</td>\n <td>-432.25</td>\n <td>-462.25</td>\n</tr>\n<tr>\n <td>现金净增加额</td>\n <td>564.29</td>\n <td>-325.15</td>\n <td>529.12</td>\n <td>582.79</td>\n</tr>\n</tbody>\n</table>",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            4
+        ],
+        "pred_position": "",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>现金流量表(百万元)</td><td>2022A</td><td>2023E</td><td>2024E</td><td>2025E</td></tr><tr><td>经营活动现金流</td><td>-445.91</td><td>-348.25</td><td>1036.17</td><td>1188.41</td></tr><tr><td>净利润</td><td>744.36</td><td>984.45</td><td>1316.95</td><td>1708.50</td></tr><tr><td>折旧摊销</td><td>472.06</td><td>457.00</td><td>487.11</td><td>520.57</td></tr><tr><td>财务费用</td><td>349.99</td><td>402.25</td><td>432.25</td><td>462.25</td></tr><tr><td>投资损失</td><td>-71.41</td><td>-101.62</td><td>-125.19</td><td>-156.62</td></tr><tr><td>营运资金变动</td><td>-2012.96</td><td>-2090.32</td><td>-1074.95</td><td>-1346.29</td></tr><tr><td>其它</td><td>72.04</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>投资活动现金流</td><td>-2613.09</td><td>-98.38</td><td>-674.81</td><td>-743.38</td></tr><tr><td>资本支出</td><td>-2490.58</td><td>-400.00</td><td>-700.00</td><td>-700.00</td></tr><tr><td>长期投资</td><td>-234.12</td><td>200.00</td><td>-100.00</td><td>-200.00</td></tr><tr><td>其他</td><td>111.60</td><td>101.62</td><td>125.19</td><td>156.62</td></tr><tr><td>筹资活动现金流</td><td>3622.15</td><td>121.48</td><td>167.75</td><td>137.75</td></tr><tr><td>短期借款</td><td>1058.07</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>长期借款</td><td>596.00</td><td>600.00</td><td>600.00</td><td>600.00</td></tr><tr><td>其他</td><td>1968.08</td><td>-478.52</td><td>-432.25</td><td>-462.25</td></tr><tr><td>现金净增加额</td><td>564.29</td><td>-325.15</td><td>529.12</td><td>582.79</td></tr></table></body></html>",
+        "norm_pred": "",
+        "gt_category_type": "table",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "less_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "edit": 1,
+        "img_id": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "metric": {
+            "TEDS": 0.0,
+            "TEDS_structure_only": 0.0,
+            "Edit_dist": 1.0
+        },
+        "image_name": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "upper_len": 1478,
+        "Edit_num": 1478
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>利润表（百万元）</th>\n <th>2022A</th>\n <th>2023E</th>\n <th>2024E</th>\n <th>2025E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>营业收入</td>\n <td>8774.23</td>\n <td>10888.60</td>\n <td>13147.88</td>\n <td>16972.29</td>\n</tr>\n<tr>\n <td>营业成本</td>\n <td>6706.94</td>\n <td>8488.58</td>\n <td>10313.11</td>\n <td>13502.99</td>\n</tr>\n<tr>\n <td>营业税金及附加</td>\n <td>50.50</td>\n <td>58.84</td>\n <td>65.74</td>\n <td>83.16</td>\n</tr>\n<tr>\n <td>营业费用</td>\n <td>121.70</td>\n <td>145.89</td>\n <td>164.35</td>\n <td>203.67</td>\n</tr>\n<tr>\n <td>管理费用</td>\n <td>421.14</td>\n <td>511.76</td>\n <td>565.36</td>\n <td>678.89</td>\n</tr>\n<tr>\n <td>财务费用</td>\n <td>338.48</td>\n <td>401.45</td>\n <td>431.61</td>\n <td>461.35</td>\n</tr>\n<tr>\n <td>资产减值损失</td>\n <td>-31.50</td>\n <td>0.00</td>\n <td>0.00</td>\n <td>0.00</td>\n</tr>\n<tr>\n <td>公允价值变动收益</td>\n <td>-17.91</td>\n <td>0.00</td>\n <td>0.00</td>\n <td>0.00</td>\n</tr>\n<tr>\n <td>投资净收益</td>\n <td>71.41</td>\n <td>101.62</td>\n <td>125.19</td>\n <td>156.62</td>\n</tr>\n<tr>\n <td>营业利润</td>\n <td>835.40</td>\n <td>1082.27</td>\n <td>1446.21</td>\n <td>1881.24</td>\n</tr>\n<tr>\n <td>营业外收入</td>\n <td>4.09</td>\n <td>0.00</td>\n <td>0.00</td>\n <td>0.00</td>\n</tr>\n<tr>\n <td>营业外支出</td>\n <td>10.56</td>\n <td>0.00</td>\n <td>0.00</td>\n <td>0.00</td>\n</tr>\n<tr>\n <td>利润总额</td>\n <td>828.93</td>\n <td>1082.27</td>\n <td>1446.21</td>\n <td>1881.24</td>\n</tr>\n<tr>\n <td>所得税</td>\n <td>84.57</td>\n <td>97.83</td>\n <td>129.26</td>\n <td>172.74</td>\n</tr>\n<tr>\n <td>净利润</td>\n <td>744.36</td>\n <td>984.45</td>\n <td>1316.95</td>\n <td>1708.50</td>\n</tr>\n<tr>\n <td>少数股东损益</td>\n <td>51.88</td>\n <td>68.62</td>\n <td>104.07</td>\n <td>127.05</td>\n</tr>\n<tr>\n <td>归属母公司净利润</td>\n <td>692.48</td>\n <td>915.83</td>\n <td>1212.89</td>\n <td>1581.46</td>\n</tr>\n<tr>\n <td>EBITDA</td>\n <td>1611.39</td>\n <td>1839.10</td>\n <td>2239.74</td>\n <td>2706.54</td>\n</tr>\n<tr>\n <td>EPS（元）</td>\n <td>0.45</td>\n <td>0.60</td>\n <td>0.79</td>\n <td>1.03</td>\n</tr>\n</tbody>\n</table>",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            5
+        ],
+        "pred_position": "",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>利润表(百万元)</td><td>2022A</td><td>2023E</td><td>2024E</td><td>2025E</td></tr><tr><td>营业收入</td><td>8774.23</td><td>10888.60</td><td>13147.88</td><td>16972.29</td></tr><tr><td>营业成本</td><td>6706.94</td><td>8488.58</td><td>10313.11</td><td>13502.99</td></tr><tr><td>营业税金及附加</td><td>50.50</td><td>58.84</td><td>65.74</td><td>83.16</td></tr><tr><td>营业费用</td><td>121.70</td><td>145.89</td><td>164.35</td><td>203.67</td></tr><tr><td>管理费用</td><td>421.14</td><td>511.76</td><td>565.36</td><td>678.89</td></tr><tr><td>财务费用</td><td>338.48</td><td>401.45</td><td>431.61</td><td>461.35</td></tr><tr><td>资产减值损失</td><td>-31.50</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>公允价值变动收益</td><td>-17.91</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>投资净收益</td><td>71.41</td><td>101.62</td><td>125.19</td><td>156.62</td></tr><tr><td>营业利润</td><td>835.40</td><td>1082.27</td><td>1446.21</td><td>1881.24</td></tr><tr><td>营业外收入</td><td>4.09</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>营业外支出</td><td>10.56</td><td>0.00</td><td>0.00</td><td>0.00</td></tr><tr><td>利润总额</td><td>828.93</td><td>1082.27</td><td>1446.21</td><td>1881.24</td></tr><tr><td>所得税</td><td>84.57</td><td>97.83</td><td>129.26</td><td>172.74</td></tr><tr><td>净利润</td><td>744.36</td><td>984.45</td><td>1316.95</td><td>1708.50</td></tr><tr><td>少数股东损益</td><td>51.88</td><td>68.62</td><td>104.07</td><td>127.05</td></tr><tr><td>归属母公司净利润</td><td>692.48</td><td>915.83</td><td>1212.89</td><td>1581.46</td></tr><tr><td>EBITDA</td><td>1611.39</td><td>1839.10</td><td>2239.74</td><td>2706.54</td></tr><tr><td>EPS(元)</td><td>0.45</td><td>0.60</td><td>0.79</td><td>1.03</td></tr></table></body></html>",
+        "norm_pred": "",
+        "gt_category_type": "table",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "edit": 1,
+        "img_id": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "metric": {
+            "TEDS": 0.0,
+            "TEDS_structure_only": 0.0,
+            "Edit_dist": 1.0
+        },
+        "image_name": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "upper_len": 1696,
+        "Edit_num": 1696
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>主要财务比率</th>\n <th>2022A</th>\n <th>2023E</th>\n <th>2024E</th>\n <th>2025E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>营业收入</td>\n <td>12.11%</td>\n <td>24.10%</td>\n <td>20.75%</td>\n <td>29.09%</td>\n</tr>\n<tr>\n <td>营业利润</td>\n <td>-8.05%</td>\n <td>29.55%</td>\n <td>33.63%</td>\n <td>30.08%</td>\n</tr>\n<tr>\n <td>归属母公司净利润</td>\n <td>-4.65%</td>\n <td>32.25%</td>\n <td>32.44%</td>\n <td>30.39%</td>\n</tr>\n<tr>\n <td>毛利率</td>\n <td>23.56%</td>\n <td>22.04%</td>\n <td>21.56%</td>\n <td>20.44%</td>\n</tr>\n<tr>\n <td>净利率</td>\n <td>7.89%</td>\n <td>8.41%</td>\n <td>9.22%</td>\n <td>9.32%</td>\n</tr>\n<tr>\n <td>ROE</td>\n <td>7.80%</td>\n <td>9.42%</td>\n <td>11.10%</td>\n <td>12.64%</td>\n</tr>\n<tr>\n <td>ROIC</td>\n <td>5.49%</td>\n <td>6.24%</td>\n <td>7.23%</td>\n <td>8.14%</td>\n</tr>\n<tr>\n <td>资产负债率</td>\n <td>57.25%</td>\n <td>56.65%</td>\n <td>55.08%</td>\n <td>53.80%</td>\n</tr>\n<tr>\n <td>净负债比率</td>\n <td>133.92%</td>\n <td>130.66%</td>\n <td>122.60%</td>\n <td>116.45%</td>\n</tr>\n<tr>\n <td>流动比率</td>\n <td>1.28</td>\n <td>1.49</td>\n <td>1.67</td>\n <td>1.83</td>\n</tr>\n<tr>\n <td>速动比率</td>\n <td>0.49</td>\n <td>0.44</td>\n <td>0.53</td>\n <td>0.61</td>\n</tr>\n<tr>\n <td>总资产周转率</td>\n <td>0.39</td>\n <td>0.45</td>\n <td>0.50</td>\n <td>0.58</td>\n</tr>\n<tr>\n <td>应收帐款周转率</td>\n <td>5.01</td>\n <td>6.80</td>\n <td>6.90</td>\n <td>7.90</td>\n</tr>\n<tr>\n <td>应付帐款周转率</td>\n <td>3.40</td>\n <td>4.17</td>\n <td>5.16</td>\n <td>6.27</td>\n</tr>\n<tr>\n <td>每股收益</td>\n <td>0.45</td>\n <td>0.60</td>\n <td>0.79</td>\n <td>1.03</td>\n</tr>\n<tr>\n <td>每股经营现金</td>\n <td>-0.29</td>\n <td>-0.23</td>\n <td>0.67</td>\n <td>0.77</td>\n</tr>\n<tr>\n <td>每股净资产</td>\n <td>5.77</td>\n <td>6.32</td>\n <td>7.11</td>\n <td>8.14</td>\n</tr>\n<tr>\n <td>P/E</td>\n <td>17.85</td>\n <td>13.50</td>\n <td>10.19</td>\n <td>7.82</td>\n</tr>\n<tr>\n <td>P/B</td>\n <td>1.39</td>\n <td>1.27</td>\n <td>1.13</td>\n <td>0.99</td>\n</tr>\n<tr>\n <td>EV/EBITDA</td>\n <td>13.88</td>\n <td>11.22</td>\n <td>9.25</td>\n <td>7.66</td>\n</tr>\n<tr>\n <td>P/S</td>\n <td>1.40</td>\n <td>1.13</td>\n <td>0.93</td>\n <td>0.72</td>\n</tr>\n</tbody>\n</table>",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            6
+        ],
+        "pred_position": "",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>主要财务比率</td><td>2022A</td><td>2023E</td><td>2024E</td><td>2025E</td></tr><tr><td>营业收入</td><td>12.11%</td><td>24.10%</td><td>20.75%</td><td>29.09%</td></tr><tr><td>营业利润</td><td>-8.05%</td><td>29.55%</td><td>33.63%</td><td>30.08%</td></tr><tr><td>归属母公司净利润</td><td>-4.65%</td><td>32.25%</td><td>32.44%</td><td>30.39%</td></tr><tr><td>毛利率</td><td>23.56%</td><td>22.04%</td><td>21.56%</td><td>20.44%</td></tr><tr><td>净利率</td><td>7.89%</td><td>8.41%</td><td>9.22%</td><td>9.32%</td></tr><tr><td>ROE</td><td>7.80%</td><td>9.42%</td><td>11.10%</td><td>12.64%</td></tr><tr><td>ROIC</td><td>5.49%</td><td>6.24%</td><td>7.23%</td><td>8.14%</td></tr><tr><td>资产负债率</td><td>57.25%</td><td>56.65%</td><td>55.08%</td><td>53.80%</td></tr><tr><td>净负债比率</td><td>133.92%</td><td>130.66%</td><td>122.60%</td><td>116.45%</td></tr><tr><td>流动比率</td><td>1.28</td><td>1.49</td><td>1.67</td><td>1.83</td></tr><tr><td>速动比率</td><td>0.49</td><td>0.44</td><td>0.53</td><td>0.61</td></tr><tr><td>总资产周转率</td><td>0.39</td><td>0.45</td><td>0.50</td><td>0.58</td></tr><tr><td>应收帐款周转率</td><td>5.01</td><td>6.80</td><td>6.90</td><td>7.90</td></tr><tr><td>应付帐款周转率</td><td>3.40</td><td>4.17</td><td>5.16</td><td>6.27</td></tr><tr><td>每股收益</td><td>0.45</td><td>0.60</td><td>0.79</td><td>1.03</td></tr><tr><td>每股经营现金</td><td>-0.29</td><td>-0.23</td><td>0.67</td><td>0.77</td></tr><tr><td>每股净资产</td><td>5.77</td><td>6.32</td><td>7.11</td><td>8.14</td></tr><tr><td>P/E</td><td>17.85</td><td>13.50</td><td>10.19</td><td>7.82</td></tr><tr><td>P/B</td><td>1.39</td><td>1.27</td><td>1.13</td><td>0.99</td></tr><tr><td>EV/EBITDA</td><td>13.88</td><td>11.22</td><td>9.25</td><td>7.66</td></tr><tr><td>P/S</td><td>1.40</td><td>1.13</td><td>0.93</td><td>0.72</td></tr></table></body></html>",
+        "norm_pred": "",
+        "gt_category_type": "table",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "less_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "edit": 1,
+        "img_id": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "metric": {
+            "TEDS": 0.0,
+            "TEDS_structure_only": 0.0,
+            "Edit_dist": 1.0
+        },
+        "image_name": "eastmoney_6e1cdb75430fe7d7a7757754d163d1a4a8a1c2a3fca38b74a8a2e8df009f2ce0.pdf_2.jpg",
+        "upper_len": 1776,
+        "Edit_num": 1776
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>主要财务指标</th>\n <th>2021A</th>\n <th>2022E</th>\n <th>2023E</th>\n <th>2024E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>营业收入</td>\n <td>12753</td>\n <td>11204</td>\n <td>12573</td>\n <td>13436</td>\n</tr>\n<tr>\n <td>收入同比（%）</td>\n <td>10.6%</td>\n <td>-12.1%</td>\n <td>12.2%</td>\n <td>6.9%</td>\n</tr>\n<tr>\n <td>归属母公司净利润</td>\n <td>1340</td>\n <td>1107</td>\n <td>1339</td>\n <td>1459</td>\n</tr>\n<tr>\n <td>净利润同比（%）</td>\n <td>295.6%</td>\n <td>-17.4%</td>\n <td>21.0%</td>\n <td>8.9%</td>\n</tr>\n<tr>\n <td>毛利率（%)</td>\n <td>42.1%</td>\n <td>37.5%</td>\n <td>38.8%</td>\n <td>39.7%</td>\n</tr>\n<tr>\n <td>ROE(%)</td>\n <td>6.9%</td>\n <td>5.5%</td>\n <td>6.3%</td>\n <td>6.4%</td>\n</tr>\n<tr>\n <td>每股收益（元)</td>\n <td>1.36</td>\n <td>0.98</td>\n <td>1.18</td>\n <td>1.29</td>\n</tr>\n<tr>\n <td>P/E</td>\n <td>19.79</td>\n <td>23.52</td>\n <td>19.44</td>\n <td>17.84</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>主要财务指标</td><td>2021A</td><td>2022E</td><td>2023E</td><td>2024E</td></tr><tr><td>营业收入</td><td>12753</td><td>11204</td><td>12573</td><td>13436</td></tr><tr><td>收入同比(%)</td><td>10.6%</td><td>-12.1%</td><td>12.2%</td><td>6.9%</td></tr><tr><td>归属母公司净利润</td><td>1340</td><td>1107</td><td>1339</td><td>1459</td></tr><tr><td>净利润同比(%)</td><td>295.6%</td><td>-17.4%</td><td>21.0%</td><td>8.9%</td></tr><tr><td>毛利率(%)</td><td>42.1%</td><td>37.5%</td><td>38.8%</td><td>39.7%</td></tr><tr><td>ROE(%)</td><td>6.9%</td><td>5.5%</td><td>6.3%</td><td>6.4%</td></tr><tr><td>每股收益(元)</td><td>1.36</td><td>0.98</td><td>1.18</td><td>1.29</td></tr><tr><td>P/E</td><td>19.79</td><td>23.52</td><td>19.44</td><td>17.84</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            8
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": true,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n    <tr>\n    <th>主要财务指标</th>\n    <th>2021A</th>\n    <th>2022E</th>\n    <th>2023E</th>\n    <th>2024E</th>\n    </tr>\n    <tr>\n    <td>营业收入</td>\n    <td>12753</td>\n    <td>11204</td>\n    <td>12753</td>\n    <td>13436</td>\n    </tr>\n    <tr>\n    <td>收入同比 (%)</td>\n    <td>10.6%</td>\n    <td>-12.1%</td>\n    <td>12.2%</td>\n    <td>5.3%</td>\n    </tr>\n    <tr>\n    <td>归属母公司净利润</td>\n    <td>1340</td>\n    <td>1107</td>\n    <td>1339</td>\n    <td>1459</td>\n    </tr>\n    <tr>\n    <td>净利润同比 (%)</td>\n    <td>295.6%</td>\n    <td>-17.4%</td>\n    <td>21.0%</td>\n    <td>8.9%</td>\n    </tr>\n    <tr>\n    <td>毛利率 (%)</td>\n    <td>42.1%</td>\n    <td>37.5%</td>\n    <td>38.8%</td>\n    <td>39.7%</td>\n    </tr>\n    <tr>\n    <td>ROE (%)</td>\n    <td>6.9%</td>\n    <td>5.5%</td>\n    <td>6.3%</td>\n    <td>6.4%</td>\n    </tr>\n    <tr>\n    <td>每股收益 (元)</td>\n    <td>1.36</td>\n    <td>0.98</td>\n    <td>1.18</td>\n    <td>1.29</td>\n    </tr>\n    <tr>\n    <td>P/E</td>\n    <td>19.79</td>\n    <td>23.52</td>\n    <td>19.44</td>\n    <td>17.84</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>主要财务指标</td><td>2021A</td><td>2022E</td><td>2023E</td><td>2024E</td></tr><tr><td>营业收入</td><td>12753</td><td>11204</td><td>12753</td><td>13436</td></tr><tr><td>收入同比 (%)</td><td>10.6%</td><td>-12.1%</td><td>12.2%</td><td>5.3%</td></tr><tr><td>归属母公司净利润</td><td>1340</td><td>1107</td><td>1339</td><td>1459</td></tr><tr><td>净利润同比 (%)</td><td>295.6%</td><td>-17.4%</td><td>21.0%</td><td>8.9%</td></tr><tr><td>毛利率 (%)</td><td>42.1%</td><td>37.5%</td><td>38.8%</td><td>39.7%</td></tr><tr><td>ROE (%)</td><td>6.9%</td><td>5.5%</td><td>6.3%</td><td>6.4%</td></tr><tr><td>每股收益 (元)</td><td>1.36</td><td>0.98</td><td>1.18</td><td>1.29</td></tr><tr><td>P/E</td><td>19.79</td><td>23.52</td><td>19.44</td><td>17.84</td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.23135755258126195,
+        "img_id": "eastmoney_bef4bcf5f2faff08a78d49945e4ac8983320f367c450720c87ab8cc6ed5726e4.pdf_1.jpg",
+        "metric": {
+            "TEDS": 0.9713550852439742,
+            "TEDS_structure_only": 1.0,
+            "Edit_dist": 0.01171875
+        },
+        "image_name": "eastmoney_bef4bcf5f2faff08a78d49945e4ac8983320f367c450720c87ab8cc6ed5726e4.pdf_1.jpg",
+        "upper_len": 768,
+        "Edit_num": 9
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>人民币亿</th>\n <th>2020A</th>\n <th>2021A</th>\n <th>2022E</th>\n <th>2023E</th>\n <th>2024E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>利润表</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>净利息收入</td>\n <td>2,533.78</td>\n <td>2,693.82</td>\n <td>2,837.71</td>\n <td>3,041.79</td>\n <td>3,284.97</td>\n</tr>\n<tr>\n <td>手续费及佣金</td>\n <td>164.95</td>\n <td>220.07</td>\n <td>300.85</td>\n <td>387.35</td>\n <td>496.56</td>\n</tr>\n<tr>\n <td>其他收入</td>\n <td>163.48</td>\n <td>273.75</td>\n <td>356.44</td>\n <td>405.53</td>\n <td>458.25</td>\n</tr>\n<tr>\n <td>营业收入</td>\n <td>2,862.21</td>\n <td>3,187.64</td>\n <td>3,495.00</td>\n <td>3,834.68</td>\n <td>4,239.78</td>\n</tr>\n<tr>\n <td>营业税及附加</td>\n <td>21.87</td>\n <td>24.68</td>\n <td>26.93</td>\n <td>29.51</td>\n <td>32.72</td>\n</tr>\n<tr>\n <td>业务管理费</td>\n <td>1,656.49</td>\n <td>1,881.02</td>\n <td>2,085.05</td>\n <td>2,311.20</td>\n <td>2,551.93</td>\n</tr>\n<tr>\n <td>其他业务成本</td>\n <td>1.92</td>\n <td>1.29</td>\n <td>0.87</td>\n <td>0.98</td>\n <td>0.85</td>\n</tr>\n<tr>\n <td>营业外净收入</td>\n <td>3.79</td>\n <td>0.49</td>\n <td>1.03</td>\n <td>1.77</td>\n <td>0.90</td>\n</tr>\n<tr>\n <td>拔备前利润</td>\n <td>1,185.72</td>\n <td>1,281.14</td>\n <td>1,383.17</td>\n <td>1,494.75</td>\n <td>1,655.17</td>\n</tr>\n<tr>\n <td>计提拨备</td>\n <td>504.17</td>\n <td>466.58</td>\n <td>453.74</td>\n <td>431.32</td>\n <td>427.17</td>\n</tr>\n<tr>\n <td>税前利润</td>\n <td>681.55</td>\n <td>814.56</td>\n <td>929.43</td>\n <td>1,063.44</td>\n <td>1,228.00</td>\n</tr>\n<tr>\n <td>所得税</td>\n <td>38.18</td>\n <td>49.22</td>\n <td>57.47</td>\n <td>65.21</td>\n <td>73.21</td>\n</tr>\n<tr>\n <td>净利润</td>\n <td>643.37</td>\n <td>765.34</td>\n <td>871.96</td>\n <td>998.22</td>\n <td>1,154.79</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>资产负债表</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>贷款</td>\n <td>55,124</td>\n <td>62,372</td>\n <td>69,610</td>\n <td>78,330</td>\n <td>86,546</td>\n</tr>\n<tr>\n <td>同业资产</td>\n <td>5,520</td>\n <td>6,361</td>\n <td>7,077</td>\n <td>7,821</td>\n <td>8,626</td>\n</tr>\n<tr>\n <td>证券投资</td>\n <td>39,088</td>\n <td>43,367</td>\n <td>47,692</td>\n <td>51,334</td>\n <td>56,429</td>\n</tr>\n<tr>\n <td>生息资产</td>\n <td>111,931</td>\n <td>123,995</td>\n <td>138,976</td>\n <td>153,335</td>\n <td>168,976</td>\n</tr>\n<tr>\n <td>非生息资产</td>\n <td>1,602</td>\n <td>1,884</td>\n <td>241</td>\n <td>1,516</td>\n <td>3,293</td>\n</tr>\n<tr>\n <td>总资产</td>\n <td>113,533</td>\n <td>125,879</td>\n <td>139,217</td>\n <td>154,851</td>\n <td>172,269</td>\n</tr>\n<tr>\n <td>存款</td>\n <td>103,580</td>\n <td>113,541</td>\n <td>126,375</td>\n <td>140,660</td>\n <td>156,560</td>\n</tr>\n<tr>\n <td>其他计息负债</td>\n <td>2,343</td>\n <td>3,404</td>\n <td>3,568</td>\n <td>3,765</td>\n <td>3,975</td>\n</tr>\n<tr>\n <td>非计息负债</td>\n <td>880</td>\n <td>978</td>\n <td>1,024</td>\n <td>1,109</td>\n <td>1,198</td>\n</tr>\n<tr>\n <td>总负债</td>\n <td>106,803</td>\n <td>117,923</td>\n <td>130,967</td>\n <td>145,534</td>\n <td>161,733</td>\n</tr>\n<tr>\n <td>母公司所有者权益</td>\n <td>6,718</td>\n <td>7,941</td>\n <td>8,234</td>\n <td>9,298</td>\n <td>10,513</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>利率指标</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>净息差(NIM)</td>\n <td>2.25%</td>\n <td>2.17%</td>\n <td>2.05%</td>\n <td>1.92%</td>\n <td>1.94%</td>\n</tr>\n<tr>\n <td>净利差(Spread)</td>\n <td>2.14%</td>\n <td>2.05%</td>\n <td>1.93%</td>\n <td>1.78%</td>\n <td>1.82%</td>\n</tr>\n<tr>\n <td>生息资产收益率</td>\n <td>3.69%</td>\n <td>3.63%</td>\n <td>3.51%</td>\n <td>3.49%</td>\n <td>3.49%</td>\n</tr>\n<tr>\n <td>计息负债成本率</td>\n <td>1.55%</td>\n <td>1.58%</td>\n <td>1.58%</td>\n <td>1.66%</td>\n <td>1.67%</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>盈利能力</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>信贷成本</td>\n <td>0.89%</td>\n <td>0.73%</td>\n <td>0.63%</td>\n <td>0.55%</td>\n <td>0.50%</td>\n</tr>\n<tr>\n <td>成本收入比</td>\n <td>58.71%</td>\n <td>59.82%</td>\n <td>60.45%</td>\n <td>61.07%</td>\n <td>60.98%</td>\n</tr>\n<tr>\n <td>ROAA</td>\n <td>0.57%</td>\n <td>0.62%</td>\n <td>0.64%</td>\n <td>0.66%</td>\n <td>0.68%</td>\n</tr>\n<tr>\n <td>ROAE</td>\n <td>9.68%</td>\n <td>9.74%</td>\n <td>10.63%</td>\n <td>10.83%</td>\n <td>11.11%</td>\n</tr>\n<tr>\n <td>拨备前利润率</td>\n <td>41.43%</td>\n <td>40.19%</td>\n <td>39.58%</td>\n <td>38.98%</td>\n <td>39.04%</td>\n</tr>\n<tr>\n <td>所得税有效税率</td>\n <td>5.60%</td>\n <td>6.04%</td>\n <td>6.18%</td>\n <td>6.13%</td>\n <td>5.96%</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>人民币亿</td><td>2020A</td><td>2021A</td><td>2022E</td><td>2023E</td><td>2024E</td></tr><tr><td>利润表</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>净利息收入</td><td>2,533.78</td><td>2,693.82</td><td>2,837.71</td><td>3,041.79</td><td>3,284.97</td></tr><tr><td>手续费及佣金</td><td>164.95</td><td>220.07</td><td>300.85</td><td>387.35</td><td>496.56</td></tr><tr><td>其他收入</td><td>163.48</td><td>273.75</td><td>356.44</td><td>405.53</td><td>458.25</td></tr><tr><td>营业收入</td><td>2,862.21</td><td>3,187.64</td><td>3,495.00</td><td>3,834.68</td><td>4,239.78</td></tr><tr><td>营业税及附加</td><td>21.87</td><td>24.68</td><td>26.93</td><td>29.51</td><td>32.72</td></tr><tr><td>业务管理费</td><td>1,656.49</td><td>1,881.02</td><td>2,085.05</td><td>2,311.20</td><td>2,551.93</td></tr><tr><td>其他业务成本</td><td>1.92</td><td>1.29</td><td>0.87</td><td>0.98</td><td>0.85</td></tr><tr><td>营业外净收入</td><td>3.79</td><td>0.49</td><td>1.03</td><td>1.77</td><td>0.90</td></tr><tr><td>拔备前利润</td><td>1,185.72</td><td>1,281.14</td><td>1,383.17</td><td>1,494.75</td><td>1,655.17</td></tr><tr><td>计提拨备</td><td>504.17</td><td>466.58</td><td>453.74</td><td>431.32</td><td>427.17</td></tr><tr><td>税前利润</td><td>681.55</td><td>814.56</td><td>929.43</td><td>1,063.44</td><td>1,228.00</td></tr><tr><td>所得税</td><td>38.18</td><td>49.22</td><td>57.47</td><td>65.21</td><td>73.21</td></tr><tr><td>净利润</td><td>643.37</td><td>765.34</td><td>871.96</td><td>998.22</td><td>1,154.79</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>资产负债表</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>贷款</td><td>55,124</td><td>62,372</td><td>69,610</td><td>78,330</td><td>86,546</td></tr><tr><td>同业资产</td><td>5,520</td><td>6,361</td><td>7,077</td><td>7,821</td><td>8,626</td></tr><tr><td>证券投资</td><td>39,088</td><td>43,367</td><td>47,692</td><td>51,334</td><td>56,429</td></tr><tr><td>生息资产</td><td>111,931</td><td>123,995</td><td>138,976</td><td>153,335</td><td>168,976</td></tr><tr><td>非生息资产</td><td>1,602</td><td>1,884</td><td>241</td><td>1,516</td><td>3,293</td></tr><tr><td>总资产</td><td>113,533</td><td>125,879</td><td>139,217</td><td>154,851</td><td>172,269</td></tr><tr><td>存款</td><td>103,580</td><td>113,541</td><td>126,375</td><td>140,660</td><td>156,560</td></tr><tr><td>其他计息负债</td><td>2,343</td><td>3,404</td><td>3,568</td><td>3,765</td><td>3,975</td></tr><tr><td>非计息负债</td><td>880</td><td>978</td><td>1,024</td><td>1,109</td><td>1,198</td></tr><tr><td>总负债</td><td>106,803</td><td>117,923</td><td>130,967</td><td>145,534</td><td>161,733</td></tr><tr><td>母公司所有者权益</td><td>6,718</td><td>7,941</td><td>8,234</td><td>9,298</td><td>10,513</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>利率指标</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>净息差(NIM)</td><td>2.25%</td><td>2.17%</td><td>2.05%</td><td>1.92%</td><td>1.94%</td></tr><tr><td>净利差(Spread)</td><td>2.14%</td><td>2.05%</td><td>1.93%</td><td>1.78%</td><td>1.82%</td></tr><tr><td>生息资产收益率</td><td>3.69%</td><td>3.63%</td><td>3.51%</td><td>3.49%</td><td>3.49%</td></tr><tr><td>计息负债成本率</td><td>1.55%</td><td>1.58%</td><td>1.58%</td><td>1.66%</td><td>1.67%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>盈利能力</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>信贷成本</td><td>0.89%</td><td>0.73%</td><td>0.63%</td><td>0.55%</td><td>0.50%</td></tr><tr><td>成本收入比</td><td>58.71%</td><td>59.82%</td><td>60.45%</td><td>61.07%</td><td>60.98%</td></tr><tr><td>ROAA</td><td>0.57%</td><td>0.62%</td><td>0.64%</td><td>0.66%</td><td>0.68%</td></tr><tr><td>ROAE</td><td>9.68%</td><td>9.74%</td><td>10.63%</td><td>10.83%</td><td>11.11%</td></tr><tr><td>拨备前利润率</td><td>41.43%</td><td>40.19%</td><td>39.58%</td><td>38.98%</td><td>39.04%</td></tr><tr><td>所得税有效税率</td><td>5.60%</td><td>6.04%</td><td>6.18%</td><td>6.13%</td><td>5.96%</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            2
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n    <tr>\n    <td>人民币亿</td>\n    <td>2020A</td>\n    <td>2021A</td>\n    <td>2022E</td>\n    <td>2023E</td>\n    <td>2024E</td>\n    </tr>\n    <tr>\n    <td>利润表</td>\n    <td colspan=\"5\"></td>\n    </tr>\n    <tr>\n    <td>净利息收入</td>\n    <td>2,533.78</td>\n    <td>2,693.82</td>\n    <td>2,871.37</td>\n    <td>3,041.79</td>\n    <td>3,284.97</td>\n    </tr>\n    <tr>\n    <td>手续费收入</td>\n    <td>164.95</td>\n    <td>220.07</td>\n    <td>300.85</td>\n    <td>387.35</td>\n    <td>496.56</td>\n    </tr>\n    <tr>\n    <td>其他营业收入</td>\n    <td>163.48</td>\n    <td>273.75</td>\n    <td>364.44</td>\n    <td>405.53</td>\n    <td>458.25</td>\n    </tr>\n    <tr>\n    <td>营业收入</td>\n    <td>2,862.21</td>\n    <td>3,187.64</td>\n    <td>3,536.01</td>\n    <td>3,834.68</td>\n    <td>4,239.78</td>\n    </tr>\n    <tr>\n    <td>营业支出</td>\n    <td>2,840.39</td>\n    <td>3,159.93</td>\n    <td>3,501.92</td>\n    <td>3,791.29</td>\n    <td>4,232.72</td>\n    </tr>\n    <tr>\n    <td>营业利润</td>\n    <td>21.87</td>\n    <td>24.68</td>\n    <td>34.09</td>\n    <td>43.39</td>\n    <td>7.06</td>\n    </tr>\n    <tr>\n    <td>营业外净收入</td>\n    <td>1.29</td>\n    <td>0.87</td>\n    <td>0.98</td>\n    <td>0.85</td>\n    <td>0.85</td>\n    </tr>\n    <tr>\n    <td>税前利润</td>\n    <td>1,656.49</td>\n    <td>1,881.08</td>\n    <td>2,085.05</td>\n    <td>2,311.80</td>\n    <td>2,551.93</td>\n    </tr>\n    <tr>\n    <td>所得税</td>\n    <td>1,185.72</td>\n    <td>1,281.13</td>\n    <td>1,387.17</td>\n    <td>1,494.75</td>\n    <td>1,655.17</td>\n    </tr>\n    <tr>\n    <td>净利润</td>\n    <td>504.17</td>\n    <td>466.55</td>\n    <td>453.74</td>\n    <td>431.32</td>\n    <td>427.17</td>\n    </tr>\n    <tr>\n    <td>归母净利润</td>\n    <td>514.65</td>\n    <td>814.56</td>\n    <td>929.43</td>\n    <td>1,063.44</td>\n    <td>1,228.00</td>\n    </tr>\n    <tr>\n    <td>扣非净利润</td>\n    <td>38.18</td>\n    <td>49.22</td>\n    <td>47.27</td>\n    <td>65.21</td>\n    <td>73.21</td>\n    </tr>\n    <tr>\n    <td>每股收益</td>\n    <td>643.37</td>\n    <td>765.34</td>\n    <td>871.96</td>\n    <td>998.22</td>\n    <td>1,154.79</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>人民币亿</td><td>2020A</td><td>2021A</td><td>2022E</td><td>2023E</td><td>2024E</td></tr><tr><td>利润表</td><td colspan=\"5\"></td></tr><tr><td>净利息收入</td><td>2,533.78</td><td>2,693.82</td><td>2,871.37</td><td>3,041.79</td><td>3,284.97</td></tr><tr><td>手续费收入</td><td>164.95</td><td>220.07</td><td>300.85</td><td>387.35</td><td>496.56</td></tr><tr><td>其他营业收入</td><td>163.48</td><td>273.75</td><td>364.44</td><td>405.53</td><td>458.25</td></tr><tr><td>营业收入</td><td>2,862.21</td><td>3,187.64</td><td>3,536.01</td><td>3,834.68</td><td>4,239.78</td></tr><tr><td>营业支出</td><td>2,840.39</td><td>3,159.93</td><td>3,501.92</td><td>3,791.29</td><td>4,232.72</td></tr><tr><td>营业利润</td><td>21.87</td><td>24.68</td><td>34.09</td><td>43.39</td><td>7.06</td></tr><tr><td>营业外净收入</td><td>1.29</td><td>0.87</td><td>0.98</td><td>0.85</td><td>0.85</td></tr><tr><td>税前利润</td><td>1,656.49</td><td>1,881.08</td><td>2,085.05</td><td>2,311.80</td><td>2,551.93</td></tr><tr><td>所得税</td><td>1,185.72</td><td>1,281.13</td><td>1,387.17</td><td>1,494.75</td><td>1,655.17</td></tr><tr><td>净利润</td><td>504.17</td><td>466.55</td><td>453.74</td><td>431.32</td><td>427.17</td></tr><tr><td>归母净利润</td><td>514.65</td><td>814.56</td><td>929.43</td><td>1,063.44</td><td>1,228.00</td></tr><tr><td>扣非净利润</td><td>38.18</td><td>49.22</td><td>47.27</td><td>65.21</td><td>73.21</td></tr><tr><td>每股收益</td><td>643.37</td><td>765.34</td><td>871.96</td><td>998.22</td><td>1,154.79</td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.6840463458110517,
+        "img_id": "eastmoney_ea59610b9b1a8f0df46f7a89da1116cbf256c772e1148f26017991e28c8bca21.pdf_18.jpg",
+        "metric": {
+            "TEDS": 0.2536848072562359,
+            "TEDS_structure_only": 0.34013605442176875,
+            "Edit_dist": 0.6617986164488855
+        },
+        "image_name": "eastmoney_ea59610b9b1a8f0df46f7a89da1116cbf256c772e1148f26017991e28c8bca21.pdf_18.jpg",
+        "upper_len": 3903,
+        "Edit_num": 2583
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th>财务指标</th>\n <th>2020A</th>\n <th>2021A</th>\n <th>2022E</th>\n <th>2023E</th>\n <th>2024E</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>收入增长</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>净利润增速</td>\n <td>5.42%</td>\n <td>18.96%</td>\n <td>13.93%</td>\n <td>14.48%</td>\n <td>15.68%</td>\n</tr>\n<tr>\n <td>拔备前利润增速</td>\n <td>-0.47%</td>\n <td>8.05%</td>\n <td>7.96%</td>\n <td>8.07%</td>\n <td>10.73%</td>\n</tr>\n<tr>\n <td>税前利润增速</td>\n <td>6.93%</td>\n <td>19.52%</td>\n <td>14.10%</td>\n <td>14.42%</td>\n <td>15.47%</td>\n</tr>\n<tr>\n <td>营业收入增速</td>\n <td>3.40%</td>\n <td>11.37%</td>\n <td>9.64%</td>\n <td>9.72%</td>\n <td>10.56%</td>\n</tr>\n<tr>\n <td>净利息收入增速</td>\n <td>5.48%</td>\n <td>6.32%</td>\n <td>5.34%</td>\n <td>7.19%</td>\n <td>7.99%</td>\n</tr>\n<tr>\n <td>手续费及佣金增速</td>\n <td>-3.45%</td>\n <td>33.42%</td>\n <td>36.70%</td>\n <td>28.75%</td>\n <td>28.19%</td>\n</tr>\n<tr>\n <td>业务管理费用增速</td>\n <td>5.78%</td>\n <td>13.55%</td>\n <td>10.85%</td>\n <td>10.85%</td>\n <td>10.42%</td>\n</tr>\n<tr>\n <td>其他业务成本增速</td>\n <td>-55.45%</td>\n <td>-32.81%</td>\n <td>-32.17%</td>\n <td>12.45%</td>\n <td>-13.82%</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>规模增长</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>生息资产增速</td>\n <td>11.02%</td>\n <td>10.78%</td>\n <td>12.08%</td>\n <td>10.33%</td>\n <td>10.20%</td>\n</tr>\n<tr>\n <td>贷款增速</td>\n <td>14.65%</td>\n <td>13.15%</td>\n <td>11.60%</td>\n <td>12.53%</td>\n <td>10.49%</td>\n</tr>\n<tr>\n <td>同业资产增速</td>\n <td>23.95%</td>\n <td>15.23%</td>\n <td>11.26%</td>\n <td>10.51%</td>\n <td>10.30%</td>\n</tr>\n<tr>\n <td>证券投资增速</td>\n <td>6.39%</td>\n <td>10.95%</td>\n <td>9.97%</td>\n <td>7.64%</td>\n <td>9.92%</td>\n</tr>\n<tr>\n <td>其他资产增速</td>\n <td>19.11%</td>\n <td>17.62%</td>\n <td>-87.20%</td>\n <td>528.94%</td>\n <td>117.19%</td>\n</tr>\n<tr>\n <td>计息负债增速</td>\n <td>10.44%</td>\n <td>10.41%</td>\n <td>11.11%</td>\n <td>11.14%</td>\n <td>11.15%</td>\n</tr>\n<tr>\n <td>存款增速</td>\n <td>11.21%</td>\n <td>9.62%</td>\n <td>11.30%</td>\n <td>11.30%</td>\n <td>11.30%</td>\n</tr>\n<tr>\n <td>同业负债增速</td>\n <td>-17.42%</td>\n <td>63.64%</td>\n <td>6.30%</td>\n <td>7.89%</td>\n <td>7.89%</td>\n</tr>\n<tr>\n <td>归属母公司权益增速</td>\n <td>23.52%</td>\n <td>18.20%</td>\n <td>3.69%</td>\n <td>12.92%</td>\n <td>13.07%</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>资产质量</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>不良贷款率</td>\n <td>0.88%</td>\n <td>0.82%</td>\n <td>0.85%</td>\n <td>0.85%</td>\n <td>0.84%</td>\n</tr>\n<tr>\n <td>不良贷款净生成率</td>\n <td>1.22%</td>\n <td>1.25%</td>\n <td>10.04%</td>\n <td>10.06%</td>\n <td>9.49%</td>\n</tr>\n<tr>\n <td>拔备覆盖率</td>\n <td>408.06%</td>\n <td>418.61%</td>\n <td>401.69%</td>\n <td>366.84%</td>\n <td>342.74%</td>\n</tr>\n<tr>\n <td>拨贷比</td>\n <td>3.59%</td>\n <td>3.43%</td>\n <td>3.29%</td>\n <td>2.93%</td>\n <td>2.66%</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>资本</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>资本充足率</td>\n <td>13.88%</td>\n <td>14.78%</td>\n <td>14.42%</td>\n <td>13.87%</td>\n <td>13.42%</td>\n</tr>\n<tr>\n <td>核心资本充足率</td>\n <td>9.60%</td>\n <td>9.92%</td>\n <td>9.79%</td>\n <td>9.72%</td>\n <td>9.68%</td>\n</tr>\n<tr>\n <td>杠杆倍数</td>\n <td>5.90%</td>\n <td>6.30%</td>\n <td>5.90%</td>\n <td>5.76%</td>\n <td>5.65%</td>\n</tr>\n<tr>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>每股指标</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>EPS(摊薄）</td>\n <td>0.74</td>\n <td>0.82</td>\n <td>0.94</td>\n <td>1.08</td>\n <td>1.25</td>\n</tr>\n<tr>\n <td>每股拨备前利润(元)</td>\n <td>0.42</td>\n <td>0.86</td>\n <td>1.21</td>\n <td>1.38</td>\n <td>0.42</td>\n</tr>\n<tr>\n <td>BVPS</td>\n <td>7.72</td>\n <td>8.60</td>\n <td>8.91</td>\n <td>10.06</td>\n <td>11.38</td>\n</tr>\n<tr>\n <td>每股总资产(元)</td>\n <td>133.27</td>\n <td>135.33</td>\n <td>137.40</td>\n <td>131.70</td>\n <td>137.53</td>\n</tr>\n<tr>\n <td>P/E</td>\n <td>6.11</td>\n <td>5.47</td>\n <td>4.79</td>\n <td>4.19</td>\n <td>3.62</td>\n</tr>\n<tr>\n <td>P/PPOP</td>\n <td>10.72</td>\n <td>5.23</td>\n <td>3.73</td>\n <td>3.28</td>\n <td>10.73</td>\n</tr>\n<tr>\n <td>P/B</td>\n <td>0.58</td>\n <td>0.52</td>\n <td>0.51</td>\n <td>0.45</td>\n <td>0.40</td>\n</tr>\n<tr>\n <td>P/A</td>\n <td>0.03</td>\n <td>0.03</td>\n <td>0.03</td>\n <td>0.03</td>\n <td>0.03</td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td>财务指标</td><td>2020A</td><td>2021A</td><td>2022E</td><td>2023E</td><td>2024E</td></tr><tr><td>收入增长</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>净利润增速</td><td>5.42%</td><td>18.96%</td><td>13.93%</td><td>14.48%</td><td>15.68%</td></tr><tr><td>拔备前利润增速</td><td>-0.47%</td><td>8.05%</td><td>7.96%</td><td>8.07%</td><td>10.73%</td></tr><tr><td>税前利润增速</td><td>6.93%</td><td>19.52%</td><td>14.10%</td><td>14.42%</td><td>15.47%</td></tr><tr><td>营业收入增速</td><td>3.40%</td><td>11.37%</td><td>9.64%</td><td>9.72%</td><td>10.56%</td></tr><tr><td>净利息收入增速</td><td>5.48%</td><td>6.32%</td><td>5.34%</td><td>7.19%</td><td>7.99%</td></tr><tr><td>手续费及佣金增速</td><td>-3.45%</td><td>33.42%</td><td>36.70%</td><td>28.75%</td><td>28.19%</td></tr><tr><td>业务管理费用增速</td><td>5.78%</td><td>13.55%</td><td>10.85%</td><td>10.85%</td><td>10.42%</td></tr><tr><td>其他业务成本增速</td><td>-55.45%</td><td>-32.81%</td><td>-32.17%</td><td>12.45%</td><td>-13.82%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>规模增长</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>生息资产增速</td><td>11.02%</td><td>10.78%</td><td>12.08%</td><td>10.33%</td><td>10.20%</td></tr><tr><td>贷款增速</td><td>14.65%</td><td>13.15%</td><td>11.60%</td><td>12.53%</td><td>10.49%</td></tr><tr><td>同业资产增速</td><td>23.95%</td><td>15.23%</td><td>11.26%</td><td>10.51%</td><td>10.30%</td></tr><tr><td>证券投资增速</td><td>6.39%</td><td>10.95%</td><td>9.97%</td><td>7.64%</td><td>9.92%</td></tr><tr><td>其他资产增速</td><td>19.11%</td><td>17.62%</td><td>-87.20%</td><td>528.94%</td><td>117.19%</td></tr><tr><td>计息负债增速</td><td>10.44%</td><td>10.41%</td><td>11.11%</td><td>11.14%</td><td>11.15%</td></tr><tr><td>存款增速</td><td>11.21%</td><td>9.62%</td><td>11.30%</td><td>11.30%</td><td>11.30%</td></tr><tr><td>同业负债增速</td><td>-17.42%</td><td>63.64%</td><td>6.30%</td><td>7.89%</td><td>7.89%</td></tr><tr><td>归属母公司权益增速</td><td>23.52%</td><td>18.20%</td><td>3.69%</td><td>12.92%</td><td>13.07%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>资产质量</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>不良贷款率</td><td>0.88%</td><td>0.82%</td><td>0.85%</td><td>0.85%</td><td>0.84%</td></tr><tr><td>不良贷款净生成率</td><td>1.22%</td><td>1.25%</td><td>10.04%</td><td>10.06%</td><td>9.49%</td></tr><tr><td>拔备覆盖率</td><td>408.06%</td><td>418.61%</td><td>401.69%</td><td>366.84%</td><td>342.74%</td></tr><tr><td>拨贷比</td><td>3.59%</td><td>3.43%</td><td>3.29%</td><td>2.93%</td><td>2.66%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>资本</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>资本充足率</td><td>13.88%</td><td>14.78%</td><td>14.42%</td><td>13.87%</td><td>13.42%</td></tr><tr><td>核心资本充足率</td><td>9.60%</td><td>9.92%</td><td>9.79%</td><td>9.72%</td><td>9.68%</td></tr><tr><td>杠杆倍数</td><td>5.90%</td><td>6.30%</td><td>5.90%</td><td>5.76%</td><td>5.65%</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>每股指标</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>EPS(摊薄)</td><td>0.74</td><td>0.82</td><td>0.94</td><td>1.08</td><td>1.25</td></tr><tr><td>每股拨备前利润(元)</td><td>0.42</td><td>0.86</td><td>1.21</td><td>1.38</td><td>0.42</td></tr><tr><td>BVPS</td><td>7.72</td><td>8.60</td><td>8.91</td><td>10.06</td><td>11.38</td></tr><tr><td>每股总资产(元)</td><td>133.27</td><td>135.33</td><td>137.40</td><td>131.70</td><td>137.53</td></tr><tr><td>P/E</td><td>6.11</td><td>5.47</td><td>4.79</td><td>4.19</td><td>3.62</td></tr><tr><td>P/PPOP</td><td>10.72</td><td>5.23</td><td>3.73</td><td>3.28</td><td>10.73</td></tr><tr><td>P/B</td><td>0.58</td><td>0.52</td><td>0.51</td><td>0.45</td><td>0.40</td></tr><tr><td>P/A</td><td>0.03</td><td>0.03</td><td>0.03</td><td>0.03</td><td>0.03</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            3
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            7
+        ],
+        "pred": "<table>\n    <tr>\n    <td>EPS(摊薄)</td>\n    <td>0.74</td>\n    <td>0.82</td>\n    <td>0.94</td>\n    <td>1.08</td>\n    <td>1.25</td>\n    </tr>\n    <tr>\n    <td>每股股息(人民币)</td>\n    <td>0.42</td>\n    <td>0.86</td>\n    <td>1.21</td>\n    <td>1.38</td>\n    <td>0.42</td>\n    </tr>\n    <tr>\n    <td>BVPS</td>\n    <td>7.72</td>\n    <td>8.60</td>\n    <td>8.91</td>\n    <td>10.11</td>\n    <td>11.38</td>\n    </tr>\n    <tr>\n    <td>每股总资产(元)</td>\n    <td>133.27</td>\n    <td>135.43</td>\n    <td>137.40</td>\n    <td>131.70</td>\n    <td>137.33</td>\n    </tr>\n    <tr>\n    <td>P/E</td>\n    <td>6.11</td>\n    <td>5.47</td>\n    <td>4.79</td>\n    <td>4.19</td>\n    <td>3.62</td>\n    </tr>\n    <tr>\n    <td>P/POP</td>\n    <td>10.72</td>\n    <td>5.32</td>\n    <td>5.02</td>\n    <td>4.52</td>\n    <td>4.02</td>\n    </tr>\n    <tr>\n    <td>P/B</td>\n    <td>0.58</td>\n    <td>0.52</td>\n    <td>0.47</td>\n    <td>0.45</td>\n    <td>0.42</td>\n    </tr>\n    <tr>\n    <td>P/A</td>\n    <td>0.03</td>\n    <td>0.03</td>\n    <td>0.03</td>\n    <td>0.03</td>\n    <td>0.03</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>EPS(摊薄)</td><td>0.74</td><td>0.82</td><td>0.94</td><td>1.08</td><td>1.25</td></tr><tr><td>每股股息(人民币)</td><td>0.42</td><td>0.86</td><td>1.21</td><td>1.38</td><td>0.42</td></tr><tr><td>BVPS</td><td>7.72</td><td>8.60</td><td>8.91</td><td>10.11</td><td>11.38</td></tr><tr><td>每股总资产(元)</td><td>133.27</td><td>135.43</td><td>137.40</td><td>131.70</td><td>137.33</td></tr><tr><td>P/E</td><td>6.11</td><td>5.47</td><td>4.79</td><td>4.19</td><td>3.62</td></tr><tr><td>P/POP</td><td>10.72</td><td>5.32</td><td>5.02</td><td>4.52</td><td>4.02</td></tr><tr><td>P/B</td><td>0.58</td><td>0.52</td><td>0.47</td><td>0.45</td><td>0.42</td></tr><tr><td>P/A</td><td>0.03</td><td>0.03</td><td>0.03</td><td>0.03</td><td>0.03</td></tr></table></body></html>",
+        "pred_category_type": "html_table",
+        "pred_position": 6182,
+        "edit": 0.7925131248573385,
+        "img_id": "eastmoney_ea59610b9b1a8f0df46f7a89da1116cbf256c772e1148f26017991e28c8bca21.pdf_18.jpg",
+        "metric": {
+            "TEDS": 0.1729591836734694,
+            "TEDS_structure_only": 0.19047619047619047,
+            "Edit_dist": 0.8029504741833509
+        },
+        "image_name": "eastmoney_ea59610b9b1a8f0df46f7a89da1116cbf256c772e1148f26017991e28c8bca21.pdf_18.jpg",
+        "upper_len": 3796,
+        "Edit_num": 3048
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<td>\n<table border=\"1\">\n<thead>\n<tr>\n <td><b>会计年度</b></td>\n <td><b>2021A</b></td>\n <td><b>2022A</b></td>\n <td><b>2023E</b></td>\n <td><b>2024E</b></td>\n <td><b>2025E</b></td>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>营业收入（百万元）</td>\n <td>11,339</td>\n <td>11,008</td>\n <td>15,123</td>\n <td>16,828</td>\n <td>18,396</td>\n</tr>\n<tr>\n <td>YoY(%)</td>\n <td>14.6</td>\n <td>-2.9</td>\n <td>37.4</td>\n <td>11.3</td>\n <td>9.3</td>\n</tr>\n<tr>\n <td>净利润（百万元）</td>\n <td>101</td>\n <td>113</td>\n <td>1,392</td>\n <td>1,991</td>\n <td>2,200</td>\n</tr>\n<tr>\n <td>YoY(%)</td>\n <td>-8.7</td>\n <td>12.8</td>\n <td>1126.8</td>\n <td>43.0</td>\n <td>10.5</td>\n</tr>\n<tr>\n <td>毛利率(%)</td>\n <td>34.2</td>\n <td>33.1</td>\n <td>41.1</td>\n <td>47.6</td>\n <td>47.7</td>\n</tr>\n<tr>\n <td>EPS(摊薄/元)</td>\n <td>0.09</td>\n <td>0.11</td>\n <td>1.30</td>\n <td>1.86</td>\n <td>2.06</td>\n</tr>\n<tr>\n <td>ROE(%)</td>\n <td>1.7</td>\n <td>1.4</td>\n <td>8.7</td>\n <td>11.2</td>\n <td>11.1</td>\n</tr>\n<tr>\n <td>P/E(倍)</td>\n <td>408.4</td>\n <td>362.1</td>\n <td>29.5</td>\n <td>20.6</td>\n <td>18.7</td>\n</tr>\n<tr>\n <td>P/B(倍)</td>\n <td>2.5</td>\n <td>2.5</td>\n <td>2.3</td>\n <td>2.1</td>\n <td>1.9</td>\n</tr>\n<tr>\n <td>净利率(%)</td>\n <td>0.9</td>\n <td>1.0</td>\n <td>9.2</td>\n <td>11.8</td>\n <td>12.0</td>\n</tr>\n</tbody>\n</table></td>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td><b>会计年度</b></td><td><b>2021A</b></td><td><b>2022A</b></td><td><b>2023E</b></td><td><b>2024E</b></td><td><b>2025E</b></td></tr><tr><td>营业收入(百万元)</td><td>11,339</td><td>11,008</td><td>15,123</td><td>16,828</td><td>18,396</td></tr><tr><td>YoY(%)</td><td>14.6</td><td>-2.9</td><td>37.4</td><td>11.3</td><td>9.3</td></tr><tr><td>净利润(百万元)</td><td>101</td><td>113</td><td>1,392</td><td>1,991</td><td>2,200</td></tr><tr><td>YoY(%)</td><td>-8.7</td><td>12.8</td><td>1126.8</td><td>43.0</td><td>10.5</td></tr><tr><td>毛利率(%)</td><td>34.2</td><td>33.1</td><td>41.1</td><td>47.6</td><td>47.7</td></tr><tr><td>EPS(摊薄/元)</td><td>0.09</td><td>0.11</td><td>1.30</td><td>1.86</td><td>2.06</td></tr><tr><td>ROE(%)</td><td>1.7</td><td>1.4</td><td>8.7</td><td>11.2</td><td>11.1</td></tr><tr><td>P/E(倍)</td><td>408.4</td><td>362.1</td><td>29.5</td><td>20.6</td><td>18.7</td></tr><tr><td>P/B(倍)</td><td>2.5</td><td>2.5</td><td>2.3</td><td>2.1</td><td>1.9</td></tr><tr><td>净利率(%)</td><td>0.9</td><td>1.0</td><td>9.2</td><td>11.8</td><td>12.0</td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            7
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": false,
+                "line": "fewer_line",
+                "language": "table_simplified_chinese",
+                "include_equation": false,
+                "include_photo": false,
+                "include_background": false,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n    <tr>\n    <th>会计年度</th>\n    <th>2021A</th>\n    <th>2022A</th>\n    <th>2023E</th>\n    </tr>\n    <tr>\n    <td>营业收入(百万元)</td>\n    <td>11,339</td>\n    <td>11,003</td>\n    <td>15,394</td>\n    </tr>\n    <tr>\n    <td>YoY(%)</td>\n    <td>14.6</td>\n    <td>-2.9</td>\n    <td>37.4</td>\n    </tr>\n    <tr>\n    <td>净利润(百万元)</td>\n    <td>101</td>\n    <td>113</td>\n    <td>1,392</td>\n    </tr>\n    <tr>\n    <td>YoY(%)</td>\n    <td>-8.7</td>\n    <td>12.8</td>\n    <td>1126.8</td>\n    </tr>\n    <tr>\n    <td>毛利率(%)</td>\n    <td>34.2</td>\n    <td>33.1</td>\n    <td>41.6</td>\n    </tr>\n    <tr>\n    <td>EPS(摊薄/元)</td>\n    <td>0.09</td>\n    <td>0.11</td>\n    <td>1.30</td>\n    </tr>\n    <tr>\n    <td>ROE(%)</td>\n    <td>1.7</td>\n    <td>1.4</td>\n    <td>8.7</td>\n    </tr>\n    <tr>\n    <td>P/E(倍)</td>\n    <td>408.4</td>\n    <td>362.1</td>\n    <td>29.5</td>\n    </tr>\n    <tr>\n    <td>P/B(倍)</td>\n    <td>2.5</td>\n    <td>2.5</td>\n    <td>2.3</td>\n    </tr>\n    <tr>\n    <td>净利率(%)</td>\n    <td>0.9</td>\n    <td>1.0</td>\n    <td>9.2</td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>会计年度</td><td>2021A</td><td>2022A</td><td>2023E</td></tr><tr><td>营业收入(百万元)</td><td>11,339</td><td>11,003</td><td>15,394</td></tr><tr><td>YoY(%)</td><td>14.6</td><td>-2.9</td><td>37.4</td></tr><tr><td>净利润(百万元)</td><td>101</td><td>113</td><td>1,392</td></tr><tr><td>YoY(%)</td><td>-8.7</td><td>12.8</td><td>1126.8</td></tr><tr><td>毛利率(%)</td><td>34.2</td><td>33.1</td><td>41.6</td></tr><tr><td>EPS(摊薄/元)</td><td>0.09</td><td>0.11</td><td>1.30</td></tr><tr><td>ROE(%)</td><td>1.7</td><td>1.4</td><td>8.7</td></tr><tr><td>P/E(倍)</td><td>408.4</td><td>362.1</td><td>29.5</td></tr><tr><td>P/B(倍)</td><td>2.5</td><td>2.5</td><td>2.3</td></tr><tr><td>净利率(%)</td><td>0.9</td><td>1.0</td><td>9.2</td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.423015873015873,
+        "img_id": "yanbaopptmerge_2d0d871a074b4818b16b4425cafac8dd221d91fbde8deae28efba2af50359c50.pdf_1.jpg",
+        "metric": {
+            "TEDS": 0.7115605278255881,
+            "TEDS_structure_only": 0.7349397590361446,
+            "Edit_dist": 0.3079044117647059
+        },
+        "image_name": "yanbaopptmerge_2d0d871a074b4818b16b4425cafac8dd221d91fbde8deae28efba2af50359c50.pdf_1.jpg",
+        "upper_len": 1088,
+        "Edit_num": 335
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "<table>\n<thead>\n<tr>\n <th></th>\n <th>碳远期</th>\n <th>碳期货</th>\n <th>碳期权</th>\n <th>碳掉期</th>\n <th>碳置换</th>\n <th>碳借贷（借碳）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n <td>全国碳市场</td>\n <td colspan=\"6\">暂未纳入碳金融衍生品</td>\n</tr>\n<tr>\n <td>北京</td>\n <td></td>\n <td></td>\n <td>√</td>\n <td>√</td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>上海</td>\n <td>√</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td>√</td>\n</tr>\n<tr>\n <td>天津</td>\n <td colspan=\"6\">暂未纳入碳金融衍生品&nbsp;&nbsp;&nbsp;</td>\n</tr>\n<tr>\n <td>深圳</td>\n <td></td>\n <td></td>\n <td>√</td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>广东</td>\n <td></td>\n <td></td>\n <td>√</td>\n <td></td>\n <td>√</td>\n <td></td>\n</tr>\n<tr>\n <td>重庆</td>\n <td colspan=\"6\">暂未纳入碳金融衍生品&nbsp;&nbsp;&nbsp;</td>\n</tr>\n<tr>\n <td>湖北</td>\n <td>√</td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n <td></td>\n</tr>\n<tr>\n <td>EU-ETS</td>\n <td>√</td>\n <td>√</td>\n <td>√</td>\n <td>√</td>\n <td>√</td>\n <td></td>\n</tr>\n</tbody>\n</table>",
+        "norm_gt": "<html><body><table border=\"1\" ><tr><td></td><td>碳远期</td><td>碳期货</td><td>碳期权</td><td>碳掉期</td><td>碳置换</td><td>碳借贷(借碳)</td></tr><tr><td>全国碳市场</td><td colspan=\"6\">暂未纳入碳金融衍生品</td></tr><tr><td>北京</td><td></td><td></td><td>√</td><td>√</td><td></td><td></td></tr><tr><td>上海</td><td>√</td><td></td><td></td><td></td><td></td><td>√</td></tr><tr><td>天津</td><td colspan=\"6\">暂未纳入碳金融衍生品 </td></tr><tr><td>深圳</td><td></td><td></td><td>√</td><td></td><td></td><td></td></tr><tr><td>广东</td><td></td><td></td><td>√</td><td></td><td>√</td><td></td></tr><tr><td>重庆</td><td colspan=\"6\">暂未纳入碳金融衍生品 </td></tr><tr><td>湖北</td><td>√</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>EU-ETS</td><td>√</td><td>√</td><td>√</td><td>√</td><td>√</td><td></td></tr></table></body></html>",
+        "gt_category_type": "table",
+        "gt_position": [
+            4
+        ],
+        "gt_attribute": [
+            {
+                "table_layout": "horizontal",
+                "with_span": true,
+                "line": "less_line",
+                "language": "table_simplified_chinese",
+                "include_equation": true,
+                "include_photo": false,
+                "include_background": true,
+                "with_structured_text": false
+            }
+        ],
+        "pred_idx": [
+            0
+        ],
+        "pred": "<table>\n    <tr>\n    <th>中国全国与地方碳市场及欧洲EU-ETS碳金融衍生品纳入情况比较</th>\n    <th>碳远期</th>\n    <th>碳期货</th>\n    <th>碳期权</th>\n    <th>碳掉期</th>\n    <th>碳置换</th>\n    <th>碳借贷（借款）</th>\n    </tr>\n    <tr>\n    <td>全国碳市场</td>\n    <td></td>\n    <td></td>\n    <td>暂无纳入碳金融衍生品</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>北京</td>\n    <td>✓</td>\n    <td></td>\n    <td>✓</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>上海</td>\n    <td></td>\n    <td></td>\n    <td>暂无纳入碳金融衍生品</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>深圳</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>✓</td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>广东</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>✓</td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>重庆</td>\n    <td></td>\n    <td></td>\n    <td>暂无纳入碳金融衍生品</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    </tr>\n    <tr>\n    <td>湖北</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>✓</td>\n    </tr>\n    <tr>\n    <td>EU-ETS</td>\n    <td>✓</td>\n    <td>✓</td>\n    <td>✓</td>\n    <td>✓</td>\n    <td>✓</td>\n    <td></td>\n    </tr>\n</table>",
+        "norm_pred": "<html><body><table border=\"1\" ><tr><td>中国全国与地方碳市场及欧洲EU-ETS碳金融衍生品纳入情况比较</td><td>碳远期</td><td>碳期货</td><td>碳期权</td><td>碳掉期</td><td>碳置换</td><td>碳借贷(借款)</td></tr><tr><td>全国碳市场</td><td></td><td></td><td>暂无纳入碳金融衍生品</td><td></td><td></td><td></td></tr><tr><td>北京</td><td>✓</td><td></td><td>✓</td><td></td><td></td><td></td></tr><tr><td>上海</td><td></td><td></td><td>暂无纳入碳金融衍生品</td><td></td><td></td><td></td></tr><tr><td>深圳</td><td></td><td></td><td></td><td>✓</td><td></td><td></td></tr><tr><td>广东</td><td></td><td></td><td></td><td></td><td>✓</td><td></td></tr><tr><td>重庆</td><td></td><td></td><td>暂无纳入碳金融衍生品</td><td></td><td></td><td></td></tr><tr><td>湖北</td><td></td><td></td><td></td><td></td><td></td><td>✓</td></tr><tr><td>EU-ETS</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td></td></tr></table></body></html>",
+        "pred_category_type": "",
+        "pred_position": "",
+        "edit": 0.40253164556962023,
+        "img_id": "yanbaor2_3e1be78252e2fdfe1adf12bba38ec2a7b30699e152d61269aa6e5827f5adcc35.pdf_13.jpg",
+        "metric": {
+            "TEDS": 0.5396825396825398,
+            "TEDS_structure_only": 0.7916666666666666,
+            "Edit_dist": 0.211750305997552
+        },
+        "image_name": "yanbaor2_3e1be78252e2fdfe1adf12bba38ec2a7b30699e152d61269aa6e5827f5adcc35.pdf_13.jpg",
+        "upper_len": 817,
+        "Edit_num": 173
+    }
+]

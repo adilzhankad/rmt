@@ -1,0 +1,10 @@
+type,score
+overall,79.9
+arxiv_math,77.6
+baseline,100.0
+headers_footers,87.5
+long_tiny_text,83.3
+multi_column,69.2
+old_scans,33.3
+old_scans_math,95.5
+tables,92.9

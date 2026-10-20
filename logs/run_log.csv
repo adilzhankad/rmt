@@ -1,0 +1,43 @@
+timestamp_utc,operator,model,benchmark,split,n_items,n_failed,duration_s,vlmevalkit_commit,tsv_md5,max_tokens,temperature,primary_score,notes
+2026-10-20T11:20:35Z,Adilzhan,GPT4o_MINI,CCOCR,pilot,20,0,69.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.6367867864295094,ok
+2026-10-20T11:21:55Z,Adilzhan,GPT4o_MINI,OCRBench_v2,pilot,20,0,51.4,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.46204623976870385,ok
+2026-10-20T11:22:33Z,Adilzhan,InternVL3-8B,CCOCR,pilot,20,,65.8,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,,ERROR AttributeError: 'InternVLChatModel' object has no attribute 'all_tied_weights_keys'
+2026-10-20T11:22:48Z,Adilzhan,InternVL3-8B,OCRBench_v2,pilot,20,,11.8,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,,ERROR AttributeError: 'InternVLChatModel' object has no attribute 'all_tied_weights_keys'
+2026-10-20T11:23:07Z,Adilzhan,InternVL3-8B,OmniDocBench,pilot,20,,16.2,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,,ERROR AttributeError: 'InternVLChatModel' object has no attribute 'all_tied_weights_keys'
+2026-10-20T11:23:14Z,Adilzhan,GPT4o_MINI,OmniDocBench,pilot,20,0,75.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.284,ok
+2026-10-20T11:25:53Z,Adilzhan,GPT4o_MINI,olmOCRBench,pilot,20,0,155.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,59.4,ok
+2026-10-20T11:26:45Z,Adilzhan,GeminiFlashLite3-5,OCRBench_v2,pilot,20,5,49.5,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.5575442122943759,5 failed answers scored by the evaluator as given
+2026-10-20T11:27:52Z,Adilzhan,GeminiFlashLite3-5,CCOCR,pilot,20,0,64.3,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.7509588762261122,ok
+2026-10-20T11:29:19Z,Adilzhan,GeminiFlashLite3-5,OmniDocBench,pilot,20,4,84.3,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.288,4 failed answers scored by the evaluator as given
+2026-10-20T11:31:25Z,Adilzhan,GeminiFlashLite3-5,olmOCRBench,pilot,20,1,124.1,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,66.7,1 failed answers scored by the evaluator as given
+2026-10-20T11:32:34Z,Adilzhan,GeminiFlash3-5,OCRBench_v2,pilot,20,14,65.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.2508680555555556,14 failed answers scored by the evaluator as given
+2026-10-20T11:33:49Z,Adilzhan,GeminiFlash3-5,CCOCR,pilot,20,12,72.8,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.3465131003491864,12 failed answers scored by the evaluator as given
+2026-10-20T11:35:38Z,Adilzhan,GeminiFlash3-5,OmniDocBench,pilot,20,19,106.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.675,19 failed answers scored by the evaluator as given
+2026-10-20T11:36:09Z,Adilzhan,GeminiFlash3-5,olmOCRBench,pilot,20,,,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,,"ABORTED by operator during inference: Gemini free-tier quota (20 requests/day, HTTP 429) exhausted; no score"
+2026-10-20T11:36:16Z,Adilzhan,GPT4o_20240806,OCRBench_v2,pilot,20,0,23.1,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.653967879165149,ok
+2026-10-20T11:36:44Z,Adilzhan,GPT4o_20240806,CCOCR,pilot,20,0,25.3,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.6619072870408994,ok
+2026-10-20T11:37:52Z,Adilzhan,GPT4o_20240806,OmniDocBench,pilot,20,0,65.8,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.246,ok
+2026-10-20T11:39:05Z,Adilzhan,GPT4o_20240806,olmOCRBench,pilot,20,0,70.7,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,70.5,ok
+2026-10-20T11:39:45Z,Adilzhan,InternVL3-8B,CCOCR,pilot,20,0,181.1,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.6672934070027262,ok
+2026-10-20T11:41:19Z,Adilzhan,InternVL3-8B,OCRBench_v2,pilot,20,0,91.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.5280753945716659,ok
+2026-10-20T11:41:40Z,Adilzhan,InternVL3-8B,OmniDocBench,pilot,20,,18.5,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,,ERROR AttributeError: 'numpy.float64' object has no attribute 'startswith'
+2026-10-20T11:43:45Z,Adilzhan,InternVL3-8B,olmOCRBench,pilot,20,,,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,,ABORTED by operator during inference: the model used its own VLMEvalKit prompt instead of the benchmark prompt; re-run with the benchmark prompt; no score
+2026-10-20T11:50:05Z,Adilzhan,InternVL3-8B,CCOCR,pilot,20,0,297.2,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.448228742124569,ok
+2026-10-20T11:51:53Z,Adilzhan,InternVL3-8B,OCRBench_v2,pilot,20,0,105.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.5342690872109771,ok
+2026-10-20T12:06:55Z,Adilzhan,InternVL3-8B,OmniDocBench,pilot,20,0,899.5,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.305,ok
+2026-10-20T12:18:00Z,Adilzhan,InternVL3-8B,olmOCRBench,pilot,20,0,662.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,79.9,ok
+2026-10-20T12:22:47Z,Adilzhan,GeminiFlashLite3-5,OCRBench_v2,pilot,20,0,30.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.682544212294376,retry of failed answers
+2026-10-20T12:24:14Z,Adilzhan,GeminiFlashLite3-5,OmniDocBench,pilot,20,0,85.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.205,retry of failed answers
+2026-10-20T12:24:19Z,Adilzhan,Qwen2.5-VL-7B-Instruct,CCOCR,pilot,20,0,375.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.757188774561454,ok
+2026-10-20T12:24:48Z,Adilzhan,GeminiFlashLite3-5,olmOCRBench,pilot,20,0,31.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,67.7,retry of failed answers
+2026-10-20T12:26:17Z,Adilzhan,Qwen2.5-VL-7B-Instruct,OCRBench_v2,pilot,20,0,116.2,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,0.3981829573934837,ok
+2026-10-20T12:30:52Z,Adilzhan,Phi-3.5-Vision,CCOCR,pilot,20,,42.5,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+2026-10-20T12:31:09Z,Adilzhan,Phi-3.5-Vision,OCRBench_v2,pilot,20,,15.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+2026-10-20T12:31:31Z,Adilzhan,Phi-3.5-Vision,OmniDocBench,pilot,20,,18.7,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+2026-10-20T12:31:51Z,Adilzhan,Phi-3.5-Vision,olmOCRBench,pilot,20,,18.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,,ERROR AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+2026-10-20T12:32:06Z,Adilzhan,Ovis2-8B,CCOCR,pilot,20,,11.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,,"ERROR ValueError: 'aimv2' is already used by a Transformers config, pick another name."
+2026-10-20T12:32:18Z,Adilzhan,Ovis2-8B,OCRBench_v2,pilot,20,,10.3,f57c3d90154010ba176fbafc39bb79ee521fbf70,65d04fe07b4d4ee33e73fc8e7d4d46b0,4096,0,,"ERROR ValueError: 'aimv2' is already used by a Transformers config, pick another name."
+2026-10-20T12:32:34Z,Adilzhan,Ovis2-8B,OmniDocBench,pilot,20,,13.4,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,,"ERROR ValueError: 'aimv2' is already used by a Transformers config, pick another name."
+2026-10-20T12:32:49Z,Adilzhan,Ovis2-8B,olmOCRBench,pilot,20,,13.6,f57c3d90154010ba176fbafc39bb79ee521fbf70,25fe250887fee675f887a2a2d24df185,4096,0,,"ERROR ValueError: 'aimv2' is already used by a Transformers config, pick another name."
+2026-10-20T12:45:29Z,Adilzhan,Qwen2.5-VL-7B-Instruct,OmniDocBench,pilot,20,0,1148.9,f57c3d90154010ba176fbafc39bb79ee521fbf70,0fa5ccf31e682e219cb9ca83da741a59,4096,0,0.343,ok
+2026-10-20T12:47:14Z,Adilzhan,Idefics3-8B-Llama3,CCOCR,pilot,20,0,863.0,f57c3d90154010ba176fbafc39bb79ee521fbf70,f8927b76510ffe04e59d45e3f8e8b620,4096,0,0.14152385845884843,ok

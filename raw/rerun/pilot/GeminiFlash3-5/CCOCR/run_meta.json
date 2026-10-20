@@ -1,0 +1,40 @@
+{
+  "operator": "Adilzhan",
+  "model": "GeminiFlash3-5",
+  "benchmark": "CCOCR",
+  "split": "pilot",
+  "n_items": 20,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "f8927b76510ffe04e59d45e3f8e8b620",
+  "n_failed": 12,
+  "primary_score": 0.3465131003491864,
+  "notes": "12 failed answers scored by the evaluator as given",
+  "duration_s": 72.8,
+  "timestamp_utc": "2026-10-20T11:33:49Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA L40S"
+    ],
+    "transformers": "4.57.6"
+  },
+  "usage": {
+    "calls": 137,
+    "tokens": {
+      "input": 9406,
+      "output": 1233,
+      "thinking": 4676
+    },
+    "finish_reasons": {
+      "STOP": 8,
+      "error:ServerError": 3,
+      "error:ClientError": 126
+    }
+  },
+  "items_file": "items/CCOCR_pilot.csv"
+}

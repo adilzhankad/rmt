@@ -1,0 +1,43 @@
+{
+  "operator": "Adilzhan",
+  "model": "InternVL3-8B",
+  "benchmark": "olmOCRBench",
+  "split": "pilot",
+  "n_items": 20,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "25fe250887fee675f887a2a2d24df185",
+  "n_failed": 0,
+  "primary_score": 79.9,
+  "notes": "ok",
+  "duration_s": 662.6,
+  "timestamp_utc": "2026-10-20T12:18:00Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA L40S"
+    ],
+    "transformers": "4.57.6"
+  },
+  "usage": {
+    "calls": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "thinking": 0
+    },
+    "finish_reasons": {}
+  },
+  "items_file": "items/olmOCRBench_pilot.csv",
+  "model_config": {
+    "kind": "local",
+    "overrides": {
+      "max_new_tokens": "MAX_TOKENS"
+    }
+  },
+  "prompt": "benchmark"
+}

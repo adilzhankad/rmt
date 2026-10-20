@@ -1,0 +1,20 @@
+{"index": "472", "prediction": "```json\n{\n  \"标题\": \"牛阵结账单\",\n  \"NO\": \"YY00012006050001\",\n  \"结算 NO\": \"JS00012006050062\",\n  \"客位\": \"105外卖\",\n  \"服务员\": \"\",\n  \"人数\": \"0\",\n  \"开始时间\": \"2020-06-05 21:02:20\",\n  \"结束时间\": \"2020-06-05 21:05:45\",\n  \"菜品详单\": [\n    {\n      \"品项\": \"烤烧饼x\",\n      \"数量\": \"1.00\",\n      \"单价\": \"2.50\",\n      \"小计\": \"2.50\",\n      \"注\": \"\"\n    },\n    {\n      \"品项\": \"百万大串x\",\n      \"数量\": \"1.00\",\n      \"单价\": \"78.00\",\n      \"小计\": \"78.00\",\n      \"注\": \"\"\n    },\n    {\n      \"品项\": \"餐具\",\n      \"数量\": \"1.00\",\n      \"单价\": \"1.00\",\n      \"小计\": \"1.00\",\n      \"注\": \"\"\n    },\n    {\n      \"品项\": \"临时热菜x\",\n      \"数量\": \"18.00\",\n      \"单价\": \"1.00\",\n      \"小计\": \"18.00\",\n      \"注\": \"\"\n    },\n    {\n      \"品项\": \"将军菜x\",\n      \"数量\": \"1.00\",\n      \"单价\": \"26.00\",\n      \"小计\": \"26.00\",\n      \"注\": \"\"\n    }\n  ],\n  \"结算方式\": \"支付宝\",\n  \"金额\": \"126.00\",\n  \"备注\": \"\",\n  \"合计\": \"125.50\",\n  \"优惠\": \"0.00\",\n  \"赠送\": \"0.00\",\n  \"实收\": \"126.00\",\n  \"电话\": \"0531-82915\",\n  \"地址\": \"济南市市中区领秀城贵和金街1F-3-11\"\n}\n```"}
+{"index": "584", "prediction": "```json\n{\n  \"项目\": \"80 万吨/年硝基复合肥\",\n  \"标题\": \"技术联系单\",\n  \"装置\": \"\",\n  \"I 号\": \"\",\n  \"送达\": \"设计院\",\n  \"提出人\": \"安二五部\",\n  \"联系单号\": \"2013..9.12\",\n  \"内容\": [\n    \"硝基复合肥设备制作由于设备在室外施工, 设备体积较大,不方便运往车间进行 X 射线探伤.根据 GB50235-2010 第 8.4.2 条规定: 当规定采用射线检测但受条件限制时, 经设计单位和建设单位同意后, 可改为超声波检测, 由原来的 II 级合格, 提高为 I 级合格。\",\n    \"需更改探伤方式设备名称:\",\n    \"设备名称:开工酸槽 排气筒 硝酸储槽 蒸汽冷凝液储槽 循环水管道过滤器\"\n  ],\n  \"日期\": \"2013 年 9 月 12 日\",\n  \"设计单位\": \"\",\n  \"建设单位\": \"\"\n}\n```"}
+{"index": "658", "prediction": "Failed to obtain answer via API."}
+{"index": "1364", "prediction": "```json\n{\n  \"学校\": \"凉城市第二实验小学\",\n  \"姓名\": \"刘畅\"\n}\n```"}
+{"index": "2126", "prediction": "Mr. Macmillan said we could be more help\nto the Commonwealth through the\nstrength we would gain in the Common\nMarket than by isolation. He paid\ntribute to the development of the\nCommon Market. \"The Community\n(Common Market) has imparted an\nimpetus and an economic growth\nto The Six. Above all, it is an idea\nwhich has gripped men's minds,\"\nhe said."}
+{"index": "2425", "prediction": "The Soup Spoon"}
+{"index": "2828", "prediction": "DAILY CAFÉ * DAILY CAFÉ *"}
+{"index": "3354", "prediction": "Failed to obtain answer via API."}
+{"index": "3388", "prediction": "Failed to obtain answer via API."}
+{"index": "3574", "prediction": "Failed to obtain answer via API."}
+{"index": "4017", "prediction": "Failed to obtain answer via API."}
+{"index": "4661", "prediction": "Failed to obtain answer via API."}
+{"index": "5039", "prediction": "Failed to obtain answer via API."}
+{"index": "5083", "prediction": "Failed to obtain answer via API."}
+{"index": "5194", "prediction": "Failed to obtain answer via API."}
+{"index": "5237", "prediction": "Failed to obtain answer via API."}
+{"index": "5450", "prediction": "Failed to obtain answer via API."}
+{"index": "5718", "prediction": "```html\n<table>\n  <thead>\n    <tr>\n      <th>Attributes</th>\n      <th>P (%)</th>\n      <th>R (%)</th>\n      <th>F<sub>1</sub> (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Frame Color</td>\n      <td>63.16</td>\n      <td>48.00</td>\n      <td>54.55</td>\n    </tr>\n    <tr>\n      <td>Lenses Color</td>\n      <td>64.29</td>\n      <td>40.91</td>\n      <td>50.00</td>\n    </tr>\n    <tr>\n      <td>Shell Material</td>\n      <td>54.05</td>\n      <td>44.44</td>\n      <td>48.78</td>\n    </tr>\n    <tr>\n      <td>Wheel Material</td>\n      <td>70.59</td>\n      <td>37.50</td>\n      <td>48.98</td>\n    </tr>\n    <tr>\n      <td>Product Type</td>\n      <td>64.86</td>\n      <td>43.29</td>\n      <td>51.92</td>\n    </tr>\n  </tbody>\n</table>\n```"}
+{"index": "6397", "prediction": "Failed to obtain answer via API."}
+{"index": "6956", "prediction": "营口市老边区监察委员会"}

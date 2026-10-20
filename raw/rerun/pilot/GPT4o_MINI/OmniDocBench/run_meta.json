@@ -1,0 +1,38 @@
+{
+  "operator": "Adilzhan",
+  "model": "GPT4o_MINI",
+  "benchmark": "OmniDocBench",
+  "split": "pilot",
+  "n_items": 20,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "0fa5ccf31e682e219cb9ca83da741a59",
+  "n_failed": 0,
+  "primary_score": 0.284,
+  "notes": "ok",
+  "duration_s": 75.6,
+  "timestamp_utc": "2026-10-20T11:23:14Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "gpu": [
+      "NVIDIA L40S"
+    ],
+    "transformers": "5.20.2"
+  },
+  "usage": {
+    "calls": 20,
+    "tokens": {
+      "input": 663542,
+      "output": 14207,
+      "thinking": 0
+    },
+    "finish_reasons": {
+      "stop": 20
+    }
+  },
+  "items_file": "items/OmniDocBench_pilot.csv"
+}
