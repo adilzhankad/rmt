@@ -226,7 +226,8 @@ def run(model_key, bench, split, operator, cfg=None, model=None, out_root=RAW, l
         notes = [note] if note else []
         saved = pd.read_excel(eval_file) if eval_file.endswith(".xlsx") else None
         if saved is not None:
-            cut = sum(str(a) != str(p) for a, p in zip(saved["prediction"], preds["prediction"]))
+            kept = saved["prediction"].fillna("").astype(str)   # an empty cell reads back as NaN
+            cut = sum(a != str(p) for a, p in zip(kept, preds["prediction"]))
             if cut:
                 notes.append(f"{cut} predictions differ in xlsx (cell limit)")
         if n_failed == len(items):
