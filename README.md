@@ -76,8 +76,11 @@ python -m pytest experiment/tests -q
 python experiment/run.py --model GPT4o_MINI --bench OCRBench_v2 CCOCR OmniDocBench olmOCRBench \
        --split pilot --operator Adilzhan
 python experiment/estimate_cost.py          # cost of the main run from pilot token usage
-#    open models: experiment/kaggle_notebook.ipynb, then
-python experiment/merge_logs.py <unzipped notebook output>
+#    open models: a second env, because InternVL3's remote code breaks on transformers 5 and
+#    flash-attn (Qwen2.5-VL) has prebuilt wheels only up to torch 2.8:
+#    experiment/setup_gpu_open_env.sh  (torch 2.8.0+cu128, transformers 4.57.6, flash-attn 2.8.3.post2)
+#    then run.py with that env active; outputs from another machine are merged with
+python experiment/merge_logs.py <copied output dir>
 
 # 6. analysis
 python experiment/collect.py

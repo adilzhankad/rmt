@@ -93,6 +93,8 @@ def build_model(key, cfg):
     if m.get("provider") == "anthropic":
         # Claude_Wrapper stores temperature but never sends it; pass it with the request.
         model.default_kwargs["temperature"] = cfg["temperature"]
+    if cfg.get("prompt") == "benchmark" and hasattr(model, "use_custom_prompt"):
+        model.use_custom_prompt = lambda dataset=None: False   # infer_data then uses dataset.build_prompt
     return model
 
 
@@ -248,7 +250,8 @@ def run(model_key, bench, split, operator, cfg=None, model=None, out_root=RAW, l
     finally:
         row["duration_s"] = round(time.time() - t0, 1)
         row["timestamp_utc"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        meta = {**row, "system": system_info(), "usage": meter.as_dict(), "items_file": f"items/{bench}_{split}.csv"}
+        meta = {**row, "system": system_info(), "usage": meter.as_dict(), "items_file": f"items/{bench}_{split}.csv",
+                "model_config": cfg["models"].get(model_key), "prompt": cfg.get("prompt", "model default")}
         (work_dir / "run_meta.json").write_text(json.dumps(meta, indent=2, default=str) + "\n")
         if usage_dir is not None:
             Path(usage_dir).mkdir(parents=True, exist_ok=True)

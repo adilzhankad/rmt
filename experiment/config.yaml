@@ -11,6 +11,11 @@ bootstrap: 1000
 # Same generation settings for every model.
 max_tokens: 4096
 temperature: 0
+# Every model gets the benchmark's own prompt (dataset.build_prompt), as the API models do.
+# VLMEvalKit lets some open models (InternVL, MiniCPM) replace it with their own per-benchmark
+# prompt; e.g. InternVL appends "Answer the question using a single word or phrase." to
+# OCRBench v2 full-page OCR tasks and reads the empty `question` field on OmniDocBench.
+prompt: benchmark
 
 vlmevalkit:
   repo: https://github.com/open-compass/VLMEvalKit
