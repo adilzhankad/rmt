@@ -1,0 +1,42 @@
+Rows: 269   Unique model labels: 119
+
+Rows per benchmark split:
+   60  OCRBench v2 | private set, 2025-09 release | English (private)
+   60  OCRBench v2 | private set, 2025-09 release | Chinese (private)
+    9  CC-OCR | v1 (Nov 2024 runs) | Multi-scene
+    9  CC-OCR | v1 (Nov 2024 runs) | Multilingual
+    9  CC-OCR | v1 (Nov 2024 runs) | Document parsing
+    9  CC-OCR | v1 (Nov 2024 runs) | KIE
+    9  CC-OCR | v1 (Nov 2024 runs) | Total
+   27  OmniDocBench | v1.0 (CVPR 2025) | English pages
+   27  OmniDocBench | v1.0 (CVPR 2025) | Chinese pages
+   41  OmniDocBench | v1.5 | All pages
+    9  olmOCR-Bench | README leaderboard | Overall
+
+Status: {'ok': 261, 'zero_unsupported': 8}
+  not usable: CC-OCR KIE GOT = 0.0 (zero_unsupported)
+  not usable: CC-OCR Document parsing Florence = 0.0 (zero_unsupported)
+  not usable: CC-OCR KIE Florence = 0.0 (zero_unsupported)
+  not usable: CC-OCR Document parsing KOSMOS2.5 = 0.0 (zero_unsupported)
+  not usable: CC-OCR KIE KOSMOS2.5 = 0.0 (zero_unsupported)
+  not usable: CC-OCR Multilingual TextMonkey = 0.0 (zero_unsupported)
+  not usable: CC-OCR Document parsing TextMonkey = 0.0 (zero_unsupported)
+  not usable: CC-OCR KIE TextMonkey = 0.0 (zero_unsupported)
+Duplicate model rows inside one split: 0 []
+
+Model version stated (rows): OCRBench v2: 4/120, CC-OCR: 15/45, OmniDocBench: 17/95, olmOCR-Bench: 4/9
+
+Models per benchmark (primary split): OCRBench v2: 60, CC-OCR: 9, OmniDocBench: 27, olmOCR-Bench: 9
+Models on all four benchmarks: 0 []
+
+Shared models per benchmark pair (estimable if >= 5):
+  OCRBench v2 x CC-OCR: 4  ['claude-3.5-sonnet', 'gemini-1.5-pro', 'gpt-4o', 'textmonkey']
+  OCRBench v2 x OmniDocBench: 3  ['gemini-2.5-pro', 'gpt-4o', 'qwen2.5-vl-7b']
+  OCRBench v2 x olmOCR-Bench: 0  []
+  CC-OCR x OmniDocBench: 4  ['got-ocr2.0', 'gpt-4o', 'internvl2-76b', 'qwen2-vl-72b']
+  CC-OCR x olmOCR-Bench: 0  []
+  OmniDocBench x olmOCR-Bench: 2  ['mistral-ocr', 'olmocr']
+
+Harness check on large within-benchmark splits (language factor, not the RQ):
+  OCRBench v2: English (private) vs Chinese (private), n = 60, Kendall tau-b = 0.66
+  OmniDocBench: English pages vs Chinese pages, n = 27, Kendall tau-b = 0.77

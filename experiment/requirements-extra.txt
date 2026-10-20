@@ -1,0 +1,15 @@
+# Needed on top of VLMEvalKit's requirements.txt (found by running the four evaluators)
+rouge-score          # imported by vlmeval at start-up, missing from its requirements
+fuzzysearch
+rapidfuzz
+beautifulsoup4
+playwright           # olmOCR-Bench math tests render KaTeX; then: python -m playwright install chromium
+evaluate             # OmniDocBench (vlmeval/dataset/OmniDocBench/requirements.txt)
+jmespath
+Levenshtein
+pylatexenc
+func_timeout
+pyyaml
+openpyxl
+scipy
+pytest

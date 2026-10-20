@@ -1,0 +1,401 @@
+index,stratum,category,group,tsv_md5
+18,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+56,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+78,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+82,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+83,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+85,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+100,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+112,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+116,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+213,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+267,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+295,APP agent en,APP agent en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+306,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+313,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+319,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+368,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+400,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+413,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+450,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+498,ASCII art classification en,ASCII art classification en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+504,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+560,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+562,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+599,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+604,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+631,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+640,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+651,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+660,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+690,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+747,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+748,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+757,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+765,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+780,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+860,key information extraction cn,key information extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+901,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+911,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+914,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+947,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+948,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+972,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+976,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1008,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1028,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1030,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1078,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1088,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1158,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1222,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1226,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1252,key information extraction en,key information extraction en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1308,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1330,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1359,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1392,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1457,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1458,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1487,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1513,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1526,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1554,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1578,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1583,key information mapping en,key information mapping en,en_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1628,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1654,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1664,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1691,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1696,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1727,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1786,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1847,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1873,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1874,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1883,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1894,VQA with position en,VQA with position en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1933,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+1968,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2000,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2041,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2043,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2078,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2080,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2102,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2139,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2172,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2210,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2225,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2230,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2257,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2275,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2280,chart parsing en,chart parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2318,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2384,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2390,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2407,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2409,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2424,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2443,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2490,cognition VQA cn,cognition VQA cn,cn_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2515,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2535,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2597,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2619,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2625,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2656,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2696,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2730,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2753,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2779,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2791,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2807,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2885,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2924,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2934,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2944,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2974,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+2985,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3042,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3070,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3076,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3081,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3092,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3099,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3135,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3141,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3148,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3165,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3189,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3242,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3261,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3286,cognition VQA en,cognition VQA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3333,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3347,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3363,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3380,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3408,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3422,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3456,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3496,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3541,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3543,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3548,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3576,diagram QA en,diagram QA en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3644,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3651,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3657,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3668,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3678,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3716,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3770,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3798,document classification en,document classification en,en_visual_text_understanding,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3802,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3804,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3921,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3941,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3955,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3988,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3994,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3998,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+3999,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4044,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4054,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4064,document parsing cn,document parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4158,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4200,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4201,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4241,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4270,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4285,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4316,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4321,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4355,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4374,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4382,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4424,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4463,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4491,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4496,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4499,document parsing en,document parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4519,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4522,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4548,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4549,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4562,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4566,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4665,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4674,formula recognition cn,formula recognition cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4705,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4777,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4790,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4805,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4820,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4844,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4880,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4935,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4953,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4970,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+4972,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5043,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5060,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5072,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5077,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5097,formula recognition en,formula recognition en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5108,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5113,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5131,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5195,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5197,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5260,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5264,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5275,handwritten answer extraction cn,handwritten answer extraction cn,cn_relationship_extraction,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5333,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5335,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5346,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5365,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5375,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5378,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5399,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5457,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5540,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5546,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5550,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5584,math QA en,math QA en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5628,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5642,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5649,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5650,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5677,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5745,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5763,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5782,full-page OCR cn,full-page OCR cn,cn_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5818,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5866,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5868,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5883,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5886,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5890,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5913,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+5956,full-page OCR en,full-page OCR en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6030,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6037,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6144,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6150,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6168,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6191,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6256,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6268,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6302,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6303,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6305,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6315,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6375,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6377,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6378,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6387,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6431,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6474,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6493,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6507,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6540,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6555,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6556,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6579,reasoning VQA en,reasoning VQA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6605,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6634,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6653,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6654,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6694,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6696,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6720,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6780,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6800,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6810,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6877,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6886,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6891,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6909,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6949,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+6974,reasoning VQA cn,reasoning VQA cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7036,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7081,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7106,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7120,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7138,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7141,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7163,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7194,fine-grained text recognition en,fine-grained text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7215,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7226,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7237,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7324,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7326,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7328,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7344,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7350,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7411,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7436,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7479,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7498,science QA en,science QA en,en_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7521,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7539,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7556,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7582,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7622,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7656,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7697,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7698,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7704,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7731,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7735,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7739,table parsing cn,table parsing cn,cn_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7825,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7843,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7890,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7908,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7921,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7964,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+7998,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8033,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8042,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8049,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8089,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8113,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8114,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8145,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8149,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8184,table parsing en,table parsing en,en_element_parsing,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8231,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8259,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8290,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8295,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8329,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8346,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8352,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8385,text counting en,text counting en,en_mathematical_calculation,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8414,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8415,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8479,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8489,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8490,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8498,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8502,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8587,text grounding en,text grounding en,en_text_detection,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8625,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8800,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8808,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8809,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8813,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8825,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8855,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8888,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8904,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8914,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8921,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8922,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8953,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8962,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8982,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+8995,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9060,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9074,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9076,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9077,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9089,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9132,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9139,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9151,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9208,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9233,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9266,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9320,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9337,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9338,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9349,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9383,text recognition en,text recognition en,en_text_recognition,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9433,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9436,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9445,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9487,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9504,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9533,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9555,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9562,text spotting en,text spotting en,en_text_spotting,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9625,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9697,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9700,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9737,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9785,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9808,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9817,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9823,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9851,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9854,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9865,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9877,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9928,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9933,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9951,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0
+9975,text translation cn,text translation cn,cn_knowledge_reasoning,65d04fe07b4d4ee33e73fc8e7d4d46b0

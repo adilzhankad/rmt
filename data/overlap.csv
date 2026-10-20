@@ -1,0 +1,7 @@
+benchmark_a,benchmark_b,shared_models,estimable,models
+OCRBench v2,CC-OCR,4,False,claude-3.5-sonnet; gemini-1.5-pro; gpt-4o; textmonkey
+OCRBench v2,OmniDocBench,3,False,gemini-2.5-pro; gpt-4o; qwen2.5-vl-7b
+OCRBench v2,olmOCR-Bench,0,False,
+CC-OCR,OmniDocBench,4,False,got-ocr2.0; gpt-4o; internvl2-76b; qwen2-vl-72b
+CC-OCR,olmOCR-Bench,0,False,
+OmniDocBench,olmOCR-Bench,2,False,mistral-ocr; olmocr

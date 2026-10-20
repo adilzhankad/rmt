@@ -1,0 +1,16 @@
+field,type,unit,allowed_values,source
+benchmark,text,,OCRBench v2 | CC-OCR | OmniDocBench | olmOCR-Bench,fixed list
+benchmark_version,text,,release or version of the leaderboard,leaderboard page or branch
+split,text,,"language, track, page set or Overall as named by the benchmark",leaderboard table
+model_raw,text,,model label exactly as printed,leaderboard table
+model_id,text,,"normalised name, one id per model across sources",mapping table CANON in extract.py
+model_version_stated,text,,"date or version string, or 'not stated'",leaderboard or its footnote
+match_level,text,,exact | family,set in extract.py (family = version differs or is not stated)
+metric,text,,name of the benchmark's own metric,leaderboard table header
+direction,text,,higher | lower,benchmark's metric definition
+value,number,"points 0-100, edit distance 0-1, or % of passed unit tests",>= 0,leaderboard table
+status,text,,ok | zero_unsupported | missing,set in extract.py
+source,text,,repository and file the number was copied from,
+snapshot,text,YYYY-MM,month of the leaderboard release,leaderboard page
+collected_on,date,YYYY-MM-DD,date we downloaded the source,
+note,text,,free text (e.g. '* = score reported by the system's authors'),

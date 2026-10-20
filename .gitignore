@@ -1,0 +1,13 @@
+.env
+.venv/
+third_party/
+__pycache__/
+*.pyc
+.DS_Store
+LMUData/
+work/
+*.zip
+*.pkl
+*_subset_gt.tsv
+*.md5.json
+hf/

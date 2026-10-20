@@ -1,0 +1,94 @@
+# Stage 2 re-run: one fixed list of 8 models on four OCR benchmarks.
+# Seed, sample size and bootstrap size are read from code/harness.py; the values
+# below must match it (sample_items.py and run.py assert this).
+
+seed: 2026
+items:
+  main: 400
+  pilot: 20
+bootstrap: 1000
+
+# Same generation settings for every model.
+max_tokens: 4096
+temperature: 0
+
+vlmevalkit:
+  repo: https://github.com/open-compass/VLMEvalKit
+  commit: f57c3d90154010ba176fbafc39bb79ee521fbf70
+
+benchmarks:
+  OCRBench_v2:
+    label: OCRBench v2
+    dataset: OCRBench_v2
+    md5: 65d04fe07b4d4ee33e73fc8e7d4d46b0
+    pred_format: tsv
+    primary_metric: English Overall Score
+    direction: higher
+    secondary_metrics: [Chinese Overall Score]
+  CCOCR:
+    label: CC-OCR
+    dataset: CCOCR
+    md5: f8927b76510ffe04e59d45e3f8e8b620
+    pred_format: tsv
+    primary_metric: total
+    direction: higher
+    secondary_metrics: [multi_scene_ocr, multi_lan_ocr, kie, doc_parsing]
+  OmniDocBench:
+    label: OmniDocBench
+    dataset: OmniDocBench
+    md5: 0fa5ccf31e682e219cb9ca83da741a59
+    pred_format: tsv
+    primary_metric: overall_EN      # mean normalised edit distance, English pages
+    direction: lower
+    secondary_metrics: [overall_CH]
+  olmOCRBench:
+    label: olmOCR-Bench
+    dataset: olmOCRBench
+    md5: 25fe250887fee675f887a2a2d24df185
+    pred_format: xlsx               # the evaluator reads predictions with pd.read_excel
+    primary_metric: overall
+    direction: higher
+    secondary_metrics: []
+
+# VLMEvalKit keys. `overrides` are passed to the VLMEvalKit constructor on top of
+# its own config; they only change what is needed to run the model with the
+# official API and the common max_tokens / temperature.
+models:
+  GPT4o_20240806:
+    kind: api
+    provider: openai
+    overrides: {max_tokens: MAX_TOKENS}
+  GPT4o_MINI:
+    kind: api
+    provider: openai
+    overrides: {max_tokens: MAX_TOKENS}
+  # The three models below replace GeminiPro2-5, GeminiFlash2-0 and Claude4_Sonnet of the
+  # original plan: claude-sonnet-4-20250514 and gemini-2.0-flash were shut down in June 2026,
+  # gemini-2.5-pro is being retired (Oct 2026) and refuses new API projects. Same provider mix
+  # (2 OpenAI, 2 Google, 1 Anthropic); stable model ids only (no preview ids). VLMEvalKit has
+  # no entry for them, so they use its own wrappers with the official APIs.
+  GeminiFlash3-5:
+    kind: api
+    provider: google
+    replace_with: {wrapper: Gemini, model: gemini-3.5-flash, temperature: 0, retry: 10, verbose: false}
+    overrides: {max_tokens: MAX_TOKENS}
+  GeminiFlashLite3-5:
+    kind: api
+    provider: google
+    replace_with: {wrapper: Gemini, model: gemini-3.5-flash-lite, temperature: 0, retry: 10, verbose: false}
+    overrides: {max_tokens: MAX_TOKENS}
+  Claude-Sonnet-4-6:
+    kind: api
+    provider: anthropic
+    replace_with: {wrapper: Claude3V, model: claude-sonnet-4-6, temperature: 0, retry: 10, verbose: false,
+                   timeout: 1800}
+    overrides: {max_tokens: MAX_TOKENS}
+  Qwen2.5-VL-7B-Instruct:
+    kind: local
+    overrides: {max_new_tokens: MAX_TOKENS}
+  InternVL3-8B:
+    kind: local
+    overrides: {max_new_tokens: MAX_TOKENS}
+  MiniCPM-V-4_5:
+    kind: local
+    overrides: {max_new_tokens: MAX_TOKENS}
