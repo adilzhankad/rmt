@@ -138,7 +138,7 @@ def test_plan_is_deterministic_and_disjoint():
 def test_collect_and_analyze(bench_env):
     import analyze
     import collect
-    models = ["GPT4o_20240806", "GPT4o_MINI", "GeminiFlash3-5", "GeminiFlashLite3-5", "Claude-Sonnet-4-6", "InternVL3-8B"]
+    models = ["GPT4o_20240806", "GPT4o_MINI", "Ovis2-8B", "Idefics3-8B-Llama3", "Phi-3.5-Vision", "InternVL3-8B"]
     for k, m in enumerate(models):
         for bench in BENCHES:
             # model k answers item i correctly with a rate that falls with k -> rankings agree

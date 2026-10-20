@@ -7,7 +7,3 @@
 usd_per_million_tokens:
   GPT4o_20240806: {input: 2.50, output: 10.00}
   GPT4o_MINI: {input: 0.15, output: 0.60}
-  Claude-Sonnet-4-6: {input: 3.00, output: 15.00}
-  # not known to us - fill in from the pricing page before running estimate_cost.py
-  GeminiFlash3-5: {input: null, output: null}
-  GeminiFlashLite3-5: {input: null, output: null}

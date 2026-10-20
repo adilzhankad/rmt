@@ -67,27 +67,12 @@ models:
     kind: api
     provider: openai
     overrides: {max_tokens: MAX_TOKENS}
-  # The three models below replace GeminiPro2-5, GeminiFlash2-0 and Claude4_Sonnet of the
-  # original plan: claude-sonnet-4-20250514 and gemini-2.0-flash were shut down in June 2026,
-  # gemini-2.5-pro is being retired (Oct 2026) and refuses new API projects. Same provider mix
-  # (2 OpenAI, 2 Google, 1 Anthropic); stable model ids only (no preview ids). VLMEvalKit has
-  # no entry for them, so they use its own wrappers with the official APIs.
-  GeminiFlash3-5:
-    kind: api
-    provider: google
-    replace_with: {wrapper: Gemini, model: gemini-3.5-flash, temperature: 0, retry: 10, verbose: false}
-    overrides: {max_tokens: MAX_TOKENS}
-  GeminiFlashLite3-5:
-    kind: api
-    provider: google
-    replace_with: {wrapper: Gemini, model: gemini-3.5-flash-lite, temperature: 0, retry: 10, verbose: false}
-    overrides: {max_tokens: MAX_TOKENS}
-  Claude-Sonnet-4-6:
-    kind: api
-    provider: anthropic
-    replace_with: {wrapper: Claude3V, model: claude-sonnet-4-6, temperature: 0, retry: 10, verbose: false,
-                   timeout: 1800}
-    overrides: {max_tokens: MAX_TOKENS}
+  # The plan had three more closed models (GeminiPro2-5, GeminiFlash2-0, Claude4_Sonnet).
+  # claude-sonnet-4-20250514 and gemini-2.0-flash were shut down in June 2026 and
+  # gemini-2.5-pro is being retired. Their current successors were piloted (Gemini 3.5 Flash /
+  # Flash-Lite, logged in logs/run_log.csv) but need paid API tiers that the project cannot fund
+  # (Gemini free tier: 20 requests/day; Anthropic has no free tier). They are replaced by three
+  # open-weight models from three other developers, all run with the same settings on our GPU.
   Qwen2.5-VL-7B-Instruct:
     kind: local
     overrides: {max_new_tokens: MAX_TOKENS}
@@ -95,5 +80,14 @@ models:
     kind: local
     overrides: {max_new_tokens: MAX_TOKENS}
   MiniCPM-V-4_5:
+    kind: local
+    overrides: {max_new_tokens: MAX_TOKENS}
+  Ovis2-8B:
+    kind: local
+    overrides: {max_new_tokens: MAX_TOKENS}
+  Idefics3-8B-Llama3:
+    kind: local
+    overrides: {max_new_tokens: MAX_TOKENS}
+  Phi-3.5-Vision:
     kind: local
     overrides: {max_new_tokens: MAX_TOKENS}

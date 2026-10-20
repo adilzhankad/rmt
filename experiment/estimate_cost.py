@@ -33,7 +33,9 @@ def main():
     for m, mc in cfg["models"].items():
         if mc["kind"] != "api":
             continue
-        p = prices[m]
+        p = prices.get(m)
+        if p is None:
+            continue
         for bench in cfg["benchmarks"]:
             r = last.get((m, bench))
             if not r:

@@ -23,6 +23,7 @@ SECONDARY_DIRECTION = {"Chinese Overall Score": "higher", "overall_CH": "lower",
 def main(run_log=RUN_LOG, raw=RAW, out_dir=PROCESSED, cfg=None):
     cfg = cfg or load_config()
     log = pd.read_csv(run_log, dtype={"primary_score": str})
+    log = log[log["model"].isin(cfg["models"])].copy()   # piloted-then-dropped models stay in the log only
     log["has_score"] = log["primary_score"].fillna("").str.strip() != ""
     rows, missing = [], []
     for (model, bench, split), g in log.groupby(["model", "benchmark", "split"], sort=True):
