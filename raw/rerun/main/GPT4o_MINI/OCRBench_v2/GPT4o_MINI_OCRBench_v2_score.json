@@ -1,0 +1,17 @@
+{
+    "en_text_recognition": 0.5065657592996426,
+    "en_text_detection": 0.20708800938754973,
+    "en_text_spotting": 0.0,
+    "en_relationship_extraction": 0.7129097093382809,
+    "en_element_parsing": 0.3027364599984359,
+    "en_mathematical_calculation": 0.4287518037518037,
+    "en_visual_text_understanding": 0.636381579780709,
+    "en_knowledge_reasoning": 0.5130288166768854,
+    "cn_text_recognition": 0.050295065942315004,
+    "cn_relationship_extraction": 0.487743880116341,
+    "cn_element_parsing": 0.3043614971302537,
+    "cn_visual_text_understanding": 0.125,
+    "cn_knowledge_reasoning": 0.15667875496875214,
+    "English Overall Score": 0.4134327672791634,
+    "Chinese Overall Score": 0.22481583963153234
+}

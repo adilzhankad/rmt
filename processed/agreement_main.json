@@ -1,0 +1,121 @@
+{
+  "split": "main",
+  "models": [
+    "GPT4o_20240806",
+    "GPT4o_MINI",
+    "InternVL3-8B",
+    "Qwen2.5-VL-7B-Instruct"
+  ],
+  "n_models": 4,
+  "pairs": [
+    {
+      "a": "OCRBench v2",
+      "b": "CC-OCR",
+      "n_shared": 2,
+      "tau_b": null
+    },
+    {
+      "a": "OCRBench v2",
+      "b": "OmniDocBench",
+      "n_shared": 2,
+      "tau_b": null
+    },
+    {
+      "a": "OCRBench v2",
+      "b": "olmOCR-Bench",
+      "n_shared": 2,
+      "tau_b": null
+    },
+    {
+      "a": "CC-OCR",
+      "b": "OmniDocBench",
+      "n_shared": 2,
+      "tau_b": null
+    },
+    {
+      "a": "CC-OCR",
+      "b": "olmOCR-Bench",
+      "n_shared": 2,
+      "tau_b": null
+    },
+    {
+      "a": "OmniDocBench",
+      "b": "olmOCR-Bench",
+      "n_shared": 2,
+      "tau_b": null
+    }
+  ],
+  "mean_tau": null,
+  "min_tau": null,
+  "verdict": "not estimable (< 5 shared models)",
+  "pair_concordance": [
+    {
+      "a": "OCRBench v2",
+      "b": "CC-OCR",
+      "n_shared": 2,
+      "concordant": 1,
+      "discordant": 0
+    },
+    {
+      "a": "OCRBench v2",
+      "b": "OmniDocBench",
+      "n_shared": 2,
+      "concordant": 1,
+      "discordant": 0
+    },
+    {
+      "a": "OCRBench v2",
+      "b": "olmOCR-Bench",
+      "n_shared": 2,
+      "concordant": 1,
+      "discordant": 0
+    },
+    {
+      "a": "CC-OCR",
+      "b": "OmniDocBench",
+      "n_shared": 2,
+      "concordant": 1,
+      "discordant": 0
+    },
+    {
+      "a": "CC-OCR",
+      "b": "olmOCR-Bench",
+      "n_shared": 2,
+      "concordant": 1,
+      "discordant": 0
+    },
+    {
+      "a": "OmniDocBench",
+      "b": "olmOCR-Bench",
+      "n_shared": 2,
+      "concordant": 1,
+      "discordant": 0
+    }
+  ],
+  "language": [
+    {
+      "a": "OCRBench v2 EN",
+      "b": "OCRBench v2 ZH",
+      "tau_b": NaN,
+      "n_shared": 4
+    },
+    {
+      "a": "OmniDocBench EN",
+      "b": "OmniDocBench ZH",
+      "tau_b": NaN,
+      "n_shared": 2
+    },
+    {
+      "a": "OCRBench v2 EN",
+      "b": "OmniDocBench EN",
+      "tau_b": NaN,
+      "n_shared": 2
+    },
+    {
+      "a": "OCRBench v2 ZH",
+      "b": "OmniDocBench ZH",
+      "tau_b": NaN,
+      "n_shared": 2
+    }
+  ]
+}

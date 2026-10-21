@@ -1,0 +1,7 @@
+a,b,n_shared,tau_b
+OCRBench v2,CC-OCR,2,
+OCRBench v2,OmniDocBench,2,
+OCRBench v2,olmOCR-Bench,2,
+CC-OCR,OmniDocBench,2,
+CC-OCR,olmOCR-Bench,2,
+OmniDocBench,olmOCR-Bench,2,

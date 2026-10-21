@@ -1,1 +1,1 @@
-2026-10-20T14:50:47Z pilot finished, uploaded (ok=1); instance deleted next
+2026-10-21T17:15:50Z run paused by the operator to save budget; partial answers in resume_cache/; instance deleted next

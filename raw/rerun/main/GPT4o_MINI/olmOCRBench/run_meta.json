@@ -1,0 +1,47 @@
+{
+  "operator": "Adilzhan",
+  "model": "GPT4o_MINI",
+  "benchmark": "olmOCRBench",
+  "split": "main",
+  "n_items": 400,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "25fe250887fee675f887a2a2d24df185",
+  "n_failed": 0,
+  "primary_score": 60.7,
+  "notes": "ok",
+  "duration_s": 788.0,
+  "timestamp_utc": "2026-10-21T14:18:24Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "gpu": [
+      "NVIDIA RTX A6000"
+    ],
+    "transformers": "5.20.2"
+  },
+  "usage": {
+    "calls": 400,
+    "tokens": {
+      "input": 12459198,
+      "output": 342272,
+      "thinking": 0
+    },
+    "finish_reasons": {
+      "stop": 397,
+      "length": 3
+    }
+  },
+  "items_file": "items/olmOCRBench_main.csv",
+  "model_config": {
+    "kind": "api",
+    "provider": "openai",
+    "overrides": {
+      "max_tokens": "MAX_TOKENS"
+    }
+  },
+  "prompt": "benchmark"
+}

@@ -1,0 +1,166 @@
+split,model,benchmark,metric,official,rebuilt,ok
+main,GPT4o_20240806,CCOCR,total,0.7345962158248712,0.7345960221729109,True
+main,GPT4o_20240806,CCOCR,kie,0.8447865858436477,0.8447858124842996,True
+main,GPT4o_20240806,CCOCR,doc_parsing,0.5499971867986985,0.5499971867986985,True
+main,GPT4o_20240806,OCRBench_v2,English Overall Score,0.46023150628304077,0.46023150628304077,True
+main,GPT4o_20240806,OCRBench_v2,Chinese Overall Score,0.3941231203573674,0.3941231203573674,True
+main,GPT4o_20240806,OmniDocBench,overall_EN,0.20908979682929213,0.20908979682929213,True
+main,GPT4o_20240806,OmniDocBench,overall_CH,0.3677759857093782,0.3677759857093782,True
+main,GPT4o_20240806,olmOCRBench,overall,72.4,72.36222216116825,True
+main,GPT4o_20240806,olmOCRBench,arxiv_math,52.2,52.179034157832746,True
+main,GPT4o_20240806,olmOCRBench,baseline,100.0,100.0,True
+main,GPT4o_20240806,olmOCRBench,headers_footers,96.2,96.17021276595744,True
+main,GPT4o_20240806,olmOCRBench,long_tiny_text,64.4,64.42307692307692,True
+main,GPT4o_20240806,olmOCRBench,multi_column,71.2,71.21771217712177,True
+main,GPT4o_20240806,olmOCRBench,old_scans,49.4,49.35064935064935,True
+main,GPT4o_20240806,olmOCRBench,old_scans_math,81.3,81.31868131868131,True
+main,GPT4o_20240806,olmOCRBench,tables,64.2,64.23841059602648,True
+main,GPT4o_MINI,CCOCR,total,0.6516909878588302,0.6516908100662454,True
+main,GPT4o_MINI,CCOCR,kie,0.7770255310080412,0.777024821052663,True
+main,GPT4o_MINI,CCOCR,doc_parsing,0.3331283729591821,0.3331283729591821,True
+main,GPT4o_MINI,OCRBench_v2,English Overall Score,0.4134327672791634,0.41343276727916345,True
+main,GPT4o_MINI,OCRBench_v2,Chinese Overall Score,0.22481583963153234,0.22481583963153237,True
+main,GPT4o_MINI,OmniDocBench,overall_EN,0.3747851922280351,0.3747851922280351,True
+main,GPT4o_MINI,OmniDocBench,overall_CH,0.4957185077285611,0.49571850772856096,True
+main,GPT4o_MINI,olmOCRBench,overall,60.7,60.66715040846739,True
+main,GPT4o_MINI,olmOCRBench,arxiv_math,29.2,29.21083627797409,True
+main,GPT4o_MINI,olmOCRBench,baseline,99.7,99.74683544303798,True
+main,GPT4o_MINI,olmOCRBench,headers_footers,97.0,97.02127659574468,True
+main,GPT4o_MINI,olmOCRBench,long_tiny_text,46.2,46.15384615384615,True
+main,GPT4o_MINI,olmOCRBench,multi_column,46.1,46.125461254612546,True
+main,GPT4o_MINI,olmOCRBench,old_scans,40.9,40.90909090909091,True
+main,GPT4o_MINI,olmOCRBench,old_scans_math,72.5,72.52747252747253,True
+main,GPT4o_MINI,olmOCRBench,tables,53.6,53.64238410596027,True
+main,InternVL3-8B,OCRBench_v2,English Overall Score,0.46542893548968756,0.46542893548968756,True
+main,InternVL3-8B,OCRBench_v2,Chinese Overall Score,0.499504297510135,0.499504297510135,True
+main,Qwen2.5-VL-7B-Instruct,OCRBench_v2,English Overall Score,0.44521340533455295,0.4452134053345529,True
+main,Qwen2.5-VL-7B-Instruct,OCRBench_v2,Chinese Overall Score,0.5799800975761343,0.5799800975761343,True
+pilot,GPT4o_20240806,CCOCR,total,0.6619072870408994,0.6619072349619692,True
+pilot,GPT4o_20240806,CCOCR,kie,0.8230117902529392,0.8230115819771409,True
+pilot,GPT4o_20240806,CCOCR,doc_parsing,0.5923375550648133,0.5923375550648133,True
+pilot,GPT4o_20240806,OCRBench_v2,English Overall Score,0.653967879165149,0.6539678791651489,True
+pilot,GPT4o_20240806,OCRBench_v2,Chinese Overall Score,0.29740640837688864,0.29740640837688864,True
+pilot,GPT4o_20240806,OmniDocBench,overall_EN,0.24621559642003477,0.24621559642003477,True
+pilot,GPT4o_20240806,OmniDocBench,overall_CH,0.3712674022020942,0.3712674022020942,True
+pilot,GPT4o_20240806,olmOCRBench,overall,70.5,70.54478259835402,True
+pilot,GPT4o_20240806,olmOCRBench,arxiv_math,67.3,67.34693877551021,True
+pilot,GPT4o_20240806,olmOCRBench,baseline,100.0,100.0,True
+pilot,GPT4o_20240806,olmOCRBench,headers_footers,100.0,100.0,True
+pilot,GPT4o_20240806,olmOCRBench,long_tiny_text,58.3,58.333333333333336,True
+pilot,GPT4o_20240806,olmOCRBench,multi_column,38.5,38.46153846153846,True
+pilot,GPT4o_20240806,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,GPT4o_20240806,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,GPT4o_20240806,olmOCRBench,tables,71.4,71.42857142857143,True
+pilot,GPT4o_MINI,CCOCR,total,0.6367867864295094,0.6367867381195191,True
+pilot,GPT4o_MINI,CCOCR,kie,0.8262244775947617,0.8262242843851165,True
+pilot,GPT4o_MINI,CCOCR,doc_parsing,0.4568407384095873,0.4568407384095873,True
+pilot,GPT4o_MINI,OCRBench_v2,English Overall Score,0.46204623976870385,0.46204623976870385,True
+pilot,GPT4o_MINI,OCRBench_v2,Chinese Overall Score,0.30987747144803723,0.30987747144803723,True
+pilot,GPT4o_MINI,OmniDocBench,overall_EN,0.28362853218944784,0.28362853218944784,True
+pilot,GPT4o_MINI,OmniDocBench,overall_CH,0.49637821014061123,0.49637821014061123,True
+pilot,GPT4o_MINI,olmOCRBench,overall,59.4,59.3596879311165,True
+pilot,GPT4o_MINI,olmOCRBench,arxiv_math,32.7,32.6530612244898,True
+pilot,GPT4o_MINI,olmOCRBench,baseline,100.0,100.0,True
+pilot,GPT4o_MINI,olmOCRBench,headers_footers,100.0,100.0,True
+pilot,GPT4o_MINI,olmOCRBench,long_tiny_text,50.0,50.0,True
+pilot,GPT4o_MINI,olmOCRBench,multi_column,15.4,15.384615384615385,True
+pilot,GPT4o_MINI,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,GPT4o_MINI,olmOCRBench,old_scans_math,86.4,86.36363636363636,True
+pilot,GPT4o_MINI,olmOCRBench,tables,57.1,57.142857142857146,True
+pilot,GeminiFlash3-5,CCOCR,total,0.3465131003491864,0.34651306458131165,True
+pilot,GeminiFlash3-5,CCOCR,kie,0.49665846321588064,0.49665832014438155,True
+pilot,GeminiFlash3-5,CCOCR,doc_parsing,0.1893939393939394,0.1893939393939394,True
+pilot,GeminiFlash3-5,OCRBench_v2,English Overall Score,0.2508680555555556,0.2508680555555555,True
+pilot,GeminiFlash3-5,OCRBench_v2,Chinese Overall Score,0.26856260762563094,0.26856260762563094,True
+pilot,GeminiFlash3-5,OmniDocBench,overall_EN,0.6754412107175005,0.6754412107175005,True
+pilot,GeminiFlash3-5,OmniDocBench,overall_CH,0.9889724125553163,0.9889724125553163,True
+pilot,GeminiFlashLite3-5,CCOCR,total,0.7509588762261122,0.7509588243887362,True
+pilot,GeminiFlashLite3-5,CCOCR,kie,0.951985621256822,0.9519854139499485,True
+pilot,GeminiFlashLite3-5,CCOCR,doc_parsing,0.6383494907382125,0.6383494907382125,True
+pilot,GeminiFlashLite3-5,OCRBench_v2,English Overall Score,0.682544212294376,0.6825442122943759,True
+pilot,GeminiFlashLite3-5,OCRBench_v2,Chinese Overall Score,0.42093427329345356,0.42093427329345356,True
+pilot,GeminiFlashLite3-5,OmniDocBench,overall_EN,0.20517310852466275,0.20517310852466275,True
+pilot,GeminiFlashLite3-5,OmniDocBench,overall_CH,0.2648809306967137,0.2648809306967137,True
+pilot,GeminiFlashLite3-5,olmOCRBench,overall,67.7,67.69532550782552,True
+pilot,GeminiFlashLite3-5,olmOCRBench,arxiv_math,71.4,71.42857142857143,True
+pilot,GeminiFlashLite3-5,olmOCRBench,baseline,100.0,100.0,True
+pilot,GeminiFlashLite3-5,olmOCRBench,headers_footers,62.5,62.5,True
+pilot,GeminiFlashLite3-5,olmOCRBench,long_tiny_text,75.0,75.0,True
+pilot,GeminiFlashLite3-5,olmOCRBench,multi_column,53.8,53.84615384615385,True
+pilot,GeminiFlashLite3-5,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,GeminiFlashLite3-5,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,GeminiFlashLite3-5,olmOCRBench,tables,50.0,50.0,True
+pilot,Idefics3-8B-Llama3,CCOCR,total,0.14152385845884843,0.14152384717659036,True
+pilot,Idefics3-8B-Llama3,CCOCR,kie,0.11895235476008996,0.11895230964656522,True
+pilot,Idefics3-8B-Llama3,CCOCR,doc_parsing,0.06833821183055373,0.06833821183055373,True
+pilot,Idefics3-8B-Llama3,OCRBench_v2,English Overall Score,0.36680114798504476,0.36680114798504476,True
+pilot,Idefics3-8B-Llama3,OCRBench_v2,Chinese Overall Score,0.2767451810981433,0.27674518109814333,True
+pilot,InternVL3-8B,CCOCR,total,0.448228742124569,0.44822868979579406,True
+pilot,InternVL3-8B,CCOCR,kie,0.8071002314130213,0.8071000221210097,True
+pilot,InternVL3-8B,CCOCR,doc_parsing,0.24974651992524333,0.24974651992524333,True
+pilot,InternVL3-8B,OCRBench_v2,English Overall Score,0.5342690872109771,0.5342690872109771,True
+pilot,InternVL3-8B,OCRBench_v2,Chinese Overall Score,0.6184456952967632,0.6184456952967632,True
+pilot,InternVL3-8B,OmniDocBench,overall_EN,0.30544987612799396,0.30544987612799396,True
+pilot,InternVL3-8B,OmniDocBench,overall_CH,0.3989804491066213,0.3989804491066213,True
+pilot,InternVL3-8B,olmOCRBench,overall,79.9,79.90751807716093,True
+pilot,InternVL3-8B,olmOCRBench,arxiv_math,77.6,77.55102040816327,True
+pilot,InternVL3-8B,olmOCRBench,baseline,100.0,100.0,True
+pilot,InternVL3-8B,olmOCRBench,headers_footers,87.5,87.5,True
+pilot,InternVL3-8B,olmOCRBench,long_tiny_text,83.3,83.33333333333333,True
+pilot,InternVL3-8B,olmOCRBench,multi_column,69.2,69.23076923076923,True
+pilot,InternVL3-8B,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,InternVL3-8B,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,InternVL3-8B,olmOCRBench,tables,92.9,92.85714285714286,True
+pilot,MiniCPM-V-4_5,CCOCR,total,0.5691208338035489,0.5691207830628963,True
+pilot,MiniCPM-V-4_5,CCOCR,kie,0.6439290673859664,0.6439288644246844,True
+pilot,MiniCPM-V-4_5,CCOCR,doc_parsing,0.5211125166264372,0.5211125166264372,True
+pilot,MiniCPM-V-4_5,OCRBench_v2,English Overall Score,0.5984195402298851,0.5984195402298851,True
+pilot,MiniCPM-V-4_5,OCRBench_v2,Chinese Overall Score,0.49727396259100376,0.49727396259100376,True
+pilot,MiniCPM-V-4_5,OmniDocBench,overall_EN,0.24214366037597573,0.24214366037597573,True
+pilot,MiniCPM-V-4_5,OmniDocBench,overall_CH,0.31450365871602326,0.31450365871602326,True
+pilot,MiniCPM-V-4_5,olmOCRBench,overall,77.3,77.32542754864184,True
+pilot,MiniCPM-V-4_5,olmOCRBench,arxiv_math,73.5,73.46938775510205,True
+pilot,MiniCPM-V-4_5,olmOCRBench,baseline,100.0,100.0,True
+pilot,MiniCPM-V-4_5,olmOCRBench,headers_footers,87.5,87.5,True
+pilot,MiniCPM-V-4_5,olmOCRBench,long_tiny_text,75.0,75.0,True
+pilot,MiniCPM-V-4_5,olmOCRBench,multi_column,53.8,53.84615384615385,True
+pilot,MiniCPM-V-4_5,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,MiniCPM-V-4_5,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,MiniCPM-V-4_5,olmOCRBench,tables,100.0,100.0,True
+pilot,Ovis2-8B,CCOCR,total,0.4708553672716677,0.4708553176635462,True
+pilot,Ovis2-8B,CCOCR,kie,0.659481144879417,0.6594809464788388,True
+pilot,Ovis2-8B,CCOCR,doc_parsing,0.16992113223769206,0.16992113223769206,True
+pilot,Ovis2-8B,OCRBench_v2,English Overall Score,0.4290022156811331,0.4290022156811331,True
+pilot,Ovis2-8B,OCRBench_v2,Chinese Overall Score,0.49418408945999587,0.49418408945999587,True
+pilot,Ovis2-8B,OmniDocBench,overall_EN,0.4711993145803482,0.4711993145803482,True
+pilot,Ovis2-8B,OmniDocBench,overall_CH,0.4461234593011855,0.4461234593011855,True
+pilot,Ovis2-8B,olmOCRBench,overall,58.4,58.3595719756434,True
+pilot,Ovis2-8B,olmOCRBench,arxiv_math,67.3,67.34693877551021,True
+pilot,Ovis2-8B,olmOCRBench,baseline,100.0,100.0,True
+pilot,Ovis2-8B,olmOCRBench,headers_footers,62.5,62.5,True
+pilot,Ovis2-8B,olmOCRBench,long_tiny_text,50.0,50.0,True
+pilot,Ovis2-8B,olmOCRBench,multi_column,15.4,15.384615384615385,True
+pilot,Ovis2-8B,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,Ovis2-8B,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,Ovis2-8B,olmOCRBench,tables,42.9,42.857142857142854,True
+pilot,Phi-3.5-Vision,CCOCR,total,0.22333081039246025,0.22333078809281998,True
+pilot,Phi-3.5-Vision,CCOCR,kie,0.23841325535057845,0.23841316615201738,True
+pilot,Phi-3.5-Vision,CCOCR,doc_parsing,0.26126856644605156,0.26126856644605156,True
+pilot,Phi-3.5-Vision,OCRBench_v2,English Overall Score,0.46142821708262677,0.46142821708262677,True
+pilot,Phi-3.5-Vision,OCRBench_v2,Chinese Overall Score,0.07477330066463439,0.07477330066463439,True
+pilot,Qwen2.5-VL-7B-Instruct,CCOCR,total,0.757188774561454,0.7571887235191012,True
+pilot,Qwen2.5-VL-7B-Instruct,CCOCR,kie,0.9728151234658591,0.9728149193666477,True
+pilot,Qwen2.5-VL-7B-Instruct,CCOCR,doc_parsing,0.5591615590386286,0.5591615590386286,True
+pilot,Qwen2.5-VL-7B-Instruct,OCRBench_v2,English Overall Score,0.3981829573934837,0.3981829573934837,True
+pilot,Qwen2.5-VL-7B-Instruct,OCRBench_v2,Chinese Overall Score,0.7714001028114564,0.7714001028114564,True
+pilot,Qwen2.5-VL-7B-Instruct,OmniDocBench,overall_EN,0.3432633897484635,0.3432633897484635,True
+pilot,Qwen2.5-VL-7B-Instruct,OmniDocBench,overall_CH,0.4387200018113284,0.4387200018113284,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,overall,79.0,79.02529018600447,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,arxiv_math,87.8,87.75510204081633,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,baseline,100.0,100.0,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,headers_footers,75.0,75.0,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,long_tiny_text,100.0,100.0,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,multi_column,69.2,69.23076923076923,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,Qwen2.5-VL-7B-Instruct,olmOCRBench,tables,71.4,71.42857142857143,True

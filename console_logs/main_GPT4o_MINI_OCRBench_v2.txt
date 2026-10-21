@@ -417,3 +417,33 @@ Traceback (most recent call last):
   File "/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/metrics/distance.py", line 45, in _check_distance_input_len
     raise ValueError(
 ValueError: edit_distance: input length 3998 exceeds MAX_DISTANCE_INPUT_LEN (2000). This function is super-linear in the input length over two untrusted strings (CWE-407/CWE-400); a long input is a CPU/memory DoS. Raise nltk.metrics.distance.MAX_DISTANCE_INPUT_LEN if you need to compare longer trusted strings.
+[2026-10-21 13:32:40] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+  0%|          | 0/400 [00:00<?, ?it/s]100%|██████████| 400/400 [00:00<00:00, 26877.09it/s]
+  0%|          | 0/400 [00:00<?, ?it/s] 10%|▉         | 39/400 [00:00<00:04, 72.84it/s] 19%|█▉        | 77/400 [00:02<00:13, 23.62it/s] 20%|██        | 81/400 [00:07<00:39,  8.01it/s] 21%|██        | 84/400 [00:08<00:48,  6.55it/s] 22%|██▏       | 86/400 [00:09<00:58,  5.34it/s] 22%|██▏       | 87/400 [00:10<01:07,  4.62it/s] 22%|██▏       | 88/400 [00:12<01:35,  3.28it/s] 22%|██▏       | 89/400 [00:13<02:08,  2.41it/s] 22%|██▎       | 90/400 [00:15<02:35,  2.00it/s] 23%|██▎       | 91/400 [00:15<02:18,  2.22it/s] 23%|██▎       | 92/400 [00:15<02:18,  2.22it/s] 41%|████      | 163/400 [00:15<00:06, 36.11it/s] 46%|████▋     | 185/400 [00:16<00:05, 42.12it/s]Building prefix dict from the default dictionary ...
+[2026-10-21 13:33:09] DEBUG - __init__.py: initialize - 113: Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+[2026-10-21 13:33:09] DEBUG - __init__.py: initialize - 132: Loading model from cache /tmp/jieba.cache
+Loading model cost 0.508 seconds.
+[2026-10-21 13:33:10] DEBUG - __init__.py: initialize - 164: Loading model cost 0.508 seconds.
+Prefix dict has been built successfully.
+[2026-10-21 13:33:10] DEBUG - __init__.py: initialize - 166: Prefix dict has been built successfully.
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+ 52%|█████▏    | 207/400 [00:19<00:12, 15.66it/s] 56%|█████▋    | 226/400 [00:19<00:08, 20.70it/s] 60%|██████    | 240/400 [00:25<00:21,  7.60it/s] 66%|██████▌   | 262/400 [00:25<00:12, 11.16it/s] 71%|███████   | 283/400 [00:25<00:07, 15.75it/s] 74%|███████▍  | 298/400 [00:26<00:05, 19.33it/s] 78%|███████▊  | 311/400 [00:26<00:04, 21.47it/s] 80%|████████  | 321/400 [00:29<00:07, 11.25it/s] 82%|████████▏ | 328/400 [00:31<00:09,  7.33it/s]100%|██████████| 400/400 [00:31<00:00, 12.58it/s]
+{"operator": "Adilzhan", "model": "GPT4o_MINI", "benchmark": "OCRBench_v2", "split": "main", "n_items": 400, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0", "n_failed": 0, "primary_score": 0.4134327672791634, "notes": "ok", "duration_s": 45.0, "timestamp_utc": "2026-10-21T13:33:25Z"}

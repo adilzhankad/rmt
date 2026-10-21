@@ -153,4 +153,33 @@ Traceback (most recent call last):
 ValueError: edit_distance: input length 3998 exceeds MAX_DISTANCE_INPUT_LEN (2000). This function is super-linear in the input length over two untrusted strings (CWE-407/CWE-400); a long input is a CPU/memory DoS. Raise nltk.metrics.distance.MAX_DISTANCE_INPUT_LEN if you need to compare longer trusted strings.
 [2026-10-21 12:53:24] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
   0%|          | 0/400 [00:00<?, ?it/s]100%|██████████| 400/400 [00:00<00:00, 22409.96it/s]
-  0%|          | 0/400 [00:00<?, ?it/s] 10%|▉         | 39/400 [00:00<00:04, 72.42it/s] 19%|█▉        | 77/400 [00:03<00:14, 22.64it/s] 20%|██        | 81/400 [00:07<00:39,  7.99it/s] 21%|██        | 84/400 [00:08<00:47,  6.63it/s] 22%|██▏       | 86/400 [00:10<01:04,  4.87it/s] 22%|██▏       | 87/400 [00:10<01:04,  4.83it/s] 22%|██▏       | 88/400 [00:11<01:19,  3.92it/s] 22%|██▏       | 89/400 [00:13<02:13,  2.33it/s]
+  0%|          | 0/400 [00:00<?, ?it/s] 10%|▉         | 39/400 [00:00<00:04, 72.42it/s] 19%|█▉        | 77/400 [00:03<00:14, 22.64it/s] 20%|██        | 81/400 [00:07<00:39,  7.99it/s] 21%|██        | 84/400 [00:08<00:47,  6.63it/s] 22%|██▏       | 86/400 [00:10<01:04,  4.87it/s] 22%|██▏       | 87/400 [00:10<01:04,  4.83it/s] 22%|██▏       | 88/400 [00:11<01:19,  3.92it/s] 22%|██▏       | 89/400 [00:13<02:13,  2.33it/s][2026-10-21 13:31:20] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+  0%|          | 0/400 [00:00<?, ?it/s]100%|██████████| 400/400 [00:00<00:00, 30478.54it/s]
+  0%|          | 0/400 [00:00<?, ?it/s] 10%|▉         | 39/400 [00:00<00:04, 81.54it/s] 19%|█▉        | 77/400 [00:02<00:12, 24.95it/s] 20%|██        | 82/400 [00:07<00:39,  8.01it/s] 21%|██▏       | 85/400 [00:09<00:53,  5.93it/s] 22%|██▏       | 87/400 [00:09<00:53,  5.85it/s] 22%|██▏       | 89/400 [00:12<01:30,  3.44it/s] 22%|██▎       | 90/400 [00:15<02:09,  2.39it/s] 23%|██▎       | 92/400 [00:15<01:57,  2.62it/s] 40%|███▉      | 159/400 [00:15<00:11, 20.49it/s] 45%|████▌     | 181/400 [00:15<00:08, 25.83it/s]Building prefix dict from the default dictionary ...
+[2026-10-21 13:31:55] DEBUG - __init__.py: initialize - 113: Building prefix dict from the default dictionary ...
+Dumping model to file cache /tmp/jieba.cache
+[2026-10-21 13:31:55] DEBUG - __init__.py: initialize - 146: Dumping model to file cache /tmp/jieba.cache
+Loading model cost 0.542 seconds.
+[2026-10-21 13:31:55] DEBUG - __init__.py: initialize - 164: Loading model cost 0.542 seconds.
+Prefix dict has been built successfully.
+[2026-10-21 13:31:55] DEBUG - __init__.py: initialize - 166: Prefix dict has been built successfully.
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/home/shadeform/a3/.venv/lib/python3.11/site-packages/nltk/translate/bleu_score.py:577: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+ 52%|█████▏    | 207/400 [00:19<00:13, 14.08it/s] 56%|█████▋    | 225/400 [00:19<00:09, 17.89it/s] 59%|█████▉    | 237/400 [00:24<00:19,  8.51it/s] 62%|██████▏   | 246/400 [00:37<00:52,  2.95it/s] 70%|███████   | 281/400 [00:37<00:21,  5.66it/s] 74%|███████▍  | 297/400 [00:37<00:14,  7.08it/s] 77%|███████▋  | 309/400 [00:38<00:10,  8.41it/s] 80%|███████▉  | 319/400 [00:39<00:10,  7.64it/s] 82%|████████▏ | 326/400 [00:41<00:10,  7.23it/s] 83%|████████▎ | 331/400 [00:42<00:11,  5.99it/s]100%|██████████| 400/400 [00:42<00:00,  9.34it/s]
+{"operator": "Adilzhan", "model": "GPT4o_20240806", "benchmark": "OCRBench_v2", "split": "main", "n_items": 400, "max_tokens": 4096, "temperature": 0, "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70", "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0", "n_failed": 0, "primary_score": 0.46023150628304077, "notes": "ok", "duration_s": 62.0, "timestamp_utc": "2026-10-21T13:32:22Z"}
