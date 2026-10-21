@@ -1,0 +1,43 @@
+{
+  "operator": "Adilzhan",
+  "model": "GPT4o_20240806",
+  "benchmark": "OCRBench_v2",
+  "split": "main",
+  "n_items": 400,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0",
+  "n_failed": 0,
+  "notes": "ERROR ValueError: edit_distance: input length 3998 exceeds MAX_DISTANCE_INPUT_LEN (2000). This function is super-linear in the input length over two untrusted strings (CWE-407/CWE-400); a long input is a CPU/memory DoS. Raise nltk.metrics.distance.MAX_DISTANCE_INPUT_LEN if you need to compare longer trusted strings.",
+  "duration_s": 43.3,
+  "timestamp_utc": "2026-10-21T12:47:46Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "gpu": [
+      "NVIDIA RTX A6000"
+    ],
+    "transformers": "5.20.2"
+  },
+  "usage": {
+    "calls": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "thinking": 0
+    },
+    "finish_reasons": {}
+  },
+  "items_file": "items/OCRBench_v2_main.csv",
+  "model_config": {
+    "kind": "api",
+    "provider": "openai",
+    "overrides": {
+      "max_tokens": "MAX_TOKENS"
+    }
+  },
+  "prompt": "benchmark"
+}

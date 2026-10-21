@@ -6,6 +6,7 @@
 cd ~/a3 || exit 1
 export PATH="$HOME/.local/bin:$PATH"
 touch BOOTSTRAP_RUNNING
+sed -i "s#^LMUData=.*#LMUData=$HOME/a3/LMUData#" .env   # .env comes from the operator's laptop
 nohup experiment/budget_guard.sh "$1" "$2" "$3" > guard.log 2>&1 &
 T=$(grep ^TELEGRAM_BOT_TOKEN .env | cut -d= -f2); C=$(grep ^TELEGRAM_CHAT_ID .env | cut -d= -f2)
 send() { echo "$(date -u +%FT%TZ) $1"; curl -s --max-time 20 "https://api.telegram.org/bot$T/sendMessage" \

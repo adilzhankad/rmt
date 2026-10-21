@@ -2,6 +2,7 @@
 # Budget guard for the Brev run. Every 30 min: upload logs and outputs to Google Drive and post the
 # spend so far to Telegram. When the queue is done, or when the budget is reached, stop the queue
 # (queue_runs.py logs the cut jobs as ABORTED), upload everything and delete this instance.
+# The queue writes QUEUE_DONE only when it ran to the end; a stopped queue writes QUEUE_STOPPED.
 #   experiment/budget_guard.sh <instance-name> <usd-per-hour> <usd-cap>
 # Hours are counted from the machine's boot, which is when Brev starts billing. If neither the
 # setup nor the queue runs for 60 min (a crash; a hand-made HOLD file pauses this), the run ends too.
@@ -30,7 +31,7 @@ upload() {
   return $((1 - ok))
 }
 
-rm -f QUEUE_DONE
+rm -f QUEUE_DONE QUEUE_STOPPED
 IDLE=0
 send "🛡 budget guard on: \$$PRICE/h, cap \$$CAP, queue stops at $(date -u -d @"$STOP_AT" +%FT%TZ)"
 while true; do
@@ -43,8 +44,9 @@ while true; do
     fi
     if [ "$(date +%s)" -ge "$STOP_AT" ]; then
       send "⏰ budget reached (\$$(spent)): stopping the queue"
+      echo "budget guard: cap reached" > STOP_REASON
       pkill -TERM -f "[q]ueue_runs.py"
-      for j in $(seq 36); do [ -f QUEUE_DONE ] && break; sleep 5; done
+      for j in $(seq 36); do [ -f QUEUE_STOPPED ] && break; sleep 5; done
       break 2
     fi
     sleep 60

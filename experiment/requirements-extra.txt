@@ -13,3 +13,4 @@ pyyaml
 openpyxl
 scipy
 pytest
+nltk==3.10.3            # pinned; its edit_distance length guard is lifted in common.py

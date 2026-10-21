@@ -37,6 +37,7 @@ BENCH_ORDER = ["OCRBench_v2", "CCOCR", "olmOCRBench", "OmniDocBench"]
 PILOT_MODELS = []
 CONSOLE = ROOT / "console_logs"
 STOP = False
+STOP_REASON = ""
 
 
 def now():
@@ -81,6 +82,7 @@ class Job:
         self.env = m.get("env", "main")
         self.gb = 0 if m["kind"] == "api" else MODEL_GB.get(model, DEFAULT_GB)
         self.proc = self.start = None
+        self.retry = False
 
     @property
     def key(self):
@@ -121,9 +123,9 @@ def abort(job, cfg):
                     "split": job.split, "n_items": len(read_items(job.bench, job.split)),
                     "duration_s": round(time.time() - job.start, 1), "vlmevalkit_commit": cfg["vlmevalkit"]["commit"],
                     "tsv_md5": b["md5"], "max_tokens": cfg["max_tokens"], "temperature": cfg["temperature"],
-                    "notes": "ABORTED by the budget guard during inference; no score "
+                    "notes": f"ABORTED during inference ({STOP_REASON}); no score "
                              "(partial answers kept for a resume)"})
-    say(f"⏹ {job.model} · {job.bench} · {job.split}: stopped by the budget guard")
+    say(f"⏹ {job.model} · {job.bench} · {job.split}: stopped ({STOP_REASON})")
 
 
 def main():
@@ -143,8 +145,10 @@ def main():
         return
 
     def on_term(*_):
-        global STOP
+        global STOP, STOP_REASON
         STOP = True
+        reason = ROOT / "STOP_REASON"   # written by whoever stops the queue
+        STOP_REASON = reason.read_text().strip() if reason.exists() else "stopped by SIGTERM"
     signal.signal(signal.SIGTERM, on_term)
     signal.signal(signal.SIGINT, on_term)
 
@@ -157,6 +161,12 @@ def main():
             report(job, rows)
             if job.split == "pilot" and not scored(rows, job.key):
                 failed_pilot.add(job.model)
+            elif not scored(rows, job.key) and not job.retry:
+                # one retry, first in its lane; it resumes from the answers already saved
+                again = Job(cfg, *job.key)
+                again.retry = True
+                (api_q if job.env == "main" else gpu_q).insert(0, again)
+                say(f"🔁 {job.model} · {job.bench} · {job.split}: queued once more")
         # a new model goes to the main run only if its whole pilot worked
         for job in [j for j in gpu_q if j.split == "main" and j.model in failed_pilot]:
             gpu_q.remove(job)
@@ -182,10 +192,12 @@ def main():
                 abort(job, cfg)
             else:
                 report(job, logged())
-        say("🛑 queue stopped by the budget guard")
+        say(f"🛑 queue stopped ({STOP_REASON})")
     else:
         say("🏁 queue finished" + (f"; API jobs waiting for ALLOW_API: {len(api_q)}" if api_q else ""))
-    (ROOT / "QUEUE_DONE").write_text(now() + ("\nstopped\n" if STOP else "\nfinished\n"))
+    # the budget guard ends the run (and deletes the machine) on QUEUE_DONE only, so a stopped
+    # queue, e.g. one restarted by hand, must never write it
+    (ROOT / ("QUEUE_STOPPED" if STOP else "QUEUE_DONE")).write_text(now() + "\n")
 
 
 if __name__ == "__main__":

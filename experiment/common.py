@@ -31,6 +31,17 @@ SPLITS = ("pilot", "main")
 sys.path.insert(0, str(ROOT / "code"))
 import harness  # noqa: E402  (fixed study rules, Kendall tau-b, bootstrap)
 
+try:
+    # nltk >= 3.10.3 refuses edit_distance on strings over 2,000 chars (a DoS guard for untrusted
+    # input). The evaluators compare model answers with ground truth that is often longer; lifting
+    # the guard does not change the distance, it only lets the computation run.
+    import importlib   # not "import nltk.metrics.distance as": nltk rebinds nltk.metrics
+    _nltk_distance = importlib.import_module("nltk.metrics.distance")
+    if hasattr(_nltk_distance, "MAX_DISTANCE_INPUT_LEN"):
+        _nltk_distance.MAX_DISTANCE_INPUT_LEN = 10 ** 9
+except ImportError:
+    pass
+
 
 def load_env(path=ROOT / ".env"):
     """Read KEY=VALUE lines from .env into os.environ (existing values win)."""
