@@ -186,3 +186,18 @@ def test_generate_overrides_are_forced():
         vc.supported_VLM["llava-onevision-qwen2-7b-ov-hf"] = orig
     assert model.model.generate(max_new_tokens=2048) == {"max_new_tokens": cfg["max_tokens"], "do_sample": False}
     assert m["env"] == "open"
+
+
+def test_compare_published(tmp_path):
+    import compare_published as cp
+    cfg = common.load_config()
+    models = ["GPT4o_20240806", "GPT4o_MINI", "InternVL3-8B", "Qwen2.5-VL-7B-Instruct"]
+    ours = pd.DataFrame([{"model": m, "benchmark": "OCRBench_v2", "split": "main", "metric": "English Overall Score",
+                          "value": v} for m, v in zip(models, [0.5, 0.4, 0.45, 0.3])])
+    pub = pd.DataFrame([{"benchmark": "OCRBench v2", "split": "English (private)", "model_id": cp.PUBLISHED_ID[m],
+                         "metric": "Average score", "value": v, "status": "ok"} for m, v in zip(models, [47, 44, 45, 41])])
+    ours.to_csv(tmp_path / "ours.csv", index=False)
+    pub.to_csv(tmp_path / "pub.csv", index=False)
+    rows, summary = cp.compare("main", tmp_path / "ours.csv", tmp_path / "pub.csv", tmp_path, cfg)
+    first = summary[0]
+    assert first["n_shared"] == 4 and first["kendall_tau_b"] == 1.0 and len(rows) == 4
