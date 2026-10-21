@@ -1,5 +1,6 @@
 """Shared paths, config loading and small helpers for the Stage 2 re-run."""
 import csv
+import fcntl
 import hashlib
 import json
 import logging
@@ -91,6 +92,7 @@ def append_run_log(row, path=RUN_LOG):
     path.parent.mkdir(parents=True, exist_ok=True)
     new = not path.exists()
     with open(path, "a", newline="") as f:
+        fcntl.flock(f, fcntl.LOCK_EX)   # several runs share the GPU and may finish together
         w = csv.DictWriter(f, fieldnames=RUN_LOG_COLUMNS)
         if new:
             w.writeheader()

@@ -138,7 +138,7 @@ def test_plan_is_deterministic_and_disjoint():
 def test_collect_and_analyze(bench_env):
     import analyze
     import collect
-    models = ["GPT4o_20240806", "GPT4o_MINI", "Ovis2-8B", "Idefics3-8B-Llama3", "Phi-3.5-Vision", "InternVL3-8B"]
+    models = ["GPT4o_20240806", "GPT4o_MINI", "Ovis2-8B", "deepseek_vl2_small", "llava-onevision-qwen2-7b-ov-hf", "InternVL3-8B"]
     for k, m in enumerate(models):
         for bench in BENCHES:
             # model k answers item i correctly with a rate that falls with k -> rankings agree
@@ -165,3 +165,24 @@ def test_olmocr_empty_answer_is_scored_not_crashing(bench_env):
     _, checks = item_scores.score_run("olmOCRBench", str(work / "GPT4o_MINI_olmOCRBench.xlsx"), metrics,
                                       common.read_items("olmOCRBench", "main"))
     assert all(c["ok"] for c in checks), checks
+
+
+def test_generate_overrides_are_forced():
+    class Inner:
+        def generate(self, *a, **k):
+            return k
+
+    class Wrapper:
+        model = Inner()
+
+    cfg = common.load_config()
+    m = cfg["models"]["llava-onevision-qwen2-7b-ov-hf"]
+    import vlmeval.config as vc
+    orig = vc.supported_VLM.get("llava-onevision-qwen2-7b-ov-hf")
+    vc.supported_VLM["llava-onevision-qwen2-7b-ov-hf"] = lambda **ov: Wrapper()
+    try:
+        model = run.build_model("llava-onevision-qwen2-7b-ov-hf", cfg)
+    finally:
+        vc.supported_VLM["llava-onevision-qwen2-7b-ov-hf"] = orig
+    assert model.model.generate(max_new_tokens=2048) == {"max_new_tokens": cfg["max_tokens"], "do_sample": False}
+    assert m["env"] == "open"

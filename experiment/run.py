@@ -95,6 +95,11 @@ def build_model(key, cfg):
         model.default_kwargs["temperature"] = cfg["temperature"]
     if cfg.get("prompt") == "benchmark" and hasattr(model, "use_custom_prompt"):
         model.use_custom_prompt = lambda dataset=None: False   # infer_data then uses dataset.build_prompt
+    if "generate_overrides" in m:
+        # for wrappers that hard-code generate() arguments: force the common values on the HF call
+        forced = {k: (cfg["max_tokens"] if v == "MAX_TOKENS" else v) for k, v in m["generate_overrides"].items()}
+        generate = model.model.generate
+        model.model.generate = lambda *a, **k: generate(*a, **{**k, **forced})
     return model
 
 

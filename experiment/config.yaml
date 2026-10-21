@@ -75,19 +75,30 @@ models:
   # open-weight models from three other developers, all run with the same settings on our GPU.
   Qwen2.5-VL-7B-Instruct:
     kind: local
+    env: open
     overrides: {max_new_tokens: MAX_TOKENS}
   InternVL3-8B:
     kind: local
+    env: open
     overrides: {max_new_tokens: MAX_TOKENS}
   MiniCPM-V-4_5:
     kind: local
+    env: open
     overrides: {max_new_tokens: MAX_TOKENS}
   Ovis2-8B:
     kind: local
+    env: legacy
     overrides: {max_new_tokens: MAX_TOKENS}
-  Idefics3-8B-Llama3:
+  # Idefics3-8B-Llama3 and Phi-3.5-Vision were piloted (logs/run_log.csv) but needed about 5 min
+  # per OmniDocBench page, which the GPU budget cannot cover for 1,600 items. They are replaced by
+  # two models from other developers that are also on the published OCRBench v2 leaderboard.
+  deepseek_vl2_small:
     kind: local
+    env: legacy            # deepseek_vl2 package needs transformers < 4.48
     overrides: {max_new_tokens: MAX_TOKENS}
-  Phi-3.5-Vision:
+  llava-onevision-qwen2-7b-ov-hf:
     kind: local
-    overrides: {max_new_tokens: MAX_TOKENS}
+    env: open
+    # The VLMEvalKit wrapper calls generate(max_new_tokens=2048) with no way to pass kwargs;
+    # these values are forced on that call so the model gets the same settings as the others.
+    generate_overrides: {max_new_tokens: MAX_TOKENS, do_sample: false}
