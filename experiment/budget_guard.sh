@@ -23,7 +23,7 @@ upload() {
     [ -n "$k" ] && grep -rlF "$k" logs raw console_logs 2>/dev/null && { send "⚠️ API key found in outputs: upload skipped"; return 1; }
   done
   local ok=1
-  for d in logs raw/rerun console_logs; do
+  for d in logs raw/rerun console_logs processed charts; do
     [ -d "$d" ] && { rclone copy "$d" "a3drive:$d" --exclude "*.pkl" --exclude "*_subset_gt.tsv" -q || ok=0; }
   done
   # partial answers, so a cut job can resume on a new machine
@@ -53,6 +53,15 @@ while true; do
   done
   upload && send "☁️ uploaded to Drive · spent so far ≈ \$$(spent) of \$$CAP"
 done
+if [ -f QUEUE_DONE ] && [ -x experiment/post_run.sh ]; then
+  # analysis before the machine goes, unless that would pass the cap
+  left=$(( STOP_AT + 600 - $(date +%s) ))
+  if [ $left -gt 600 ]; then
+    send "📈 queue done: running the analysis (max $((left / 60)) min)"
+    timeout $left experiment/post_run.sh > post_run.log 2>&1 && send "📈 analysis done" || send "⚠️ analysis failed or timed out: see post_run.log on Drive"
+    cp post_run.log logs/ 2>/dev/null
+  fi
+fi
 for i in 1 2 3; do upload && { UP=ok; break; }; sleep 60; done
 echo "$(date -u +%FT%TZ) run finished; spent ≈ \$$(spent); upload ${UP:-FAILED}; instance deleted next" > logs/FINISHED.txt
 rclone copy logs/FINISHED.txt a3drive:logs -q
