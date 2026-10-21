@@ -81,10 +81,6 @@ models:
     kind: local
     env: open
     overrides: {max_new_tokens: MAX_TOKENS}
-  MiniCPM-V-4_5:
-    kind: local
-    env: open
-    overrides: {max_new_tokens: MAX_TOKENS}
   Ovis2-8B:
     kind: local
     env: legacy
@@ -92,10 +88,9 @@ models:
   # Idefics3-8B-Llama3 and Phi-3.5-Vision were piloted (logs/run_log.csv) but needed about 5 min
   # per OmniDocBench page, which the GPU budget cannot cover for 1,600 items. They are replaced by
   # two models from other developers that are also on the published OCRBench v2 leaderboard.
-  deepseek_vl2_small:
-    kind: local
-    env: legacy            # deepseek_vl2 package needs transformers < 4.48
-    overrides: {max_new_tokens: MAX_TOKENS}
+  # MiniCPM-V-4_5 (piloted, logs/run_log.csv) and deepseek_vl2_small were dropped before the main
+  # run to fit the GPU budget (USD 20): MiniCPM was the slowest model in the pilot (about 21 GPU-h
+  # for the main run) and the 16B DeepSeek-VL2-small cannot share the 48 GB GPU with another model.
   llava-onevision-qwen2-7b-ov-hf:
     kind: local
     env: open
