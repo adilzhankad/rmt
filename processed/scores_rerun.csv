@@ -31,6 +31,9 @@ GPT4o_MINI,OmniDocBench,pilot,overall_EN,True,0.284,lower,20,0,2026-10-20T11:23:
 GPT4o_MINI,OmniDocBench,pilot,overall_CH,False,0.496,lower,20,0,2026-10-20T11:23:14Z,Adilzhan
 GPT4o_MINI,olmOCRBench,main,overall,True,60.7,higher,400,0,2026-10-21T14:18:24Z,Adilzhan
 GPT4o_MINI,olmOCRBench,pilot,overall,True,59.4,higher,20,0,2026-10-20T11:25:53Z,Adilzhan
+InternVL3-8B,CCOCR,main,total,True,0.6131142551586721,higher,400,0,2026-10-22T13:07:04Z,Adilzhan
+InternVL3-8B,CCOCR,main,kie,False,0.8810065922126661,higher,400,0,2026-10-22T13:07:04Z,Adilzhan
+InternVL3-8B,CCOCR,main,doc_parsing,False,0.2839318251263193,higher,400,0,2026-10-22T13:07:04Z,Adilzhan
 InternVL3-8B,CCOCR,pilot,total,True,0.448228742124569,higher,20,0,2026-10-20T11:50:05Z,Adilzhan
 InternVL3-8B,CCOCR,pilot,kie,False,0.8071002314130213,higher,20,0,2026-10-20T11:50:05Z,Adilzhan
 InternVL3-8B,CCOCR,pilot,doc_parsing,False,0.24974651992524333,higher,20,0,2026-10-20T11:50:05Z,Adilzhan
@@ -38,24 +41,36 @@ InternVL3-8B,OCRBench_v2,main,English Overall Score,True,0.46542893548968756,hig
 InternVL3-8B,OCRBench_v2,main,Chinese Overall Score,False,0.499504297510135,higher,400,0,2026-10-21T14:36:25Z,Adilzhan
 InternVL3-8B,OCRBench_v2,pilot,English Overall Score,True,0.5342690872109771,higher,20,0,2026-10-20T11:51:53Z,Adilzhan
 InternVL3-8B,OCRBench_v2,pilot,Chinese Overall Score,False,0.6184456952967632,higher,20,0,2026-10-20T11:51:53Z,Adilzhan
+InternVL3-8B,OmniDocBench,main,overall_EN,True,0.341,lower,400,0,2026-10-22T21:26:34Z,Adilzhan
+InternVL3-8B,OmniDocBench,main,overall_CH,False,0.398,lower,400,0,2026-10-22T21:26:34Z,Adilzhan
 InternVL3-8B,OmniDocBench,pilot,overall_EN,True,0.305,lower,20,0,2026-10-20T12:06:55Z,Adilzhan
 InternVL3-8B,OmniDocBench,pilot,overall_CH,False,0.399,lower,20,0,2026-10-20T12:06:55Z,Adilzhan
+InternVL3-8B,olmOCRBench,main,overall,True,68.6,higher,400,0,2026-10-22T16:57:02Z,Adilzhan
 InternVL3-8B,olmOCRBench,pilot,overall,True,79.9,higher,20,0,2026-10-20T12:18:00Z,Adilzhan
+Ovis2-8B,CCOCR,main,total,True,0.6727728805111237,higher,400,0,2026-10-22T16:09:46Z,Adilzhan
+Ovis2-8B,CCOCR,main,kie,False,0.8591556456473151,higher,400,0,2026-10-22T16:09:46Z,Adilzhan
+Ovis2-8B,CCOCR,main,doc_parsing,False,0.3013736256757143,higher,400,0,2026-10-22T16:09:46Z,Adilzhan
 Ovis2-8B,CCOCR,pilot,total,True,0.4708553672716677,higher,20,0,2026-10-20T14:18:16Z,Adilzhan
 Ovis2-8B,CCOCR,pilot,kie,False,0.659481144879417,higher,20,0,2026-10-20T14:18:16Z,Adilzhan
 Ovis2-8B,CCOCR,pilot,doc_parsing,False,0.16992113223769206,higher,20,0,2026-10-20T14:18:16Z,Adilzhan
+Ovis2-8B,OCRBench_v2,main,English Overall Score,True,0.41444362461409806,higher,400,0,2026-10-22T12:23:54Z,Adilzhan
+Ovis2-8B,OCRBench_v2,main,Chinese Overall Score,False,0.5207775254827627,higher,400,0,2026-10-22T12:23:54Z,Adilzhan
 Ovis2-8B,OCRBench_v2,pilot,English Overall Score,True,0.4290022156811331,higher,20,0,2026-10-20T14:20:19Z,Adilzhan
 Ovis2-8B,OCRBench_v2,pilot,Chinese Overall Score,False,0.49418408945999587,higher,20,0,2026-10-20T14:20:19Z,Adilzhan
 Ovis2-8B,OmniDocBench,pilot,overall_EN,True,0.471,lower,20,0,2026-10-20T14:34:23Z,Adilzhan
 Ovis2-8B,OmniDocBench,pilot,overall_CH,False,0.446,lower,20,0,2026-10-20T14:34:23Z,Adilzhan
 Ovis2-8B,olmOCRBench,pilot,overall,True,58.4,higher,20,0,2026-10-20T14:42:41Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,CCOCR,main,total,True,0.8028581270007462,higher,400,0,2026-10-22T13:53:12Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,CCOCR,main,kie,False,0.9446783166325421,higher,400,0,2026-10-22T13:53:12Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,CCOCR,main,doc_parsing,False,0.6016086443235051,higher,400,0,2026-10-22T13:53:12Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,CCOCR,pilot,total,True,0.757188774561454,higher,20,0,2026-10-20T12:24:19Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,CCOCR,pilot,kie,False,0.9728151234658591,higher,20,0,2026-10-20T12:24:19Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,CCOCR,pilot,doc_parsing,False,0.5591615590386286,higher,20,0,2026-10-20T12:24:19Z,Adilzhan
-Qwen2.5-VL-7B-Instruct,OCRBench_v2,main,English Overall Score,True,0.44521340533455295,higher,400,0,2026-10-21T14:33:24Z,Adilzhan
-Qwen2.5-VL-7B-Instruct,OCRBench_v2,main,Chinese Overall Score,False,0.5799800975761343,higher,400,0,2026-10-21T14:33:24Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,OCRBench_v2,main,English Overall Score,True,0.4565473336423915,higher,400,0,2026-10-22T11:55:13Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,OCRBench_v2,main,Chinese Overall Score,False,0.5802356593932532,higher,400,0,2026-10-22T11:55:13Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OCRBench_v2,pilot,English Overall Score,True,0.3981829573934837,higher,20,0,2026-10-20T12:26:17Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OCRBench_v2,pilot,Chinese Overall Score,False,0.7714001028114564,higher,20,0,2026-10-20T12:26:17Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OmniDocBench,pilot,overall_EN,True,0.343,lower,20,0,2026-10-20T12:45:29Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OmniDocBench,pilot,overall_CH,False,0.439,lower,20,0,2026-10-20T12:45:29Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,olmOCRBench,main,overall,True,79.6,higher,400,0,2026-10-22T19:54:25Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,olmOCRBench,pilot,overall,True,79.0,higher,20,0,2026-10-20T13:04:08Z,Adilzhan

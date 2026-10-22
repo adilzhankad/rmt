@@ -64,42 +64,42 @@ All 6 are on the published OCRBench v2 board (`data/scores_long.csv`).
 
 ---
 
-## 3. State right now (2026-10-22 ~11:20 UTC)
+## 3. State right now (2026-10-22 21:32 UTC): run STOPPED by the students, no machine running
 
-### 3.1 Main run: 10 of 24 jobs had a score before today
-Scores from `logs/run_log.csv` (main split, 400 items each, 0 failed answers):
+### 3.1 Main run: 19 of 24 jobs have a score
+Scores from `logs/run_log.csv` (main split, 400 items each, 0 failed answers in every scored run):
 
 | Model | OCRBench v2 (EN, ↑) | CC-OCR (↑) | olmOCR (↑) | OmniDocBench (EN edit dist, ↓) |
 |---|---|---|---|---|
 | GPT-4o | 0.460 | 0.735 | 72.4 | 0.209 |
 | GPT-4o-mini | 0.413 | 0.652 | 60.7 | 0.375 |
-| InternVL3-8B | 0.465 | ABORTED 338/400 (resumes) | ABORTED 135/400 (resumes) | — |
-| Qwen2.5-VL-7B | 0.445 on transformers, **superseded** (see 3.3) | — | — | — |
-| Ovis2-8B | — | — | — | — |
-| LLaVA-OV-7B | — | — | — | — |
+| InternVL3-8B | 0.465 | 0.613 | 68.6 | 0.341 |
+| Qwen2.5-VL-7B (vLLM) | 0.457 (see 3.3) | 0.803 | 79.6 | ABORTED, 140/400 saved |
+| Ovis2-8B | 0.414 | 0.673 | ABORTED, 270/400 saved | ABORTED, 370/400 saved |
+| LLaVA-OV-7B | ABORTED, 160/400 saved | not started | not started | not started |
 
-So 15 GPU jobs are left (Qwen ×4 incl. the OCRBench redo, InternVL ×3, Ovis2 ×4, LLaVA ×4). API runs
-are complete: the OpenAI key is no longer needed.
+So **4 models have all 4 benchmarks** (GPT-4o, GPT-4o-mini, InternVL3-8B, and Qwen/Ovis2 each miss
+one). `MIN_SHARED_MODELS` is 5, so the full four-benchmark verdict needs one more model done: the
+cheapest is Ovis2 OmniDocBench (30 pages left, < 1 h) or Qwen OmniDocBench (260 pages left, ~2–3 h).
+Pairwise τ for pairs with ≥ 5 shared models can already be computed (e.g. OCRBench v2 × CC-OCR: 5).
 
-### 3.2 A GPU machine is RUNNING and billing
-- Brev instance **`a3-main`**, type `massedcompute_A6000_plusx2` (2× RTX A6000 48 GB, 30 vCPU
-  Xeon Gold 6238R 2.2 GHz, 125 GB RAM, 503 GB disk), **$1.37/h**, created 2026-10-22 ~11:00 UTC.
-  It cannot be stopped, only deleted.
-- Started with `experiment/brev_bootstrap.sh a3-main 1.37 29`: **cap $29** for this machine. The
-  budget guard stops the queue at **2026-10-23 07:53 UTC** at the latest, uploads everything to
-  Drive and deletes the instance itself.
-- Expected: ~13–15 h, ~$18–20, if vLLM Qwen works. Setup finished at 11:20:45Z (all 4 envs,
-  data, weights). The queue started at 11:20:47Z with 15 GPU jobs on 2 GPUs: Qwen OCRBench v2 on
-  GPU 1 (vLLM, model loaded and compiling at 11:22Z), Ovis2 and LLaVA OCRBench v2 on GPU 0 (both
-  answering). Qwen-on-vLLM works: OCRBench v2 scored at 11:55Z, then Qwen CC-OCR started on GPU 1.
-- Scheduling (`experiment/queue_runs.py`): every job is pinned to one GPU
-  (`CUDA_VISIBLE_DEVICES`). Since 12:15Z: GPU 1 runs the vLLM (Qwen) job with half the card
-  (`gpu_utils: 0.5`) plus one transformers job, and keeps room for the next Qwen job. GPU 0 runs
-  two transformers jobs (~18 GB each). When no Qwen job is left, GPU 1 takes two transformers jobs.
-  A new job never starts on a GPU within 3 min of the previous start there. (Until 12:15Z vLLM
-  took the whole GPU 1; Qwen CC-OCR was stopped then and resumed, logged as ABORTED.) Order is benchmark-major: OCRBench v2 → CC-OCR → olmOCR → OmniDocBench.
-- Telegram bot (@clde_alert_bot) posts ▶️ start / ✅ score / ❌ failure / ☁️ upload / 🏁 end
-  messages to Adilzhan's chat.
+### 3.2 How the run ended
+- Machine `a3-main` (`massedcompute_A6000_plusx2`, 2× RTX A6000, $1.37/h) ran 2026-10-22
+  ~11:00–21:31 UTC, ≈ **$14.4**. A Brev outage (API 503, ~20:30–21:30 UTC) blocked `ssh a3-main`;
+  the machine was reached directly (`ssh -p 22 a3-main-host`, the Brev key) and the students asked
+  to stop it to save money.
+- Stop: guard and watchdog killed, then `pkill -TERM queue_runs.py` with `STOP_REASON` "user asked
+  to stop the run (2026-10-23, budget)". The queue logged the 4 running jobs as ABORTED
+  (`logs/run_log.csv`, `processed/missing_runs.csv`). Everything was uploaded to Drive (key check
+  passed) and pulled to the laptop; then `brev delete a3-main` (`brev ls`: no instances).
+- Partial answers (`01_<bench>.pkl`, every 10 items) are in Drive `a3drive:resume_cache/raw/rerun/main/`
+  for Ovis2 olmOCR + OmniDocBench, Qwen OmniDocBench, LLaVA OCRBench v2: a resume continues from them (section 7).
+- LLaVA CC-OCR, olmOCR and OmniDocBench never started, so they have **no row** in the run log;
+  the report must say so.
+- Queue/guard logs of this machine: `logs/queue_2026-10-22.log`, `logs/guard_2026-10-22.log`; consoles in `console_logs/`.
+- Scheduling used (`experiment/queue_runs.py`): every job pinned to one GPU (`CUDA_VISIBLE_DEVICES`);
+  the vLLM (Qwen) job took half of GPU 1 (`gpu_utils: 0.5`) next to one transformers job; GPU 0 ran
+  two transformers jobs; 3 min gap between starts on one GPU. Order benchmark-major.
 
 ### 3.3 Why Qwen's OCRBench v2 is run again
 Qwen on transformers was ~1.4× slower than InternVL and the GPU budget did not cover it, so Qwen
@@ -115,8 +115,7 @@ state this, and give both OCRBench numbers as an engine sanity check. `run.py` a
 
 ### 3.4 Money spent so far
 - Brev: ≈ $7.2 before today (pilot on L40S ≈ $4.0; first A6000 ≈ $0.4, lost by a guard race; second
-  A6000 2026-10-21 13:13–17:20 UTC ≈ $2.8), plus today's machine (≤ $29). Brev balance was ≈ $43
-  before today, from $50.
+  A6000 2026-10-21 13:13–17:20 UTC ≈ $2.8), plus 2026-10-22 ≈ $14.4 → Brev total ≈ $21.6 of $50.
 - OpenAI: main runs finished, ≈ $21 (estimate from usage; check the OpenAI billing page for the real number).
 
 ### 3.5 Pilot (20 items, done 2026-10-20 on an L40S)

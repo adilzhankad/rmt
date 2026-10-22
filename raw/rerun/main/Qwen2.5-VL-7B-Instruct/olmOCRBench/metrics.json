@@ -1,0 +1,11 @@
+{
+  "overall": 79.6,
+  "arxiv_math": 87.2,
+  "baseline": 98.7,
+  "headers_footers": 73.2,
+  "long_tiny_text": 84.6,
+  "multi_column": 70.5,
+  "old_scans": 56.5,
+  "old_scans_math": 91.2,
+  "tables": 75.2
+}
