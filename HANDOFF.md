@@ -78,9 +78,9 @@ Scores from `logs/run_log.csv` (main split, 400 items each, 0 failed answers in 
 | Ovis2-8B | 0.414 | 0.673 | ABORTED, 270/400 saved | ABORTED, 370/400 saved |
 | LLaVA-OV-7B | ABORTED, 160/400 saved | not started | not started | not started |
 
-So **4 models have all 4 benchmarks** (GPT-4o, GPT-4o-mini, InternVL3-8B, and Qwen/Ovis2 each miss
-one). `MIN_SHARED_MODELS` is 5, so the full four-benchmark verdict needs one more model done: the
-cheapest is Ovis2 OmniDocBench (30 pages left, < 1 h) or Qwen OmniDocBench (260 pages left, ~2–3 h).
+So **3 models have all 4 benchmarks** (GPT-4o, GPT-4o-mini, InternVL3-8B); Qwen and Ovis2 miss
+one or two. `MIN_SHARED_MODELS` is 5, so the full four-benchmark verdict needs Qwen and Ovis2 done: Ovis2
+OmniDocBench (30 pages left) + olmOCR (130 left), Qwen OmniDocBench (260 left): ~3–4 h on one 2-GPU machine.
 Pairwise τ for pairs with ≥ 5 shared models can already be computed (e.g. OCRBench v2 × CC-OCR: 5).
 
 ### 3.2 How the run ended
