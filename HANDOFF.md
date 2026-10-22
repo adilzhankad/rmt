@@ -208,6 +208,10 @@ Control files in `~/a3` on the machine:
   paused at 12:19Z (ABORTED row, partial answers kept); it resumes after the other models.
 - `ALLOW_API`: API jobs run only if it exists. Not needed now.
 - `BOOTSTRAP_RUNNING`: setup in progress.
+- `experiment/queue_watchdog.sh` (started by hand at 12:45Z on 2026-10-22, log `watchdog.log`):
+  every 5 min, restarts the queue if it is not running and neither `QUEUE_DONE` nor
+  `QUEUE_STOPPED` nor `HOLD` exists. **Touch `HOLD` before stopping the queue by hand**, or it comes back.
+- Decision 2026-10-22 (Adilzhan): LLaVA keeps running after the other models until the $29 cap.
 
 ### If Qwen on vLLM fails
 The queue retries a failed job once, then moves on (each failure = an ERROR row, which is correct
