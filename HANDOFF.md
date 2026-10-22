@@ -199,7 +199,10 @@ Control files in `~/a3` on the machine:
 - `STOP_REASON`: text written into the ABORTED rows when the queue is stopped.
 - `QUEUE_DONE`: the queue finished everything → the guard runs `post_run.sh`, uploads, deletes the machine.
 - `QUEUE_STOPPED`: the queue was stopped (no delete by itself, except when the cap was reached).
-- `QUEUE_ORDER`: optional, one model per line → model-by-model order. Not used in this run.
+- `QUEUE_ORDER`: optional, one model per line → model-by-model order. Set at 12:05Z on 2026-10-22
+  to InternVL3 → Qwen → Ovis2 → LLaVA: LLaVA-OV falls into repetition loops up to the 4096-token
+  limit on full-page OCR (~6 min per such item at ~11 tok/s), so its long benchmarks go last and
+  the other models finish inside the cap first.
 - `ALLOW_API`: API jobs run only if it exists. Not needed now.
 - `BOOTSTRAP_RUNNING`: setup in progress.
 
