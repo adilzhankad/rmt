@@ -204,7 +204,8 @@ Control files in `~/a3` on the machine:
 - `QUEUE_ORDER`: optional, one model per line → model-by-model order. Set at 12:05Z on 2026-10-22
   to InternVL3 → Qwen → Ovis2 → LLaVA: LLaVA-OV falls into repetition loops up to the 4096-token
   limit on full-page OCR (~6 min per such item at ~11 tok/s), so its long benchmarks go last and
-  the other models finish inside the cap first.
+  the other models finish inside the cap first. Its running OCRBench v2 (168/400 after 56 min) was
+  paused at 12:19Z (ABORTED row, partial answers kept); it resumes after the other models.
 - `ALLOW_API`: API jobs run only if it exists. Not needed now.
 - `BOOTSTRAP_RUNNING`: setup in progress.
 
