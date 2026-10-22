@@ -91,7 +91,7 @@ are complete: the OpenAI key is no longer needed.
 - Expected: ~13–15 h, ~$18–20, if vLLM Qwen works. Setup finished at 11:20:45Z (all 4 envs,
   data, weights). The queue started at 11:20:47Z with 15 GPU jobs on 2 GPUs: Qwen OCRBench v2 on
   GPU 1 (vLLM, model loaded and compiling at 11:22Z), Ovis2 and LLaVA OCRBench v2 on GPU 0 (both
-  answering). **Qwen-on-vLLM had not produced a score yet when this was written**: check it first.
+  answering). Qwen-on-vLLM works: OCRBench v2 scored at 11:55Z, then Qwen CC-OCR started on GPU 1.
 - Scheduling (`experiment/queue_runs.py`): every job is pinned to one GPU
   (`CUDA_VISIBLE_DEVICES`). GPU 1 is kept for the vLLM (Qwen) jobs, one at a time, whole GPU.
   GPU 0 runs two transformers jobs at once (21 GB each). When no Qwen job is left, GPU 1 takes
@@ -105,7 +105,9 @@ moved to VLMEvalKit's own vLLM path (same messages and image resizing; greedy, s
 transformers path uses top_k=1). OCRBench v2 is redone on vLLM so all four benchmarks of the model
 use one engine. The transformers run (0.445) stays in `logs/run_log.csv` and its outputs are in
 `raw/superseded/main/Qwen2.5-VL-7B-Instruct/OCRBench_v2/` (see `raw/superseded/README.md`).
-`collect.py` takes the last scored row, so the vLLM row wins once it exists. **For the report:**
+`collect.py` takes the last scored row, so the vLLM row wins once it exists.
+Result (2026-10-22 11:55Z): vLLM English Overall **0.457** (0 failed, 35 min) vs transformers 0.445;
+256 of 400 answers are identical as text, 144 differ (different kernels/numerics in bf16). **For the report:**
 state this, and give both OCRBench numbers as an engine sanity check. `run.py` adds
 `engine vLLM <version>` to the run's notes and the vLLM version to `run_meta.json`.
 
