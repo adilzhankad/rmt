@@ -76,13 +76,16 @@ python -m pytest experiment/tests -q
 python experiment/run.py --model GPT4o_MINI --bench OCRBench_v2 CCOCR OmniDocBench olmOCRBench \
        --split pilot --operator Adilzhan
 python experiment/estimate_cost.py          # cost of the main run from pilot token usage
-#    open models: two more envs, because InternVL3's remote code breaks on transformers 5,
-#    flash-attn (Qwen2.5-VL) has prebuilt wheels only up to torch 2.8, and Ovis2 needs 4.46:
+#    open models: three more envs, because InternVL3's remote code breaks on transformers 5,
+#    flash-attn has prebuilt wheels only up to torch 2.8, Ovis2 needs 4.46, and Qwen2.5-VL
+#    runs on VLMEvalKit's vLLM backend:
 #    experiment/setup_gpu_open_env.sh    (torch 2.8.0+cu128, transformers 4.57.6, flash-attn 2.8.3.post2)
 #    experiment/setup_gpu_legacy_env.sh  (same torch, transformers 4.46.2)
-#    The main run used one NVIDIA Brev RTX A6000 (48 GB): experiment/brev_bootstrap.sh sets up
-#    the envs, then experiment/queue_runs.py runs every model x benchmark in the model's env
-#    (config.yaml `env`) under experiment/budget_guard.sh (USD cap, Drive upload, self-delete).
+#    experiment/setup_gpu_vllm_env.sh    (same torch, vLLM 0.10.2)
+#    The main run used NVIDIA Brev RTX A6000 (48 GB) machines, one and then two GPUs:
+#    experiment/brev_bootstrap.sh sets up the envs, then experiment/queue_runs.py runs every
+#    model x benchmark in the model's env (config.yaml `env`), one job per GPU slot, under
+#    experiment/budget_guard.sh (USD cap, Drive upload, self-delete).
 #    Outputs from another machine are merged with
 python experiment/merge_logs.py <copied output dir>
 
