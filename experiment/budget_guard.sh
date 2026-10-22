@@ -23,7 +23,7 @@ upload() {
     [ -n "$k" ] && grep -rlF "$k" logs raw console_logs 2>/dev/null && { send "⚠️ API key found in outputs: upload skipped"; return 1; }
   done
   local ok=1
-  for d in logs raw/rerun console_logs processed charts; do
+  for d in logs raw/rerun raw/superseded console_logs processed charts; do
     [ -d "$d" ] && { rclone copy "$d" "a3drive:$d" --exclude "*.pkl" --exclude "*_subset_gt.tsv" -q || ok=0; }
   done
   # partial answers, so a cut job can resume on a new machine

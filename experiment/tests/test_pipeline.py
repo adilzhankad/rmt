@@ -201,3 +201,28 @@ def test_compare_published(tmp_path):
     rows, summary = cp.compare("main", tmp_path / "ours.csv", tmp_path / "pub.csv", tmp_path, cfg)
     first = summary[0]
     assert first["n_shared"] == 4 and first["kendall_tau_b"] == 1.0 and len(rows) == 4
+
+
+def test_queue_keeps_a_gpu_for_vllm():
+    import queue_runs as qr
+    cfg = common.load_config()
+    job = lambda m, b: qr.Job(cfg, m, b, "main")
+    qwen = [job("Qwen2.5-VL-7B-Instruct", b) for b in qr.BENCH_ORDER]
+    hf = [job(m, b) for b in qr.BENCH_ORDER for m in ("InternVL3-8B", "Ovis2-8B", "llava-onevision-qwen2-7b-ov-hf")]
+    assert all(j.exclusive and j.gb == qr.GPU_GB for j in qwen) and not any(j.exclusive for j in hf)
+    queue, running = qwen + hf, []
+    starts = []
+    for _ in range(3):   # two GPUs: Qwen alone on GPU 1, two transformers jobs on GPU 0
+        j, g = qr.pick(queue, running, 2)
+        j.gpu = g
+        queue.remove(j)
+        running.append(j)
+        starts.append((j.model, g))
+    assert starts == [("Qwen2.5-VL-7B-Instruct", 1), ("InternVL3-8B", 0), ("Ovis2-8B", 0)]
+    assert qr.pick(queue, running, 2) is None
+    running = [j for j in running if not j.exclusive]   # Qwen done: its next benchmark takes GPU 1
+    assert qr.pick(queue, running, 2)[0].model == "Qwen2.5-VL-7B-Instruct"
+    queue = [j for j in queue if not j.exclusive]       # no vLLM jobs left: GPU 1 takes the rest
+    assert qr.pick(queue, running, 2)[1] == 1
+    # one GPU: the old rule, no skipping past a job that does not fit
+    assert qr.pick(qwen[:1] + hf, hf[:1], 1) is None

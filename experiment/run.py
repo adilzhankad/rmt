@@ -57,6 +57,8 @@ def system_info():
         info["transformers"] = transformers.__version__
     except ImportError:
         pass
+    if "vllm" in sys.modules:   # imported by the model wrapper only when it runs on vLLM
+        info["vllm"] = sys.modules["vllm"].__version__
     return info
 
 
@@ -231,6 +233,8 @@ def run(model_key, bench, split, operator, cfg=None, model=None, out_root=RAW, l
         n_failed = int(preds["prediction"].astype(str).str.contains(FAIL_MSG, regex=False).sum())
         row["n_failed"] = n_failed
         notes = [note] if note else []
+        if "vllm" in sys.modules:
+            notes.append(f"engine vLLM {sys.modules['vllm'].__version__}")
         saved = pd.read_excel(eval_file) if eval_file.endswith(".xlsx") else None
         if saved is not None:
             kept = saved["prediction"].fillna("").astype(str)   # an empty cell reads back as NaN

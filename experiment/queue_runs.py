@@ -3,9 +3,12 @@
     python experiment/queue_runs.py                 # pilot of new models, then the main run
     python experiment/queue_runs.py --dry-run       # print the queue only
 
-Each job is one `run.py` process in the model's environment (config.yaml `env`). Two jobs share
-the GPU when their memory fits (two processes keep it busier than one batch-1 generate loop).
-Jobs that already have a score in logs/run_log.csv are skipped, so the queue can be restarted;
+Each job is one `run.py` process in the model's environment (config.yaml `env`), pinned to one
+GPU. Two transformers jobs share a GPU when their memory fits (two processes keep it busier than
+one batch-1 generate loop); a vLLM job takes a whole GPU, and on a machine with several GPUs the
+last GPU is kept for the vLLM jobs until they are all done.
+Jobs that already have a score in logs/run_log.csv and their outputs in raw/rerun are skipped,
+so the queue can be restarted;
 run.py processes left by a previous queue are adopted, not restarted. A file QUEUE_ORDER (one
 model per line) switches the GPU lane to model-by-model order; it is read on every step.
 API models run in their own lane and only when the file ALLOW_API exists (they cost money).
@@ -28,10 +31,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import RAW, ROOT, RUN_LOG, append_run_log, load_config, load_env, read_items  # noqa: E402
 
 PYTHON = {"main": ROOT / ".venv/bin/python", "open": ROOT / ".venv-open/bin/python",
-          "legacy": ROOT / ".venv-legacy/bin/python"}
+          "legacy": ROOT / ".venv-legacy/bin/python", "vllm": ROOT / ".venv-vllm/bin/python"}
 GPU_GB = 44                                   # usable memory of a 48 GB card, with headroom
-MODEL_GB = {"deepseek_vl2_small": 40}         # 16B MoE in bf16; every other open model is ~8B
-DEFAULT_GB = 21
+DEFAULT_GB = 21                               # an ~8B model in bf16 with transformers
 # cheapest benchmarks first: if the budget runs out, every model still has the same benchmarks
 BENCH_ORDER = ["OCRBench_v2", "CCOCR", "olmOCRBench", "OmniDocBench"]
 # The two replacement models go straight to the main run (no separate 20-item pilot) to save GPU
@@ -69,6 +71,20 @@ def scored(rows, key):
     return bool((rows.get(key) or {}).get("primary_score", "").strip())
 
 
+def done(rows, key):
+    """Scored, and the outputs are still there (a superseded run is moved out of raw/rerun)."""
+    model, bench, split = key
+    return scored(rows, key) and (RAW / split / model / bench / "metrics.json").exists()
+
+
+def gpu_count():
+    try:
+        out = subprocess.check_output(["nvidia-smi", "-L"], text=True)
+        return max(1, sum(line.startswith("GPU ") for line in out.splitlines()))
+    except (OSError, subprocess.CalledProcessError):
+        return 1
+
+
 def build_queue(cfg):
     local = [m for m, v in cfg["models"].items() if v["kind"] == "local"]
     api = [m for m, v in cfg["models"].items() if v["kind"] == "api"]
@@ -95,7 +111,7 @@ class Adopted:
 
 
 def running_runs():
-    """(model, bench, split) -> pid for run.py processes already on this machine."""
+    """(model, bench, split) -> (pid, gpu) for run.py processes already on this machine."""
     found = {}
     for d in Path("/proc").glob("[0-9]*"):
         try:
@@ -104,7 +120,12 @@ def running_runs():
             continue
         if any(a.endswith("experiment/run.py") for a in argv) and "--model" in argv:
             get = lambda flag: argv[argv.index(flag) + 1]
-            found[(get("--model"), get("--bench"), get("--split"))] = int(d.name)
+            try:
+                env = dict(v.split("=", 1) for v in (d / "environ").read_bytes().decode().split("\0") if "=" in v)
+            except OSError:
+                env = {}
+            found[(get("--model"), get("--bench"), get("--split"))] = (int(d.name),
+                                                                       int(env.get("CUDA_VISIBLE_DEVICES", 0)))
     return found
 
 
@@ -122,8 +143,9 @@ class Job:
         self.model, self.bench, self.split = model, bench, split
         m = cfg["models"][model]
         self.env = m.get("env", "main")
-        self.gb = 0 if m["kind"] == "api" else MODEL_GB.get(model, DEFAULT_GB)
-        self.proc = self.start = None
+        self.exclusive = bool(m.get("overrides", {}).get("use_vllm"))   # vLLM takes the whole GPU
+        self.gb = 0 if m["kind"] == "api" else GPU_GB if self.exclusive else DEFAULT_GB
+        self.proc = self.start = self.gpu = None
         self.retry = False
 
     @property
@@ -137,10 +159,15 @@ class Job:
                "--bench", self.bench, "--split", self.split, "--operator", "Adilzhan"]
         if self.env == "main":
             cmd += ["--api-nproc", "8"]
+        env = dict(os.environ)
+        if self.gpu is not None:
+            # one GPU per job: transformers' device_map="auto" would spread a model over all of them
+            env["CUDA_VISIBLE_DEVICES"] = str(self.gpu)
+        env["VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
         self.start = time.time()
         self.proc = subprocess.Popen(cmd, cwd=ROOT, stdout=out, stderr=subprocess.STDOUT,
-                                     start_new_session=True)
-        say(f"▶️ {self.model} · {self.bench} · {self.split}")
+                                     start_new_session=True, env=env)
+        say(f"▶️ {self.model} · {self.bench} · {self.split}" + ("" if self.gpu is None else f" · GPU {self.gpu}"))
 
 
 def report(job, rows):
@@ -170,6 +197,24 @@ def abort(job, cfg):
     say(f"⏹ {job.model} · {job.bench} · {job.split}: stopped ({STOP_REASON})")
 
 
+def pick(gpu_q, running, n_gpu):
+    """(job, gpu) to start next on the GPU lane, or None."""
+    used = {g: sum(j.gb for j in running if j.gpu == g) for g in range(n_gpu)}
+    pilot_left = {j.model for j in gpu_q + running if j.split == "pilot"}
+    ready = [j for j in gpu_q if not (j.split == "main" and j.model in pilot_left)]
+    if n_gpu == 1:
+        # no skipping past a big job, so it is not starved
+        return (ready[0], 0) if ready and ready[0].gb + used[0] <= GPU_GB else None
+    vllm_gpu = n_gpu - 1
+    vllm_left = any(j.exclusive for j in gpu_q + running)
+    for job in ready:
+        allowed = [vllm_gpu] if job.exclusive else [g for g in used if not (vllm_left and g == vllm_gpu)]
+        fits = [g for g in allowed if used[g] + job.gb <= GPU_GB]
+        if fits:
+            return job, max(fits, key=lambda g: used[g])   # fill a GPU before starting another
+    return None
+
+
 def main():
     global STOP
     ap = argparse.ArgumentParser()
@@ -179,9 +224,11 @@ def main():
     cfg = load_config()
     gpu_q, api_q = build_queue(cfg)
     rows = logged()
-    gpu_q = [Job(cfg, *k) for k in gpu_q if not scored(rows, k)]
-    api_q = [Job(cfg, *k) for k in api_q if not scored(rows, k)]
+    gpu_q = [Job(cfg, *k) for k in gpu_q if not done(rows, k)]
+    api_q = [Job(cfg, *k) for k in api_q if not done(rows, k)]
+    n_gpu = gpu_count()
     if args.dry_run:
+        print(f"{n_gpu} GPU(s)")
         for j in gpu_q + api_q:
             print(j.env.ljust(7), str(j.gb).rjust(3), *j.key)
         return
@@ -195,14 +242,15 @@ def main():
     signal.signal(signal.SIGINT, on_term)
 
     running, failed_pilot = [], set()
-    for key, pid in running_runs().items():
+    for key, (pid, gpu) in running_runs().items():
         job = next((j for j in gpu_q + api_q if j.key == key), None)
         if job:
             (gpu_q if job in gpu_q else api_q).remove(job)
             job.proc, job.start = Adopted(pid), time.time()
+            job.gpu = gpu if job.gb else None
             running.append(job)
             say(f"🔗 adopted the running {job.model} · {job.bench} · {job.split}")
-    say(f"🚀 queue started: {len(gpu_q)} GPU jobs, {len(api_q)} API jobs")
+    say(f"🚀 queue started: {len(gpu_q)} GPU jobs on {n_gpu} GPU(s), {len(api_q)} API jobs")
     while (gpu_q or running or (api_q and (ROOT / "ALLOW_API").exists())) and not STOP:
         for job in [j for j in running if j.proc.poll() is not None]:
             running.remove(job)
@@ -221,11 +269,10 @@ def main():
             gpu_q.remove(job)
             say(f"⏭ {job.model} · {job.bench} · main skipped: its pilot failed")
         order_queue(gpu_q)
-        used = sum(j.gb for j in running)
-        pilot_left = {j.model for j in gpu_q + running if j.split == "pilot"}
-        ready = [j for j in gpu_q if not (j.split == "main" and j.model in pilot_left)]
-        if ready and ready[0].gb + used <= GPU_GB:   # no skipping past a big job, so it is not starved
-            job = ready[0]
+        nxt = pick(gpu_q, running, n_gpu)
+        if nxt:
+            job, gpu = nxt
+            job.gpu = gpu
             gpu_q.remove(job)
             job.launch()
             running.append(job)

@@ -75,8 +75,12 @@ models:
   # open-weight models from three other developers, all run with the same settings on our GPU.
   Qwen2.5-VL-7B-Instruct:
     kind: local
-    env: open
-    overrides: {max_new_tokens: MAX_TOKENS}
+    # VLMEvalKit's own vLLM backend for this wrapper (same messages, same image resizing, greedy
+    # decoding as in its transformers path, which uses top_k=1). The transformers path was ~1.4x
+    # slower than InternVL3 and did not fit the GPU budget. All four benchmarks run on vLLM; the
+    # first OCRBench v2 run on transformers is kept in logs/run_log.csv and raw/superseded/.
+    env: vllm
+    overrides: {max_new_tokens: MAX_TOKENS, use_vllm: true}
   InternVL3-8B:
     kind: local
     env: open
