@@ -80,7 +80,8 @@ models:
     # slower than InternVL3 and did not fit the GPU budget. All four benchmarks run on vLLM; the
     # first OCRBench v2 run on transformers is kept in logs/run_log.csv and raw/superseded/.
     env: vllm
-    overrides: {max_new_tokens: MAX_TOKENS, use_vllm: true}
+    # gpu_utils: vLLM reserves half of the 48 GB card, so one transformers job runs next to it
+    overrides: {max_new_tokens: MAX_TOKENS, use_vllm: true, gpu_utils: 0.5}
   InternVL3-8B:
     kind: local
     env: open

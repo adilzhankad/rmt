@@ -93,9 +93,11 @@ are complete: the OpenAI key is no longer needed.
   GPU 1 (vLLM, model loaded and compiling at 11:22Z), Ovis2 and LLaVA OCRBench v2 on GPU 0 (both
   answering). Qwen-on-vLLM works: OCRBench v2 scored at 11:55Z, then Qwen CC-OCR started on GPU 1.
 - Scheduling (`experiment/queue_runs.py`): every job is pinned to one GPU
-  (`CUDA_VISIBLE_DEVICES`). GPU 1 is kept for the vLLM (Qwen) jobs, one at a time, whole GPU.
-  GPU 0 runs two transformers jobs at once (21 GB each). When no Qwen job is left, GPU 1 takes
-  two transformers jobs too. Order is benchmark-major: OCRBench v2 → CC-OCR → olmOCR → OmniDocBench.
+  (`CUDA_VISIBLE_DEVICES`). Since 12:15Z: GPU 1 runs the vLLM (Qwen) job with half the card
+  (`gpu_utils: 0.5`) plus one transformers job, and keeps room for the next Qwen job. GPU 0 runs
+  two transformers jobs (~18 GB each). When no Qwen job is left, GPU 1 takes two transformers jobs.
+  A new job never starts on a GPU within 3 min of the previous start there. (Until 12:15Z vLLM
+  took the whole GPU 1; Qwen CC-OCR was stopped then and resumed, logged as ABORTED.) Order is benchmark-major: OCRBench v2 → CC-OCR → olmOCR → OmniDocBench.
 - Telegram bot (@clde_alert_bot) posts ▶️ start / ✅ score / ❌ failure / ☁️ upload / 🏁 end
   messages to Adilzhan's chat.
 

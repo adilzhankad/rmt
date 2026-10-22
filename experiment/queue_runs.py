@@ -5,8 +5,10 @@
 
 Each job is one `run.py` process in the model's environment (config.yaml `env`), pinned to one
 GPU. Two transformers jobs share a GPU when their memory fits (two processes keep it busier than
-one batch-1 generate loop); a vLLM job takes a whole GPU, and on a machine with several GPUs the
-last GPU is kept for the vLLM jobs until they are all done.
+one batch-1 generate loop). On a machine with several GPUs the last GPU runs the vLLM jobs (half
+of its memory, config `gpu_utils`) next to one transformers job, and keeps room for the next vLLM
+job until they are all done. A new job never starts on a GPU within 3 min of the previous start
+there, so two processes do not load (and vLLM does not profile memory) at the same time.
 Jobs that already have a score in logs/run_log.csv and their outputs in raw/rerun are skipped,
 so the queue can be restarted;
 run.py processes left by a previous queue are adopted, not restarted. A file QUEUE_ORDER (one
@@ -32,8 +34,10 @@ from common import RAW, ROOT, RUN_LOG, append_run_log, load_config, load_env, re
 
 PYTHON = {"main": ROOT / ".venv/bin/python", "open": ROOT / ".venv-open/bin/python",
           "legacy": ROOT / ".venv-legacy/bin/python", "vllm": ROOT / ".venv-vllm/bin/python"}
+GPU_TOTAL_GB = 48
 GPU_GB = 44                                   # usable memory of a 48 GB card, with headroom
-DEFAULT_GB = 21                               # an ~8B model in bf16 with transformers
+DEFAULT_GB = 20                               # an ~8B model in bf16 with transformers (measured ~18)
+START_GAP_S = 180
 # cheapest benchmarks first: if the budget runs out, every model still has the same benchmarks
 BENCH_ORDER = ["OCRBench_v2", "CCOCR", "olmOCRBench", "OmniDocBench"]
 # The two replacement models go straight to the main run (no separate 20-item pilot) to save GPU
@@ -143,8 +147,11 @@ class Job:
         self.model, self.bench, self.split = model, bench, split
         m = cfg["models"][model]
         self.env = m.get("env", "main")
-        self.exclusive = bool(m.get("overrides", {}).get("use_vllm"))   # vLLM takes the whole GPU
-        self.gb = 0 if m["kind"] == "api" else GPU_GB if self.exclusive else DEFAULT_GB
+        ov = m.get("overrides", {})
+        self.vllm = bool(ov.get("use_vllm"))
+        # vLLM reserves gpu_utils x the card's memory up front (VLMEvalKit's default: 0.9)
+        self.gb = (0 if m["kind"] == "api" else
+                   round(ov.get("gpu_utils", 0.9) * GPU_TOTAL_GB) if self.vllm else DEFAULT_GB)
         self.proc = self.start = self.gpu = None
         self.retry = False
 
@@ -197,19 +204,26 @@ def abort(job, cfg):
     say(f"⏹ {job.model} · {job.bench} · {job.split}: stopped ({STOP_REASON})")
 
 
-def pick(gpu_q, running, n_gpu):
+def pick(gpu_q, running, n_gpu, now=None):
     """(job, gpu) to start next on the GPU lane, or None."""
+    now = time.time() if now is None else now
     used = {g: sum(j.gb for j in running if j.gpu == g) for g in range(n_gpu)}
+    busy = {j.gpu for j in running if j.start and now - j.start < START_GAP_S}
     pilot_left = {j.model for j in gpu_q + running if j.split == "pilot"}
     ready = [j for j in gpu_q if not (j.split == "main" and j.model in pilot_left)]
     if n_gpu == 1:
         # no skipping past a big job, so it is not starved
-        return (ready[0], 0) if ready and ready[0].gb + used[0] <= GPU_GB else None
+        ok = ready and ready[0].gb + used[0] <= GPU_GB and 0 not in busy
+        return (ready[0], 0) if ok else None
     vllm_gpu = n_gpu - 1
-    vllm_left = any(j.exclusive for j in gpu_q + running)
-    for job in ready:
-        allowed = [vllm_gpu] if job.exclusive else [g for g in used if not (vllm_left and g == vllm_gpu)]
-        fits = [g for g in allowed if used[g] + job.gb <= GPU_GB]
+    vllm_q = [j for j in ready if j.vllm]
+    vllm_running = any(j.vllm and j.gpu == vllm_gpu for j in running)
+    # room kept on the vLLM GPU for the next vLLM job while one is queued and none runs there
+    keep = vllm_q[0].gb if vllm_q and not vllm_running else 0
+    for job in vllm_q[:1] + [j for j in ready if not j.vllm]:   # the vLLM GPU starts its vLLM job first
+        allowed = [vllm_gpu] if job.vllm else list(used)
+        fits = [g for g in allowed if g not in busy
+                and used[g] + job.gb + (keep if g == vllm_gpu and not job.vllm else 0) <= GPU_GB]
         if fits:
             return job, max(fits, key=lambda g: used[g])   # fill a GPU before starting another
     return None

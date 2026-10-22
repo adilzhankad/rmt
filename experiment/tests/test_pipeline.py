@@ -203,26 +203,39 @@ def test_compare_published(tmp_path):
     assert first["n_shared"] == 4 and first["kendall_tau_b"] == 1.0 and len(rows) == 4
 
 
-def test_queue_keeps_a_gpu_for_vllm():
+def test_queue_shares_the_vllm_gpu():
     import queue_runs as qr
     cfg = common.load_config()
     job = lambda m, b: qr.Job(cfg, m, b, "main")
     qwen = [job("Qwen2.5-VL-7B-Instruct", b) for b in qr.BENCH_ORDER]
     hf = [job(m, b) for b in qr.BENCH_ORDER for m in ("InternVL3-8B", "Ovis2-8B", "llava-onevision-qwen2-7b-ov-hf")]
-    assert all(j.exclusive and j.gb == qr.GPU_GB for j in qwen) and not any(j.exclusive for j in hf)
-    queue, running = qwen + hf, []
-    starts = []
-    for _ in range(3):   # two GPUs: Qwen alone on GPU 1, two transformers jobs on GPU 0
-        j, g = qr.pick(queue, running, 2)
-        j.gpu = g
-        queue.remove(j)
-        running.append(j)
-        starts.append((j.model, g))
-    assert starts == [("Qwen2.5-VL-7B-Instruct", 1), ("InternVL3-8B", 0), ("Ovis2-8B", 0)]
-    assert qr.pick(queue, running, 2) is None
-    running = [j for j in running if not j.exclusive]   # Qwen done: its next benchmark takes GPU 1
-    assert qr.pick(queue, running, 2)[0].model == "Qwen2.5-VL-7B-Instruct"
-    queue = [j for j in queue if not j.exclusive]       # no vLLM jobs left: GPU 1 takes the rest
-    assert qr.pick(queue, running, 2)[1] == 1
+    assert all(j.vllm and j.gb == 24 for j in qwen) and not any(j.vllm for j in hf)
+    queue, running, t = hf[:2] + qwen + hf[2:], [], 0.0
+
+    def start():
+        nonlocal t
+        t += qr.START_GAP_S          # past the start gap
+        nxt = qr.pick(queue, running, 2, now=t)
+        if nxt:
+            j = nxt[0]
+            j.gpu, j.start = nxt[1], t
+            queue.remove(j)
+            running.append(j)
+        return nxt and (nxt[0].model, nxt[1])
+    # GPU 1: its vLLM job first, then one transformers job next to it; GPU 0: two transformers jobs
+    assert start() == ("Qwen2.5-VL-7B-Instruct", 1)
+    assert start() == ("InternVL3-8B", 1)
+    assert start() == ("Ovis2-8B", 0)
+    assert start() == ("llava-onevision-qwen2-7b-ov-hf", 0)
+    assert start() is None
+    # no second start on a GPU within the gap
+    running.remove(next(j for j in running if j.gpu == 0))
+    last = max(j.start for j in running if j.gpu == 0)
+    assert qr.pick(queue, running, 2, now=last + 1) is None
+    assert qr.pick(queue, running, 2, now=last + qr.START_GAP_S)[1] == 0
+    # Qwen finished, a transformers job is still on GPU 1: room is kept for the next Qwen job
+    running = [j for j in running if not j.vllm]
+    assert qr.pick([j for j in queue if not j.vllm], running, 2, now=t + 999)[1] == 0
+    assert qr.pick(queue, running, 2, now=t + 999)[0].model == "Qwen2.5-VL-7B-Instruct"
     # one GPU: the old rule, no skipping past a job that does not fit
-    assert qr.pick(qwen[:1] + hf, hf[:1], 1) is None
+    assert qr.pick(qwen[:1] + hf, [], 1, now=t)[0].vllm
