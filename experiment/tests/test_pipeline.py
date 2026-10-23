@@ -203,6 +203,23 @@ def test_compare_published(tmp_path):
     assert first["n_shared"] == 4 and first["kendall_tau_b"] == 1.0 and len(rows) == 4
 
 
+def test_queue_puts_vllm_only_jobs_on_every_gpu():
+    import queue_runs as qr
+    cfg = common.load_config()
+    gemma = [qr.Job(cfg, "Gemma3-4B", b, "main") for b in qr.BENCH_ORDER]
+    assert all(j.vllm and j.gb == 22 for j in gemma)
+    # stopped models are not queued again
+    assert all(k[0] != "llava-onevision-qwen2-7b-ov-hf" for k in qr.build_queue(cfg)[0])
+    queue, running, gpus = list(gemma), [], []
+    for t in (1e4, 1e4 + 1, 1e4 + qr.START_GAP_S + 2, 1e4 + qr.START_GAP_S + 3):
+        j, g = qr.pick(queue, running, 2, now=t)
+        j.gpu, j.start = g, t
+        queue.remove(j)
+        running.append(j)
+        gpus.append(g)
+    assert gpus == [0, 1, 0, 1]          # two per card, starts staggered on each card
+
+
 def test_queue_shares_the_vllm_gpu():
     import queue_runs as qr
     cfg = common.load_config()

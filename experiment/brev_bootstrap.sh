@@ -15,8 +15,9 @@ fail() { send "❌ setup failed: $1 (see ~/a3/$1.log)"; rm -f BOOTSTRAP_RUNNING;
 
 send "🔧 setup started on $1"
 experiment/setup_gpu_main_env.sh > setup_main.log 2>&1 || fail setup_main
-( for r in Qwen/Qwen2.5-VL-7B-Instruct OpenGVLab/InternVL3-8B AIDC-AI/Ovis2-8B \
-           llava-hf/llava-onevision-qwen2-7b-ov-hf; do
+# weights of the models still in the queue (earlier runs: Qwen/Qwen2.5-VL-7B-Instruct,
+# OpenGVLab/InternVL3-8B, AIDC-AI/Ovis2-8B, llava-hf/llava-onevision-qwen2-7b-ov-hf)
+( for r in unsloth/gemma-3-4b-it; do
     .venv/bin/hf download "$r" > /dev/null && echo "ok $r" || echo "FAILED $r"; done ) > weights.log 2>&1 &
 W=$!
 experiment/setup_gpu_open_env.sh > setup_open.log 2>&1 & O=$!

@@ -102,3 +102,15 @@ models:
     # The VLMEvalKit wrapper calls generate(max_new_tokens=2048) with no way to pass kwargs;
     # these values are forced on that call so the model gets the same settings as the others.
     generate_overrides: {max_new_tokens: MAX_TOKENS, do_sample: false}
+    # Stopped by the students on 2026-10-23 after OCRBench v2 (scored, logs/run_log.csv): repetition
+    # loops up to 4096 tokens on full pages made the other three benchmarks cost ~11-15 GPU-h. The
+    # three cut runs are logged ABORTED; the model stays here so its OCRBench v2 score is kept.
+    queue: false
+  # Replaces LLaVA-OV for the other benchmarks (another developer, VLMEvalKit's vLLM path, greedy).
+  # Weights: unsloth/gemma-3-4b-it, a public re-upload of the gated google/gemma-3-4b-it (same
+  # safetensors files by size and the same weight index), so the run needs no Hugging Face login.
+  Gemma3-4B:
+    kind: local
+    env: vllm
+    # gpu_utils: two vLLM jobs share one 48 GB card
+    overrides: {model_path: unsloth/gemma-3-4b-it, max_new_tokens: MAX_TOKENS, use_vllm: true, gpu_utils: 0.45}

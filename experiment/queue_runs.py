@@ -7,7 +7,7 @@ Each job is one `run.py` process in the model's environment (config.yaml `env`),
 GPU. Two transformers jobs share a GPU when their memory fits (two processes keep it busier than
 one batch-1 generate loop). On a machine with several GPUs the last GPU runs the vLLM jobs (half
 of its memory, config `gpu_utils`) next to one transformers job, and keeps room for the next vLLM
-job until they are all done. A new job never starts on a GPU within 3 min of the previous start
+job until they are all done; when only vLLM jobs are left they go on every GPU. A new job never starts on a GPU within 3 min of the previous start
 there, so two processes do not load (and vLLM does not profile memory) at the same time.
 Jobs that already have a score in logs/run_log.csv and their outputs in raw/rerun are skipped,
 so the queue can be restarted;
@@ -90,7 +90,8 @@ def gpu_count():
 
 
 def build_queue(cfg):
-    local = [m for m, v in cfg["models"].items() if v["kind"] == "local"]
+    # `queue: false` keeps a model's finished runs in the analysis but runs nothing more for it
+    local = [m for m, v in cfg["models"].items() if v["kind"] == "local" and v.get("queue", True)]
     api = [m for m, v in cfg["models"].items() if v["kind"] == "api"]
     gpu = [(m, b, "pilot") for m in PILOT_MODELS for b in BENCH_ORDER]
     gpu += [(m, b, "main") for b in BENCH_ORDER for m in local]
@@ -220,8 +221,10 @@ def pick(gpu_q, running, n_gpu, now=None):
     vllm_running = any(j.vllm and j.gpu == vllm_gpu for j in running)
     # room kept on the vLLM GPU for the next vLLM job while one is queued and none runs there
     keep = vllm_q[0].gb if vllm_q and not vllm_running else 0
-    for job in vllm_q[:1] + [j for j in ready if not j.vllm]:   # the vLLM GPU starts its vLLM job first
-        allowed = [vllm_gpu] if job.vllm else list(used)
+    # with no transformers job left, vLLM jobs take every GPU, two per card
+    vllm_only = not any(not j.vllm for j in ready + running)
+    for job in (vllm_q if vllm_only else vllm_q[:1]) + [j for j in ready if not j.vllm]:
+        allowed = list(used) if not job.vllm or vllm_only else [vllm_gpu]
         fits = [g for g in allowed if g not in busy
                 and used[g] + job.gb + (keep if g == vllm_gpu and not job.vllm else 0) <= GPU_GB]
         if fits:
