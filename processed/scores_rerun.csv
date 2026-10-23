@@ -57,8 +57,11 @@ Ovis2-8B,OCRBench_v2,main,English Overall Score,True,0.41444362461409806,higher,
 Ovis2-8B,OCRBench_v2,main,Chinese Overall Score,False,0.5207775254827627,higher,400,0,2026-10-22T12:23:54Z,Adilzhan
 Ovis2-8B,OCRBench_v2,pilot,English Overall Score,True,0.4290022156811331,higher,20,0,2026-10-20T14:20:19Z,Adilzhan
 Ovis2-8B,OCRBench_v2,pilot,Chinese Overall Score,False,0.49418408945999587,higher,20,0,2026-10-20T14:20:19Z,Adilzhan
+Ovis2-8B,OmniDocBench,main,overall_EN,True,0.428,lower,400,0,2026-10-23T05:44:02Z,Adilzhan
+Ovis2-8B,OmniDocBench,main,overall_CH,False,0.458,lower,400,0,2026-10-23T05:44:02Z,Adilzhan
 Ovis2-8B,OmniDocBench,pilot,overall_EN,True,0.471,lower,20,0,2026-10-20T14:34:23Z,Adilzhan
 Ovis2-8B,OmniDocBench,pilot,overall_CH,False,0.446,lower,20,0,2026-10-20T14:34:23Z,Adilzhan
+Ovis2-8B,olmOCRBench,main,overall,True,57.9,higher,400,0,2026-10-23T07:01:41Z,Adilzhan
 Ovis2-8B,olmOCRBench,pilot,overall,True,58.4,higher,20,0,2026-10-20T14:42:41Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,CCOCR,main,total,True,0.8028581270007462,higher,400,0,2026-10-22T13:53:12Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,CCOCR,main,kie,False,0.9446783166325421,higher,400,0,2026-10-22T13:53:12Z,Adilzhan
@@ -70,7 +73,11 @@ Qwen2.5-VL-7B-Instruct,OCRBench_v2,main,English Overall Score,True,0.45654733364
 Qwen2.5-VL-7B-Instruct,OCRBench_v2,main,Chinese Overall Score,False,0.5802356593932532,higher,400,0,2026-10-22T11:55:13Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OCRBench_v2,pilot,English Overall Score,True,0.3981829573934837,higher,20,0,2026-10-20T12:26:17Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OCRBench_v2,pilot,Chinese Overall Score,False,0.7714001028114564,higher,20,0,2026-10-20T12:26:17Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,OmniDocBench,main,overall_EN,True,0.274,lower,400,0,2026-10-23T08:29:23Z,Adilzhan
+Qwen2.5-VL-7B-Instruct,OmniDocBench,main,overall_CH,False,0.417,lower,400,0,2026-10-23T08:29:23Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OmniDocBench,pilot,overall_EN,True,0.343,lower,20,0,2026-10-20T12:45:29Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,OmniDocBench,pilot,overall_CH,False,0.439,lower,20,0,2026-10-20T12:45:29Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,olmOCRBench,main,overall,True,79.6,higher,400,0,2026-10-22T19:54:25Z,Adilzhan
 Qwen2.5-VL-7B-Instruct,olmOCRBench,pilot,overall,True,79.0,higher,20,0,2026-10-20T13:04:08Z,Adilzhan
+llava-onevision-qwen2-7b-ov-hf,OCRBench_v2,main,English Overall Score,True,0.3819246983848855,higher,400,0,2026-10-23T06:49:26Z,Adilzhan
+llava-onevision-qwen2-7b-ov-hf,OCRBench_v2,main,Chinese Overall Score,False,0.09182820169657487,higher,400,0,2026-10-23T06:49:26Z,Adilzhan

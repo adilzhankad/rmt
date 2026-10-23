@@ -1,0 +1,2403 @@
+[
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n（\\frac{1} {9} ）（\\frac{2}{9} ）（\\frac{5}{9} ）（\\frac{8}{9} ）$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[\\left(\\frac{1}{9}\\right)\\quad\\left(\\frac{2}{9}\\right)\\quad\\left(\\frac{5}{9}\\right)\\quad\\left(\\frac{8}{9}\\right)\\]",
+        "gt_position": [
+            3
+        ],
+        "pred_position": 33,
+        "norm_gt": "$$\n（\\frac{1}{9}）（\\frac{2}{9}）（\\frac{5}{9}）（\\frac{8}{9}）$$",
+        "norm_pred": "\\left(\\frac{1}{9}\\right)\\left(\\frac{2}{9}\\right)\\left(\\frac{5}{9}\\right)\\left(\\frac{8}{9}\\right)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "edit": 0.5416666666666666,
+        "img_id": "yanbaopptmerge_yanbaoPPT_4710.jpg",
+        "image_name": "yanbaopptmerge_yanbaoPPT_4710.jpg",
+        "upper_len": 96,
+        "metric": {
+            "Edit_dist": 0.5416666666666666
+        },
+        "Edit_num": 52
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\left[ U ( x ), \\Pi^{U} ( y ) \\right]=\\delta( x-y )，\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[[U(x),\\Pi^U(y)]=\\delta(x-y),\\]",
+        "edit": 0.425531914893617,
+        "gt_position": [
+            2
+        ],
+        "pred_position": 247,
+        "norm_gt": "$$\n\\left[u(x),\\pi^{u}(y)\\right]=\\delta(x-y)，\n$$",
+        "norm_pred": "[u(x),\\pi^u(y)]=\\delta(x-y),",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 47,
+        "metric": {
+            "Edit_dist": 0.425531914893617
+        },
+        "Edit_num": 20
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n( \\Sigma, \\Sigma_{i} )=\\left(-\\partial_{k} \\Pi_{k}^{V}, \\varepsilon^{i j k} \\partial_{j} \\left( \\Pi_{k}^{B}-m V_{k} \\right)-\\mu^{2} B_{i} \\right).\n$$",
+        "pred_idx": [
+            1
+        ],
+        "pred": "\\[(\\Sigma,\\Sigma_i)=(-\\partial_k\\Pi^V,\\epsilon^{ijk}\\partial_j(\\Pi^B_k-mV_k)-\\mu^2B_i).\\]",
+        "edit": 0.41304347826086957,
+        "gt_position": [
+            5
+        ],
+        "pred_position": 370,
+        "norm_gt": "$$\n(\\sigma,\\sigma_{i})=\\left(-\\partial_{k}\\pi_{k}^{v},\\varepsilon^{ijk}\\partial_{j}\\left(\\pi_{k}^{b}-mv_{k}\\right)-\\mu^{2}b_{i}\\right).\n$$",
+        "norm_pred": "(\\sigma,\\sigma_i)=(-\\partial_k\\pi^v,\\epsilon^{ijk}\\partial_j(\\pi^b_k-mv_k)-\\mu^2b_i)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 138,
+        "metric": {
+            "Edit_dist": 0.41304347826086957
+        },
+        "Edit_num": 57
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\nT_{k} \\equiv\\mu^{2} \\varPi_{k}^{B}=0\n$$",
+        "pred_idx": [
+            7
+        ],
+        "pred": "\\[T_k\\equiv\\mu^2\\Pi^B_k=0\\]",
+        "edit": 0.5,
+        "gt_position": [
+            8
+        ],
+        "pred_position": 782,
+        "norm_gt": "$$\nt_{k}\\equiv\\mu^{2}\\varpi_{k}^{b}=0\n$$",
+        "norm_pred": "t_k\\equiv\\mu^2\\pi^b_k=0",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 40,
+        "metric": {
+            "Edit_dist": 0.5
+        },
+        "Edit_num": 20
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\n\\left[ T_{k} ( x ), \\, \\varSigma_{i} ( y ) \\right]=\\mu^{4} \\delta_{i k} \\delta( x-y ).\n$$",
+        "pred_idx": [
+            9,
+            10
+        ],
+        "pred": "\\[T_k\\]\\[[T_k(x),\\Sigma_i(y)]=\\mu^4\\delta_ik\\delta(x-y).\\]",
+        "edit": 0.4025974025974026,
+        "gt_position": [
+            11
+        ],
+        "pred_position": 840,
+        "norm_gt": "$$\n\\left[t_{k}(x),\\,\\varsigma_{i}(y)\\right]=\\mu^{4}\\delta_{ik}\\delta(x-y).\n$$",
+        "norm_pred": "t_k[t_k(x),\\sigma_i(y)]=\\mu^4\\delta_ik\\delta(x-y)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 77,
+        "metric": {
+            "Edit_dist": 0.4025974025974026
+        },
+        "Edit_num": 31
+    },
+    {
+        "gt_idx": [
+            4
+        ],
+        "gt": "$$\n\\left( \\gamma^{U}, \\gamma_{k}^{A}, \\gamma^{V} \\right)=\\left( U, A_{k}, \\partial_{k} V_{k} \\right)=0.\n$$",
+        "pred_idx": [
+            22,
+            23
+        ],
+        "pred": "\\[A_k\\]\\[(\\gamma^U,\\gamma^A_k,\\gamma^V)=(U,A_k,\\partial_kV_k)=0.\\]",
+        "edit": 0.4742268041237113,
+        "gt_position": [
+            14
+        ],
+        "pred_position": 1460,
+        "norm_gt": "$$\n\\left(\\gamma^{u},\\gamma_{k}^{a},\\gamma^{v}\\right)=\\left(u,a_{k},\\partial_{k}v_{k}\\right)=0.\n$$",
+        "norm_pred": "a_k(\\gamma^u,\\gamma^a_k,\\gamma^v)=(u,a_k,\\partial_kv_k)=0",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 97,
+        "metric": {
+            "Edit_dist": 0.4742268041237113
+        },
+        "Edit_num": 46
+    },
+    {
+        "gt_idx": [
+            5
+        ],
+        "gt": "$$\nV_{i}^{T} \\equiv\\big( \\delta_{i j}-\\partial_{i} \\partial_{j} / \\partial^{2} \\big) V_{j}.\n$$",
+        "pred_idx": [
+            24,
+            25
+        ],
+        "pred": "\\[V_i\\equiv(\\delta_{ij}-\\partial_i\\partial_j/\\partial^2)V_j.\\]\\[V_k\\]",
+        "edit": 0.3372093023255814,
+        "gt_position": [
+            17
+        ],
+        "pred_position": 1818,
+        "norm_gt": "$$\nv_{i}^{t}\\equiv\\big(\\delta_{ij}-\\partial_{i}\\partial_{j}/\\partial^{2}\\big)v_{j}.\n$$",
+        "norm_pred": "v_i\\equiv(\\delta_{ij}-\\partial_i\\partial_j/\\partial^2)v_jv_k",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 86,
+        "metric": {
+            "Edit_dist": 0.3372093023255814
+        },
+        "Edit_num": 29
+    },
+    {
+        "gt_idx": [
+            6
+        ],
+        "gt": "$$\n\\mathbf{\\nabla} \\times\\mathbf{V}^{L} \\equiv0 \\equiv\\mathbf{\\nabla} \\cdot\\mathbf{V}^{T}，\n$$",
+        "pred_idx": [
+            28
+        ],
+        "pred": "\\[\\nabla\\timesV^L=0\\equiv\\nabla\\cdotV^T,\\]",
+        "edit": 0.4098360655737705,
+        "gt_position": [
+            20
+        ],
+        "pred_position": 2093,
+        "norm_gt": "$$\n{\\nabla}\\times{v}^{l}\\equiv0\\equiv{\\nabla}\\cdot{v}^{t}，\n$$",
+        "norm_pred": "\\nabla\\timesv^l=0\\equiv\\nabla\\cdotv^t,",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 61,
+        "metric": {
+            "Edit_dist": 0.4098360655737705
+        },
+        "Edit_num": 25
+    },
+    {
+        "gt_idx": [
+            8
+        ],
+        "gt": "$$\n{\\bf B}^{L}=0={\\dot{\\bf V}}^{L}-\\nabla U，\n$$",
+        "pred_idx": [
+            32,
+            33
+        ],
+        "pred": "\\[U\\]\\[\\dot{B}^L=0=\\ddot{V}^L-\\nablaU,\\]",
+        "edit": 0.4772727272727273,
+        "gt_position": [
+            26
+        ],
+        "pred_position": 2488,
+        "norm_gt": "$$\n{\\bfb}^{l}=0={\\dot{\\bfv}}^{l}-\\nablau，\n$$",
+        "norm_pred": "u\\dot{b}^l=0=\\ddot{v}^l-\\nablau,",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 44,
+        "metric": {
+            "Edit_dist": 0.4772727272727273
+        },
+        "Edit_num": 21
+    },
+    {
+        "gt_idx": [
+            9
+        ],
+        "gt": "$$\n2 L=\\left( {\\dot{\\mathbf{V}}}^{T} \\right)^{2}-\\left( \\nabla\\times\\mathbf{V}^{T} \\right)^{2}+\\left[ {\\dot{\\mathbf{B}}}^{T}-\\nabla\\times\\mathbf{A}^{T} \\right]^{2}+2 m \\mathbf{V}^{T} \\cdot\\left( \\nabla\\times\\mathbf{A}^{T} \\right)+2 m \\mathbf{B}^{T} \\cdot{\\dot{\\mathbf{V}}}^{T}+2 \\mu^{2} \\mathbf{A}^{T} \\cdot\\mathbf{B}^{T}.\n$$",
+        "pred_idx": [
+            34
+        ],
+        "pred": "\\[2L=(\\dot{V}^T)^2-(\\nabla\\timesV^T)^2+[\\dot{B}^T-\\nabla\\timesA^T]^2+2mV^T\\cdot(\\nabla\\timesA^T)+2mB^T\\cdot\\dot{V}^T+2\\mu^2A^T\\cdotB^T.\\]",
+        "edit": 0.4430379746835443,
+        "gt_position": [
+            29
+        ],
+        "pred_position": 2585,
+        "norm_gt": "$$\n2l=\\left({\\dot{{v}}}^{t}\\right)^{2}-\\left(\\nabla\\times{v}^{t}\\right)^{2}+\\left[{\\dot{{b}}}^{t}-\\nabla\\times{a}^{t}\\right]^{2}+2m{v}^{t}\\cdot\\left(\\nabla\\times{a}^{t}\\right)+2m{b}^{t}\\cdot{\\dot{{v}}}^{t}+2\\mu^{2}{a}^{t}\\cdot{b}^{t}.\n$$",
+        "norm_pred": "2l=(\\dot{v}^t)^2-(\\nabla\\timesv^t)^2+[\\dot{b}^t-\\nabla\\timesa^t]^2+2mv^t\\cdot(\\nabla\\timesa^t)+2mb^t\\cdot\\dot{v}^t+2\\mu^2a^t\\cdotb^t",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 237,
+        "metric": {
+            "Edit_dist": 0.4430379746835443
+        },
+        "Edit_num": 105
+    },
+    {
+        "gt_idx": [
+            10
+        ],
+        "gt": "$$\n\\mathbf{A}^{T} \\cdot\\mathbf{B}^{T}=-\\big( \\nabla\\times\\mathbf{A}^{T} \\big) \\cdot\\big( \\nabla^{2} \\big)^{-1} \\big( \\nabla\\times\\mathbf{B}^{T} \\big)，\n$$",
+        "pred_idx": [
+            35
+        ],
+        "pred": "\\[A^T\\cdotB^T=-(\\nabla\\timesA^T)\\cdot(\\nabla^2)^{-1}(\\nabla\\timesB^T),\\]",
+        "edit": 0.4224137931034483,
+        "gt_position": [
+            32
+        ],
+        "pred_position": 2762,
+        "norm_gt": "$$\n{a}^{t}\\cdot{b}^{t}=-\\big(\\nabla\\times{a}^{t}\\big)\\cdot\\big(\\nabla^{2}\\big)^{-1}\\big(\\nabla\\times{b}^{t}\\big)，\n$$",
+        "norm_pred": "a^t\\cdotb^t=-(\\nabla\\timesa^t)\\cdot(\\nabla^2)^{-1}(\\nabla\\timesb^t),",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 116,
+        "metric": {
+            "Edit_dist": 0.4224137931034483
+        },
+        "Edit_num": 49
+    },
+    {
+        "gt_idx": [
+            11
+        ],
+        "gt": "$$\n\\nabla\\times{\\bf A}^{T}=\\dot{{\\bf B}}^{T}-m {\\bf V}^{T}+\\mu^{2} \\big( \\nabla^{2} \\big)^{-1} \\big( \\nabla\\times{\\bf B}^{T} \\big).\n$$",
+        "pred_idx": [
+            37
+        ],
+        "pred": "\\[\\nabla\\timesA^T=\\dot{B}^T-mV^T+\\mu^2(\\nabla^2)^{-1}(\\nabla\\timesB^T).\\]",
+        "edit": 0.44715447154471544,
+        "gt_position": [
+            35
+        ],
+        "pred_position": 2909,
+        "norm_gt": "$$\n\\nabla\\times{\\bfa}^{t}=\\dot{{\\bfb}}^{t}-m{\\bfv}^{t}+\\mu^{2}\\big(\\nabla^{2}\\big)^{-1}\\big(\\nabla\\times{\\bfb}^{t}\\big).\n$$",
+        "norm_pred": "\\nabla\\timesa^t=\\dot{b}^t-mv^t+\\mu^2(\\nabla^2)^{-1}(\\nabla\\timesb^t)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 123,
+        "metric": {
+            "Edit_dist": 0.44715447154471544
+        },
+        "Edit_num": 55
+    },
+    {
+        "gt_idx": [
+            7
+        ],
+        "gt": "$$\n\\begin{array} {l} {{{2 L=\\left( \\dot{\\mathbf{B}}^{L} \\right)^{2}-\\left( \\nabla\\cdot\\mathbf{B}^{L} \\right)^{2}+\\left[ \\dot{\\mathbf{B}}^{T}-\\nabla\\times\\mathbf{A}^{T} \\right]^{2}+\\left( \\dot{\\mathbf{V}}^{T} \\right)^{2}-\\left( \\nabla\\times\\mathbf{V}^{T} \\right)^{2}+\\left[ \\dot{\\mathbf{V}}^{L}-\\nabla U \\right]^{2}}}} \\\\ {{{\\ \\ \\ +2 m \\left[ \\mathbf{V}^{T} \\cdot\\left( \\nabla\\times\\mathbf{A}^{T} \\right)+\\mathbf{B}^{L} \\cdot\\dot{\\mathbf{V}}^{L}+\\mathbf{B}^{T} \\cdot\\dot{\\mathbf{V}}^{T}-\\mathbf{B}^{L} \\cdot\\nabla U \\right]+2 \\mu^{2} \\left[ \\mathbf{A}^{T} \\cdot\\mathbf{B}^{T}+\\mathbf{A}^{L} \\cdot\\mathbf{B}^{L} \\right]}}} \\\\ \\end{array}.\n$$",
+        "pred_idx": [
+            30
+        ],
+        "pred": "\\[+2m[V^T\\cdot(\\nabla\\timesA^L)+B^L\\cdot\\dot{V}^L+B^T\\cdot\\dot{V}^T-B^L\\cdot\\nablaU]+2\\mu^2[A^T\\cdotB^T+A^L\\cdotB^L].\\]",
+        "edit": 1,
+        "gt_position": [
+            23
+        ],
+        "pred_position": 2299,
+        "norm_gt": "$$\n{l}{{{2l=\\left(\\dot{{b}}^{l}\\right)^{2}-\\left(\\nabla\\cdot{b}^{l}\\right)^{2}+\\left[\\dot{{b}}^{t}-\\nabla\\times{a}^{t}\\right]^{2}+\\left(\\dot{{v}}^{t}\\right)^{2}-\\left(\\nabla\\times{v}^{t}\\right)^{2}+\\left[\\dot{{v}}^{l}-\\nablau\\right]^{2}}}}\\\\{{{\\\\\\+2m\\left[{v}^{t}\\cdot\\left(\\nabla\\times{a}^{t}\\right)+{b}^{l}\\cdot\\dot{{v}}^{l}+{b}^{t}\\cdot\\dot{{v}}^{t}-{b}^{l}\\cdot\\nablau\\right]+2\\mu^{2}\\left[{a}^{t}\\cdot{b}^{t}+{a}^{l}\\cdot{b}^{l}\\right]}}}\\\\.\n$$",
+        "norm_pred": "+2m[v^t\\cdot(\\nabla\\timesa^l)+b^l\\cdot\\dot{v}^l+b^t\\cdot\\dot{v}^t-b^l\\cdot\\nablau]+2\\mu^2[a^t\\cdotb^t+a^l\\cdotb^l]",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3.jpg",
+        "upper_len": 449,
+        "metric": {
+            "Edit_dist": 0.7483296213808464
+        },
+        "Edit_num": 336
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\nV_{s}=V_{s 0} \\, \\frac{r} {\\left( 1+r^{2 n} \\right)^{1 / n}}\n$$",
+        "pred_idx": [
+            12
+        ],
+        "pred": "\\[V_s=V_{s,max}\\left(1+r^{2n}/n\\right)^{-1/n}\\]",
+        "edit": 0.38596491228070173,
+        "gt_position": [
+            7
+        ],
+        "pred_position": 2766,
+        "norm_gt": "$$\nv_{s}=v_{s0}\\,\\frac{r}{\\left(1+r^{2n}\\right)^{1/n}}\n$$",
+        "norm_pred": "v_s=v_{s,max}\\left(1+r^{2n}/n\\right)^{-1/n}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "upper_len": 57,
+        "metric": {
+            "Edit_dist": 0.38596491228070173
+        },
+        "Edit_num": 22
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\nV_{s 0}=V_{s, m a x} 2^{1 / n}=\\frac{\\Gamma_{v}} {2 \\pi r_{c}}\n$$",
+        "pred_idx": [
+            13
+        ],
+        "pred": "\\[V_{s0}=V_{s,max}^{2/n}=\\frac{\\Gamma_v}{2\\pir_c}\\]",
+        "edit": 0.20689655172413793,
+        "gt_position": [
+            8
+        ],
+        "pred_position": 2822,
+        "norm_gt": "$$\nv_{s0}=v_{s,max}2^{1/n}=\\frac{\\gamma_{v}}{2\\pir_{c}}\n$$",
+        "norm_pred": "v_{s0}=v_{s,max}^{2/n}=\\frac{\\gamma_v}{2\\pir_c}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "upper_len": 58,
+        "metric": {
+            "Edit_dist": 0.20689655172413793
+        },
+        "Edit_num": 12
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\nV_{s}=V_{s 0} \\frac{1-e^{-\\alpha r^{2}}} {r}\n$$",
+        "pred_idx": [
+            2
+        ],
+        "pred": "\\[V_{s,max}\\]",
+        "edit": 1,
+        "gt_position": [
+            12
+        ],
+        "pred_position": 2079,
+        "norm_gt": "$$\nv_{s}=v_{s0}\\frac{1-e^{-\\alphar^{2}}}{r}\n$$",
+        "norm_pred": "v_{s,max}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "upper_len": 46,
+        "metric": {
+            "Edit_dist": 0.8695652173913043
+        },
+        "Edit_num": 40
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\nV_{s 0}=\\frac{V_{s, m a x}} {1-e^{-\\alpha}}=\\frac{\\Gamma_{v}} {2 \\pi r_{c}}\n$$",
+        "pred_idx": [
+            14
+        ],
+        "pred": "\\[V_{s,max}\\]",
+        "edit": 1,
+        "gt_position": [
+            13
+        ],
+        "pred_position": 3005,
+        "norm_gt": "$$\nv_{s0}=\\frac{v_{s,max}}{1-e^{-\\alpha}}=\\frac{\\gamma_{v}}{2\\pir_{c}}\n$$",
+        "norm_pred": "v_{s,max}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00348-006-0117-x.pdf_11.jpg",
+        "upper_len": 73,
+        "metric": {
+            "Edit_dist": 0.8767123287671232
+        },
+        "Edit_num": 64
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n运输保险费=材料原价\\times材料运输保险费率\n $$",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            15
+        ],
+        "pred_position": "",
+        "norm_gt": "$$\n运输保险费=材料原价\\times材料运输保险费率\n$$",
+        "norm_pred": "",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "edit": 1,
+        "img_id": "docstructbench_dianzishu_zhongwenzaixian-o.O-61520788.pdf_391.jpg",
+        "image_name": "docstructbench_dianzishu_zhongwenzaixian-o.O-61520788.pdf_391.jpg",
+        "upper_len": 30,
+        "metric": {
+            "Edit_dist": 1.0
+        },
+        "Edit_num": 30
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$血中原卟啉含量（g/L全血）=\\frac{样品荧光强度空白荧光强度}{标准管荧光强度空白荧光强度}\\times标准管原卟啉含量(g)\\times\\frac{100}{样品取样量(ml)}\\times10$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[\\frac{\\text{样品荧光强度}-\\text{空白荧光强度}}{\\text{标准管荧光强度}-\\text{空白荧光强度}}\\times\\text{标准管原卟啉含量（g）}\\times\\frac{100}{\\text{样品取样量（ml）}}\\]",
+        "gt_position": [
+            14
+        ],
+        "pred_position": 919,
+        "norm_gt": "$$血中原卟啉含量（g/l全血）=\\frac{样品荧光强度空白荧光强度}{标准管荧光强度空白荧光强度}\\times标准管原卟啉含量(g)\\times\\frac{100}{样品取样量(ml)}\\times10$$",
+        "norm_pred": "\\frac{{样品荧光强度}-{空白荧光强度}}{{标准管荧光强度}-{空白荧光强度}}\\times{标准管原卟啉含量（g）}\\times\\frac{100}{{样品取样量（ml）}}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "edit": 0.41904761904761906,
+        "img_id": "docstructbench_dianzishu_zhongwenzaixian-o.O-61569751.pdf_155.jpg",
+        "image_name": "docstructbench_dianzishu_zhongwenzaixian-o.O-61569751.pdf_155.jpg",
+        "upper_len": 105,
+        "metric": {
+            "Edit_dist": 0.41904761904761906
+        },
+        "Edit_num": 44
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\nd \\vec{\\mathbf{s}} \\times\\hat{\\mathbf{r}}=\\left| d \\vec{\\mathbf{s}} \\times\\hat{\\mathbf{r}} \\right| \\hat{\\mathbf{k}}=\\left[ d x \\operatorname{s i n} \\left( \\frac{\\pi} {2}-\\theta\\right) \\right] \\hat{\\mathbf{k}}=( d x \\operatorname{c o s} \\theta) \\hat{\\mathbf{k}}\n$$",
+        "pred_idx": [
+            15
+        ],
+        "pred": "\\[d\\vec{s}\\times\\hat{r}=\\left[d\\vec{s}\\times\\hat{r}\\right]\\hat{k}=\\left[dx\\sin\\left(\\frac{\\pi}{2}-\\theta\\right)\\right]\\hat{k}=\\left(dx\\cos\\theta\\right)\\hat{k}\\]",
+        "edit": 0.2215568862275449,
+        "gt_position": [
+            5
+        ],
+        "pred_position": 1315,
+        "norm_gt": "$$\nd\\vec{{s}}\\times\\hat{{r}}=\\left|d\\vec{{s}}\\times\\hat{{r}}\\right|\\hat{{k}}=\\left[dx{sin}\\left(\\frac{\\pi}{2}-\\theta\\right)\\right]\\hat{{k}}=(dx{cos}\\theta)\\hat{{k}}\n$$",
+        "norm_pred": "d\\vec{s}\\times\\hat{r}=\\left[d\\vec{s}\\times\\hat{r}\\right]\\hat{k}=\\left[dx\\sin\\left(\\frac{\\pi}{2}-\\theta\\right)\\right]\\hat{k}=\\left(dx\\cos\\theta\\right)\\hat{k}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 167,
+        "metric": {
+            "Edit_dist": 0.2215568862275449
+        },
+        "Edit_num": 37
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\nd \\vec{\\mathbf{B}}=( d B ) \\hat{\\mathbf{k}}=\\frac{\\mu_{_0} I} {4 \\pi} \\frac{d x \\operatorname{c o s} \\theta} {r^{2}} \\hat{\\mathbf{k}}\n$$",
+        "pred_idx": [
+            16
+        ],
+        "pred": "\\[d\\vec{B}=(dB)\\hat{k}=\\frac{\\mu_0I}{4\\pi}\\frac{dx\\cos\\theta}{r^2}\\hat{k}\\]",
+        "edit": 0.21348314606741572,
+        "gt_position": [
+            7
+        ],
+        "pred_position": 1537,
+        "norm_gt": "$$\nd\\vec{{b}}=(db)\\hat{{k}}=\\frac{\\mu_{_0}i}{4\\pi}\\frac{dx{cos}\\theta}{r^{2}}\\hat{{k}}\n$$",
+        "norm_pred": "d\\vec{b}=(db)\\hat{k}=\\frac{\\mu_0i}{4\\pi}\\frac{dx\\cos\\theta}{r^2}\\hat{k}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 89,
+        "metric": {
+            "Edit_dist": 0.21348314606741572
+        },
+        "Edit_num": 19
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\nr=\\frac{a} {\\operatorname{c o s} \\theta}\n$$",
+        "pred_idx": [
+            19
+        ],
+        "pred": "\\[r=\\frac{a}{\\cos\\theta}\\]",
+        "edit": 0.27586206896551724,
+        "gt_position": [
+            10
+        ],
+        "pred_position": 1703,
+        "norm_gt": "$$\nr=\\frac{a}{{cos}\\theta}\n$$",
+        "norm_pred": "r=\\frac{a}{\\cos\\theta}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 29,
+        "metric": {
+            "Edit_dist": 0.27586206896551724
+        },
+        "Edit_num": 8
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\nx=-a \\operatorname{t a n} \\theta\n$$",
+        "pred_idx": [
+            23,
+            24,
+            25
+        ],
+        "pred": "\\[x\\]\\[x=-a\\tan\\theta\\]\\[dx\\]",
+        "edit": 0.38095238095238093,
+        "gt_position": [
+            15
+        ],
+        "pred_position": 1925,
+        "norm_gt": "$$\nx=-a{tan}\\theta\n$$",
+        "norm_pred": "xx=-a\\tan\\thetadx",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 21,
+        "metric": {
+            "Edit_dist": 0.38095238095238093
+        },
+        "Edit_num": 8
+    },
+    {
+        "gt_idx": [
+            4
+        ],
+        "gt": "$$\nd x=-a \\operatorname{s e c}^{2} \\theta\\, d \\theta=-\\frac{a \\, d \\theta} {\\operatorname{c o s}^{2} \\theta}\n$$",
+        "pred_idx": [
+            26
+        ],
+        "pred": "\\[dx=-a\\sec^2\\theta\\,d\\theta=-\\frac{a\\,d\\theta}{\\cos^2\\theta}\\]",
+        "edit": 0.19718309859154928,
+        "gt_position": [
+            17
+        ],
+        "pred_position": 1992,
+        "norm_gt": "$$\ndx=-a{sec}^{2}\\theta\\,d\\theta=-\\frac{a\\,d\\theta}{{cos}^{2}\\theta}\n$$",
+        "norm_pred": "dx=-a\\sec^2\\theta\\,d\\theta=-\\frac{a\\,d\\theta}{\\cos^2\\theta}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 71,
+        "metric": {
+            "Edit_dist": 0.19718309859154928
+        },
+        "Edit_num": 14
+    },
+    {
+        "gt_idx": [
+            5
+        ],
+        "gt": "$$\nd B=-\\frac{\\mu_{0} I} {4 \\pi} \\! \\left( \\frac{a \\, d \\theta} {\\operatorname{c o s}^{2} \\theta} \\right) \\! \\left( \\frac{\\operatorname{c o s}^{2} \\theta} {a^{2}} \\right) \\! \\operatorname{c o s} \\theta=-\\frac{\\mu_{0} I} {4 \\pi a} \\! \\operatorname{c o s} \\theta\\, d \\theta\n$$",
+        "pred_idx": [
+            27
+        ],
+        "pred": "\\[dB=\\frac{\\mu_0I}{4\\pi}\\left(\\frac{a\\,d\\theta}{\\cos^2\\theta}\\right)\\left(\\frac{\\cos\\theta}{a^2}\\right)\\cos\\theta=\\frac{\\mu_0I}{4\\pia}\\cos\\theta\\,d\\theta\\]",
+        "edit": 0.18579234972677597,
+        "gt_position": [
+            20
+        ],
+        "pred_position": 2154,
+        "norm_gt": "$$\ndb=-\\frac{\\mu_{0}i}{4\\pi}\\!\\left(\\frac{a\\,d\\theta}{{cos}^{2}\\theta}\\right)\\!\\left(\\frac{{cos}^{2}\\theta}{a^{2}}\\right)\\!{cos}\\theta=-\\frac{\\mu_{0}i}{4\\pia}\\!{cos}\\theta\\,d\\theta\n$$",
+        "norm_pred": "db=\\frac{\\mu_0i}{4\\pi}\\left(\\frac{a\\,d\\theta}{\\cos^2\\theta}\\right)\\left(\\frac{\\cos\\theta}{a^2}\\right)\\cos\\theta=\\frac{\\mu_0i}{4\\pia}\\cos\\theta\\,d\\theta",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 183,
+        "metric": {
+            "Edit_dist": 0.18579234972677597
+        },
+        "Edit_num": 34
+    },
+    {
+        "gt_idx": [
+            6
+        ],
+        "gt": "$$\nB=-\\frac{\\mu_{0} I} {4 \\pi a} \\int_{\\theta_{1}}^{\\theta_{2}} \\cos\\theta d \\theta=\\frac{\\mu_{0} I} {4 \\pi a} ( \\operatorname{s i n} \\theta_{1}-\\operatorname{s i n} \\theta_{2} )\n$$",
+        "pred_idx": [
+            30
+        ],
+        "pred": "\\[B=\\frac{\\mu_0I}{4\\pia}\\int_{\\theta_1}^{\\theta_2}\\cos\\theta\\,d\\theta=\\frac{\\mu_0I}{4\\pia}\\left(\\sin\\theta_2-\\sin\\theta_1\\right)\\]",
+        "edit": 0.2537313432835821,
+        "gt_position": [
+            23
+        ],
+        "pred_position": 2497,
+        "norm_gt": "$$\nb=-\\frac{\\mu_{0}i}{4\\pia}\\int_{\\theta_{1}}^{\\theta_{2}}\\cos\\thetad\\theta=\\frac{\\mu_{0}i}{4\\pia}({sin}\\theta_{1}-{sin}\\theta_{2})\n$$",
+        "norm_pred": "b=\\frac{\\mu_0i}{4\\pia}\\int_{\\theta_1}^{\\theta_2}\\cos\\theta\\,d\\theta=\\frac{\\mu_0i}{4\\pia}\\left(\\sin\\theta_2-\\sin\\theta_1\\right)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 134,
+        "metric": {
+            "Edit_dist": 0.2537313432835821
+        },
+        "Edit_num": 34
+    },
+    {
+        "gt_idx": [
+            7
+        ],
+        "gt": "$$\n[ \\mathrm{M Q}^{-1} \\mathrm{T}^{-1} ]=[ \\mathrm{M L Q}^{-2} ] [ \\mathrm{Q T}^{-1} ] / [ \\mathrm{L} ]=[ \\mathrm{M Q}^{-1} \\mathrm{T}^{-1} ]\n$$",
+        "pred_idx": [
+            31
+        ],
+        "pred": "\\[\\left[\\text{MQ}^{-1}\\text{T}^{-1}\\right]=\\left[\\text{ML}^{-2}\\text{Q}^{-1}\\right]\\left[\\text{Q}\\text{T}^{-1}\\right]\\left[\\text{L}\\right]=\\left[\\text{M}\\text{Q}^{-1}\\text{T}^{-1}\\right]\\]",
+        "edit": 0.5074626865671642,
+        "gt_position": [
+            26
+        ],
+        "pred_position": 2728,
+        "norm_gt": "$$\n[{mq}^{-1}{t}^{-1}]=[{mlq}^{-2}][{qt}^{-1}]/[{l}]=[{mq}^{-1}{t}^{-1}]\n$$",
+        "norm_pred": "\\left[{mq}^{-1}{t}^{-1}\\right]=\\left[{ml}^{-2}{q}^{-1}\\right]\\left[{q}{t}^{-1}\\right]\\left[{l}\\right]=\\left[{m}{q}^{-1}{t}^{-1}\\right]",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "image_name": "docstructbench_enbook-zlib-o.O-19091739.pdf_181.jpg",
+        "upper_len": 134,
+        "metric": {
+            "Edit_dist": 0.5074626865671642
+        },
+        "Edit_num": 68
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\mathrm{Hazard~Quotient}=\\frac{\\mathrm{Exposure~ Dose}} {RfD}\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[\\text{HazardQuotient}=\\frac{\\text{ExposureDose}}{\\text{RfD}}\\]",
+        "edit": 0.17647058823529413,
+        "gt_position": [
+            7
+        ],
+        "pred_position": 1870,
+        "norm_gt": "$$\n{hazard~quotient}=\\frac{{exposure~dose}}{rfd}\n$$",
+        "norm_pred": "{hazardquotient}=\\frac{{exposuredose}}{{rfd}}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00128-008-9367-z.pdf_4.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00128-008-9367-z.pdf_4.jpg",
+        "upper_len": 51,
+        "metric": {
+            "Edit_dist": 0.17647058823529413
+        },
+        "Edit_num": 9
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n\\mathrm{Exposure ~ Dose}=\\frac{Ci \\times\\mathrm{D} v \\times\\mathrm{E} d} {Bw \\times At}\n$$",
+        "pred_idx": [
+            1
+        ],
+        "pred": "\\[\\text{ExposureDose}=\\frac{C_i\\timesD_v\\timesE_d}{B_w\\timesA_t}\\]",
+        "edit": 0.2222222222222222,
+        "gt_position": [
+            9
+        ],
+        "pred_position": 1942,
+        "norm_gt": "$$\n{exposure~dose}=\\frac{ci\\times{d}v\\times{e}d}{bw\\timesat}\n$$",
+        "norm_pred": "{exposuredose}=\\frac{c_i\\timesd_v\\timese_d}{b_w\\timesa_t}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00128-008-9367-z.pdf_4.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00128-008-9367-z.pdf_4.jpg",
+        "upper_len": 63,
+        "metric": {
+            "Edit_dist": 0.2222222222222222
+        },
+        "Edit_num": 14
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\n\\mathrm{Hazard ~ Index}=\\sum_{n=1}^{n=k} \\mathrm{Hazard ~ Quotient}\n$$",
+        "pred_idx": [
+            2
+        ],
+        "pred": "\\[\\text{HazardIndex}=\\sum_{n=1}^{n=k}\\text{HazardQuotient}\\]",
+        "edit": 0.14814814814814814,
+        "gt_position": [
+            11
+        ],
+        "pred_position": 2021,
+        "norm_gt": "$$\n{hazard~index}=\\sum_{n=1}^{n=k}{hazard~quotient}\n$$",
+        "norm_pred": "{hazardindex}=\\sum_{n=1}^{n=k}{hazardquotient}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "docstructbench_llm-raw-scihub-o.O-s00128-008-9367-z.pdf_4.jpg",
+        "image_name": "docstructbench_llm-raw-scihub-o.O-s00128-008-9367-z.pdf_4.jpg",
+        "upper_len": 54,
+        "metric": {
+            "Edit_dist": 0.14814814814814814
+        },
+        "Edit_num": 8
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\iint_{\\Sigma}Pdydz+Qdzdx=\\iint_{\\Sigma}\\left(\\frac{x}{z}P+\\frac{y}{z}Q\\right)dxdy\n$$",
+        "pred_idx": [
+            15,
+            16
+        ],
+        "pred": "\\[\\iint_SPdydz+Qdzdx=\\]\\[\\iint_S\\left(\\frac{P}{z}+\\frac{Q}{z}\\right)dydz\\]",
+        "edit": 0.3068181818181818,
+        "gt_position": [
+            22
+        ],
+        "pred_position": 649,
+        "norm_gt": "$$\n\\iint_{\\sigma}pdydz+qdzdx=\\iint_{\\sigma}\\left(\\frac{x}{z}p+\\frac{y}{z}q\\right)dxdy\n$$",
+        "norm_pred": "\\iint_spdydz+qdzdx=\\iint_s\\left(\\frac{p}{z}+\\frac{q}{z}\\right)dydz",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "upper_len": 88,
+        "metric": {
+            "Edit_dist": 0.29545454545454547
+        },
+        "Edit_num": 26
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n=\\ln2+\\sum_{n=1}^{\\infty}(-1)^{n-1}{\\frac{\\left({\\frac{1}{2}}x\\right)^{n}}{n}}\n$$",
+        "pred_idx": [
+            30
+        ],
+        "pred": "\\[\\ln(2+x)=\\sum_{n=1}^{\\infty}\\frac{(-1)^{n-1}}{n}\\left(\\frac{x}{2}\\right)^n\\]",
+        "edit": 0.4166666666666667,
+        "gt_position": [
+            28
+        ],
+        "pred_position": 1339,
+        "norm_gt": "$$\n=\\ln2+\\sum_{n=1}^{\\infty}(-1)^{n-1}{\\frac{\\left({\\frac{1}{2}}x\\right)^{n}}{n}}\n$$",
+        "norm_pred": "\\ln(2+x)=\\sum_{n=1}^{\\infty}\\frac{(-1)^{n-1}}{n}\\left(\\frac{x}{2}\\right)^n",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "upper_len": 84,
+        "metric": {
+            "Edit_dist": 0.4166666666666667
+        },
+        "Edit_num": 35
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\n\\ln(2+x)=\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{\\left(\\frac{1}{2}x\\right)^{n+1}}{n+1}+C=\\sum_{n=1}^{\\infty}(-1)^{n-1}\\frac{\\left(\\frac{1}{2}x\\right)^{n}}{n}+C\n$$",
+        "pred_idx": [
+            31
+        ],
+        "pred": "\\[\\sum_{n=0}^{\\infty}na_n=\\sum_{n=1}^{\\infty}n\\cdot\\frac{(-1)^{n-1}}{n}\\cdot\\frac{1}{2^{n+1}}=\\frac{1}{6}\\]",
+        "edit": 0.6518987341772152,
+        "gt_position": [
+            32
+        ],
+        "pred_position": 1431,
+        "norm_gt": "$$\n\\ln(2+x)=\\sum_{n=0}^{\\infty}(-1)^{n}\\frac{\\left(\\frac{1}{2}x\\right)^{n+1}}{n+1}+c=\\sum_{n=1}^{\\infty}(-1)^{n-1}\\frac{\\left(\\frac{1}{2}x\\right)^{n}}{n}+c\n$$",
+        "norm_pred": "\\sum_{n=0}^{\\infty}na_n=\\sum_{n=1}^{\\infty}n\\cdot\\frac{(-1)^{n-1}}{n}\\cdot\\frac{1}{2^{n+1}}=\\frac{1}{6}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "upper_len": 158,
+        "metric": {
+            "Edit_dist": 0.6518987341772152
+        },
+        "Edit_num": 103
+    },
+    {
+        "gt_idx": [
+            4
+        ],
+        "gt": "$$\nS(0)=C=\\ln(2+0)=\\ln2\n$$",
+        "pred_idx": [
+            36,
+            37
+        ],
+        "pred": "\\[f'(0)=m\\]\\[f'(0)=m\\]",
+        "edit": 0.6923076923076923,
+        "gt_position": [
+            33
+        ],
+        "pred_position": 1669,
+        "norm_gt": "$$\ns(0)=c=\\ln(2+0)=\\ln2\n$$",
+        "norm_pred": "f'(0)=mf'(0)=m",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "upper_len": 26,
+        "metric": {
+            "Edit_dist": 0.6923076923076923
+        },
+        "Edit_num": 18
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\n\\begin{aligned}[\\ln(2+x)]'=\\frac{1}{2+x}=\\frac{1}{2\\left(1+\\frac{x}{2}\\right)}=\\frac{1}{2}\\sum_{n=0}^{\\infty}(-1)^n\\left(\\frac{x}{2}\\right)^n\\end{aligned}\n$$",
+        "pred_idx": [
+            18
+        ],
+        "pred": "\\[\\iint_S\\left(\\frac{P}{z}-\\frac{Q}{z}\\right)dydz\\]",
+        "edit": 1,
+        "gt_position": [
+            31
+        ],
+        "pred_position": 826,
+        "norm_gt": "$$\n[\\ln(2+x)]'=\\frac{1}{2+x}=\\frac{1}{2\\left(1+\\frac{x}{2}\\right)}=\\frac{1}{2}\\sum_{n=0}^{\\infty}(-1)^n\\left(\\frac{x}{2}\\right)^n\n$$",
+        "norm_pred": "\\iint_s\\left(\\frac{p}{z}-\\frac{q}{z}\\right)dydz",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_20608808.pdf_0.jpg",
+        "upper_len": 132,
+        "metric": {
+            "Edit_dist": 0.75
+        },
+        "Edit_num": 99
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\nA B=\\left( \\begin{array} {c c c} {{{-5}}} & {{{2}}} & {{{3}}} \\\\ {{{6}}} & {{{3}}} & {{{9}}} \\\\ {{{-4}}} & {{{1}}} & {{{1}}} \\\\ \\end{array} \\right)_{3 \\times3} \\quad| A B |=\\left| \\begin{array} {c c c} {{{-5}}} & {{{2}}} & {{{3}}} \\\\ {{{6}}} & {{{3}}} & {{{9}}} \\\\ {{{-4}}} & {{{1}}} & {{{1}}} \\\\ \\end{array} \\right|\n$$",
+        "pred_idx": [
+            36
+        ],
+        "pred": "\\[\\left|\\left(\\frac{1}{12}A\\right)^{-1}+3A\\right|=\\left|12A^{-1}+3A\\right|=108\\]",
+        "edit": 1,
+        "gt_position": [
+            28
+        ],
+        "pred_position": 1865,
+        "norm_gt": "$$\nab=\\left({ccc}{{{-5}}}&{{{2}}}&{{{3}}}\\\\{{{6}}}&{{{3}}}&{{{9}}}\\\\{{{-4}}}&{{{1}}}&{{{1}}}\\\\\\right)_{3\\times3}|ab|=\\left|{ccc}{{{-5}}}&{{{2}}}&{{{3}}}\\\\{{{6}}}&{{{3}}}&{{{9}}}\\\\{{{-4}}}&{{{1}}}&{{{1}}}\\\\\\right|\n$$",
+        "norm_pred": "\\left|\\left(\\frac{1}{12}a\\right)^{-1}+3a\\right|=\\left|12a^{-1}+3a\\right|=108",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_38247658.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_38247658.pdf_0.jpg",
+        "upper_len": 215,
+        "metric": {
+            "Edit_dist": 0.8093023255813954
+        },
+        "Edit_num": 174
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\nA=\\left( \\begin{array} {c c c} {{{1}}} & {{{1}}} & {{{0}}} \\\\ {{{1}}} & {{{2}}} & {{{1}}} \\\\ {{{1}}} & {{{3}}} & {{{2}}} \\\\ {{{1}}} & {{{4}}} & {{{3}}} \\\\ \\end{array} \\right)\n$$",
+        "pred_idx": [
+            32
+        ],
+        "pred": "\\[\\left|\\left(\\frac{1}{12}A\\right)^{-1}+3A\\right|=\\]",
+        "edit": 1,
+        "gt_position": [
+            40
+        ],
+        "pred_position": 1621,
+        "norm_gt": "$$\na=\\left({ccc}{{{1}}}&{{{1}}}&{{{0}}}\\\\{{{1}}}&{{{2}}}&{{{1}}}\\\\{{{1}}}&{{{3}}}&{{{2}}}\\\\{{{1}}}&{{{4}}}&{{{3}}}\\\\\\right)\n$$",
+        "norm_pred": "\\left|\\left(\\frac{1}{12}a\\right)^{-1}+3a\\right|=",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_38247658.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_38247658.pdf_0.jpg",
+        "upper_len": 126,
+        "metric": {
+            "Edit_dist": 0.8174603174603174
+        },
+        "Edit_num": 103
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\nA=\\left( \\begin{array} {c c c} {{{1}}} & {{{1}}} & {{{0}}} \\\\ {{{1}}} & {{{2}}} & {{{1}}} \\\\ {{{1}}} & {{{3}}} & {{{2}}} \\\\ {{{1}}} & {{{4}}} & {{{3}}} \\\\ \\end{array} \\right) \\sim \\left( \\begin{array} {c c c} {{{1}}} & {{{1}}} & {{{0}}} \\\\ {{{0}}} & {{{1}}} & {{{1}}} \\\\ {{{0}}} & {{{0}}} & {{{0}}} \\\\ {{{0}}} & {{{0}}} & {{{0}}} \\\\ \\end{array} \\right)\n$$",
+        "pred_idx": [
+            35
+        ],
+        "pred": "\\[\\left(\\frac{1}{12}A\\right)^{-1}=12A^{-1}\\]",
+        "edit": 1,
+        "gt_position": [
+            42
+        ],
+        "pred_position": 1814,
+        "norm_gt": "$$\na=\\left({ccc}{{{1}}}&{{{1}}}&{{{0}}}\\\\{{{1}}}&{{{2}}}&{{{1}}}\\\\{{{1}}}&{{{3}}}&{{{2}}}\\\\{{{1}}}&{{{4}}}&{{{3}}}\\\\\\right)\\sim\\left({ccc}{{{1}}}&{{{1}}}&{{{0}}}\\\\{{{0}}}&{{{1}}}&{{{1}}}\\\\{{{0}}}&{{{0}}}&{{{0}}}\\\\{{{0}}}&{{{0}}}&{{{0}}}\\\\\\right)\n$$",
+        "norm_pred": "\\left(\\frac{1}{12}a\\right)^{-1}=12a^{-1}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_38247658.pdf_0.jpg",
+        "image_name": "jiaocaineedrop_38247658.pdf_0.jpg",
+        "upper_len": 248,
+        "metric": {
+            "Edit_dist": 0.8870967741935484
+        },
+        "Edit_num": 220
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\mathrm{C_{1 2} H_{2 2} O_{1 1} ( s )+h e a t \\to1 2 \\, C ( s )+1 1 \\, H_{2} O ( g )}\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[C_{12}H_{22}O_{11}(s)+\\text{heat}\\rightarrow12C(s)+11H_2O(g)\\]",
+        "gt_position": [
+            1
+        ],
+        "pred_position": 27,
+        "norm_gt": "$$\n{c_{12}h_{22}o_{11}(s)+heat\\to12\\,c(s)+11\\,h_{2}o(g)}\n$$",
+        "norm_pred": "c_{12}h_{22}o_{11}(s)+{heat}\\rightarrow12c(s)+11h_2o(g)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "edit": 0.4067796610169492,
+        "img_id": "jiaocaineedrop_chem-97961.pdf_128.jpg",
+        "image_name": "jiaocaineedrop_chem-97961.pdf_128.jpg",
+        "upper_len": 59,
+        "metric": {
+            "Edit_dist": 0.4067796610169492
+        },
+        "Edit_num": 24
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\begin{array}{c}\n2 5 x \\!=\\! 1 5 \\! \\times\\! 2 0 0 0\n\\\\x \\!=\\! 1 2 0 0\n\\end{array}\n$$",
+        "pred_idx": [
+            0,
+            1
+        ],
+        "pred": "\\[25x=15\\times2000\\]\\[x=1200\\]",
+        "edit": 0.5416666666666666,
+        "gt_position": [
+            6
+        ],
+        "pred_position": 111,
+        "norm_gt": "$$\n{c}\n25x\\!=\\!15\\!\\times\\!2000\n\\\\x\\!=\\!1200\n\n$$",
+        "norm_pred": "25x=15\\times2000x=1200",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_1253.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_1253.jpg",
+        "upper_len": 48,
+        "metric": {
+            "Edit_dist": 0.5416666666666666
+        },
+        "Edit_num": 26
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n\\begin{array}{c}\n2 5^{2} \\ x \\!=\\! 1 5^{2} \\! \\times\\! 2 0 0 0\n\\\\x \\!=\\! 7 2 0\n\\end{array}$$",
+        "pred_idx": [
+            2
+        ],
+        "pred": "\\[25^2x=15^2\\times2000\\]",
+        "edit": 0.6363636363636364,
+        "gt_position": [
+            10
+        ],
+        "pred_position": 232,
+        "norm_gt": "$$\n{c}\n25^{2}\\x\\!=\\!15^{2}\\!\\times\\!2000\n\\\\x\\!=\\!720\n$$",
+        "norm_pred": "25^2x=15^2\\times2000",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_1253.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_1253.jpg",
+        "upper_len": 55,
+        "metric": {
+            "Edit_dist": 0.6363636363636364
+        },
+        "Edit_num": 35
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n\\mathrm{Z n} \\longrightarrow\\mathrm{Z n}^{2+}+2 \\mathrm{e}^{-}\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[Zn\\rightarrowZn^{2+}+2e^-\\]",
+        "edit": 0.4186046511627907,
+        "gt_position": [
+            12
+        ],
+        "pred_position": 221,
+        "norm_gt": "$$\n{zn}\\longrightarrow{zn}^{2+}+2{e}^{-}\n$$",
+        "norm_pred": "zn\\rightarrowzn^{2+}+2e^-",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_250.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_250.jpg",
+        "upper_len": 43,
+        "metric": {
+            "Edit_dist": 0.4186046511627907
+        },
+        "Edit_num": 18
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n化学能{\\underset{氧化还原反应} {\\xrightarrow{\\text{化学电池}}}}电能  \n$$",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "edit": 1,
+        "gt_position": [
+            3
+        ],
+        "pred_position": "",
+        "norm_gt": "$$\n化学能{\\underset{氧化还原反应}{\\xrightarrow{{化学电池}}}}电能\n$$",
+        "norm_pred": "",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_250.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_250.jpg",
+        "upper_len": 52,
+        "metric": {
+            "Edit_dist": 1.0
+        },
+        "Edit_num": 52
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n化学能{\\underset{氧化还原反应} {\\xrightarrow{\\text{化学电池}}}}电能  \n$$",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "edit": 1,
+        "gt_position": [
+            3
+        ],
+        "pred_position": "",
+        "norm_gt": "$$\n化学能{\\underset{氧化还原反应}{\\xrightarrow{{化学电池}}}}电能\n$$",
+        "norm_pred": "",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_250.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_250.jpg",
+        "upper_len": 52,
+        "metric": {
+            "Edit_dist": 1.0
+        },
+        "Edit_num": 52
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\n| x | \\leqslant2, \\ \\ | y | \\leqslant2, \\ \\ | z | \\leqslant2 ;\n$$",
+        "pred_idx": [
+            32,
+            33,
+            34
+        ],
+        "pred": "\\[L\\]\\[|x|\\leq2,\\quad|y|\\leq2,\\quad|z|\\leq2;\\]\\[L\\]",
+        "edit": 0.4807692307692308,
+        "gt_position": [
+            14
+        ],
+        "pred_position": 750,
+        "norm_gt": "$$\n|x|\\leqslant2,\\\\|y|\\leqslant2,\\\\|z|\\leqslant2;\n$$",
+        "norm_pred": "l|x|\\leq2,|y|\\leq2,|z|\\leq2;l",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "upper_len": 52,
+        "metric": {
+            "Edit_dist": 0.4807692307692308
+        },
+        "Edit_num": 25
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\nx^{2}+y^{2}+z^{2}=4,\n$$",
+        "pred_idx": [
+            1
+        ],
+        "pred": "\\[M_2,M_3\\]",
+        "edit": 1,
+        "gt_position": [
+            8
+        ],
+        "pred_position": 60,
+        "norm_gt": "$$\nx^{2}+y^{2}+z^{2}=4,\n$$",
+        "norm_pred": "m_2,m_3",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "upper_len": 26,
+        "metric": {
+            "Edit_dist": 0.9230769230769231
+        },
+        "Edit_num": 24
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\nx^{2}+y^{2}-2 x=0\n$$",
+        "pred_idx": [
+            5
+        ],
+        "pred": "\\[xOy\\]",
+        "edit": 1,
+        "gt_position": [
+            10
+        ],
+        "pred_position": 138,
+        "norm_gt": "$$\nx^{2}+y^{2}-2x=0\n$$",
+        "norm_pred": "xoy",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "upper_len": 22,
+        "metric": {
+            "Edit_dist": 0.9090909090909091
+        },
+        "Edit_num": 20
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\n\\left\\{\\begin{array} {l} {{{x^{2}+y^{2}-2 x=0 \\,,}}} \\\\ {{{{}}}} \\\\ {{{{z=0 \\,,}}}} \\\\ \\end{array} \\right.\n$$",
+        "pred_idx": [
+            38
+        ],
+        "pred": "\\[\\begin{cases}x^2+y^2-2x=0,\\\\z=0.\\end{cases}\\quad(3.38)\\]",
+        "edit": 1,
+        "gt_position": [
+            16
+        ],
+        "pred_position": 907,
+        "norm_gt": "$$\n\\left\\{{l}{{{x^{2}+y^{2}-2x=0\\,,}}}\\\\{{{{}}}}\\\\{{{{z=0\\,,}}}}\\\\\\right.\n$$",
+        "norm_pred": "x^2+y^2-2x=0,\\\\z=0.(3.38)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_3009.jpg",
+        "upper_len": 76,
+        "metric": {
+            "Edit_dist": 0.75
+        },
+        "Edit_num": 57
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\nV {=} V_{D-B C E F}+V_{D-A B F} \\quad{=} V_{D-B C E F}+V_{B-A D F}={\\frac{1} {3}} S_{\\# \\mathrm{g e g} B C E F} \\cdot D G+{\\frac{1} {3}} S_{\\Delta\\mathrm{A D F}} \\cdot C G\n$$",
+        "pred_idx": [
+            1
+        ],
+        "pred": "\\[\\frac{1}{3}S_{△BCEF}\\cdotDG+\\frac{1}{3}S_{△ADF}\\cdotCG\\]",
+        "edit": 0.584,
+        "gt_position": [
+            17
+        ],
+        "pred_position": 494,
+        "norm_gt": "$$\nv{=}v_{d-bcef}+v_{d-abf}{=}v_{d-bcef}+v_{b-adf}={\\frac{1}{3}}s_{\\#{geg}bcef}\\cdotdg+{\\frac{1}{3}}s_{\\delta{adf}}\\cdotcg\n$$",
+        "norm_pred": "\\frac{1}{3}s_{△bcef}\\cdotdg+\\frac{1}{3}s_{△adf}\\cdotcg",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_3063.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_3063.jpg",
+        "upper_len": 125,
+        "metric": {
+            "Edit_dist": 0.584
+        },
+        "Edit_num": 73
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n\\therefore \\left\\{\\begin{matrix} {{x=\\lambda x_{1}+\\mu x_{2}}} \\\\ {{y=\\lambda y_{1}+\\mu y_{2}}} \\\\ \\end{matrix} \\right.\n$$",
+        "pred_idx": [
+            20
+        ],
+        "pred": "\\[\\becausee=\\frac{c}{a}=\\frac{\\sqrt{2}}{2}\\]",
+        "edit": 1,
+        "gt_position": [
+            45
+        ],
+        "pred_position": 1226,
+        "norm_gt": "$$\n\\therefore\\left\\{{{x=\\lambdax_{1}+\\mux_{2}}}\\\\{{y=\\lambday_{1}+\\muy_{2}}}\\\\\\right.\n$$",
+        "norm_pred": "\\becausee=\\frac{c}{a}=\\frac{\\sqrt{2}}{2}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_3063.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_3063.jpg",
+        "upper_len": 88,
+        "metric": {
+            "Edit_dist": 0.7727272727272727
+        },
+        "Edit_num": 68
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n4\\frac{3}{5}\\!-\\!1\\frac{1}{2}\\!=\\!3\\frac{1}{10}\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[4\\frac{3}{5}-1\\frac{1}{2}=3\\frac{1}{10}\\]",
+        "edit": 0.2641509433962264,
+        "gt_position": [
+            1
+        ],
+        "pred_position": 21,
+        "norm_gt": "$$\n4\\frac{3}{5}\\!-\\!1\\frac{1}{2}\\!=\\!3\\frac{1}{10}\n$$",
+        "norm_pred": "4\\frac{3}{5}-1\\frac{1}{2}=3\\frac{1}{10}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 53,
+        "metric": {
+            "Edit_dist": 0.2641509433962264
+        },
+        "Edit_num": 14
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n6. 6 \\times3 0 0=1 9 8 0\n$$",
+        "pred_idx": [
+            1
+        ],
+        "pred": "\\[6.6\\times300=1980\\]",
+        "edit": 0.2608695652173913,
+        "gt_position": [
+            2
+        ],
+        "pred_position": 77,
+        "norm_gt": "$$\n6.6\\times300=1980\n$$",
+        "norm_pred": "6.6\\times300=1980",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 23,
+        "metric": {
+            "Edit_dist": 0.2608695652173913
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\n5\\frac{1}{2}\\!-\\!2\\frac{4}{9}\\!=\\!3\\,\\frac{1}{18}\n$$",
+        "pred_idx": [
+            2
+        ],
+        "pred": "\\[5\\frac{1}{2}-2\\frac{4}{9}=3\\frac{1}{18}\\]",
+        "edit": 0.2909090909090909,
+        "gt_position": [
+            3
+        ],
+        "pred_position": 108,
+        "norm_gt": "$$\n5\\frac{1}{2}\\!-\\!2\\frac{4}{9}\\!=\\!3\\,\\frac{1}{18}\n$$",
+        "norm_pred": "5\\frac{1}{2}-2\\frac{4}{9}=3\\frac{1}{18}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 55,
+        "metric": {
+            "Edit_dist": 0.2909090909090909
+        },
+        "Edit_num": 16
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\n2 4 \\div1. 2=2 0\n$$",
+        "pred_idx": [
+            3
+        ],
+        "pred": "\\[24\\div1.2=20\\]",
+        "edit": 0.3333333333333333,
+        "gt_position": [
+            4
+        ],
+        "pred_position": 164,
+        "norm_gt": "$$\n24\\div1.2=20\n$$",
+        "norm_pred": "24\\div1.2=20",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 18,
+        "metric": {
+            "Edit_dist": 0.3333333333333333
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            4
+        ],
+        "gt": "$$\n0. 3 \\times0. 8=0. 2 4\n$$",
+        "pred_idx": [
+            5
+        ],
+        "pred": "\\[0.3\\times0.8=0.24\\]",
+        "edit": 0.2608695652173913,
+        "gt_position": [
+            6
+        ],
+        "pred_position": 229,
+        "norm_gt": "$$\n0.3\\times0.8=0.24\n$$",
+        "norm_pred": "0.3\\times0.8=0.24",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 23,
+        "metric": {
+            "Edit_dist": 0.2608695652173913
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            5
+        ],
+        "gt": "$$\n4. 2 \\times2 0=8 4\n$$",
+        "pred_idx": [
+            6
+        ],
+        "pred": "\\[4.2\\times20=84\\]",
+        "edit": 0.3,
+        "gt_position": [
+            7
+        ],
+        "pred_position": 260,
+        "norm_gt": "$$\n4.2\\times20=84\n$$",
+        "norm_pred": "4.2\\times20=84",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 20,
+        "metric": {
+            "Edit_dist": 0.3
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            6
+        ],
+        "gt": "$$\n8. 0 1 \\div0. 9=8. 9\n$$",
+        "pred_idx": [
+            8
+        ],
+        "pred": "\\[8.01\\div0.9=8.9\\]",
+        "edit": 0.2857142857142857,
+        "gt_position": [
+            9
+        ],
+        "pred_position": 325,
+        "norm_gt": "$$\n8.01\\div0.9=8.9\n$$",
+        "norm_pred": "8.01\\div0.9=8.9",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 21,
+        "metric": {
+            "Edit_dist": 0.2857142857142857
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            7
+        ],
+        "gt": "$$\n1. 6 \\times0. 3=0. 4 8\n$$",
+        "pred_idx": [
+            9
+        ],
+        "pred": "\\[1.6\\times0.3=0.48\\]",
+        "edit": 0.2608695652173913,
+        "gt_position": [
+            10
+        ],
+        "pred_position": 355,
+        "norm_gt": "$$\n1.6\\times0.3=0.48\n$$",
+        "norm_pred": "1.6\\times0.3=0.48",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 23,
+        "metric": {
+            "Edit_dist": 0.2608695652173913
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            8
+        ],
+        "gt": "$$\n9. 3 \\times6 0=5 5 8\n$$",
+        "pred_idx": [
+            11
+        ],
+        "pred": "\\[9.3\\times60=558\\]",
+        "edit": 0.2857142857142857,
+        "gt_position": [
+            12
+        ],
+        "pred_position": 417,
+        "norm_gt": "$$\n9.3\\times60=558\n$$",
+        "norm_pred": "9.3\\times60=558",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 21,
+        "metric": {
+            "Edit_dist": 0.2857142857142857
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            9
+        ],
+        "gt": "$$\n{\\frac{1}{6}}+{\\frac{3}{5}}={\\frac{23}{30}}\n$$",
+        "pred_idx": [
+            12
+        ],
+        "pred": "\\[\\frac{1}{6}+\\frac{3}{5}=\\frac{23}{30}\\]",
+        "edit": 0.24489795918367346,
+        "gt_position": [
+            13
+        ],
+        "pred_position": 447,
+        "norm_gt": "$$\n{\\frac{1}{6}}+{\\frac{3}{5}}={\\frac{23}{30}}\n$$",
+        "norm_pred": "\\frac{1}{6}+\\frac{3}{5}=\\frac{23}{30}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 49,
+        "metric": {
+            "Edit_dist": 0.24489795918367346
+        },
+        "Edit_num": 12
+    },
+    {
+        "gt_idx": [
+            10
+        ],
+        "gt": "$$\n2. 3 \\times5=1 1. 5\n$$",
+        "pred_idx": [
+            13
+        ],
+        "pred": "\\[2.3\\times5=11.5\\]",
+        "edit": 0.2857142857142857,
+        "gt_position": [
+            14
+        ],
+        "pred_position": 499,
+        "norm_gt": "$$\n2.3\\times5=11.5\n$$",
+        "norm_pred": "2.3\\times5=11.5",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_541.jpg",
+        "upper_len": 21,
+        "metric": {
+            "Edit_dist": 0.2857142857142857
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n26\\div3=\n$$",
+        "pred_idx": [
+            12
+        ],
+        "pred": "\\[20\\div3=\\]",
+        "edit": 0.5,
+        "gt_position": [
+            6
+        ],
+        "pred_position": 293,
+        "norm_gt": "$$\n26\\div3=\n$$",
+        "norm_pred": "20\\div3=",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "upper_len": 14,
+        "metric": {
+            "Edit_dist": 0.5
+        },
+        "Edit_num": 7
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\n41\\div6=\n$$",
+        "pred_idx": [
+            17
+        ],
+        "pred": "\\[41\\div6=\\]",
+        "edit": 0.42857142857142855,
+        "gt_position": [
+            7
+        ],
+        "pred_position": 398,
+        "norm_gt": "$$\n41\\div6=\n$$",
+        "norm_pred": "41\\div6=",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "upper_len": 14,
+        "metric": {
+            "Edit_dist": 0.42857142857142855
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\n79\\div9=\n$$",
+        "pred_idx": [
+            20
+        ],
+        "pred": "\\[79\\div9=\\]",
+        "edit": 0.42857142857142855,
+        "gt_position": [
+            8
+        ],
+        "pred_position": 461,
+        "norm_gt": "$$\n79\\div9=\n$$",
+        "norm_pred": "79\\div9=",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "upper_len": 14,
+        "metric": {
+            "Edit_dist": 0.42857142857142855
+        },
+        "Edit_num": 6
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\begin{array}{l}\n38\\div7=    20\\div3=\n\\\\50\\div8=  71\\div8=\n\\\\42\\div6=  17\\div2=\n\\\\78\\div9=  38\\div6=\n\\\\60\\div8=  80\\div9=\n\\\\30\\div4=  15\\div5=\n\\\\64\\div8=  32\\div5=\n\\\\35\\div8=  42\\div7=\n\\\\54\\div8=  36\\div4=\n\\\\36\\div9=  30\\div8=\n\\\\60\\div7=  48\\div9=\n\\\\23\\div4=  45\\div7=\n\\end{array}\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[38\\div7=\\]",
+        "edit": 1,
+        "gt_position": [
+            4
+        ],
+        "pred_position": 49,
+        "norm_gt": "$$\n{l}\n38\\div7=20\\div3=\n\\\\50\\div8=71\\div8=\n\\\\42\\div6=17\\div2=\n\\\\78\\div9=38\\div6=\n\\\\60\\div8=80\\div9=\n\\\\30\\div4=15\\div5=\n\\\\64\\div8=32\\div5=\n\\\\35\\div8=42\\div7=\n\\\\54\\div8=36\\div4=\n\\\\36\\div9=30\\div8=\n\\\\60\\div7=48\\div9=\n\\\\23\\div4=45\\div7=\n\n$$",
+        "norm_pred": "38\\div7=",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_546.jpg",
+        "upper_len": 236,
+        "metric": {
+            "Edit_dist": 0.9661016949152542
+        },
+        "Edit_num": 228
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\nS_{n}=\\frac{a_{1}-a_{n} q} {1-q} \\ \\ ( q \\neq1 ).\n$$",
+        "pred_idx": [
+            1
+        ],
+        "pred": "\\[S_n=\\frac{a_1-a_1q^n}{1-q}\\quad(q\\neq1).\\]",
+        "edit": 0.3617021276595745,
+        "gt_position": [
+            3
+        ],
+        "pred_position": 52,
+        "norm_gt": "$$\ns_{n}=\\frac{a_{1}-a_{n}q}{1-q}\\\\(q\\neq1).\n$$",
+        "norm_pred": "s_n=\\frac{a_1-a_1q^n}{1-q}(q\\neq1)",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "upper_len": 47,
+        "metric": {
+            "Edit_dist": 0.3617021276595745
+        },
+        "Edit_num": 17
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n\\begin{aligned} {{S_{s}=}} & {{} {{} {\\frac{a_{1} ( 1-q^{n} )} {1-q}}}} \\\\ {{=}} & {{} {{} {\\frac{1 \\times( 1-2^{64} )} {1-2}}}} \\\\ {{=}} & {{} {{} {2^{64}-1}.}} \\\\ \\end{aligned}\n$$",
+        "pred_idx": [
+            4,
+            5,
+            6
+        ],
+        "pred": "\\[n=64\\]\\[S_n=\\frac{a_1(1-q^n)}{1-q}=\\frac{1\\times(1-2^{64})}{1-2}=\\frac{2^{64}-1}{1}=2^{64}-1.\\]\\[2^{64}-1\\]",
+        "edit": 0.4883720930232558,
+        "gt_position": [
+            5
+        ],
+        "pred_position": 161,
+        "norm_gt": "$$\n{{s_{s}=}}&{{}{{}{\\frac{a_{1}(1-q^{n})}{1-q}}}}\\\\{{=}}&{{}{{}{\\frac{1\\times(1-2^{64})}{1-2}}}}\\\\{{=}}&{{}{{}{2^{64}-1}.}}\\\\\n$$",
+        "norm_pred": "n=64s_n=\\frac{a_1(1-q^n)}{1-q}=\\frac{1\\times(1-2^{64})}{1-2}=\\frac{2^{64}-1}{1}=2^{64}-12^{64}-1",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "upper_len": 129,
+        "metric": {
+            "Edit_dist": 0.4883720930232558
+        },
+        "Edit_num": 63
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$\n\\mathbf{S}_{n}\\!=\\!\\frac{\\frac{1}{2}\\Big[1\\!-\\!\\left(\\frac{1}{2}\\right)^{8}\\Big]}{1\\!-\\!\\frac{1}{2}}\\!=\\!\\frac{255}{256}.\n$$",
+        "pred_idx": [
+            12
+        ],
+        "pred": "\\[S_n=\\frac{\\frac{1}{2}\\left[1-\\left(\\frac{1}{2}\\right)^8\\right]}{1-\\frac{1}{2}}=\\frac{255}{256}.\\]",
+        "edit": 0.3,
+        "gt_position": [
+            11
+        ],
+        "pred_position": 591,
+        "norm_gt": "$$\n{s}_{n}\\!=\\!\\frac{\\frac{1}{2}\\big[1\\!-\\!\\left(\\frac{1}{2}\\right)^{8}\\big]}{1\\!-\\!\\frac{1}{2}}\\!=\\!\\frac{255}{256}.\n$$",
+        "norm_pred": "s_n=\\frac{\\frac{1}{2}\\left[1-\\left(\\frac{1}{2}\\right)^8\\right]}{1-\\frac{1}{2}}=\\frac{255}{256}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "upper_len": 120,
+        "metric": {
+            "Edit_dist": 0.3
+        },
+        "Edit_num": 36
+    },
+    {
+        "gt_idx": [
+            3
+        ],
+        "gt": "$$\n{\\frac{1}{243}}{=}27\\cdot q^{8}.\n$$",
+        "pred_idx": [
+            14
+        ],
+        "pred": "\\[\\frac{1}{243}=27\\cdotq^8.\\]",
+        "edit": 0.35135135135135137,
+        "gt_position": [
+            13
+        ],
+        "pred_position": 750,
+        "norm_gt": "$$\n{\\frac{1}{243}}{=}27\\cdotq^{8}.\n$$",
+        "norm_pred": "\\frac{1}{243}=27\\cdotq^8",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "upper_len": 37,
+        "metric": {
+            "Edit_dist": 0.35135135135135137
+        },
+        "Edit_num": 13
+    },
+    {
+        "gt_idx": [
+            4
+        ],
+        "gt": "$$\nq=-\\frac{1} {3}.\n$$",
+        "pred_idx": [
+            16
+        ],
+        "pred": "\\[q=-\\frac{1}{3}.\\]",
+        "edit": 0.3333333333333333,
+        "gt_position": [
+            15
+        ],
+        "pred_position": 808,
+        "norm_gt": "$$\nq=-\\frac{1}{3}.\n$$",
+        "norm_pred": "q=-\\frac{1}{3}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "upper_len": 21,
+        "metric": {
+            "Edit_dist": 0.3333333333333333
+        },
+        "Edit_num": 7
+    },
+    {
+        "gt_idx": [
+            5
+        ],
+        "gt": "$$\nS_{8} \\!=\\! \\frac{2 7 \\Big[ 1 \\!-\\! \\Big( \\!-\\! \\frac{1} {3} \\Big)^{8} \\Big]} {1 \\!-\\! \\Big( \\!-\\! \\frac{1} {3} \\Big)} \\!=\\! \\frac{1 \\!-\\! 6 4 0} {8 1} \\!.\n$$",
+        "pred_idx": [
+            18
+        ],
+        "pred": "\\[S_8=\\frac{27\\left[1-\\left(-\\frac{1}{3}\\right)^8\\right]}{1-\\left(-\\frac{1}{3}\\right)}=\\frac{1640}{81}.\\]",
+        "edit": 0.45864661654135336,
+        "gt_position": [
+            17
+        ],
+        "pred_position": 855,
+        "norm_gt": "$$\ns_{8}\\!=\\!\\frac{27\\big[1\\!-\\!\\big(\\!-\\!\\frac{1}{3}\\big)^{8}\\big]}{1\\!-\\!\\big(\\!-\\!\\frac{1}{3}\\big)}\\!=\\!\\frac{1\\!-\\!640}{81}\\!.\n$$",
+        "norm_pred": "s_8=\\frac{27\\left[1-\\left(-\\frac{1}{3}\\right)^8\\right]}{1-\\left(-\\frac{1}{3}\\right)}=\\frac{1640}{81}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_913.jpg",
+        "upper_len": 133,
+        "metric": {
+            "Edit_dist": 0.45864661654135336
+        },
+        "Edit_num": 61
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n1-\\frac9{10}=  \\frac{4}{3}\\!+\\!\\frac{2}{3}\\!= \\frac{1}{5}\\!-\\!\\frac{1}{6}\\!= \\frac{6}{7}-\\frac{1}{2}+\\frac{1}{7}=\n$$",
+        "pred_idx": [
+            14
+        ],
+        "pred": "\\[1-\\frac{9}{10}=\\frac{1}{5}-\\frac{1}{6}=\\frac{6}{7}-\\frac{1}{2}+\\frac{1}{7}=\\frac{1}{5}+\\frac{3}{5}=\\frac{11}{12}-\\frac{2}{9}=\\frac{7}{9}-\\frac{2}{9}=\\frac{1}{19}-\\frac{17}{19}\\]",
+        "edit": 0.5085714285714286,
+        "gt_position": [
+            46
+        ],
+        "pred_position": 1536,
+        "norm_gt": "$$\n1-\\frac9{10}=\\frac{4}{3}\\!+\\!\\frac{2}{3}\\!=\\frac{1}{5}\\!-\\!\\frac{1}{6}\\!=\\frac{6}{7}-\\frac{1}{2}+\\frac{1}{7}=\n$$",
+        "norm_pred": "1-\\frac{9}{10}=\\frac{1}{5}-\\frac{1}{6}=\\frac{6}{7}-\\frac{1}{2}+\\frac{1}{7}=\\frac{1}{5}+\\frac{3}{5}=\\frac{11}{12}-\\frac{2}{9}=\\frac{7}{9}-\\frac{2}{9}=\\frac{1}{19}-\\frac{17}{19}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_999.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_999.jpg",
+        "upper_len": 175,
+        "metric": {
+            "Edit_dist": 0.5085714285714286
+        },
+        "Edit_num": 89
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$\n\\frac{1}{5}\\!+\\!\\frac{3}{5}\\!=\\frac{11}{12}\\!-\\!\\frac{1}{3}\\!=\\frac{7}{9}\\!-\\!\\frac{2}{9}\\!=1-\\frac{2}{19}-\\frac{17}{19}=\n$$",
+        "pred_idx": [
+            11,
+            12
+        ],
+        "pred": "\\[\\frac{2}{5}\\]\\[\\frac{7}{9}+\\frac{3}{10}+\\frac{2}{9}=(\\frac{7}{9}+\\frac{2}{9})+(\\frac{3}{10}+\\frac{17}{10})\\]",
+        "edit": 0.3543307086614173,
+        "gt_position": [
+            47
+        ],
+        "pred_position": 1038,
+        "norm_gt": "$$\n\\frac{1}{5}\\!+\\!\\frac{3}{5}\\!=\\frac{11}{12}\\!-\\!\\frac{1}{3}\\!=\\frac{7}{9}\\!-\\!\\frac{2}{9}\\!=1-\\frac{2}{19}-\\frac{17}{19}=\n$$",
+        "norm_pred": "\\frac{2}{5}\\frac{7}{9}+\\frac{3}{10}+\\frac{2}{9}=(\\frac{7}{9}+\\frac{2}{9})+(\\frac{3}{10}+\\frac{17}{10})",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_inline",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "jiaocaineedrop_jiaocai_needrop_en_999.jpg",
+        "image_name": "jiaocaineedrop_jiaocai_needrop_en_999.jpg",
+        "upper_len": 127,
+        "metric": {
+            "Edit_dist": 0.3543307086614173
+        },
+        "Edit_num": 45
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$日平均气温=一日内气温观测值之和{\\div} 观测次数$$",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            4
+        ],
+        "pred_position": "",
+        "norm_gt": "$$日平均气温=一日内气温观测值之和{\\div}观测次数$$",
+        "norm_pred": "",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "formula_type": "handwriting"
+            }
+        ],
+        "edit": 1,
+        "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_16.jpg",
+        "image_name": "notes_1ba14cb325bc448f7201b20502ecf2b5_16.jpg",
+        "upper_len": 30,
+        "metric": {
+            "Edit_dist": 1.0
+        },
+        "Edit_num": 30
+    },
+    {
+        "gt_idx": [
+            1
+        ],
+        "gt": "$$月平均气温=一月内日平均气温之和{\\div} 当月天数$$",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            5
+        ],
+        "pred_position": "",
+        "norm_gt": "$$月平均气温=一月内日平均气温之和{\\div}当月天数$$",
+        "norm_pred": "",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "formula_type": "handwriting"
+            }
+        ],
+        "edit": 1,
+        "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_16.jpg",
+        "image_name": "notes_1ba14cb325bc448f7201b20502ecf2b5_16.jpg",
+        "upper_len": 30,
+        "metric": {
+            "Edit_dist": 1.0
+        },
+        "Edit_num": 30
+    },
+    {
+        "gt_idx": [
+            2
+        ],
+        "gt": "$$年平均气温=一年内月平均气温之和{\\div} 月数\\left ( 12 \\right ) $$",
+        "pred_idx": [
+            ""
+        ],
+        "pred": "",
+        "gt_position": [
+            6
+        ],
+        "pred_position": "",
+        "norm_gt": "$$年平均气温=一年内月平均气温之和{\\div}月数\\left(12\\right)$$",
+        "norm_pred": "",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "",
+        "gt_attribute": [
+            {
+                "formula_type": "handwriting"
+            }
+        ],
+        "edit": 1,
+        "img_id": "notes_1ba14cb325bc448f7201b20502ecf2b5_16.jpg",
+        "image_name": "notes_1ba14cb325bc448f7201b20502ecf2b5_16.jpg",
+        "upper_len": 43,
+        "metric": {
+            "Edit_dist": 1.0
+        },
+        "Edit_num": 43
+    },
+    {
+        "gt_idx": [
+            0
+        ],
+        "gt": "$$\n\\begin{array}{r}{r=\\frac{\\left(\\frac{f}{22.4}\\right)\\left\\{\\int_{t_{0}}^{t_{1}}\\big([N O]_{0}-[N O]\\big)\\mathrm{d}t+\\int_{t_{0}}^{t_{1}}\\big([N O_{2}]_{0}-[N O_{2}]\\big)\\mathrm{d}t\\right\\}}{A T}}\\end{array}\n$$",
+        "pred_idx": [
+            0
+        ],
+        "pred": "\\[r=\\frac{(f\\int_{t_0}^{t_1}(NO_{0}-NO)dt-f\\int_{t_0}^{t_1}(NO_{2}-NO_0)dt)}{AT}\\]",
+        "edit": 0.5680473372781065,
+        "gt_position": [
+            4
+        ],
+        "pred_position": 483,
+        "norm_gt": "$$\n{r}{r=\\frac{\\left(\\frac{f}{22.4}\\right)\\left\\{\\int_{t_{0}}^{t_{1}}\\big([no]_{0}-[no]\\big){d}t+\\int_{t_{0}}^{t_{1}}\\big([no_{2}]_{0}-[no_{2}]\\big){d}t\\right\\}}{at}}\n$$",
+        "norm_pred": "r=\\frac{(f\\int_{t_0}^{t_1}(no_{0}-no)dt-f\\int_{t_0}^{t_1}(no_{2}-no_0)dt)}{at}",
+        "gt_category_type": "equation_isolated",
+        "pred_category_type": "equation_isolated",
+        "gt_attribute": [
+            {
+                "formula_type": "print"
+            }
+        ],
+        "img_id": "scihub_j.conbuildmat.2019.117698.pdf_5.jpg",
+        "image_name": "scihub_j.conbuildmat.2019.117698.pdf_5.jpg",
+        "upper_len": 169,
+        "metric": {
+            "Edit_dist": 0.5680473372781065
+        },
+        "Edit_num": 96
+    }
+]

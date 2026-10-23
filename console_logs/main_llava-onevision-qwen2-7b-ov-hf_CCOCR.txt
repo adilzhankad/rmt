@@ -1,0 +1,112 @@
+[2026-10-23 05:44:12] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+`torch_dtype` is deprecated! Use `dtype` instead!
+The localized version of data file is /home/shadeform/a3/LMUData/CCOCR_local.tsv
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 26.81it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 35.30it/s]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   0%|          | 0/400 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   0%|          | 1/400 [00:09<1:00:27,  9.09s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   0%|          | 2/400 [04:22<16:53:02, 152.72s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   1%|          | 3/400 [08:24<21:19:35, 193.39s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   1%|          | 4/400 [08:25<12:56:03, 117.58s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   1%|▏         | 5/400 [08:28<8:22:38, 76.35s/it]  Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   2%|▏         | 6/400 [12:34<14:39:12, 133.89s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   2%|▏         | 7/400 [12:49<10:22:58, 95.11s/it] Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   2%|▏         | 8/400 [17:00<15:44:35, 144.58s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   2%|▏         | 9/400 [21:01<18:59:35, 174.87s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   2%|▎         | 10/400 [21:10<13:22:51, 123.52s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   3%|▎         | 11/400 [21:23<9:41:39, 89.71s/it]  Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   3%|▎         | 12/400 [21:31<7:00:16, 64.99s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   3%|▎         | 13/400 [21:58<5:44:56, 53.48s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   4%|▎         | 14/400 [22:05<4:13:52, 39.46s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   4%|▍         | 15/400 [22:13<3:11:37, 29.86s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   4%|▍         | 16/400 [22:17<2:21:53, 22.17s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   4%|▍         | 17/400 [22:24<1:51:33, 17.48s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   4%|▍         | 18/400 [22:29<1:28:39, 13.93s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   5%|▍         | 19/400 [22:47<1:34:56, 14.95s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   5%|▌         | 20/400 [23:19<2:07:25, 20.12s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   5%|▌         | 21/400 [27:20<9:06:12, 86.47s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   6%|▌         | 22/400 [27:43<7:04:37, 67.40s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   6%|▌         | 23/400 [28:03<5:33:31, 53.08s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   6%|▌         | 24/400 [28:11<4:09:06, 39.75s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   6%|▋         | 25/400 [28:24<3:17:53, 31.66s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   6%|▋         | 26/400 [28:40<2:48:46, 27.08s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   7%|▋         | 27/400 [28:54<2:23:47, 23.13s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   7%|▋         | 28/400 [33:00<9:18:06, 90.02s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   7%|▋         | 29/400 [33:14<6:54:41, 67.07s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   8%|▊         | 30/400 [33:34<5:26:06, 52.88s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   8%|▊         | 31/400 [33:55<4:26:16, 43.30s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   8%|▊         | 32/400 [34:22<3:55:48, 38.45s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   8%|▊         | 33/400 [34:53<3:41:01, 36.13s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   8%|▊         | 34/400 [35:03<2:53:56, 28.52s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   9%|▉         | 35/400 [35:18<2:28:13, 24.37s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   9%|▉         | 36/400 [35:45<2:32:25, 25.13s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:   9%|▉         | 37/400 [40:00<9:28:41, 94.00s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  10%|▉         | 38/400 [40:42<7:53:44, 78.52s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  10%|▉         | 39/400 [41:02<6:06:21, 60.89s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  10%|█         | 40/400 [41:35<5:16:06, 52.68s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  10%|█         | 41/400 [41:50<4:06:15, 41.16s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  10%|█         | 42/400 [42:04<3:17:58, 33.18s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  11%|█         | 43/400 [42:56<3:50:45, 38.78s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  11%|█         | 44/400 [43:26<3:33:49, 36.04s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  11%|█▏        | 45/400 [43:50<3:12:16, 32.50s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  12%|█▏        | 46/400 [44:15<2:59:18, 30.39s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  12%|█▏        | 47/400 [44:38<2:44:33, 27.97s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  12%|█▏        | 48/400 [45:46<3:54:45, 40.02s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  12%|█▏        | 49/400 [46:11<3:28:36, 35.66s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  12%|█▎        | 50/400 [46:42<3:18:51, 34.09s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  13%|█▎        | 51/400 [50:59<9:47:22, 100.98s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  13%|█▎        | 52/400 [51:36<7:54:58, 81.89s/it] Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  13%|█▎        | 53/400 [52:35<7:13:02, 74.88s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  14%|█▎        | 54/400 [53:11<6:04:56, 63.29s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  14%|█▍        | 55/400 [53:30<4:47:51, 50.06s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  14%|█▍        | 56/400 [53:42<3:42:07, 38.74s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  14%|█▍        | 57/400 [54:03<3:11:16, 33.46s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  14%|█▍        | 58/400 [54:40<3:16:40, 34.51s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  15%|█▍        | 59/400 [55:09<3:05:20, 32.61s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  15%|█▌        | 60/400 [55:31<2:47:17, 29.52s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  15%|█▌        | 61/400 [56:05<2:54:35, 30.90s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  16%|█▌        | 62/400 [56:52<3:21:38, 35.79s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  16%|█▌        | 63/400 [57:18<3:04:20, 32.82s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  16%|█▌        | 64/400 [57:45<2:53:10, 30.92s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  16%|█▋        | 65/400 [1:02:02<9:11:41, 98.81s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  16%|█▋        | 66/400 [1:02:27<7:07:20, 76.77s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  17%|█▋        | 67/400 [1:06:30<11:41:51, 126.46s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  17%|█▋        | 68/400 [1:10:49<15:20:03, 166.28s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  17%|█▋        | 69/400 [1:10:51<10:46:03, 117.11s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  18%|█▊        | 70/400 [1:14:57<14:17:17, 155.87s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  18%|█▊        | 71/400 [1:15:00<10:01:49, 109.75s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  18%|█▊        | 72/400 [1:15:02<7:03:40, 77.50s/it]  Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  18%|█▊        | 73/400 [1:15:04<4:59:55, 55.03s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  18%|█▊        | 74/400 [1:15:08<3:34:53, 39.55s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  19%|█▉        | 75/400 [1:15:12<2:37:24, 29.06s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  19%|█▉        | 76/400 [1:15:16<1:55:07, 21.32s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  19%|█▉        | 77/400 [1:15:18<1:23:45, 15.56s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  20%|█▉        | 78/400 [1:15:23<1:06:59, 12.48s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  20%|█▉        | 79/400 [1:15:28<54:22, 10.16s/it]  Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  20%|██        | 80/400 [1:15:31<43:04,  8.08s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  20%|██        | 81/400 [1:15:35<35:46,  6.73s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  20%|██        | 82/400 [1:15:36<27:26,  5.18s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  21%|██        | 83/400 [1:15:41<26:38,  5.04s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  21%|██        | 84/400 [1:15:45<25:27,  4.83s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  21%|██▏       | 85/400 [1:15:57<36:10,  6.89s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  22%|██▏       | 86/400 [1:16:19<59:18, 11.33s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  22%|██▏       | 87/400 [1:16:20<43:02,  8.25s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  22%|██▏       | 88/400 [1:16:23<35:04,  6.75s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  22%|██▏       | 89/400 [1:16:27<31:01,  5.99s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  22%|██▎       | 90/400 [1:16:31<27:58,  5.41s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  23%|██▎       | 91/400 [1:16:35<24:37,  4.78s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  23%|██▎       | 92/400 [1:16:39<23:34,  4.59s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  23%|██▎       | 93/400 [1:16:42<21:22,  4.18s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  24%|██▎       | 94/400 [1:16:46<20:23,  4.00s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  24%|██▍       | 95/400 [1:16:49<19:02,  3.75s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  24%|██▍       | 96/400 [1:16:52<18:29,  3.65s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  24%|██▍       | 97/400 [1:16:56<18:10,  3.60s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  24%|██▍       | 98/400 [1:17:00<18:49,  3.74s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  25%|██▍       | 99/400 [1:17:03<18:29,  3.69s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  25%|██▌       | 100/400 [1:17:07<18:36,  3.72s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  25%|██▌       | 101/400 [1:17:11<18:40,  3.75s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  26%|██▌       | 102/400 [1:17:14<18:15,  3.68s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  26%|██▌       | 103/400 [1:17:18<18:05,  3.66s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  26%|██▌       | 104/400 [1:17:27<26:14,  5.32s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Infer llava-onevision-qwen2-7b-ov-hf/CCOCR, Rank 0/1:  26%|██▋       | 105/400 [1:17:32<25:38,  5.22s/it]Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+2026-10-23T07:02:46Z LLaVA CCOCR process group 29310 paused (SIGSTOP) so Qwen OmniDocBench gets GPU 1

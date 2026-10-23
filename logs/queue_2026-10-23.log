@@ -1,0 +1,15 @@
+2026-10-23T04:53:48Z 🚀 queue started: 7 GPU jobs on 2 GPU(s), 0 API jobs
+2026-10-23T04:53:48Z ▶️ Qwen2.5-VL-7B-Instruct · OmniDocBench · main · GPU 1
+2026-10-23T04:53:49Z ▶️ Ovis2-8B · olmOCRBench · main · GPU 0
+2026-10-23T04:56:49Z ▶️ Ovis2-8B · OmniDocBench · main · GPU 1
+2026-10-23T04:56:49Z ▶️ llava-onevision-qwen2-7b-ov-hf · OCRBench_v2 · main · GPU 0
+2026-10-23T05:44:10Z ✅ Ovis2-8B · OmniDocBench · main
+score 0.428 · failed answers 0 of 400 · 47 min
+2026-10-23T05:44:10Z ▶️ llava-onevision-qwen2-7b-ov-hf · CCOCR · main · GPU 1
+2026-10-23T06:49:31Z ✅ llava-onevision-qwen2-7b-ov-hf · OCRBench_v2 · main
+score 0.382 · failed answers 0 of 400 · 113 min
+2026-10-23T06:49:31Z ▶️ llava-onevision-qwen2-7b-ov-hf · olmOCRBench · main · GPU 0
+2026-10-23T07:01:51Z ✅ Ovis2-8B · olmOCRBench · main
+score 57.900 · failed answers 0 of 400 · 128 min
+2026-10-23T07:01:52Z ▶️ llava-onevision-qwen2-7b-ov-hf · OmniDocBench · main · GPU 0
+2026-10-23T07:34:20Z queue process killed by hand; LLaVA jobs stopped and logged ABORTED (students: too slow); Qwen OmniDocBench keeps running alone

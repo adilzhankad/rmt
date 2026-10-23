@@ -1,0 +1,45 @@
+{
+  "operator": "Adilzhan",
+  "model": "llava-onevision-qwen2-7b-ov-hf",
+  "benchmark": "OCRBench_v2",
+  "split": "main",
+  "n_items": 400,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "65d04fe07b4d4ee33e73fc8e7d4d46b0",
+  "n_failed": 0,
+  "primary_score": 0.3819246983848855,
+  "notes": "ok",
+  "duration_s": 6755.0,
+  "timestamp_utc": "2026-10-23T06:49:26Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA RTX A6000"
+    ],
+    "transformers": "4.57.6"
+  },
+  "usage": {
+    "calls": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "thinking": 0
+    },
+    "finish_reasons": {}
+  },
+  "items_file": "items/OCRBench_v2_main.csv",
+  "model_config": {
+    "kind": "local",
+    "env": "open",
+    "generate_overrides": {
+      "max_new_tokens": "MAX_TOKENS",
+      "do_sample": false
+    }
+  },
+  "prompt": "benchmark"
+}

@@ -1,5 +1,4 @@
 model,benchmark,split,last_timestamp_utc,notes
-Ovis2-8B,OmniDocBench,main,2026-10-22T21:28:50Z,"ABORTED during inference (user asked to stop the run (2026-10-23, budget)); no score (partial answers kept for a resume)"
-Ovis2-8B,olmOCRBench,main,2026-10-22T21:28:49Z,"ABORTED during inference (user asked to stop the run (2026-10-23, budget)); no score (partial answers kept for a resume)"
-Qwen2.5-VL-7B-Instruct,OmniDocBench,main,2026-10-22T21:28:51Z,"ABORTED during inference (user asked to stop the run (2026-10-23, budget)); no score (partial answers kept for a resume)"
-llava-onevision-qwen2-7b-ov-hf,OCRBench_v2,main,2026-10-22T21:28:51Z,"ABORTED during inference (user asked to stop the run (2026-10-23, budget)); no score (partial answers kept for a resume)"
+llava-onevision-qwen2-7b-ov-hf,CCOCR,main,2026-10-23T07:34:18Z,ABORTED during inference (students stopped LLaVA-OV on 2026-10-23: repetition loops made it too slow for the budget); no score (partial answers kept for a resume)
+llava-onevision-qwen2-7b-ov-hf,OmniDocBench,main,2026-10-23T07:34:20Z,ABORTED during inference (students stopped LLaVA-OV on 2026-10-23: repetition loops made it too slow for the budget); no score (partial answers kept for a resume)
+llava-onevision-qwen2-7b-ov-hf,olmOCRBench,main,2026-10-23T07:34:19Z,ABORTED during inference (students stopped LLaVA-OV on 2026-10-23: repetition loops made it too slow for the budget); no score (partial answers kept for a resume)
