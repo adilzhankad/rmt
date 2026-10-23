@@ -64,9 +64,9 @@ All 6 are on the published OCRBench v2 board (`data/scores_long.csv`).
 
 ---
 
-## 3. State right now (2026-10-22 21:32 UTC): run STOPPED by the students, no machine running
+## 3. State right now (2026-10-23 08:35 UTC): main run FINISHED, no machine running
 
-### 3.1 Main run: 19 of 24 jobs have a score
+### 3.1 Main run: 21 of 24 jobs have a score
 Scores from `logs/run_log.csv` (main split, 400 items each, 0 failed answers in every scored run):
 
 | Model | OCRBench v2 (EN, ↑) | CC-OCR (↑) | olmOCR (↑) | OmniDocBench (EN edit dist, ↓) |
@@ -74,16 +74,31 @@ Scores from `logs/run_log.csv` (main split, 400 items each, 0 failed answers in 
 | GPT-4o | 0.460 | 0.735 | 72.4 | 0.209 |
 | GPT-4o-mini | 0.413 | 0.652 | 60.7 | 0.375 |
 | InternVL3-8B | 0.465 | 0.613 | 68.6 | 0.341 |
-| Qwen2.5-VL-7B (vLLM) | 0.457 (see 3.3) | 0.803 | 79.6 | ABORTED, 140/400 saved |
-| Ovis2-8B | 0.414 | 0.673 | ABORTED, 270/400 saved | ABORTED, 370/400 saved |
-| LLaVA-OV-7B | ABORTED, 160/400 saved | not started | not started | not started |
+| Qwen2.5-VL-7B (vLLM) | 0.457 (see 3.3) | 0.803 | 79.6 | 0.274 |
+| Ovis2-8B | 0.414 | 0.673 | 57.9 | 0.428 |
+| LLaVA-OV-7B | 0.382 | ABORTED (stopped) | ABORTED (stopped) | ABORTED (stopped) |
 
-So **3 models have all 4 benchmarks** (GPT-4o, GPT-4o-mini, InternVL3-8B); Qwen and Ovis2 miss
-one or two. `MIN_SHARED_MODELS` is 5, so the full four-benchmark verdict needs Qwen and Ovis2 done: Ovis2
-OmniDocBench (30 pages left) + olmOCR (130 left), Qwen OmniDocBench (260 left): ~3–4 h on one 2-GPU machine.
-Pairwise τ for pairs with ≥ 5 shared models can already be computed (e.g. OCRBench v2 × CC-OCR: 5).
+**5 models have all 4 benchmarks** = `MIN_SHARED_MODELS`, so the four-benchmark verdict can be
+computed. LLaVA-OV is on OCRBench v2 only (6 models there); its other three runs were stopped by
+the students on 2026-10-23 07:34 UTC because repetition loops (answers up to 4096 tokens) made it
+far too slow for the budget, and are logged ABORTED with that reason. The report must say so.
+
+Next: `item_scores.py` needs the benchmark TSVs (`LMUData`, `experiment/download_data.py`, ~6 GB),
+then `analyze.py --split main` and `compare_published.py` (section 8).
 
 ### 3.2 How the run ended
+- Second machine (same type) 2026-10-23 04:33–08:33 UTC, cap $9, **≈ $5.4** (`logs/FINISHED.txt`).
+  It resumed the four ABORTED jobs from their saved answers: Ovis2 OmniDocBench (resumed at 370),
+  Ovis2 olmOCR (270), Qwen OmniDocBench (140), LLaVA OCRBench v2 (160), and started LLaVA's other
+  three benchmarks in the free slots.
+- At 07:02 Qwen OmniDocBench slowed to ~21 tok/s (answers to 4096 tokens while sharing GPU 1 with
+  LLaVA CC-OCR); LLaVA CC-OCR was paused (SIGSTOP), and Qwen went back to ~40 tok/s. Greedy
+  decoding, so the pause does not change any answer. At 07:34 the students stopped LLaVA: the
+  queue process was killed by hand, the three LLaVA run.py jobs were stopped and logged ABORTED in the
+  same form as `queue_runs.abort()` (one-off script, reason in the notes); Qwen ran on alone and
+  wrote its own row at 08:29. An on-machine one-off script then uploaded everything to Drive and
+  deleted the machine. Logs: `logs/queue_2026-10-23.log`, `logs/guard_2026-10-23.log`.
+- First machine of the main run, 2026-10-22 (below):
 - Machine `a3-main` (`massedcompute_A6000_plusx2`, 2× RTX A6000, $1.37/h) ran 2026-10-22
   ~11:00–21:31 UTC, ≈ **$14.4**. A Brev outage (API 503, ~20:30–21:30 UTC) blocked `ssh a3-main`;
   the machine was reached directly (`ssh -p 22 a3-main-host`, the Brev key) and the students asked
@@ -115,7 +130,7 @@ state this, and give both OCRBench numbers as an engine sanity check. `run.py` a
 
 ### 3.4 Money spent so far
 - Brev: ≈ $7.2 before today (pilot on L40S ≈ $4.0; first A6000 ≈ $0.4, lost by a guard race; second
-  A6000 2026-10-21 13:13–17:20 UTC ≈ $2.8), plus 2026-10-22 ≈ $14.4 → Brev total ≈ $21.6 of $50.
+  A6000 2026-10-21 13:13–17:20 UTC ≈ $2.8), plus 2026-10-22 ≈ $14.4 → Brev total ≈ $21.6 of $50, plus 2026-10-23 ≈ $5.4 → ≈ $27 of $50.
 - OpenAI: main runs finished, ≈ $21 (estimate from usage; check the OpenAI billing page for the real number).
 
 ### 3.5 Pilot (20 items, done 2026-10-20 on an L40S)
@@ -346,9 +361,8 @@ Partial answers (`*.pkl`) go to Drive under `resume_cache/raw/rerun/...`. They a
 
 ## 11. What is left (in order)
 
-1. Watch the run until the queue is done (or the cap is reached): first confirm Qwen on vLLM
-   gives a score; check `n_failed`; react to ❌ messages.
-2. Pull the results, commit, push, mirror to Drive (section 8).
+1. ~~Watch the run~~ done 2026-10-23 (21/24 scored, LLaVA stopped).
+2. ~~Pull the results, commit, push, mirror to Drive~~ done.
 3. Final analysis on all 6 models + figures redrawn on the Mac; check `missing_runs.csv`.
 4. Write report sections D.1–D.6 with the notes in section 9.
 5. Fix the student doc: one model list, the ER1 range as one value, OmniDocBench direction/version.
