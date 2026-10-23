@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+main,Ovis2-8B,olmOCRBench,overall,57.9,57.9258473162697,True
+main,Ovis2-8B,olmOCRBench,arxiv_math,56.2,56.18374558303887,True
+main,Ovis2-8B,olmOCRBench,baseline,99.7,99.74683544303798,True
+main,Ovis2-8B,olmOCRBench,headers_footers,61.3,61.276595744680854,True
+main,Ovis2-8B,olmOCRBench,long_tiny_text,37.5,37.5,True
+main,Ovis2-8B,olmOCRBench,multi_column,38.0,38.00738007380074,True
+main,Ovis2-8B,olmOCRBench,old_scans,40.9,40.90909090909091,True
+main,Ovis2-8B,olmOCRBench,old_scans_math,79.1,79.12087912087912,True
+main,Ovis2-8B,olmOCRBench,tables,50.7,50.66225165562914,True

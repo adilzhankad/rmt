@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+pilot,GeminiFlashLite3-5,olmOCRBench,overall,67.7,67.69532550782552,True
+pilot,GeminiFlashLite3-5,olmOCRBench,arxiv_math,71.4,71.42857142857143,True
+pilot,GeminiFlashLite3-5,olmOCRBench,baseline,100.0,100.0,True
+pilot,GeminiFlashLite3-5,olmOCRBench,headers_footers,62.5,62.5,True
+pilot,GeminiFlashLite3-5,olmOCRBench,long_tiny_text,75.0,75.0,True
+pilot,GeminiFlashLite3-5,olmOCRBench,multi_column,53.8,53.84615384615385,True
+pilot,GeminiFlashLite3-5,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,GeminiFlashLite3-5,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,GeminiFlashLite3-5,olmOCRBench,tables,50.0,50.0,True

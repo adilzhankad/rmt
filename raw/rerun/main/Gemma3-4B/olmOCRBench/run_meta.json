@@ -1,0 +1,48 @@
+{
+  "operator": "Adilzhan",
+  "model": "Gemma3-4B",
+  "benchmark": "olmOCRBench",
+  "split": "main",
+  "n_items": 400,
+  "max_tokens": 4096,
+  "temperature": 0,
+  "vlmevalkit_commit": "f57c3d90154010ba176fbafc39bb79ee521fbf70",
+  "tsv_md5": "25fe250887fee675f887a2a2d24df185",
+  "n_failed": 0,
+  "primary_score": 32.2,
+  "notes": "engine vLLM 0.10.2",
+  "duration_s": 7808.9,
+  "timestamp_utc": "2026-10-23T12:08:19Z",
+  "system": {
+    "python": "3.11.17",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": [
+      "NVIDIA RTX A6000"
+    ],
+    "transformers": "4.57.6",
+    "vllm": "0.10.2"
+  },
+  "usage": {
+    "calls": 0,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "thinking": 0
+    },
+    "finish_reasons": {}
+  },
+  "items_file": "items/olmOCRBench_main.csv",
+  "model_config": {
+    "kind": "local",
+    "env": "vllm",
+    "overrides": {
+      "model_path": "unsloth/gemma-3-4b-it",
+      "max_new_tokens": "MAX_TOKENS",
+      "use_vllm": true,
+      "gpu_utils": 0.45
+    }
+  },
+  "prompt": "benchmark"
+}

@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+main,GPT4o_MINI,olmOCRBench,overall,60.7,60.66715040846739,True
+main,GPT4o_MINI,olmOCRBench,arxiv_math,29.2,29.21083627797409,True
+main,GPT4o_MINI,olmOCRBench,baseline,99.7,99.74683544303798,True
+main,GPT4o_MINI,olmOCRBench,headers_footers,97.0,97.02127659574468,True
+main,GPT4o_MINI,olmOCRBench,long_tiny_text,46.2,46.15384615384615,True
+main,GPT4o_MINI,olmOCRBench,multi_column,46.1,46.125461254612546,True
+main,GPT4o_MINI,olmOCRBench,old_scans,40.9,40.90909090909091,True
+main,GPT4o_MINI,olmOCRBench,old_scans_math,72.5,72.52747252747253,True
+main,GPT4o_MINI,olmOCRBench,tables,53.6,53.64238410596027,True

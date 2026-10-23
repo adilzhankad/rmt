@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+pilot,MiniCPM-V-4_5,olmOCRBench,overall,77.3,77.32542754864184,True
+pilot,MiniCPM-V-4_5,olmOCRBench,arxiv_math,73.5,73.46938775510205,True
+pilot,MiniCPM-V-4_5,olmOCRBench,baseline,100.0,100.0,True
+pilot,MiniCPM-V-4_5,olmOCRBench,headers_footers,87.5,87.5,True
+pilot,MiniCPM-V-4_5,olmOCRBench,long_tiny_text,75.0,75.0,True
+pilot,MiniCPM-V-4_5,olmOCRBench,multi_column,53.8,53.84615384615385,True
+pilot,MiniCPM-V-4_5,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,MiniCPM-V-4_5,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,MiniCPM-V-4_5,olmOCRBench,tables,100.0,100.0,True

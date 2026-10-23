@@ -1,0 +1,14 @@
+{
+  "text_block_Edit_dist_EN": 0.643,
+  "text_block_Edit_dist_CH": 0.718,
+  "display_formula_Edit_dist_EN": 0.833,
+  "display_formula_Edit_dist_CH": 0.896,
+  "table_TEDS_EN": 25.291,
+  "table_TEDS_CH": 18.12,
+  "table_Edit_dist_EN": 0.773,
+  "table_Edit_dist_CH": 0.834,
+  "reading_order_Edit_dist_EN": 0.504,
+  "reading_order_Edit_dist_CH": 0.48,
+  "overall_EN": 0.688,
+  "overall_CH": 0.732
+}

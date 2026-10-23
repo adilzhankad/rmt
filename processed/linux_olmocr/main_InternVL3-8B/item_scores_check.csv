@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+main,InternVL3-8B,olmOCRBench,overall,68.6,68.61228757453074,True
+main,InternVL3-8B,olmOCRBench,arxiv_math,70.3,70.31802120141343,True
+main,InternVL3-8B,olmOCRBench,baseline,99.5,99.49367088607595,True
+main,InternVL3-8B,olmOCRBench,headers_footers,66.8,66.80851063829788,True
+main,InternVL3-8B,olmOCRBench,long_tiny_text,71.2,71.15384615384616,True
+main,InternVL3-8B,olmOCRBench,multi_column,62.4,62.361623616236166,True
+main,InternVL3-8B,olmOCRBench,old_scans,42.2,42.20779220779221,True
+main,InternVL3-8B,olmOCRBench,old_scans_math,70.3,70.32967032967034,True
+main,InternVL3-8B,olmOCRBench,tables,66.2,66.2251655629139,True

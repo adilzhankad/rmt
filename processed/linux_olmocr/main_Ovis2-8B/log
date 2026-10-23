@@ -1,0 +1,87 @@
+[2026-10-23 12:46:10] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+Error rendering equation: '\begin{tikzcd}
+M_{z+w} \otimes N_w \otimes P_0 \arrow[r] \arrow[d] & (M_z \otimes N_w) \otimes P_0 \arrow[d] \\
+M_{z+w} \otimes (N_w \otimes P_0)
+\end{tikzcd}'
+KaTeX parse error: No such environment: tikzcd at position 7: \begin{̲t̲i̲k̲z̲c̲d̲}̲
+M_{z+w} \otime…
+Error rendering equation: '\mathbb{E}[\|\hat{x}_n-x^*\|^2]\leq \frac{1}{2\mu_f}(\|\nabla f(x^*)\|\frac{\sqrt{\alpha}}{\nu_{\alpha}}(\sqrt{\Err_{\eta}}+nM)+\frac{1}{\eta}\Err_{\eta})'
+KaTeX parse error: Undefined control sequence: \Err at position 112: …\alpha}}(\sqrt{\̲E̲r̲r̲_{\eta}}+nM)+\f…
+Error rendering equation: '\mathbb{E}[\|\hat{x}_n-x^*\|^2]\leq \frac{1}{4\mu_f}(\|\nabla f(x^*)\|^2\mathbb{E}[\mathrm{dist}(\hat{x}_n,X_h)]+\frac{1}{\eta}\Err_{\eta})'
+KaTeX parse error: Undefined control sequence: \Err at position 128: …+\frac{1}{\eta}\̲E̲r̲r̲_{\eta})
+Error rendering equation: '\frac{\mu_f}{2}\mathbb{E}[\|\hat{x}_n-x^*\|^2]-\frac{\sqrt{\alpha}}{\nu_{\alpha}}(\sqrt{\Err_{\eta}}+nM)\leq \mathbb{E}[f(\hat{x}_n)]-f^*\leq \frac{1}{\eta}\Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 89: …\alpha}}(\sqrt{\̲E̲r̲r̲_{\eta}}+nM)\le…
+Error rendering equation: '\frac{\mu_f}{2}\mathbb{E}[\|\hat{x}_n-x^*\|^2]-2\|\nabla f(x^*)\|\Err_{\eta}\leq \mathbb{E}[f(\hat{x}_n)]-f^*\leq \frac{1}{\eta}\Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 66: …\nabla f(x^*)\|\̲E̲r̲r̲_{\eta}\leq \ma…
+Error rendering equation: '\frac{\mu_f}{2}\mathbb{E}[\|\hat{x}_n-x^*\|^2]-\|\nabla f(x^*)\|^2\mathbb{E}[\mathrm{dist}(\hat{x}_n,X_h)]\leq \mathbb{E}[f(\hat{x}_n)]-f^*\leq \frac{1}{\eta}\Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 159: … \frac{1}{\eta}\̲E̲r̲r̲_{\eta}
+Error rendering equation: '\mathbb{E}[\|\hat{x}_n-x^*\|^2]\leq \frac{2}{\mu_f}\Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 52: …\frac{2}{\mu_f}\̲E̲r̲r̲_{\eta}
+Error rendering equation: '\frac{\mu_f}{2}\mathbb{E}[\|\hat{x}_n-x^*\|^2]+\nabla f(x^*)^\rightarrowp\mathbb{E}[(\hat{x}_n-x)]\leq \mathbb{E}[f(\hat{x}_n)]-f^*,'
+KaTeX parse error: Undefined control sequence: \rightarrowp at position 62: …+\nabla f(x^*)^\̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲p̲\mathbb{E}[(\ha…
+Error rendering equation: '\frac{\mu_f}{2}\mathbb{E}[\|\hat{x}_n-x^*\|^2]+\nabla f(x^*)^\rightarrowp[(\hat{x}_n-\Pi_{X_h}[\hat{x}_n])+\Pi_{X_h}[\hat{x}_n]-x^*]\leq \mathbb{E}[f(\hat{x}_n)]-f^*.'
+KaTeX parse error: Undefined control sequence: \rightarrowp at position 62: …+\nabla f(x^*)^\̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲p̲[(\hat{x}_n-\Pi…
+Error rendering equation: '\frac{\mu_f}{2}\mathbb{E}[\|\hat{x}_n-x^*\|^2]+\nabla f(x^*)^\rightarrowp[(\hat{x}_n-\Pi_{X_h}[\hat{x}_n])]\leq \mathbb{E}[f(\hat{x}_n)]-f^*'
+KaTeX parse error: Undefined control sequence: \rightarrowp at position 62: …+\nabla f(x^*)^\̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲p̲[(\hat{x}_n-\Pi…
+Error rendering equation: '\mathbb{E}[h(\hat{x}_n)-\eta f(\hat{x}_n)]-f_{\eta}\leq \Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 57: …]-f_{\eta}\leq \̲E̲r̲r̲_{\eta}
+Error rendering equation: '\mathbb{E}[h(\hat{x}_n)]-h^*+\eta(\mathbb{E}[f(\hat{x}_n)]-f^*)\leq \Err_{\eta}.'
+KaTeX parse error: Undefined control sequence: \Err at position 69: …}_n)]-f^*)\leq \̲E̲r̲r̲_{\eta}.
+Error rendering equation: '\mathbb{E}[h(\hat{x}_n)]-h^*\leq \Err_{\eta}+\eta M'
+KaTeX parse error: Undefined control sequence: \Err at position 34: …x}_n)]-h^*\leq \̲E̲r̲r̲_{\eta}+\eta M
+Error rendering equation: '0\leq \mathbb{E}[h(\hat{x}_n)]-h^*\leq \Err_{\eta}+nM'
+KaTeX parse error: Undefined control sequence: \Err at position 40: …x}_n)]-h^*\leq \̲E̲r̲r̲_{\eta}+nM
+Error rendering equation: '0\leq \mathbb{E}[h(\hat{x}_n)]-h^*\leq 2\Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 41: …}_n)]-h^*\leq 2\̲E̲r̲r̲_{\eta}
+Error rendering equation: '\nabla f(x^*)^\rightarrowp[(\Pi_{X_h}[\hat{x}_n]-x^*)]\geq 0'
+KaTeX parse error: Undefined control sequence: \rightarrowp at position 15: \nabla f(x^*)^\̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲p̲[(\Pi_{X_h}[\ha…
+Error rendering equation: '\nabla f(x^*)^\rightarrowp[\hat{x}_n-x^*]'
+KaTeX parse error: Undefined control sequence: \rightarrowp at position 15: \nabla f(x^*)^\̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲p̲[\hat{x}_n-x^*]
+Error rendering equation: '\Err_{\eta}'
+KaTeX parse error: Undefined control sequence: \Err at position 1: \̲E̲r̲r̲_{\eta}
+Error rendering equation: '\{x \in \dom(h): h(x) \leq \alpha\}'
+KaTeX parse error: Undefined control sequence: \dom at position 9: \{x \in \̲d̲o̲m̲(h): h(x) \leq …
+Error rendering equation: '\idom(h) = (0,\infty)'
+KaTeX parse error: Undefined control sequence: \idom at position 1: \̲i̲d̲o̲m̲(h) = (0,\infty…
+Error rendering equation: '\dom(h) = \mathbb{R}_+'
+KaTeX parse error: Undefined control sequence: \dom at position 1: \̲d̲o̲m̲(h) = \mathbb{R…
+Error rendering equation: '\bdom(h) = \{0\}'
+KaTeX parse error: Undefined control sequence: \bdom at position 1: \̲b̲d̲o̲m̲(h) = \{0\}
+Error rendering equation: 'y \in \idom(h)'
+KaTeX parse error: Undefined control sequence: \idom at position 7: y \in \̲i̲d̲o̲m̲(h)
+Error rendering equation: 'x \in \idom(h)'
+KaTeX parse error: Undefined control sequence: \idom at position 7: x \in \̲i̲d̲o̲m̲(h)
+Error rendering equation: 'x \in \bdom(f)'
+KaTeX parse error: Undefined control sequence: \bdom at position 7: x \in \̲b̲d̲o̲m̲(f)
+Error rendering equation: '\idom(h)'
+KaTeX parse error: Undefined control sequence: \idom at position 1: \̲i̲d̲o̲m̲(h)
+Error rendering equation: '\frac{\partial \cov_\sigma(l^h_\sigma)}{\partial l_{24}} = \alpha_{24} + \frac{\pi}{3} \frac{\partial}{\partial l_{24}}(l_{12} + l_{13} + l_{14}),'
+KaTeX parse error: Undefined control sequence: \cov at position 16: \frac{\partial \̲c̲o̲v̲_\sigma(l^h_\si…
+Error rendering equation: '\frac{\partial \cov_\sigma(l^h_\sigma)}{\partial l_{34}} = \alpha_{34} + \frac{\pi}{3} \frac{\partial}{\partial l_{34}}(l_{12} + l_{13} + l_{14}).'
+KaTeX parse error: Undefined control sequence: \cov at position 16: \frac{\partial \̲c̲o̲v̲_\sigma(l^h_\si…
+Error rendering equation: 'H^h(l^h) = H(l^*, l^h) = H(l) = \cov(l) - 2\pi \sum_{i \in E} l_i,'
+KaTeX parse error: Undefined control sequence: \cov at position 33: … l^h) = H(l) = \̲c̲o̲v̲(l) - 2\pi \sum…
+Error rendering equation: '\cov^h(l^h) = \cov(l^*, l^h) = \cov(l) = \sum_{\sigma \in \mathcal{T}_{3,1}} \cov_\sigma(l^h) + \sum_{\sigma \in \mathcal{T}_{4,0}} \cov_\sigma(l)'
+KaTeX parse error: Undefined control sequence: \cov at position 1: \̲c̲o̲v̲^h(l^h) = \cov(…
+Error rendering equation: '\cov(l)'
+KaTeX parse error: Undefined control sequence: \cov at position 1: \̲c̲o̲v̲(l)
+Error rendering equation: '\frac{\partial \cov_\sigma(l^h_\sigma)}{\partial l_{23}} = \frac{\partial \cov(l_\sigma)}{\partial l_{23}} = \frac{\partial \cov}{\partial l_{12}} \frac{\partial l_{12}}{\partial l_{23}} + \frac{\partial \cov}{\partial l_{13}} \frac{\partial l_{13}}{\partial l_{23}} + \frac{\partial \cov}{\partial l_{14}} \frac{\partial l_{14}}{\partial l_{23}} = \alpha_{23} + \alpha_{12} \frac{\partial l_{12}}{\partial l_{23}} + \alpha_{13} \frac{\partial l_{13}}{\partial l_{23}} + \alpha_{14} \frac{\partial l_{14}}{\partial l_{23}} = -\alpha_{23} + \frac{\pi}{3} \frac{\partial}{\partial l_{23}}(l_{12} + l_{13} + l_{14}).'
+KaTeX parse error: Undefined control sequence: \cov at position 16: \frac{\partial \̲c̲o̲v̲_\sigma(l^h_\si…
+Error rendering equation: '\cov'
+KaTeX parse error: Undefined control sequence: \cov at position 1: \̲c̲o̲v̲
+Error rendering equation: '\mathds{1}_A^{\otimes H} = \mathds{1}_A^{\otimes C} \otimes \text{id}_H'
+KaTeX parse error: Undefined control sequence: \mathds at position 1: \̲m̲a̲t̲h̲d̲s̲{1}_A^{\otimes …
+Error rendering equation: '\text{rk}(\mathds{1}_0^{\oplus C_1} \oplus \mathds{1}_A^{\oplus C_1}) = \text{rk}(\mathds{1}_0^{\oplus C_1} \oplus \mathds{1}_A^{\oplus 1}) \geq \text{rk}(\mathds{1}_A^{\oplus C_1}),'
+KaTeX parse error: Undefined control sequence: \mathds at position 11: \text{rk}(\̲m̲a̲t̲h̲d̲s̲{1}_0^{\oplus C…
+Error rendering equation: '\begin{tikzcd}
+0 \arrow[r] & \mathrm{Sel}_p^{\pm}(E/K)[\omega_n^\pm] \arrow[r] \arrow[d, "s_n^\pm"] & H^1(K_\Sigma/K_n, E[p^\infty])[\omega_n^\pm] \arrow[r, "a"] \arrow[d, "h_n^\pm"] & \prod_{v \nmid \Sigma} H^1(K_{n,vn}, E[p^\infty]) \arrow[d, "\prod g_{vn}^\pm"] \\
+0 \arrow[r] & \mathrm{Sel}_p^{\pm}(E/K_\infty)[\omega_n^\pm] \arrow[r] & H^1(K_\Sigma/K_\infty, E[p^\infty])[\omega_n^\pm] \arrow[r] & \prod_{v \in \Sigma} H^1(K_{\infty,v}, E[p^\infty])[\omega_n^\pm]
+\end{tikzcd}'
+KaTeX parse error: No such environment: tikzcd at position 7: \begin{̲t̲i̲k̲z̲c̲d̲}̲
+0 \arrow[r] & …
+Error rendering equation: 'G \rel A'
+KaTeX parse error: Undefined control sequence: \rel at position 3: G \̲r̲e̲l̲ ̲A
+Error rendering equation: 'e_\mathbf{k} = (c_\mathbf{k} - c_{-\mathbf{k}}^\dagger, c_{\mathbf{k} + \mathbf{K}}^\dagger, c_{-\mathbf{k} + \mathbf{K}}^\dagger, c_{-\mathbf{k}})^\rightarrowp'
+KaTeX parse error: Undefined control sequence: \rightarrowp at position 149: …{-\mathbf{k}})^\̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲p̲
+main  Ovis2-8B                 olmOCRBench     2401 rows  check OK
+exit 0

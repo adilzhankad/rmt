@@ -1,0 +1,51 @@
+[2026-10-23 12:46:10] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+Error rendering equation: '+ 2\epsilon^2 \int_{-1}^{1} (1 - y^2) \partial_y \delta \phi_0 \, dy + O(\epsilon)^3 \right). \tag{A.12}'
+KaTeX parse error: Expected 'EOF', got '\right' at position 86: … O(\epsilon)^3 \̲r̲i̲g̲h̲t̲). \tag{A.12}
+Error rendering equation: '\ker(D^t) \xlongrightarrow{i^t} \text{xker}(D^t) \xlongrightarrow{\text{ob}^t} \text{xcoker}(D^t) \xlongrightarrow{p^t} \text{coker}(D^t).'
+KaTeX parse error: Undefined control sequence: \xlongrightarrow at position 11: \ker(D^t) \̲x̲l̲o̲n̲g̲r̲i̲g̲h̲t̲a̲r̲r̲o̲w̲{i^t} \text{xke…
+Error rendering equation: 'm(B_r) \leq m(G) - 1 &lt; \frac{n - (t - 1)}{3t - 7} - 1 = \frac{n - (3t - 7) - (t - 1)}{3t - 7} &lt; \frac{|B_r| - (t - 1)}{3t - 7}'
+KaTeX parse error: Expected 'EOF', got '&' at position 22: … \leq m(G) - 1 &̲lt; \frac{n - (…
+Error rendering equation: 'm(B_r) &lt; m(G_2) = m(G)'
+KaTeX parse error: Expected 'EOF', got '&' at position 8: m(B_r) &̲lt; m(G_2) = m(…
+Error rendering equation: '|B_i| &lt; k^{\log_2 3}'
+KaTeX parse error: Expected 'EOF', got '&' at position 7: |B_i| &̲lt; k^{\log_2 3…
+Error rendering equation: 'n &gt; 36k^{\log_2 3}'
+KaTeX parse error: Expected 'EOF', got '&' at position 3: n &̲gt; 36k^{\log_2…
+Error rendering equation: '\rho' \circ f = (f \otimes \id_C) \circ \rho'
+KaTeX parse error: Undefined control sequence: \id at position 28: …f = (f \otimes \̲i̲d̲_C) \circ \rho
+Error rendering equation: '(\id_M \otimes \Delta) \circ \rho = (\rho \otimes \id_C) \circ \rho'
+KaTeX parse error: Undefined control sequence: \id at position 2: (\̲i̲d̲_M \otimes \Del…
+Error rendering equation: '(\id_M \otimes \varepsilon) \circ \rho = \id_M'
+KaTeX parse error: Undefined control sequence: \id at position 2: (\̲i̲d̲_M \otimes \var…
+Error rendering equation: '\mu \circ (\id \otimes S) \circ \Delta = \eta \circ \varepsilon = \mu \circ (S \otimes \id) \circ \Delta'
+KaTeX parse error: Undefined control sequence: \id at position 12: \mu \circ (\̲i̲d̲ ̲\otimes S) \cir…
+Error rendering equation: '\begin{tikzcd}
+M \square_C N \arrow[r] & M \otimes N \arrow[r, "\rho^{\otimes 1}", "\lambda \otimes 1"', two heads] & M \otimes C \otimes N.
+\end{tikzcd}'
+KaTeX parse error: No such environment: tikzcd at position 7: \begin{̲t̲i̲k̲z̲c̲d̲}̲
+M \square_C N …
+Error rendering equation: '\coMod_C \to \Vect_k'
+KaTeX parse error: Undefined control sequence: \coMod at position 1: \̲c̲o̲M̲o̲d̲_C \to \Vect_k
+Error rendering equation: 'K(\Inj_{\fc}(C))'
+KaTeX parse error: Undefined control sequence: \Inj at position 3: K(\̲I̲n̲j̲_{\fc}(C))
+Error rendering equation: '\Alg(\Vect_k^{\op})'
+KaTeX parse error: Undefined control sequence: \Alg at position 1: \̲A̲l̲g̲(\Vect_k^{\op})
+Error rendering equation: '\begin{tikzcd}
+0 \arrow[r] & M \arrow[r] & N \arrow[r] & P \arrow[r] & 0.
+\end{tikzcd}'
+KaTeX parse error: No such environment: tikzcd at position 7: \begin{̲t̲i̲k̲z̲c̲d̲}̲
+0 \arrow[r] & …
+Error rendering equation: '\Vect_k^{\op}'
+KaTeX parse error: Undefined control sequence: \Vect at position 1: \̲V̲e̲c̲t̲_k^{\op}
+Error rendering equation: '\Inj_{\fc}(C)'
+KaTeX parse error: Undefined control sequence: \Inj at position 1: \̲I̲n̲j̲_{\fc}(C)
+Error rendering equation: '\coMod_C'
+KaTeX parse error: Undefined control sequence: \coMod at position 1: \̲c̲o̲M̲o̲d̲_C
+Error rendering equation: '\Vect_k'
+KaTeX parse error: Undefined control sequence: \Vect at position 1: \̲V̲e̲c̲t̲_k
+Error rendering equation: '\coAlg_k'
+KaTeX parse error: Undefined control sequence: \coAlg at position 1: \̲c̲o̲A̲l̲g̲_k
+Error rendering equation: '\begin{array}{ll} \minimize & J_{i}\left(x_{i}, \bar{x}\right) \\ \text { subject to } & g(\bar{x}) \leq 0 . \end{array}'
+KaTeX parse error: Undefined control sequence: \minimize at position 19: …gin{array}{ll} \̲m̲i̲n̲i̲m̲i̲z̲e̲ ̲& J_{i}\left(x_…
+main  Qwen2.5-VL-7B-Instruct   olmOCRBench     2401 rows  check OK
+exit 0

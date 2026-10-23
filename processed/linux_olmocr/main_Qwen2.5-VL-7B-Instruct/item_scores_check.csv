@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,overall,79.6,79.63124786485491,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,arxiv_math,87.2,87.16136631330977,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,baseline,98.7,98.73417721518987,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,headers_footers,73.2,73.19148936170212,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,long_tiny_text,84.6,84.61538461538461,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,multi_column,70.5,70.47970479704797,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,old_scans,56.5,56.493506493506494,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,old_scans_math,91.2,91.20879120879121,True
+main,Qwen2.5-VL-7B-Instruct,olmOCRBench,tables,75.2,75.16556291390728,True

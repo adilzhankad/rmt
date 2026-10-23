@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+main,Gemma3-4B,olmOCRBench,overall,32.2,32.15440252824869,True
+main,Gemma3-4B,olmOCRBench,arxiv_math,0.9,0.9422850412249706,True
+main,Gemma3-4B,olmOCRBench,baseline,99.7,99.74683544303798,True
+main,Gemma3-4B,olmOCRBench,headers_footers,89.4,89.36170212765957,True
+main,Gemma3-4B,olmOCRBench,long_tiny_text,2.9,2.8846153846153846,True
+main,Gemma3-4B,olmOCRBench,multi_column,1.8,1.845018450184502,True
+main,Gemma3-4B,olmOCRBench,old_scans,24.0,24.025974025974026,True
+main,Gemma3-4B,olmOCRBench,old_scans_math,20.9,20.87912087912088,True
+main,Gemma3-4B,olmOCRBench,tables,17.5,17.549668874172184,True

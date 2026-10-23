@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+pilot,GPT4o_MINI,olmOCRBench,overall,59.4,59.3596879311165,True
+pilot,GPT4o_MINI,olmOCRBench,arxiv_math,32.7,32.6530612244898,True
+pilot,GPT4o_MINI,olmOCRBench,baseline,100.0,100.0,True
+pilot,GPT4o_MINI,olmOCRBench,headers_footers,100.0,100.0,True
+pilot,GPT4o_MINI,olmOCRBench,long_tiny_text,50.0,50.0,True
+pilot,GPT4o_MINI,olmOCRBench,multi_column,15.4,15.384615384615385,True
+pilot,GPT4o_MINI,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,GPT4o_MINI,olmOCRBench,old_scans_math,86.4,86.36363636363636,True
+pilot,GPT4o_MINI,olmOCRBench,tables,57.1,57.142857142857146,True

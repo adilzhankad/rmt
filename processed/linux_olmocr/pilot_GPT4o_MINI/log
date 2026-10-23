@@ -1,0 +1,3 @@
+[2026-10-23 12:46:10] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+pilot GPT4o_MINI               olmOCRBench      141 rows  check OK
+exit 0

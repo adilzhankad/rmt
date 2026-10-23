@@ -11,3 +11,4 @@ work/
 *_subset_gt.tsv
 *.md5.json
 hf/
+.vlmeval/

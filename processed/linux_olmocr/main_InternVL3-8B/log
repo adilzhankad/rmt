@@ -1,0 +1,23 @@
+[2026-10-23 12:46:10] ERROR - __init__.py: load_env - 20: Did not detect the .env file at /home/shadeform/a3/third_party/VLMEvalKit/.env, failed to load.
+Error rendering equation: '\mathbb{E}_\boldsymbol{y}[F(\boldsymbol{y})]'
+KaTeX parse error: Got function '\boldsymbol' with no arguments as subscript at position 12: \mathbb{E}_\̲b̲o̲l̲d̲s̲y̲m̲b̲o̲l̲{y}[F(\boldsymb…
+Error rendering equation: '\begin{tikzcd}
+X \arrow{r}{f'} \arrow{d}{\Phi} & Z_h \arrow{d}{\Delta_{n+1}} \\
+T^n(\mu) & Z_{h}^{n+1}
+\end{tikzcd}'
+KaTeX parse error: No such environment: tikzcd at position 7: \begin{̲t̲i̲k̲z̲c̲d̲}̲
+X \arrow{r}{f'…
+Error rendering equation: '485).
+
+Ex. Evaluate
+
+
+
+The determinant =
+
+
+
+490. Evaluation of determinants. By means of the preceding proposition all elements but one in a column (or row) can be made equal to zero, and hence the determinant can be reduced to one of the next lower order (\'
+KaTeX parse error: Unexpected character: '\' at position 258: …t lower order (\̲
+main  InternVL3-8B             olmOCRBench     2401 rows  check OK
+exit 0

@@ -1,0 +1,10 @@
+split,model,benchmark,metric,official,rebuilt,ok
+pilot,Ovis2-8B,olmOCRBench,overall,58.4,58.3595719756434,True
+pilot,Ovis2-8B,olmOCRBench,arxiv_math,67.3,67.34693877551021,True
+pilot,Ovis2-8B,olmOCRBench,baseline,100.0,100.0,True
+pilot,Ovis2-8B,olmOCRBench,headers_footers,62.5,62.5,True
+pilot,Ovis2-8B,olmOCRBench,long_tiny_text,50.0,50.0,True
+pilot,Ovis2-8B,olmOCRBench,multi_column,15.4,15.384615384615385,True
+pilot,Ovis2-8B,olmOCRBench,old_scans,33.3,33.333333333333336,True
+pilot,Ovis2-8B,olmOCRBench,old_scans_math,95.5,95.45454545454545,True
+pilot,Ovis2-8B,olmOCRBench,tables,42.9,42.857142857142854,True
