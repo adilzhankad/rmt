@@ -8,7 +8,9 @@ report that is not in those files is computed here, from them:
     for the point estimate and in each of the 1,000 bootstrap replicates (bootstrap_main.csv);
   * the verdict computed with the pre-registered plain-mean statistic (harness.bootstrap_tau);
   * ER3: the first-ranked model on each benchmark;
-  * the engine check: Qwen2.5-VL OCRBench v2 on transformers vs vLLM, and whether the rank changes.
+  * the engine check: Qwen2.5-VL OCRBench v2 on transformers vs vLLM, and whether the rank changes;
+  * leave-one-model-out: mean and min tau-b when each of the six complete models is left out;
+  * answer-level failure totals over the 25 scored main runs (output_checks_main.csv).
 """
 import json
 import sys
@@ -59,6 +61,23 @@ def main():
     rank_with = lambda v: 1 + sum(x > v for m, x in ocr.items() if m != "Qwen2.5-VL-7B-Instruct")
     out["engine_check"] = {"transformers": tr, "vllm": vl, "rank_among_six_transformers": rank_with(tr),
                            "rank_among_six_vllm": rank_with(vl)}
+    six = ranks.set_index("model")
+    labels = [c.replace(" score", "") for c in six.columns if c.endswith(" score")]
+    oriented = {b: {m: harness.oriented(v, "lower" if b == "OmniDocBench" else "higher")
+                    for m, v in six[f"{b} score"].items()} for b in labels}
+    loo = {}
+    for left in six.index:
+        tab = {b: {m: v for m, v in d.items() if m != left} for b, d in oriented.items()}
+        taus = [t for *_, t, _ in harness.pairwise(tab)]
+        loo[left] = {"mean_tau": sum(taus) / len(taus), "min_tau": min(taus),
+                     "verdict": harness.verdict(sum(taus) / len(taus), min(taus))}
+    out["leave_one_model_out"] = loo
+
+    oc = pd.read_csv(PROCESSED / "output_checks_main.csv")
+    out["answer_level"] = {"runs": len(oc), "answers": int(oc.answers.sum()), "empty": int(oc["empty"].sum()),
+                           "long": int(oc.long.sum()), "loop": int(oc.loop.sum()),
+                           "cut_api": int(pd.to_numeric(oc.cut_api, errors="coerce").fillna(0).sum()),
+                           "loop_by_benchmark": oc.groupby("benchmark").loop.sum().astype(int).to_dict()}
     (PROCESSED / "a4_numbers.json").write_text(json.dumps(out, indent=2) + "\n")
     print(json.dumps(out, indent=2))
 

@@ -254,6 +254,30 @@ def fig8_failures():
     save(fig, "a4_fig8_loops.png")
 
 
+def fig9_leave_one_out(cfg):
+    import json
+    n = json.loads((PROCESSED / "a4_numbers.json").read_text())
+    j = pd.read_json(PROCESSED / "agreement_main.json", typ="series")
+    loo = sorted(n["leave_one_model_out"].items(), key=lambda kv: kv[1]["mean_tau"])
+    fig, ax = plt.subplots(figsize=(9, 3.8))
+    zones(ax)
+    for i, (m, v) in enumerate(loo):
+        ax.plot([v["min_tau"], v["mean_tau"]], [i, i], color=MUTED, lw=1.2, zorder=2)
+        ax.plot(v["min_tau"], i, "|", ms=12, color=INK, zorder=3)
+        ax.plot(v["mean_tau"], i, "o", ms=9, color=colour(cfg, m), mec="white", zorder=3)
+        ax.text(1.02, i, f"mean {v['mean_tau']:.2f}, min {v['min_tau']:.2f}: {v['verdict']}", va="center",
+                fontsize=9, transform=ax.get_yaxis_transform())
+    ax.axvline(j["mean_tau"], color=INK, lw=1, ls="--", zorder=1)
+    ax.text(j["mean_tau"], len(loo) - 0.45, f" all six: {j['mean_tau']:.2f}", fontsize=9)
+    ax.set_yticks(range(len(loo)), [f"without {NAME[m]}" for m, _ in loo])
+    ax.set_xlim(-0.05, 1)
+    ax.set_ylim(-0.6, len(loo) - 0.2)
+    ax.set_xlabel("Kendall's τ-b over the six benchmark pairs on five models (dot = mean, bar = minimum)")
+    clean(ax)
+    ax.set_title("Sensitivity to the model set: verdict when one of the six models is left out", loc="left", fontsize=11)
+    save(fig, "a4_fig9_leave_one_out.png")
+
+
 def main():
     cfg = load_config()
     scores = primary(cfg)
@@ -265,6 +289,7 @@ def main():
     fig6_language(cfg)
     fig7_published(cfg)
     fig8_failures()
+    fig9_leave_one_out(cfg)
 
 
 if __name__ == "__main__":

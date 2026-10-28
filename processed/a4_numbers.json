@@ -38,5 +38,51 @@
     "vllm": 0.4565473336423915,
     "rank_among_six_transformers": 3,
     "rank_among_six_vllm": 3
+  },
+  "leave_one_model_out": {
+    "GPT4o_20240806": {
+      "mean_tau": 0.5666666666666667,
+      "min_tau": 0.4,
+      "verdict": "partial agreement"
+    },
+    "GPT4o_MINI": {
+      "mean_tau": 0.5666666666666668,
+      "min_tau": 0.2,
+      "verdict": "partial agreement"
+    },
+    "Gemma3-4B": {
+      "mean_tau": 0.3333333333333333,
+      "min_tau": 0.0,
+      "verdict": "rankings do not agree"
+    },
+    "InternVL3-8B": {
+      "mean_tau": 0.7333333333333334,
+      "min_tau": 0.6,
+      "verdict": "rankings agree"
+    },
+    "Ovis2-8B": {
+      "mean_tau": 0.5666666666666668,
+      "min_tau": 0.2,
+      "verdict": "partial agreement"
+    },
+    "Qwen2.5-VL-7B-Instruct": {
+      "mean_tau": 0.5666666666666667,
+      "min_tau": 0.4,
+      "verdict": "partial agreement"
+    }
+  },
+  "answer_level": {
+    "runs": 25,
+    "answers": 10000,
+    "empty": 0,
+    "long": 94,
+    "loop": 312,
+    "cut_api": 53,
+    "loop_by_benchmark": {
+      "CCOCR": 52,
+      "OCRBench_v2": 22,
+      "OmniDocBench": 193,
+      "olmOCRBench": 45
+    }
   }
 }
