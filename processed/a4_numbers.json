@@ -1,0 +1,42 @@
+{
+  "same_type_taus": [
+    0.3333333333333333,
+    0.8666666666666667
+  ],
+  "cross_type_taus": [
+    0.6,
+    0.4666666666666667,
+    0.4666666666666667,
+    0.6
+  ],
+  "same_type_mean": 0.6,
+  "cross_type_mean": 0.5333333333333333,
+  "gap_same_minus_cross": 0.06666666666666665,
+  "gap_bootstrap": {
+    "replicates": 1000,
+    "ci95": [
+      -0.1333333333333333,
+      0.13333333333333341
+    ],
+    "share_same_above_cross": 0.428,
+    "share_gap_below_0.15": 0.424
+  },
+  "plain_mean_statistic": {
+    "mean_tau": 0.5111111111111112,
+    "min_tau": 0.2,
+    "verdict": "partial agreement"
+  },
+  "first_ranked": {
+    "OCRBench v2": "InternVL3-8B",
+    "CC-OCR": "Qwen2.5-VL-7B-Instruct",
+    "OmniDocBench": "GPT4o_20240806",
+    "olmOCR-Bench": "Qwen2.5-VL-7B-Instruct"
+  },
+  "leader_max_benchmarks": 2,
+  "engine_check": {
+    "transformers": 0.4452134053345529,
+    "vllm": 0.4565473336423915,
+    "rank_among_six_transformers": 3,
+    "rank_among_six_vllm": 3
+  }
+}

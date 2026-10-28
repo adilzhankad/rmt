@@ -1,0 +1,119 @@
+model,benchmark,item,chars,tail_300
+GPT4o_20240806,CCOCR,2457,20479, SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+GPT4o_20240806,OmniDocBench,740,25948, appropriate species under the appropriate species under the appropriate species under the appropriate species under the appropriate species under the appropriate species under the appropriate species under the appropriate species under the appropriate species under the appropriate species under the
+GPT4o_20240806,olmOCRBench,751,21775,d at the characteristic warmth of America. I was amazed at the characteristic warmth of America. I was amazed at the characteristic warmth of America. I was amazed at the characteristic warmth of America. I was amazed at the characteristic warmth of America. I was amazed at the characteristic warmth
+GPT4o_MINI,CCOCR,2457,20479, SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+GPT4o_MINI,OmniDocBench,291,17766,"|          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|"
+GPT4o_MINI,olmOCRBench,751,18799,"ed in New York City, how the family was reunited in New York City, how the family was reunited in New York City, how the family was reunited in New York City, how the family was reunited in New York City, how the family was reunited in New York City, how the family was reunited in New York City, how"
+Gemma3-4B,CCOCR,4659,16921," ai làm quên đi, tôi không biết mình đã viết được những dòng chữ này để cho ai làm quên đi, tôi không biết mình đã viết được những dòng chữ này để cho ai làm quên đi, tôi không biết mình đã viết được những dòng chữ này để cho ai làm quên đi, tôi không biết mình đã viết được những dòng chữ này để cho"
+Gemma3-4B,OCRBench_v2,9933,64988,............................................................................................................................................................................................................................................................................................................
+Gemma3-4B,OmniDocBench,914,23999,ics in the dynamic interactions among these topics in the dynamic interactions among these topics in the dynamic interactions among these topics in the dynamic interactions among these topics in the dynamic interactions among these topics in the dynamic interactions among these topics in the dynamic
+Gemma3-4B,olmOCRBench,952,22709,es of detection. (Fine needle aspiration biopsy achieves high rates of detection. (Fine needle aspiration biopsy achieves high rates of detection. (Fine needle aspiration biopsy achieves high rates of detection. (Fine needle aspiration biopsy achieves high rates of detection. (Fine needle aspiration
+InternVL3-8B,CCOCR,4062,13676,"ского процесса:
+• Основные черты исторического процесса:
+• Основные черты исторического процесса:
+• Основные черты исторического процесса:
+• Основные черты исторического процесса:
+• Основные черты исторического процесса:
+• Основные черты исторического процесса:
+• Основные черты исторического процесс"
+InternVL3-8B,OCRBench_v2,5956,23387,"on called drones, which have been used in conflicts in the Middle East and Afghanistan. Competition called drones, which have been used in conflicts in the Middle East and Afghanistan. Competition called drones, which have been used in conflicts in the Middle East and Afghanistan. Competition called"
+InternVL3-8B,OmniDocBench,380,251582,------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+InternVL3-8B,olmOCRBench,1367,261300,------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ovis2-8B,CCOCR,2606,10240,"Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+Coca-Cola
+"
+Ovis2-8B,OmniDocBench,736,21061,perties owned by State and Federal agencies. Recruitments of sicklefin redhorse suckers have been observed in conservation properties owned by State and Federal agencies. Recruitments of sicklefin redhorse suckers have been observed in conservation properties owned by State and Federal agencies. Rec
+Ovis2-8B,olmOCRBench,877,25594, of racial discrimination in the institutional and inter-personal levels and help them gradually eliminate this social issue through a united effort and various sources of racial discrimination in the institutional and inter-personal levels and help them gradually eliminate this social issue through
+Qwen2.5-VL-7B-Instruct,CCOCR,4860,8333,_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
+Qwen2.5-VL-7B-Instruct,OmniDocBench,730,9776,"* * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  * * * * *
+
+  *"
+Qwen2.5-VL-7B-Instruct,olmOCRBench,719,12260,quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \
+llava-onevision-qwen2-7b-ov-hf,OCRBench_v2,4270,18377,t higher mode numbers. The interaction of EGP and ELM has been found to happen also at higher mode numbers. The interaction of EGP and ELM has been found to happen also at higher mode numbers. The interaction of EGP and ELM has been found to happen also at higher mode numbers. The interaction of EGP

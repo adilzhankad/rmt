@@ -214,6 +214,12 @@ def analyze(split, cfg, processed=PROCESSED, charts=CHARTS, reps=harness.BOOTSTR
         out["min_tau_ci"] = percentile_ci(min_draws, reps)
         out["verdict_share"] = {k: v / reps for k, v in sorted(verdicts.items())}
         boot = {"mean": mean_draws}
+        # every replicate, so each interval and share in the report can be recounted from a file
+        if len(mean_draws) == reps:
+            reps_df = pd.DataFrame({"replicate": range(1, reps + 1), "mean_tau": mean_draws, "min_tau": min_draws})
+            for (a, b), v in pair_draws.items():
+                reps_df[f"{a} x {b}"] = v
+            reps_df.to_csv(processed / f"bootstrap_{split}.csv", index=False)
 
         # 3b. pre-registered harness bootstrap (plain item means)
         plain = plain_items(rows, cfg)
