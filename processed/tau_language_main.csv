@@ -1,5 +1,5 @@
-a,b,tau_b,n_shared
-OCRBench v2 EN,OCRBench v2 ZH,,4
-OmniDocBench EN,OmniDocBench ZH,,2
-OCRBench v2 EN,OmniDocBench EN,,2
-OCRBench v2 ZH,OmniDocBench ZH,,2
+a,b,tau_b,n_shared,ci_stratified
+OCRBench v2 EN,OCRBench v2 ZH,0.5238095238095238,7,"(0.3333333333333333, 0.8095238095238095)"
+OmniDocBench EN,OmniDocBench ZH,0.7333333333333333,6,"(0.4666666666666667, 0.8666666666666667)"
+OCRBench v2 EN,OmniDocBench EN,0.6,6,"(0.4666666666666667, 1.0)"
+OCRBench v2 ZH,OmniDocBench ZH,0.3333333333333333,6,"(0.2, 0.6)"

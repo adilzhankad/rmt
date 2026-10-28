@@ -1,6 +1,7 @@
 """Per-item scores for every finished run -> processed/item_scores.csv.
 
-    python experiment/item_scores.py
+    python experiment/item_scores.py [--bench B ...] [--jobs N] [--out-dir DIR]
+    python experiment/item_scores.py --merge DIR [DIR ...]     # combine parts into processed/
 
 Each benchmark's headline number is an average of averages, so per-item scores are
 kept together with the groups the official aggregate averages over. For every run the
@@ -220,22 +221,22 @@ def find_runs(root=RAW):
         yield meta.parent, m
 
 
-def main(root=RAW, out_dir=PROCESSED, cfg=None):
-    cfg = cfg or load_config()
-    all_rows, all_checks = [], []
-    for work_dir, m in find_runs(root):
-        bench, split, model = m["benchmark"], m["split"], m["model"]
-        b = cfg["benchmarks"][bench]
-        ext = b["pred_format"]
-        eval_file = work_dir / f"{model}_{b['dataset']}.{ext}"
-        metrics = json.loads((work_dir / "metrics.json").read_text())
-        rows, checks = score_run(bench, str(eval_file), metrics, read_items(bench, split))
-        for r in rows:
-            all_rows.append({"split": split, "model": model, "benchmark": bench, **r})
-        for c in checks:
-            all_checks.append({"split": split, "model": model, "benchmark": bench, **c})
-        bad = [c for c in checks if not c["ok"]]
-        print(f"{split:5s} {model:24s} {bench:13s} {len(rows):6d} rows  check {'OK' if not bad else bad}")
+def score_one(job):
+    """Rows and checks of one run (a separate process when --jobs > 1)."""
+    work_dir, m = job
+    cfg = load_config()
+    bench, split, model = m["benchmark"], m["split"], m["model"]
+    b = cfg["benchmarks"][bench]
+    eval_file = work_dir / f"{model}_{b['dataset']}.{b['pred_format']}"
+    metrics = json.loads((work_dir / "metrics.json").read_text())
+    rows, checks = score_run(bench, str(eval_file), metrics, read_items(bench, split))
+    bad = [c for c in checks if not c["ok"]]
+    print(f"{split:5s} {model:24s} {bench:13s} {len(rows):6d} rows  check {'OK' if not bad else bad}", flush=True)
+    return ([{"split": split, "model": model, "benchmark": bench, **r} for r in rows],
+            [{"split": split, "model": model, "benchmark": bench, **c} for c in checks])
+
+
+def write(all_rows, all_checks, out_dir):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(all_rows).to_csv(out_dir / "item_scores.csv", index=False)
@@ -243,8 +244,45 @@ def main(root=RAW, out_dir=PROCESSED, cfg=None):
     bad = [c for c in all_checks if not c["ok"]]
     if bad:
         raise SystemExit(f"{len(bad)} aggregates not reproduced from item scores: {bad[:3]}")
+
+
+def main(root=RAW, out_dir=PROCESSED, cfg=None, benches=None, jobs=1):
+    runs = [(d, m) for d, m in find_runs(root) if benches is None or m["benchmark"] in benches]
+    if jobs > 1:
+        from multiprocessing import get_context
+        with get_context("spawn").Pool(jobs) as pool:
+            parts = pool.map(score_one, runs, chunksize=1)
+    else:
+        parts = [score_one(r) for r in runs]
+    all_rows = [r for rows, _ in parts for r in rows]
+    all_checks = [c for _, checks in parts for c in checks]
+    write(all_rows, all_checks, out_dir)
     return all_rows, all_checks
 
 
+def merge(parts, out_dir=PROCESSED):
+    """Combine item_scores.csv / item_scores_check.csv written by separate runs of this script
+    (e.g. olmOCR on Linux, where its maths tests render as in the official evaluation)."""
+    parts = [p for p in parts if (Path(p) / "item_scores.csv").stat().st_size > 1]   # a part with no scored run is empty
+    rows = pd.concat([pd.read_csv(Path(p) / "item_scores.csv", dtype={"item": str, "unit": str}) for p in parts])
+    checks = pd.concat([pd.read_csv(Path(p) / "item_scores_check.csv") for p in parts])
+    runs = checks[["split", "model", "benchmark"]].drop_duplicates()
+    dup = runs.duplicated().sum() + checks.duplicated(["split", "model", "benchmark", "metric"]).sum()
+    if dup:
+        raise SystemExit(f"{dup} runs appear in more than one part")
+    print(f"merged {len(runs)} runs, {len(rows)} item rows from {len(parts)} parts")
+    write(rows.to_dict("records"), checks.to_dict("records"), out_dir)
+
+
 if __name__ == "__main__":
-    main()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--bench", nargs="+", help="only these benchmarks (default: all)")
+    ap.add_argument("--jobs", type=int, default=1, help="runs scored in parallel")
+    ap.add_argument("--out-dir", default=str(PROCESSED))
+    ap.add_argument("--merge", nargs="+", metavar="DIR", help="combine the outputs of earlier runs instead")
+    args = ap.parse_args()
+    if args.merge:
+        merge(args.merge, args.out_dir)
+    else:
+        main(out_dir=args.out_dir, benches=args.bench, jobs=args.jobs)

@@ -3,119 +3,205 @@
   "models": [
     "GPT4o_20240806",
     "GPT4o_MINI",
+    "Gemma3-4B",
     "InternVL3-8B",
-    "Qwen2.5-VL-7B-Instruct"
+    "Ovis2-8B",
+    "Qwen2.5-VL-7B-Instruct",
+    "llava-onevision-qwen2-7b-ov-hf"
   ],
-  "n_models": 4,
+  "n_models": 7,
   "pairs": [
     {
       "a": "OCRBench v2",
       "b": "CC-OCR",
-      "n_shared": 2,
-      "tau_b": null
+      "n_shared": 6,
+      "tau_b": 0.3333333333333333,
+      "ci_stratified": [
+        0.2,
+        0.7333333333333333
+      ],
+      "ci_harness_plain_mean": [
+        0.06666666666666667,
+        0.6
+      ],
+      "tau_b_plain_mean": 0.2
     },
     {
       "a": "OCRBench v2",
       "b": "OmniDocBench",
-      "n_shared": 2,
-      "tau_b": null
+      "n_shared": 6,
+      "tau_b": 0.6,
+      "ci_stratified": [
+        0.4666666666666667,
+        1.0
+      ],
+      "ci_harness_plain_mean": [
+        0.06666666666666667,
+        0.7333333333333333
+      ],
+      "tau_b_plain_mean": 0.4666666666666667
     },
     {
       "a": "OCRBench v2",
       "b": "olmOCR-Bench",
-      "n_shared": 2,
-      "tau_b": null
+      "n_shared": 6,
+      "tau_b": 0.4666666666666667,
+      "ci_stratified": [
+        0.4666666666666667,
+        1.0
+      ],
+      "ci_harness_plain_mean": [
+        0.2,
+        0.7333333333333333
+      ],
+      "tau_b_plain_mean": 0.4666666666666667
     },
     {
       "a": "CC-OCR",
       "b": "OmniDocBench",
-      "n_shared": 2,
-      "tau_b": null
+      "n_shared": 6,
+      "tau_b": 0.4666666666666667,
+      "ci_stratified": [
+        0.4666666666666667,
+        0.6
+      ],
+      "ci_harness_plain_mean": [
+        0.4666666666666667,
+        0.6
+      ],
+      "tau_b_plain_mean": 0.4666666666666667
     },
     {
       "a": "CC-OCR",
       "b": "olmOCR-Bench",
-      "n_shared": 2,
-      "tau_b": null
+      "n_shared": 6,
+      "tau_b": 0.6,
+      "ci_stratified": [
+        0.6,
+        0.7333333333333333
+      ],
+      "ci_harness_plain_mean": [
+        0.4666666666666667,
+        0.7333333333333333
+      ],
+      "tau_b_plain_mean": 0.7333333333333333
     },
     {
       "a": "OmniDocBench",
       "b": "olmOCR-Bench",
-      "n_shared": 2,
-      "tau_b": null
+      "n_shared": 6,
+      "tau_b": 0.8666666666666667,
+      "ci_stratified": [
+        0.7333333333333333,
+        0.8666666666666667
+      ],
+      "ci_harness_plain_mean": [
+        0.6,
+        0.8666666666666667
+      ],
+      "tau_b_plain_mean": 0.7333333333333333
     }
   ],
-  "mean_tau": null,
-  "min_tau": null,
-  "verdict": "not estimable (< 5 shared models)",
+  "mean_tau": 0.5555555555555556,
+  "min_tau": 0.3333333333333333,
+  "verdict": "partial agreement",
   "pair_concordance": [
     {
       "a": "OCRBench v2",
       "b": "CC-OCR",
-      "n_shared": 2,
-      "concordant": 1,
-      "discordant": 0
+      "n_shared": 6,
+      "concordant": 10,
+      "discordant": 5
     },
     {
       "a": "OCRBench v2",
       "b": "OmniDocBench",
-      "n_shared": 2,
-      "concordant": 1,
-      "discordant": 0
+      "n_shared": 6,
+      "concordant": 12,
+      "discordant": 3
     },
     {
       "a": "OCRBench v2",
       "b": "olmOCR-Bench",
-      "n_shared": 2,
-      "concordant": 1,
-      "discordant": 0
+      "n_shared": 6,
+      "concordant": 11,
+      "discordant": 4
     },
     {
       "a": "CC-OCR",
       "b": "OmniDocBench",
-      "n_shared": 2,
-      "concordant": 1,
-      "discordant": 0
+      "n_shared": 6,
+      "concordant": 11,
+      "discordant": 4
     },
     {
       "a": "CC-OCR",
       "b": "olmOCR-Bench",
-      "n_shared": 2,
-      "concordant": 1,
-      "discordant": 0
+      "n_shared": 6,
+      "concordant": 12,
+      "discordant": 3
     },
     {
       "a": "OmniDocBench",
       "b": "olmOCR-Bench",
-      "n_shared": 2,
-      "concordant": 1,
-      "discordant": 0
+      "n_shared": 6,
+      "concordant": 14,
+      "discordant": 1
     }
   ],
   "language": [
     {
       "a": "OCRBench v2 EN",
       "b": "OCRBench v2 ZH",
-      "tau_b": NaN,
-      "n_shared": 4
+      "tau_b": 0.5238095238095238,
+      "n_shared": 7,
+      "ci_stratified": [
+        0.3333333333333333,
+        0.8095238095238095
+      ]
     },
     {
       "a": "OmniDocBench EN",
       "b": "OmniDocBench ZH",
-      "tau_b": NaN,
-      "n_shared": 2
+      "tau_b": 0.7333333333333333,
+      "n_shared": 6,
+      "ci_stratified": [
+        0.4666666666666667,
+        0.8666666666666667
+      ]
     },
     {
       "a": "OCRBench v2 EN",
       "b": "OmniDocBench EN",
-      "tau_b": NaN,
-      "n_shared": 2
+      "tau_b": 0.6,
+      "n_shared": 6,
+      "ci_stratified": [
+        0.4666666666666667,
+        1.0
+      ]
     },
     {
       "a": "OCRBench v2 ZH",
       "b": "OmniDocBench ZH",
-      "tau_b": NaN,
-      "n_shared": 2
+      "tau_b": 0.3333333333333333,
+      "n_shared": 6,
+      "ci_stratified": [
+        0.2,
+        0.6
+      ]
     }
-  ]
+  ],
+  "mean_tau_ci": [
+    0.5333333333333333,
+    0.7333333333333334
+  ],
+  "min_tau_ci": [
+    0.2,
+    0.4666666666666667
+  ],
+  "verdict_share": {
+    "partial agreement": 0.865,
+    "rankings agree": 0.134,
+    "rankings do not agree": 0.001
+  }
 }

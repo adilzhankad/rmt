@@ -3,15 +3,15 @@
     "benchmark": "OCRBench_v2",
     "metric": "English Overall Score",
     "leaderboard_split": "English (private)",
-    "n_shared": 4,
-    "kendall_tau_b": 0.333
+    "n_shared": 6,
+    "kendall_tau_b": 0.467
   },
   {
     "benchmark": "OCRBench_v2",
     "metric": "Chinese Overall Score",
     "leaderboard_split": "Chinese (private)",
-    "n_shared": 4,
-    "kendall_tau_b": 1.0
+    "n_shared": 6,
+    "kendall_tau_b": 0.867
   },
   {
     "benchmark": "CCOCR",
@@ -24,14 +24,14 @@
     "benchmark": "OmniDocBench",
     "metric": "overall_EN",
     "leaderboard_split": "English pages",
-    "n_shared": 1,
+    "n_shared": 2,
     "kendall_tau_b": null
   },
   {
     "benchmark": "OmniDocBench",
     "metric": "overall_CH",
     "leaderboard_split": "Chinese pages",
-    "n_shared": 1,
+    "n_shared": 2,
     "kendall_tau_b": null
   }
 ]
