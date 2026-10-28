@@ -10,7 +10,9 @@ report that is not in those files is computed here, from them:
   * ER3: the first-ranked model on each benchmark;
   * the engine check: Qwen2.5-VL OCRBench v2 on transformers vs vLLM, and whether the rank changes;
   * leave-one-model-out: mean and min tau-b when each of the six complete models is left out;
-  * answer-level failure totals over the 25 scored main runs (output_checks_main.csv).
+  * answer-level failure totals over the 25 scored main runs (output_checks_main.csv);
+  * sample facts (strata per benchmark, English pages in the OmniDocBench sample), the number of
+    identical answers in the two Qwen2.5-VL OCRBench v2 runs, and the run time of the scored main runs.
 """
 import json
 import sys
@@ -78,6 +80,21 @@ def main():
                            "long": int(oc.long.sum()), "loop": int(oc.loop.sum()),
                            "cut_api": int(pd.to_numeric(oc.cut_api, errors="coerce").fillna(0).sum()),
                            "loop_by_benchmark": oc.groupby("benchmark").loop.sum().astype(int).to_dict()}
+    items = {b: pd.read_csv(ROOT / "items" / f"{b}_main.csv") for b in ("OCRBench_v2", "CCOCR", "OmniDocBench", "olmOCRBench")}
+    out["sample"] = {"strata": {b: int(d.stratum.nunique()) for b, d in items.items()},
+                     "omnidoc_english_pages": int(items["OmniDocBench"].stratum.str.startswith("english").sum())}
+
+    def answers(path):
+        return {str(j["index"]): str(j["prediction"]) for j in map(json.loads, path.read_text().splitlines()) if j}
+    a = answers(ROOT / "raw/superseded/main/Qwen2.5-VL-7B-Instruct/OCRBench_v2/predictions.jsonl")
+    b = answers(ROOT / "raw/rerun/main/Qwen2.5-VL-7B-Instruct/OCRBench_v2/predictions.jsonl")
+    out["engine_check"]["identical_answers"] = sum(a[k] == b.get(k) for k in a)
+    out["engine_check"]["answers"] = len(a)
+
+    scored = log[(log.split == "main") & log.primary_score.notna()]
+    out["run_hours"] = {"scored_main_runs": len(scored), "total": round(scored.duration_s.sum() / 3600, 1),
+                        "by_model": scored.groupby("model").duration_s.sum().div(3600).round(1).to_dict(),
+                        "by_benchmark": scored.groupby("benchmark").duration_s.sum().div(3600).round(1).to_dict()}
     (PROCESSED / "a4_numbers.json").write_text(json.dumps(out, indent=2) + "\n")
     print(json.dumps(out, indent=2))
 
