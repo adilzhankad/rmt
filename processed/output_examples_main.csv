@@ -1,0 +1,33 @@
+model,benchmark,item,question,ground_truth,answer_start,answer_chars,scores
+Qwen2.5-VL-7B-Instruct,OCRBench_v2,1030,"Find out the company name, date, address, and total amount issued in this receipt. Extract the required information using the text in the image directly, and return the result in a dict with keys 'company', 'date', 'address', 'total'. Your answer should be in the JSON format:{    ""key1"": "".."",  # The firt key and value    ""key2"": ""..""     # The second key and value    ..}","[""{'company': ['99 SPEED MART S/B'], 'date': ['19-10-16'], 'address': ['LOT P.T. 33198, BATU 4 JALAN KAPAR, MUKIM KAPAR 42100 KLANG, SELANGOR 1558-TMN PUSAT KEPONG'], 'total': ['14.20']}""]","```json
+{
+    ""company"": ""99 SPEED MART S/B"",
+    ""date"": ""19-10-16"",
+    ""address"": ""LOT P.T. 33198, BATU 4 JALAN KAPAR, MUKIM KAPAR 42100 KLANG, SELANGOR 1558-TMN PUSAT KEPONG"",
+    ""total"": ""14.20""
+}
+```",206,1030=1.000
+Qwen2.5-VL-7B-Instruct,OCRBench_v2,85,"What is the cost of the ""1965 AC Shelby Cobra"" posted on April 11?","['76,000 dollars']","The cost of the ""1965 AC Shelby Cobra"" posted on April 11 is $76,000.",69,85=0.000
+Qwen2.5-VL-7B-Instruct,CCOCR,2918,Please output only the text content from the image without any additional descriptions or formatting.,20 FILTER CIGARETTES,"FILTER
+CIGARETTES
+20",20,2918=1.000
+Qwen2.5-VL-7B-Instruct,OmniDocBench,153,,"{""layout_dets"": [{""category_type"": ""title"", ""poly"": [206.077857, 420.460979, 1440.20931, 420.460979, 1440.20931, 530.541336, 206.077857, 530.541336], ""ignore"": false, ""order"": 1, ""anno_id"": 5, ""text"": ""Daily streamflow modelling and assessment based on the curve-number technique"", ""line_with_spans"": [{""category_type"": ""text_span"", ""poly"": [211.11110504830307, 422.22221009660615, 1436.1110698680618","```markdown
+# Daily streamflow modelling and assessment based on the curve-number technique
+
+**Jin-Yong Choi,1* Bernard A. Engel1 and Ha Woo Chung2**
+
+1 Department of Agricultural and Biological Engineering, Purdue University, West Lafayette, IN 47907-1146, USA.
+2 Division of Biological Resources and Material Engineering, Seoul National University, Suwon, Kyounggi 441-744, South Korea
+
+## Abstract",4026,153:text_block=0.000; 153:reading_order=0.000
+Qwen2.5-VL-7B-Instruct,olmOCRBench,1177,,"[{""pdf"": ""old_scans/87.pdf"", ""page"": 1, ""id"": ""87_131035"", ""type"": ""present"", ""max_diffs"": 0, ""text"": ""for the information of Miss Barton."", ""case_sensitive"": true, ""first_n"": null, ""last_n"": null, ""checked"": ""verified"", ""url"": ""https://crowd.loc.gov/campaigns/clara-barton-angel-of-the-battlefield/subject-file/mss119730433/mss119730433-15/""}]","I do not think, at the present time, Miss Barton had better undertake to go to Bermuda's Division to act as a nurse.
+
+Alfred North
+
+March 25th 1862.
+
+Respectfully referred for the information of Miss Barton.
+
+Grand Army
+
+Jan. 25th 1862",235,87_131035=1.000; old_scans/87.pdf_baseline=1.000
